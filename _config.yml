@@ -1,9 +1,9 @@
 # Site settings
-title: noamelf.com
+title: noamelf
 header-img: img/home-bg.jpg
 email: noamelf@gmail.com
 copyright_name: Noam Elfanbaum
-description: "Thoughts and writing by Noam Elfanbaum"
+description: "Thoughts and writings by Noam Elfanbaum"
 baseurl: ""
 url: "http://noamelf.github.io"
 twitter_username: noamelf
