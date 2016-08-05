@@ -4,7 +4,7 @@ title: Designing Pythonic APIs
 ---
 
 # Designing Pythonic APIs
-*Lessons from Kenneth Reitz's `requests` package*
+*Guidelines from Kenneth Reitz's `requests` package*
 
 (This blog post is an adaptation of a talk I gave at our local Python meetup - [PywebIL][meetup link] - 
 last week. You can find the slides [here][talk slides].)
@@ -366,5 +366,5 @@ elif r.status_code == requests.codes.not_found:
 That's it for now. I learned quite a bit preparing this talk/post, and I hope you did too reading it. I'll be glad to hear your comments down bellow or on Twitter (@noamelf). 
 
 [meetup link]: http://www.meetup.com/PyWeb-IL/events/232724175/
-[talk slides]: designing-pythonic-apis-talk
+[talk slides]: /designing-pythonic-apis-talk
 [requests url]: http://docs.python-requests.org/en/master/
