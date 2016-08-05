@@ -4,18 +4,18 @@ title: Designing Pythonic APIs
 ---
 
 # Designing Pythonic APIs
-*Guidelines from Kenneth Reitz's `requests` package*
+*Learning from Kenneth Reitz's Requests*
 
 (This blog post is an adaptation of a talk I gave at our local Python meetup - [PywebIL][meetup link] - 
 last week. You can find the slides [here][talk slides].)
 
 When writing a package (library), providing it with a good API, is almost as important as it's
-functionality itself (we'll at least if you want some adaptation), but what makes an API good? In this post, I'll be following Kenneth Reitz's popular [requests][requests url] (HTTP for Humans) package, and see what makes it so easy and simple to use.
+functionality itself (we'll at least if you want some adaptation), but what makes an API good? In this post, I'll be following Kenneth Reitz's popular [Requests][requests url] (HTTP for Humans) package, and see what makes it so easy and simple to use.
 
-\* Throughout our investigation we'll be using **Python 3.5** and **requests 2.10.0**.
+\* Throughout our investigation we'll be using **Python 3.5** and **Requests 2.10.0**.
 
-## Requests vs. urllib
-Comparing `requests` and `urllib` in a few typical HTTP usage scenarios, shows why `requests` has become the de facto standard among Python users. Reviewing those examples, I'll try to generalize a set of guidelines for designing great API's. 
+## *Requests* vs. *Urllib*
+Comparing *Requests* and *Urllib* in a few typical HTTP usage scenarios, shows why *Requests* has become the de facto standard among Python users. Reviewing those examples, I'll try to generalize a set of guidelines for designing great API's.
 
 ### Use case #1: sending a GET request
 
@@ -47,11 +47,11 @@ requests.get('http://python.org/')
 
 #### Explicit (API endpoints) is better than implicit
 * Notice how requests is more concise (hence, clear) about what it will do.
-* `urllib` is getting told implicitly to send a GET request since it didn't receive a data argument
-* `requests` function name explicitly mark what it will do.
+* *Urllib* is getting told implicitly to send a GET request since it didn't receive a data argument
+* *Requests* function name explicitly mark what it will do.
 
 #### Helpful object representation
-* `requests` returns a helpful string with the request status code when examining it (implements `__repr__()`)
+* *Requests* returns a helpful string with the request status code when examining it (implements `__repr__()`)
 
 #### Libraries code
 
@@ -107,7 +107,7 @@ r.status_code
 #### No need for getters and setters
 * Accessing an object property as an actual property (and not a method call) makes the code a little clearer.
 * If you come from other OOP language (hmmm... Java), you might be tempted to use getters and setters to allow future changes to the object properties.
-* No need for that in Python, just use the [**`@property`**](http://www.programiz.com/python-programming/property) decorator.
+* No need for that in Python, just use the [`@property`](http://www.programiz.com/python-programming/property) decorator.
 
 #### Libraries code
 
@@ -152,10 +152,10 @@ response.json()
 ```
 
 #### Easy access to common functionality
-* `requests` provides an out-of-the-box experience for the encoding of the data and loading the`json` response while in `urllib`...
+* *Requests* provides an out-of-the-box experience for the encoding of the data and loading the JSON response while in *Urllib*...
 * When creating your API think: how will my package be commonly use? What plugs can I add to make that usage easier?
 
-On the same note, `requests` also provides an elegant way to send `json` content:
+On the same note, *Requests* also provides an elegant way to send JSON content:
 
 
 ```python
@@ -201,10 +201,10 @@ session.get('https://api.github.com/user')
 ```
 
 #### Prefer Python data types over self-made ones
-* `requests` usage of Python's data structures makes it very easy to use. No need to get to know internal `requests` packages.
+* *Requests* usage of Python's data structures makes it very easy to use. No need to get to know internal *Requests* packages.
 
 #### Provide possibilities for simple and advanced usage
-* `requests` allow concise usage, when sending a single request, and a more verbose one for multiple requests.
+* *Requests* allow concise usage, when sending a single request, and a more verbose one for multiple requests.
 * Don't make the user go through a lengthy process when he needs a simple use case.
 
 #### Libraries code
@@ -224,7 +224,7 @@ def prepare_auth(self, auth, url=''):
             auth = HTTPBasicAuth(*auth)
 ```
 
-* `requests` internally converts the `(user,pass)` tuple to an authentication class.
+* *Requests* internally converts the `(user,pass)` tuple to an authentication class.
 
 ### Use case #5: handling errors
 
