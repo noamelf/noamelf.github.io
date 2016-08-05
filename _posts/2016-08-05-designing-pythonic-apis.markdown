@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Designing Pythonic API's
+title: Designing Pythonic APIs
 ---
 
-# Designing Pythonic API's
-*Learning from Kenneth Reitz's `requests` package*
+# Designing Pythonic APIs
+*Lessons from Kenneth Reitz's `requests` package*
 
 (This blog post is an adaptation of a talk I gave at our local Python meetup - [PywebIL][meetup link] - 
 last week. You can find the slides [here][talk slides].)
