@@ -364,8 +364,14 @@ elif r.status_code == requests.codes.not_found:
 
 
 
-That's it for now. I learned quite a bit preparing this talk/post, and I hope you did too reading it. I'll be glad to hear your comments down bellow or on Twitter (@noamelf). 
+That's it for now. I learned quite a bit preparing this talk/post, and I hope you did too reading it. I'll be glad to hear your comments down bellow or on Twitter (@noamelf).
+
+##### Update (August 8th, 2016)
+
+If you end up wondering how come there is such a stark usability difference between Requests and Urllib like many, including myself, do. Nick Coghlan shares his wide perspective on the subject, in a [comment bellow][nicks comment] and a following blog post (with the self-explanatory title): [what problem does it solve?][nicks post].
 
 [meetup link]: http://www.meetup.com/PyWeb-IL/events/232724175/
 [talk slides]: /designing-pythonic-apis-talk
+[nicks post]: http://www.curiousefficiency.org/posts/2016/08/what-problem-does-it-solve.html
+[nicks comment]: http://noamelf.com/2016/08/05/designing-pythonic-apis/#comment-2823855721
 [requests url]: http://docs.python-requests.org/en/master/
