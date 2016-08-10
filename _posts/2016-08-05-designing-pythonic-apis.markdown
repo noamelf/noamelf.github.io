@@ -6,7 +6,7 @@ title: Designing Pythonic APIs
 # Designing Pythonic APIs
 *Learning from Kenneth Reitz's [Requests][requests url]*
 
-When writing a package (library), providing it with a good API, is almost as important as it's
+When writing a package (library), providing it with a good API, is almost as important as its
 functionality itself (well, at least if you want some adoption), but what makes a good API? In this post, I'll try to provide some insights on that question by comparing *Requests* and *Urllib* (part of Python's standard library) in a few typical HTTP usage scenarios and see why *Requests* has become the de facto standard among Python users.
 
 \* Throughout our investigation we'll be using **Python 3.5** and **Requests 2.10.0**.
