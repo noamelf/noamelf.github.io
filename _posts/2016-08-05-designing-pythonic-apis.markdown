@@ -375,3 +375,7 @@ If you end up wondering how come there is such a stark usability difference betw
 [nicks post]: http://www.curiousefficiency.org/posts/2016/08/what-problem-does-it-solve.html
 [nicks comment]: http://noamelf.com/2016/08/05/designing-pythonic-apis/#comment-2823855721
 [requests url]: http://docs.python-requests.org/en/master/
+
+<blockquote class="reddit-card" data-card-created="1471210275"><a href="https://www.reddit.com/r/Python/comments/4wfdfc/designing_pythonic_apis_learning_from_requests/?ref=share&ref_source=embed">Designing Pythonic APIs - learning from Requests</a> from <a href="http://www.reddit.com/r/Python">Python</a></blockquote>
+<script async src="//embed.redditmedia.com/widgets/platform.js"
+charset="UTF-8"></script>
