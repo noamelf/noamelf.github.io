@@ -7,14 +7,14 @@ header-img: "img/about3.jpg"
 
 My name is Noam Elfanbaum and I live in Tel-Aviv with my girlfriend, Alexandra,
 and our dog Cashew. In general, my life revolves around finding meaning and
-fulfilment (like most, I guess), and in this blog you'll get to read what I came
-up with, along with other, more specific interests that indirectly serves that goal.
+fulfilment, and in this blog, you'll get to read what I came up with, along with
+other, more specific interests that indirectly serves that goal.
 
 Those interests include philosophy (mainly ethics), sports, meditation,
 politics, music and finally computers and software development, which is what I
-do for a living. Computers and software have always fascinated me. I enjoy
+do for a living. Since I was young, computers and software fascinated me. I enjoy
 tinkering with my system, reading and implementing new ideas and taking part
-in the community discussions.
+in the communities discussions.
 
 Theses days, I split my time between freelance developing at
 [Cloudlock][cloudlock], teaching [Python courses][pycubator], consulting work
