@@ -1,3 +1,9 @@
+layout: post
+title: Strict Python
+date: '2018-03-29 00:00:00'
+
+-------------------------------------------------------------------------------------------------------------------------
+
 # Strict Python
 
 Python is fun, but did you ever get the feeling after looking at other people code (or your past self) that maybe it's to much fun?
