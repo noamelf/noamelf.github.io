@@ -11,6 +11,13 @@ I enjoy giving public talks about subjects I investigate. Here are links to my p
 
 <iframe width="1280" height="720" src="https://www.youtube.com/embed/H8uVgtVv44Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-- **Designing Pythonic APIs**: [blog post](/designing-pythonic-apis-talk), [pyconil2017 video](https://www.youtube.com/watch?v=CrQQCa_AoWI) 
+
+- **Designing Pythonic APIs**: [blog post](/designing-pythonic-apis-talk), [pyconil2017 video](https://www.youtube.com/watch?v=CrQQCa_AoWI)
+
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/CrQQCa_AoWI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
 * **API and Microservices Management with Kong** - [slides](https://goo.gl/sS5spo)
 * **Introduction to Python coroutines** - [slides](/intro-to-python-coroutines-talk)
