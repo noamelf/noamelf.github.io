@@ -1,6 +1,6 @@
 # Meeting protocols
 
-I wanted to share some ideas I have regarding the meetings involved in leading an engineering team. Having meeting rituals is something that I found helpful to increase the productivity of the meetings and the overall team functioning. People know what to expect, and what is expected of them in the meetings. Each meeting have a protocol document, containing what we'll talk about, and also, we document important notions that come up in the meetings themselves.
+I wanted to share some ideas I have regarding the meetings involved in leading an engineering team. Having meeting rituals is something that I found helpful to increase the productivity of the meetings and the overall team functioning. People know what to expect, and what is expected of them in the meetings. Each meeting has a protocol document, containing what we'll talk about, and also, we document important notions that come up in the meetings themselves.
 
 ## 1:1s (every 3 weeks)
 
@@ -11,21 +11,21 @@ I wanted to share some ideas I have regarding the meetings involved in leading a
 
 ## Team meetings (weekly)
 
-### Meeting prepartion
+### Meeting preparation
 
 Each team member is requested to prepare for the meeting:
 
 * **Tickets grooming**:
   * Review last week progress and move tasks to their respective status columns.
   * Update ticket descriptions/PRs etc.
-  * Break big tasks into smaller ones that require up to 2 days effort.
+  * Break big tasks into smaller ones that require up to 2 days of effort.
 * **Plans for next week** - decide what you plan to work on next week and creates the appropriate tickets for it.
 * **Feedback** - write up stuff you want to talk about in the meeting in the meeting document.
 
 ### In the meeting
 
 * **Feedback and updates**
-  * Review this week contnet team members brought up (myself included).
+  * Review this week content team members brought up (myself included).
   * Company/group/team updates.
-* **Review tickets** - we review the tickets in the done column and each team member is encouraged to talk about the work been done. From saying a few words to a full on demo.
+* **Review tickets** - we review the tickets in the done column and each team member is encouraged to talk about the work been done. From saying a few words to a full-on demo.
 * **Milestones and upcoming work** - see if we met the milestones we setup earlier, review the upcoming ones, and say what you want to work on.
