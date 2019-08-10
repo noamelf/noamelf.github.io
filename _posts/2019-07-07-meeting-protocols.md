@@ -1,15 +1,15 @@
 # Meeting protocols
 
-Engineering teams have a few types of meetings that repeat themselves. Weekly meetings, 1:1s, design, and code review meetings, etc. I found that for each type of these meetings having a concrete protocol, meeting record, and sharing the meeting doc in advance between the members have great benefit for the quality and the participation in the meeting.
+Engineering teams have a few types of meetings that repeat themselves. Weekly meetings, 1:1s, design and code review meetings, etc. I found that for each type of these meetings having a concrete protocol, firm recurring schedule (where applicable), meeting record, and sharing the meeting doc in advance between the members have great benefit for the quality and the participation in the meeting.
 
 Their concrete benefits are:
 
 * Individual expression - team members know they'll get an appropriate stage for their ideas/complaints/feelings so they can express them to me and the other team members (hopefully) in a proactive way.
-* Higher participation - the protocol is known in advance, so members can prepare their points in advance. Moreover, it is expected of them. 
+* Higher participation - the protocol and schedule are known in advance, so members have time to prepare and articulate what they want to say.
 * Taking turns - since everyone is used to the way the meeting works, it's possible to delegate the job of running the meetings between different team members - making it more a cooperative effort then the team lead role.
 * Visibility of decision-making process - running the team and making the decisions is not being made in the head of the team lead, but is a visible, recorded process.
 
-Below are my teams' existing meeting protocols:
+Below are my teams' meeting protocols:
 
 ## 1:1s (every 3 weeks)
 
