@@ -1,11 +1,7 @@
 ---
 layout: post
 title: Meeting protocols
-header-img: "img/pixel-cells-3947913_640.png"
 ---
-
-> Image by <a href="https://pixabay.com/users/manfredsteger-1848497/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3947913">Manfred Steger</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3947913">Pixabay</a>
-
 
 Engineering teams have a few types of meetings that repeat themselves: weekly, 1:1s, design review, etc. I found that for each type of these meetings having a concrete protocol, firm recurring schedule (where applicable), meeting record, and the meeting doc shared in advance between the members have great benefits, mostly:
 
@@ -13,6 +9,10 @@ Engineering teams have a few types of meetings that repeat themselves: weekly, 1
 * Higher participation - the protocol and schedule are known in advance, so members have time to prepare and articulate what they want to say.
 * Taking turns - since everyone is used to the way the meeting works, it's possible to delegate the job of running the meetings between different team members - making it more a cooperative effort then the team lead role.
 * Visibility of decision-making process - running the team and making the decisions is not being made in the head of the team lead, but is a visible, recorded process.
+
+![Meeting protocols](/img/pixel-cells-3947913_640.png)
+
+> Image by <a href="https://pixabay.com/users/manfredsteger-1848497/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3947913">Manfred Steger</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3947913">Pixabay</a>
 
 Below are my teams' meeting protocols:
 
