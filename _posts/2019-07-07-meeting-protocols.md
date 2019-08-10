@@ -2,7 +2,7 @@
 
 Engineering teams have a few types of meetings that repeat themselves: weekly, 1:1s, design review, etc. I found that for each type of these meetings having a concrete protocol, firm recurring schedule (where applicable), meeting record, and the meeting doc shared in advance between the members have great benefits, mostly:
 
-* Individual expression - team members know they'll get an appropriate stage for their ideas/complaints/feelings so they can express them to me and the other team members (hopefully) in a proactive way.
+* Individual expression - team members know they'll get an appropriate stage for their ideas/complaints/feelings so they can express them to me and the other team members in a (hopefully) proactive way.
 * Higher participation - the protocol and schedule are known in advance, so members have time to prepare and articulate what they want to say.
 * Taking turns - since everyone is used to the way the meeting works, it's possible to delegate the job of running the meetings between different team members - making it more a cooperative effort then the team lead role.
 * Visibility of decision-making process - running the team and making the decisions is not being made in the head of the team lead, but is a visible, recorded process.
@@ -37,7 +37,7 @@ Each team member is requested to prepare for the meeting:
 * Drill down - depending on the project, specify how the components work internally.
 * Milestones - how is the project development broken down? what are the estimated delivery dates?
 * Risk management - what can go wrong (building on previous experience)? how can the risk be mitigated?
-* Feedback - time for the participant to offer their views.
+* Feedback - time for the participants to offer their views.
 
 ## 1:1s (every 3 weeks)
 
