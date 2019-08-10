@@ -1,4 +1,8 @@
-![protocols](/img/pixel-cells-3947913_640.png)
+---
+layout: post
+title: Meeting protocols
+header-img: "/img/pixel-cells-3947913_640.png"
+---
 
 > Image by <a href="https://pixabay.com/users/manfredsteger-1848497/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3947913">Manfred Steger</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3947913">Pixabay</a>
 
