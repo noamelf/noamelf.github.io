@@ -1,8 +1,6 @@
 # Meeting protocols
 
-Engineering teams have a few types of meetings that repeat themselves. Weekly meetings, 1:1s, design and code review meetings, etc. I found that for each type of these meetings having a concrete protocol, firm recurring schedule (where applicable), meeting record, and sharing the meeting doc in advance between the members have great benefit for the quality and the participation in the meeting.
-
-Their concrete benefits are:
+Engineering teams have a few types of meetings that repeat themselves. Weekly meetings, 1:1s, design and code review meetings, etc. I found that for each type of these meetings having a concrete protocol, firm recurring schedule (where applicable), meeting record, and sharing the meeting doc in advance between the members have great benefits, mostly:
 
 * Individual expression - team members know they'll get an appropriate stage for their ideas/complaints/feelings so they can express them to me and the other team members (hopefully) in a proactive way.
 * Higher participation - the protocol and schedule are known in advance, so members have time to prepare and articulate what they want to say.
@@ -10,13 +8,6 @@ Their concrete benefits are:
 * Visibility of decision-making process - running the team and making the decisions is not being made in the head of the team lead, but is a visible, recorded process.
 
 Below are my teams' meeting protocols:
-
-## 1:1s (every 3 weeks)
-
-* Lookback - how the last 3 weeks have been for you?
-* Colleague feedback - is there something I (the team lead) can do better? Is there anything you want to ask from me?
-* Manager feedback - can you can do more of this and less of that?
-* Summary - any action items?
 
 ## Team meetings (weekly)
 
@@ -47,3 +38,10 @@ Each team member is requested to prepare for the meeting:
 * Milestones - how is the project development broken down? what are the estimated delivery dates?
 * Risk management - what can go wrong (building on previous experience)? how can the risk be mitigated?
 * Feedback - time for the participant to offer their views.
+
+## 1:1s (every 3 weeks)
+
+* Lookback - how the last 3 weeks have been for you?
+* Colleague feedback - is there something I (the team lead) can do better? Is there anything you want to ask from me?
+* Manager feedback - can you can do more of this and less of that?
+* Summary - any action items?
