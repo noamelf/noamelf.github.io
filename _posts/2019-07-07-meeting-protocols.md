@@ -1,5 +1,7 @@
 # Meeting protocols
 
+![Thought it was funny that the first image coming up in the search is of a russian cabinet meeting](/img/russia-meeting-protocols)
+
 Engineering teams have a few types of meetings that repeat themselves: weekly, 1:1s, design review, etc. I found that for each type of these meetings having a concrete protocol, firm recurring schedule (where applicable), meeting record, and the meeting doc shared in advance between the members have great benefits, mostly:
 
 * Individual expression - team members know they'll get an appropriate stage for their ideas/complaints/feelings so they can express them to me and the other team members in a (hopefully) proactive way.
