@@ -45,3 +45,5 @@ Each team member is requested to prepare for the meeting:
 * Colleague feedback - is there something I (the team lead) can do better? Is there anything you want to ask from me?
 * Manager feedback - can you can do more of this and less of that?
 * Summary - any action items?
+
+That's what I got so far, as I create more of these I'll add them to this list.
