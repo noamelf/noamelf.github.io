@@ -35,5 +35,3 @@ The story behind bootstraping Airflow at Bluevine Capital
 ### Introduction to Python coroutines
 
 - [slides](/intro-to-python-coroutines-talk)
-
-# 
