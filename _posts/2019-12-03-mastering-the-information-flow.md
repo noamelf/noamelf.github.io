@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Finding my way around team communication
+title: Hacking team communications
 ---
 
 One of the daunting things in managing a team is being up to date with what is going on. On the one hand, it's crucial to be up to speed with the team's progress, but on the other hand, I hate continuously asking about status or dreadful standup meetings. I guess being an individual contributor up until now, I remember not enjoying this type of management practices. It took me a while to figure out a technique that works well for my needs:
