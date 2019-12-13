@@ -41,7 +41,7 @@ Meetings are a very important source for updates and planning, but too many of t
 
 
 ## Forming team communication habits 
-Now all these ideas are nice and dandy, but if your team doesn't cooperate with you, it will never work. From my experience, lack of cooperation is mostly a matter of changing habits. It's pretty easy to start working on something without moving the ticket to "in progress".
+Now all these ideas are nice and dandy, but if your team doesn't cooperate with you, it will never work. From my experience, a lack of cooperation is mostly a matter of changing habits. It's pretty easy to start working on something without moving the ticket to "in progress".
 
 What I try to do is to convince the individuals in the team, why communication is important, and how if they don't answer a mail or move a ticket or open draft PRs, it creates more communication load later on. I also let them know that I understand that programming is not something that can be interrupted every few minutes and that as far as I'm considered, checking their communication channels twice a day is enough. 
 
@@ -49,4 +49,4 @@ Something I encounter often is that when team members don't have anything meanin
 
 Most of the times, just explaining what I expect communication-wise, doesn't cut it since it requires a change of habits, so after the explanation part, comes the reminding part. For example - I ask a question on a ticket, once I don't get a response within say 4 hours, I ask that person: did you check Trello recently? This may some patronizing, but when doing it in good spirit, people tend to take it in a good way and make an effort to be more aware. In my current team, this works out pretty nicely and I can see a real difference.
 
-That's all I got this far, feel free to leave comments if you have some other tricks!
+I find that while having good communication habits can be easily overlooked (it doesn't fit well with the hacking mentality), if done right, even the most hardcore, lone wolf developer, can enjoy the freedom and peace of mind it brings.
