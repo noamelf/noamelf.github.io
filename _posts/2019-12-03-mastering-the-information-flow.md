@@ -3,7 +3,7 @@ layout: post
 title: Hacking team communications
 ---
 
-One of the daunting things in managing a team is being up to date with what is going on. On the one hand, it's crucial to be up to speed with the team's progress, but on the other hand, I hate continuously asking about status or dreadful standup meetings. I guess being an individual contributor up until now, I remember not enjoying this type of management practices. It took me a while to figure out a technique that works well for my needs:
+One of the daunting things in managing a team is being up to date with what is going on. On one hand, it's crucial to be up to speed with the team's progress, but on the other, I hate continuously asking about status or dreadful standup meetings. I guess being an individual contributor up until now, I remember not enjoying this type of management practices. It took me a while to figure out a technique that works well for my needs:
 
 1. Smart usage of communication channels
 2. Forming team communication habits 
@@ -49,4 +49,4 @@ Something I encounter often is that when team members don't have anything meanin
 
 Most of the times, just explaining what I expect communication-wise, doesn't cut it since it requires a change of habits, so after the explanation part, comes the reminding part. For example - I ask a question on a ticket, once I don't get a response within say 4 hours, I ask that person: did you check Trello recently? This may some patronizing, but when doing it in good spirit, people tend to take it in a good way and make an effort to be more aware. In my current team, this works out pretty nicely and I can see a real difference.
 
-I find that while having good communication habits can be easily overlooked (it doesn't fit well with the hacking mentality), if done right, even the most hardcore, lone wolf developer, can enjoy the freedom and peace of mind it brings.
+I find that while having good communication skills may not fit well with the image of a great developer (I'm looking at you Linus ☺️), it can provide him/her with the freedom and context needed to do great work. And as for engineering leads, this is our main role, to make sure we set up the environment for great work to happen. 
