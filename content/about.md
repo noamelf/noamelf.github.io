@@ -1,6 +1,7 @@
 +++
 title = "About"
 menu = "main"
+hidden = true 
 +++
 
 I'm Noam Elfanbaum, I live in Tel-Aviv with my wife, baby-daughter and dog. In general, my life revolves around finding meaning and fulfilment, and in this blog, you'll get to read what I came up with, along with other, more specific interests that indirectly serves that goal.

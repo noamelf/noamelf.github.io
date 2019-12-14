@@ -1,6 +1,7 @@
 +++
 title = "Talks"
 menu = "main"
+hidden = true 
 +++
 
 I enjoy giving public talks about subjects I investigate. Here are links to my previous talks:
@@ -10,6 +11,7 @@ I enjoy giving public talks about subjects I investigate. Here are links to my p
 The story behind bootstraping Airflow at Bluevine Capital
 
 - [slides](https://docs.google.com/presentation/d/1J0frjnuehQKLjFEmHdQqM7kd89flUN3M1chLEvulvwM/edit?usp=sharing)
+
 
 ### Let's build a Python profiler in 25 LOC
 
