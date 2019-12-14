@@ -1,0 +1,385 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>noamelf</title>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="The HTML5 Herald" />
+<meta name="author" content="Noam Elfanbaum" /><meta property="og:title" content="Designing Pythonic APIs" />
+<meta property="og:description" content="Designing Pythonic APIs Learning from Kenneth Reitz&#39;s Requests
+When writing a package (library), providing it with a good API, is almost as important as its functionality itself (well, at least if you want some adoption), but what makes a good API? In this post, I&#39;ll try to provide some insights on that question by comparing Requests and Urllib (part of Python&#39;s standard library) in a few typical HTTP usage scenarios and see why Requests has become the de facto standard among Python users." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://noamelf.com/posts/designing-pythonic-apis/" />
+<meta property="article:published_time" content="2016-08-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-08-05T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Designing Pythonic APIs"/>
+<meta name="twitter:description" content="Designing Pythonic APIs Learning from Kenneth Reitz&#39;s Requests
+When writing a package (library), providing it with a good API, is almost as important as its functionality itself (well, at least if you want some adoption), but what makes a good API? In this post, I&#39;ll try to provide some insights on that question by comparing Requests and Urllib (part of Python&#39;s standard library) in a few typical HTTP usage scenarios and see why Requests has become the de facto standard among Python users."/>
+
+<meta name="generator" content="Hugo 0.61.0" />
+    
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+  <script src="https://kit.fontawesome.com/b76b73e8e8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" /></head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">noamelf</a>
+            </h1>
+
+      <ul id="social-media">
+             <li>
+               <a href="https://github.com/noamelf" title="GitHub">
+               <i class="fab fa-github fa-lg"></i>
+               </a>
+             </li>
+             <li>
+               <a href="https://twitter.com/noamelf" title="Twitter">
+               <i class="fab fa-twitter fa-lg"></i>
+               </a>
+             </li>
+             <li>
+               <a href="https://linkedin.com/in/noamelf" title="LinkedIn">
+               <i class="fab fa-linkedin fa-lg"></i>
+               </a>
+             </li>
+      </ul>
+      
+      <p><em>thoughts about software development and more</em></p>
+      
+    </header>
+
+    
+<nav>
+    <ul>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+<article>
+
+    <h1>Designing Pythonic APIs</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2016-08-05T00:00:00Z">Aug 5, 2016</time>
+        </li>
+        
+
+        
+
+        <li>6 minutes read</li>
+    </ul>
+</aside>
+
+    
+
+    <h1 id="designing-pythonic-apis">Designing Pythonic APIs</h1>
+<p><em>Learning from Kenneth Reitz's <a href="http://docs.python-requests.org/en/master/">Requests</a></em></p>
+<p>When writing a package (library), providing it with a good API, is almost as important as its
+functionality itself (well, at least if you want some adoption), but what makes a good API? In this post, I'll try to provide some insights on that question by comparing <em>Requests</em> and <em>Urllib</em> (part of Python's standard library) in a few typical HTTP usage scenarios and see why <em>Requests</em> has become the de facto standard among Python users.</p>
+<p>* Throughout our investigation we'll be using <strong>Python 3.5</strong> and <strong>Requests 2.10.0</strong>.</p>
+<p>** This blog post is an adaptation of a talk I gave at our local Python meetup - <a href="http://www.meetup.com/PyWeb-IL/events/232724175/">PywebIL</a> - last week. You can find the slides <a href="/designing-pythonic-apis-talk">here</a>.</p>
+<h2 id="requests-vs-urllib"><em>Requests</em> vs. <em>Urllib</em></h2>
+<h3 id="use-case-1-sending-a-get-request">Use case #1: sending a GET request</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> urllib.request
+urllib<span style="color:#f92672">.</span>request<span style="color:#f92672">.</span>urlopen(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">http://python.org/</span><span style="color:#e6db74">&#39;</span>)
+</code></pre></div><pre><code>&lt;http.client.HTTPResponse at 0x7fdb08b1bba8&gt;
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> requests
+requests<span style="color:#f92672">.</span>get(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">http://python.org/</span><span style="color:#e6db74">&#39;</span>)
+</code></pre></div><pre><code>&lt;Response [200]&gt;
+</code></pre>
+<h4 id="explicit-api-endpoints-is-better-than-implicit">Explicit (API endpoints) is better than implicit</h4>
+<ul>
+<li>Notice how requests is more concise (hence, clear) about what it will do.</li>
+<li><em>Urllib</em> is getting told implicitly to send a GET request since it didn't receive a <code>data</code> argument</li>
+<li><em>Requests</em> function name explicitly mark what it will do.</li>
+</ul>
+<h4 id="helpful-object-representation">Helpful object representation</h4>
+<ul>
+<li><em>Requests</em> returns a helpful string with the request status code when examining it (this done by implementing the <code>__repr__()</code> method).</li>
+<li><em>Urllib</em> just returns the default (unclear) object representation</li>
+</ul>
+<h4 id="code-snippet">Code snippet</h4>
+<p>(<a href="https://github.com/kennethreitz/requests/blob/v2.10.0/requests/api.py">requests/api.py</a>):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">request</span>(method, url, <span style="color:#f92672">*</span><span style="color:#f92672">*</span>kwargs):
+    <span style="color:#66d9ef">with</span> sessions<span style="color:#f92672">.</span>Session() <span style="color:#66d9ef">as</span> session:
+        <span style="color:#66d9ef">return</span> session<span style="color:#f92672">.</span>request(method<span style="color:#f92672">=</span>method, url<span style="color:#f92672">=</span>url, <span style="color:#f92672">*</span><span style="color:#f92672">*</span>kwargs)
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get</span>(url, params<span style="color:#f92672">=</span>None, <span style="color:#f92672">*</span><span style="color:#f92672">*</span>kwargs):
+    kwargs<span style="color:#f92672">.</span>setdefault(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">allow_redirects</span><span style="color:#e6db74">&#39;</span>, True)
+    <span style="color:#66d9ef">return</span> request(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">get</span><span style="color:#e6db74">&#39;</span>, url, params<span style="color:#f92672">=</span>params, <span style="color:#f92672">*</span><span style="color:#f92672">*</span>kwargs)
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">post</span>(url, data<span style="color:#f92672">=</span>None, json<span style="color:#f92672">=</span>None, <span style="color:#f92672">*</span><span style="color:#f92672">*</span>kwargs):
+    <span style="color:#66d9ef">return</span> request(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">post</span><span style="color:#e6db74">&#39;</span>, url, data<span style="color:#f92672">=</span>data, json<span style="color:#f92672">=</span>json, <span style="color:#f92672">*</span><span style="color:#f92672">*</span>kwargs)
+</code></pre></div><ul>
+<li>All the HTTP verbs follow a similar flow prior to sending, hence there is a the <code>request()</code> main flow function.</li>
+<li>Implementing a &ldquo;helper function&rdquo; for each verb that calls <code>request()</code>, enables the explicitness we are looking for.</li>
+</ul>
+<h3 id="use-case-2-getting-a-request-status-code">Use case #2: getting a request status code</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> urllib.request
+r <span style="color:#f92672">=</span> urllib<span style="color:#f92672">.</span>request<span style="color:#f92672">.</span>urlopen(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">http://python.org/</span><span style="color:#e6db74">&#39;</span>)
+r<span style="color:#f92672">.</span>getcode()
+</code></pre></div><pre><code>200
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> requests
+r <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">http://python.org/</span><span style="color:#e6db74">&#39;</span>)
+r<span style="color:#f92672">.</span>status_code
+</code></pre></div><pre><code>200
+</code></pre>
+<h4 id="no-need-for-getters-and-setters">No need for getters and setters</h4>
+<ul>
+<li>Accessing an object property as an actual property (and not a method call) makes the code a little clearer.</li>
+<li>If you come from other OOP language (hmmm&hellip; Java), you might be tempted to use getters and setters to allow future changes to the object's properties. No need for that in Python, just use the <a href="http://www.programiz.com/python-programming/property"><code>@property</code></a> decorator.</li>
+</ul>
+<h4 id="code-snippet-1">Code snippet</h4>
+<p><a href="https://github.com/python/cpython/blob/3.5/Lib/http/client.py#L737">http/client.py</a>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HTTPResponse</span>(io<span style="color:#f92672">.</span>BufferedIOBase):
+
+    <span style="color:#75715e"># ...</span>
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getcode</span>(self):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>status
+</code></pre></div><ul>
+<li><em>Urllib</em> (or actually <em>http</em>) is using a &ldquo;getter&rdquo; to return a class property.</li>
+</ul>
+<h3 id="use-case-3-encoding-sending-and-decoding-a-post-request">Use case #3: encoding, sending and decoding a POST request</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> urllib.parse
+<span style="color:#f92672">import</span> urllib.request
+<span style="color:#f92672">import</span> json
+
+url <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">http://www.httpbin.org/post</span><span style="color:#e6db74">&#39;</span>
+values <span style="color:#f92672">=</span> {<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">name</span><span style="color:#e6db74">&#39;</span> : <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Michael Foord</span><span style="color:#e6db74">&#39;</span>}
+
+data <span style="color:#f92672">=</span> urllib<span style="color:#f92672">.</span>parse<span style="color:#f92672">.</span>urlencode(values)<span style="color:#f92672">.</span>encode()
+response <span style="color:#f92672">=</span> urllib<span style="color:#f92672">.</span>request<span style="color:#f92672">.</span>urlopen(url, data)
+body <span style="color:#f92672">=</span> response<span style="color:#f92672">.</span>read()<span style="color:#f92672">.</span>decode()
+json<span style="color:#f92672">.</span>loads(body)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> requests
+
+url <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">http://www.httpbin.org/post</span><span style="color:#e6db74">&#39;</span>
+data <span style="color:#f92672">=</span> {<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">name</span><span style="color:#e6db74">&#39;</span> : <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Michael Foord</span><span style="color:#e6db74">&#39;</span>}
+
+response <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>post(url, data<span style="color:#f92672">=</span>data)
+response<span style="color:#f92672">.</span>json()
+</code></pre></div><h4 id="easy-access-to-common-functionality">Easy access to common functionality</h4>
+<ul>
+<li><em>Requests</em> provides an out-of-the-box experience for the encoding of the data and loading the JSON response while in <em>Urllib</em> you have to implement those parts yourself.</li>
+<li>When designing your API think: how will my package be commonly use? What plugs can I add to make that usage easier?</li>
+</ul>
+<p>On the same note, <em>Requests</em> also provides an elegant way to send JSON content:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> requests
+
+url <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">http://www.httpbin.org/post</span><span style="color:#e6db74">&#39;</span>
+data <span style="color:#f92672">=</span> {<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">name</span><span style="color:#e6db74">&#39;</span> : <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Michael Foord</span><span style="color:#e6db74">&#39;</span>}
+
+response <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>post(url, json<span style="color:#f92672">=</span>data)
+response<span style="color:#f92672">.</span>json()
+</code></pre></div><h3 id="use-case-4-sending-authenticated-request">Use case #4: sending authenticated request</h3>
+<p>The following creates persistence credentials for HTTP requests, and sends a request:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> urllib.request
+
+gh_url <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">https://api.github.com/user</span><span style="color:#e6db74">&#39;</span>
+
+password_mgr <span style="color:#f92672">=</span> urllib<span style="color:#f92672">.</span>request<span style="color:#f92672">.</span>HTTPPasswordMgrWithDefaultRealm()
+password_mgr<span style="color:#f92672">.</span>add_password(None, gh_url, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">user</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">pswd</span><span style="color:#e6db74">&#39;</span>)
+handler <span style="color:#f92672">=</span> urllib<span style="color:#f92672">.</span>request<span style="color:#f92672">.</span>HTTPBasicAuthHandler(password_mgr)
+
+opener <span style="color:#f92672">=</span> urllib<span style="color:#f92672">.</span>request<span style="color:#f92672">.</span>build_opener(handler)
+opener<span style="color:#f92672">.</span>open(gh_url)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> requests
+
+session <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>Session()
+session<span style="color:#f92672">.</span>auth <span style="color:#f92672">=</span> (<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">user</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">pswd</span><span style="color:#e6db74">&#39;</span>)
+session<span style="color:#f92672">.</span>get(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">https://api.github.com/user</span><span style="color:#e6db74">&#39;</span>)
+</code></pre></div><p>But what if we just want to do a single HTTP call? Do we need all that code? <em>Requests</em> have you covered here:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> requests
+
+requests<span style="color:#f92672">.</span>get(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">https://api.github.com/user</span><span style="color:#e6db74">&#39;</span>, auth<span style="color:#f92672">=</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">user</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">pswd</span><span style="color:#e6db74">&#39;</span>))
+</code></pre></div><h4 id="provide-possibilities-for-simple-and-advanced-usage">Provide possibilities for simple and advanced usage</h4>
+<ul>
+<li><em>Requests</em> allow concise usage, when sending a single request, and a more verbose one for multiple requests.</li>
+<li>Don't make the user go through a lengthy process when he needs a simple use case.</li>
+</ul>
+<h4 id="prefer-python-data-types-over-self-made-ones">Prefer Python data types over self-made ones</h4>
+<ul>
+<li><em>Requests</em> usage of Python's data structures makes it very easy to use. No need to get to know internal <em>Requests</em> packages.</li>
+</ul>
+<h4 id="libraries-code">Libraries code</h4>
+<p><a href="https://github.com/kennethreitz/requests/blob/v2.10.0/requests/models.py#L488">requests/models.py</a>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">prepare_auth</span>(self, auth, url<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">&#39;</span>):
+    <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">Prepares the given HTTP auth data.</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+
+    <span style="color:#75715e"># ...</span>
+
+    <span style="color:#66d9ef">if</span> auth:
+        <span style="color:#66d9ef">if</span> isinstance(auth, tuple) <span style="color:#f92672">and</span> len(auth) <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>:
+            <span style="color:#75715e"># special-case basic HTTP auth</span>
+            auth <span style="color:#f92672">=</span> HTTPBasicAuth(<span style="color:#f92672">*</span>auth)
+</code></pre></div><ul>
+<li><em>Requests</em> internally converts the <code>(user,pass)</code> tuple to an authentication class.</li>
+</ul>
+<h3 id="use-case-5-handling-errors">Use case #5: handling errors</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> urllib.request <span style="color:#f92672">import</span> urlopen
+response <span style="color:#f92672">=</span> urlopen(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">http://www.httpbin.org/geta</span><span style="color:#e6db74">&#39;</span>)
+response<span style="color:#f92672">.</span>getcode()
+</code></pre></div><pre><code>---------------------------------------------------------------------------
+
+HTTPError                                 Traceback (most recent call last)
+
+&lt;ipython-input-45-5fba039d189a&gt; in &lt;module&gt;()
+      1 from urllib.request import urlopen
+----&gt; 2 response = urlopen('http://www.httpbin.org/geta')
+      3 response.getcode()
+
+
+/usr/lib/python3.5/urllib/request.py in urlopen(url, data, timeout, cafile, capath, cadefault, context)
+    161     else:
+    162         opener = _opener
+--&gt; 163     return opener.open(url, data, timeout)
+    164
+    165 def install_opener(opener):
+
+
+/usr/lib/python3.5/urllib/request.py in open(self, fullurl, data, timeout)
+    470         for processor in self.process_response.get(protocol, []):
+    471             meth = getattr(processor, meth_name)
+--&gt; 472             response = meth(req, response)
+    473
+    474         return response
+
+
+/usr/lib/python3.5/urllib/request.py in http_response(self, request, response)
+    580         if not (200 &lt;= code &lt; 300):
+    581             response = self.parent.error(
+--&gt; 582                 'http', request, response, code, msg, hdrs)
+    583
+    584         return response
+
+
+/usr/lib/python3.5/urllib/request.py in error(self, proto, *args)
+    508         if http_err:
+    509             args = (dict, 'default', 'http_error_default') + orig_args
+--&gt; 510             return self._call_chain(*args)
+    511
+    512 # XXX probably also want an abstract factory that knows when it makes
+
+
+/usr/lib/python3.5/urllib/request.py in _call_chain(self, chain, kind, meth_name, *args)
+    442         for handler in handlers:
+    443             func = getattr(handler, meth_name)
+--&gt; 444             result = func(*args)
+    445             if result is not None:
+    446                 return result
+
+
+/usr/lib/python3.5/urllib/request.py in http_error_default(self, req, fp, code, msg, hdrs)
+    588 class HTTPDefaultErrorHandler(BaseHandler):
+    589     def http_error_default(self, req, fp, code, msg, hdrs):
+--&gt; 590         raise HTTPError(req.full_url, code, msg, hdrs, fp)
+    591
+    592 class HTTPRedirectHandler(BaseHandler):
+
+
+HTTPError: HTTP Error 404: NOT FOUND
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> requests
+r <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">http://www.httpbin.org/geta</span><span style="color:#e6db74">&#39;</span>)
+r<span style="color:#f92672">.</span>status_code
+</code></pre></div><pre><code>404
+</code></pre>
+<h4 id="let-the-user-choose-how-to-handle-errors">Let the user choose how to handle errors</h4>
+<ul>
+<li>Some programmers prefer exceptions, some prefer checks.</li>
+<li>In some situations a check is much more elegant and sometimes it's the other way around.</li>
+<li>It's good to let your users to choose what to use when.</li>
+<li>Defaulting to return codes allow that, while defaulting to <code>exceptions</code> do not.</li>
+</ul>
+<p>Usage examples:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> urllib.request <span style="color:#f92672">import</span> urlopen
+<span style="color:#f92672">from</span> urllib.error <span style="color:#f92672">import</span> URLError, HTTPError
+<span style="color:#66d9ef">try</span>:
+    response <span style="color:#f92672">=</span> urlopen(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">http://www.httpbin.org/geta</span><span style="color:#e6db74">&#39;</span>)
+<span style="color:#66d9ef">except</span> HTTPError <span style="color:#66d9ef">as</span> e:
+    <span style="color:#66d9ef">if</span> e<span style="color:#f92672">.</span>code <span style="color:#f92672">==</span> <span style="color:#ae81ff">404</span>:
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Page not found</span><span style="color:#e6db74">&#39;</span>)
+<span style="color:#66d9ef">else</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">All good</span><span style="color:#e6db74">&#39;</span>)
+</code></pre></div><pre><code>Page not found
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> requests.exceptions <span style="color:#f92672">import</span> HTTPError
+<span style="color:#f92672">import</span> requests
+r <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">http://www.httpbin.org/posta</span><span style="color:#e6db74">&#39;</span>)
+<span style="color:#66d9ef">try</span>:
+    r<span style="color:#f92672">.</span>raise_for_status()
+<span style="color:#66d9ef">except</span> HTTPError <span style="color:#66d9ef">as</span> e:
+    <span style="color:#66d9ef">if</span> e<span style="color:#f92672">.</span>response<span style="color:#f92672">.</span>status_code <span style="color:#f92672">==</span> <span style="color:#ae81ff">404</span>:
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Page not found</span><span style="color:#e6db74">&#39;</span>)
+</code></pre></div><pre><code>Page not found
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> requests
+r <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">http://www.httpbin.org/geta</span><span style="color:#e6db74">&#39;</span>)
+<span style="color:#66d9ef">if</span> r<span style="color:#f92672">.</span>ok:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">All good</span><span style="color:#e6db74">&#39;</span>)
+<span style="color:#66d9ef">elif</span> r<span style="color:#f92672">.</span>status_code <span style="color:#f92672">==</span> requests<span style="color:#f92672">.</span>codes<span style="color:#f92672">.</span>not_found:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Page not found</span><span style="color:#e6db74">&#39;</span>)
+</code></pre></div><pre><code>Page not found
+</code></pre>
+<p>That's it for now. I learned quite a bit preparing this talk/post, and I hope you did too reading it. I'll be glad to hear your comments down bellow or on Twitter (@noamelf).</p>
+<h5 id="update-august-8th-2016">Update (August 8th, 2016)</h5>
+<p>If you end up wondering how come there is such a stark usability difference between Requests and Urllib like many, including myself, do. Nick Coghlan shares his wide perspective on the subject, in a <a href="http://noamelf.com/2016/08/05/designing-pythonic-apis/#comment-2823855721">comment bellow</a> and a following blog post (with the self-explanatory title): <a href="http://www.curiousefficiency.org/posts/2016/08/what-problem-does-it-solve.html">what problem does it solve?</a>.</p>
+<!-- raw HTML omitted -->
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="https://noamelf.com/posts/api-and-microservices-management-with-kong/"><i class="fa fa-chevron-circle-left"></i> API and Microservices Management with Kong</a>
+        </li>
+        
+        
+        <li>
+            <a href="https://noamelf.com/posts/python-performance-profiling/">Python Performance Profiling <i class="fa fa-chevron-circle-right"></i> </a>
+        </li>
+        
+    </ul>
+</section>
+    
+
+
+
+
+
+</main>
+    <footer>
+        <h6> |
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="https://noamelf.comindex.xml">Subscribe </a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+
+</body>
+
+</html>
+

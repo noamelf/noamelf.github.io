@@ -1,0 +1,600 @@
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+ <channel>
+   <title>coroutines on noamelf</title>
+   <link>https://noamelf.com/tags/coroutines/</link>
+   <description>Recent content in coroutines on noamelf</description>
+   <generator>Hugo -- gohugo.io</generator>
+   <language>en-us</language>
+   <lastBuildDate>Sun, 10 May 2015 12:16:55 +0000</lastBuildDate>
+   
+       <atom:link href="https://noamelf.com/tags/coroutines/index.xml" rel="self" type="application/rss+xml" />
+   
+   
+     <item>
+       <title>Hacking team communications</title>
+       <link>https://noamelf.com/posts/hacking-team-communications/</link>
+       <pubDate>Fri, 13 Dec 2019 00:00:00 +0000</pubDate>
+       
+       <guid>https://noamelf.com/posts/hacking-team-communications/</guid>
+       <description>&lt;p&gt;One of the daunting things in managing a team is being up to date with what is going on. On one hand, it&#39;s crucial to be up to speed with the team&#39;s progress, but on the other, I hate continuously asking about status or dreadful standup meetings. I guess being an individual contributor up until now, I remember not enjoying this type of management practices. It took me a while to figure out a technique that works well for my needs:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Smart usage of communication channels&lt;/li&gt;
+&lt;li&gt;Forming team communication habits&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;smart-usage-of-communication-channels&#34;&gt;Smart usage of communication channels&lt;/h2&gt;
+&lt;p&gt;The key here is utilizing the existing communication channels to the maximum without drowning in information. It can be accomplished by setting up smart notification and filters. If this sound too generic, here is the actual data sources and filtering mechanisms:&lt;/p&gt;
+&lt;h3 id=&#34;emails&#34;&gt;Emails&lt;/h3&gt;
+&lt;p&gt;In short, filters and inbox zero. Filters are mandatory to avoid drowning in a sea of irrelevant information. As much as it sounds anti-social, I&#39;m not really interested in new recruits across the company, and error emails of other teams aren&#39;t my cup of tea either. The simplest way to ignore these is to have accurate filters on recurring and not relevant emails.&lt;/p&gt;
+&lt;p&gt;Once the filters are set up, I&#39;m using the &lt;a href=&#34;https://whatis.techtarget.com/definition/inbox-zero&#34;&gt;inbox zero&lt;/a&gt; methodology, so that anything that needs addressing is being addressed at that moment or snoozed to when it needs to be addressed. If it&#39;s an ongoing thing, I turn it into a ticket.&lt;/p&gt;
+&lt;h3 id=&#34;tickets&#34;&gt;Tickets&lt;/h3&gt;
+&lt;p&gt;We use Trello where I work. Set up as a Kanban board, it allows to have multiple lists that represent the status of stuff, e.g. backlog, in progress, etc. The tickets are always sorted by priority in their list where a key requirement is to have the minimum viable number of tickets in each list. Our team has a board that holds all the work that we do, and if there are complex sub-projects that need their own board, the main board points to the sub-project board.&lt;/p&gt;
+&lt;p&gt;Having a single board, allows me to understand at a glance what are we working on at the moment and in what priorities. Since Trello allows to subscribe to any action on the board, I get a notification when someone updates his progress. I find it more convenient to use Trello&#39;s in-app notification instead of receiving emails since it allows to respond more easily. One of the challenges is forming team communication habits, as I&#39;ll discuss later on, and one is less likely to update his tickets without getting any feedback that someone is paying attention. Hence, a simple &amp;ldquo;+1&amp;rdquo; emoji can go a long way.&lt;/p&gt;
+&lt;p&gt;Each ticket gets assigned the relevant Pull Requests so that we can easily see the code that is being developed, Trello integrates nicely and shows the PR status (open/closed/merged) and the CI status (fails/success) on the ticket.&lt;/p&gt;
+&lt;h3 id=&#34;pull-requests&#34;&gt;Pull Requests&lt;/h3&gt;
+&lt;p&gt;Like with Trello, Github allows to subscribe to all activities on a certain repository, this is very convenient since I can be aware of what is going on in our code base, without being dependent on voluntary updates. If something is not interesting it&#39;s possible to unsubscribe specifically from it hence decrease the notifications load. Also, on repos that are not directly developed by us, I subscribe just to PRs of interest to me. Here also, I canceled the email notifications and use Github&#39;s in-app notifications, since it adds a few nice capabilities: marking all as read, muting and you can use the excellent&lt;a href=&#34;https://github.com/tanmayrajani/notifications-preview-github&#34;&gt;notifications-preview-github&lt;/a&gt; to have quicker access to updates.&lt;/p&gt;
+&lt;p&gt;One thing I can&#39;t stress enough is having team members open PRs as soon as possible. This helps to avoid so many headaches later on. Some devs are a little put off by this since it means coworkers will review (and judge!) their work before it&#39;s fully done, but now with Github new &amp;ldquo;Draft PR&amp;rdquo; feature, it&#39;s easier to explain to them that others know that this is not the final version. Making PRs early communicates the direction and the status of the project, it allows to give feedback before too much work has been invested. This, in turn, reduces conflicts since the dev getting the feedback is not busy defending the hours (if not days!) he spent.&lt;/p&gt;
+&lt;h3 id=&#34;meetings&#34;&gt;Meetings&lt;/h3&gt;
+&lt;p&gt;Meetings are a very important source for updates and planning, but too many of those kills productivity. Since so much of the manager&#39;s day is invested in meetings, I try to make them shorter and more effective. A few ideas I use:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Start with emails, then move to meetings - try to avoid setting meetings where an email can do the same job. If things are unclear or there is a conflict or a project is just stuck for no apparent reason, it&#39;s time to move to a meeting since these issues are easier to resolve that way.&lt;/li&gt;
+&lt;li&gt;Ask for meetings agenda - helps to make the meeting more productive and shows if the meeting is really needed. e.g. &amp;ldquo;Discuss latency&amp;rdquo; meeting title doesn&#39;t say much.&lt;/li&gt;
+&lt;li&gt;Ask to shorten meetings - a lot of times co-workers choose 1-hour spots for a meeting, this is a lot! They count on cutting it short if they don&#39;t need all the time. I much rather have 30m meetings and scheduling another one if needed. Asking for shortening the meeting becomes pretty easy and not awkward with Google calender &amp;ldquo;suggest new time&amp;rdquo; feature. You just purpose less time and hope they accept it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;forming-team-communication-habits&#34;&gt;Forming team communication habits&lt;/h2&gt;
+&lt;p&gt;Now all these ideas are nice and dandy, but if your team doesn&#39;t cooperate with you, it will never work. From my experience, a lack of cooperation is mostly a matter of changing habits. It&#39;s pretty easy to start working on something without moving the ticket to &amp;ldquo;in progress&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;What I try to do is to convince the individuals in the team, why communication is important, and how if they don&#39;t answer a mail or move a ticket or open draft PRs, it creates more communication load later on. I also let them know that I understand that programming is not something that can be interrupted every few minutes and that as far as I&#39;m considered, checking their communication channels twice a day is enough.&lt;/p&gt;
+&lt;p&gt;Something I encounter often is that when team members don&#39;t have anything meaningful to reply to a message they receive, they just, well, don&#39;t reply. This makes sense, but it leaves the other side hanging. What I encourage them to do, is to reply &amp;ldquo;still in progress&amp;rdquo; or &amp;ldquo;will get back to you tomorrow on this&amp;rdquo;, so that the other person knows that things are in check.&lt;/p&gt;
+&lt;p&gt;Most of the times, just explaining what I expect communication-wise, doesn&#39;t cut it since it requires a change of habits, so after the explanation part, comes the reminding part. For example - I ask a question on a ticket, once I don&#39;t get a response within say 4 hours, I ask that person: did you check Trello recently? This may some patronizing, but when doing it in good spirit, people tend to take it in a good way and make an effort to be more aware. In my current team, this works out pretty nicely and I can see a real difference.&lt;/p&gt;
+&lt;p&gt;I find that while having good communication skills may not fit well with the image of a great developer (I&#39;m looking at you Linus ☺️), it can provide him/her with the freedom and context needed to do great work. And as for engineering leads, this is our main role, to make sure we set up the environment for great work to happen.&lt;/p&gt;
+</description>
+     </item>
+   
+     <item>
+       <title>Meeting protocols</title>
+       <link>https://noamelf.com/posts/meeting-protocols/</link>
+       <pubDate>Sat, 10 Aug 2019 00:00:00 +0000</pubDate>
+       
+       <guid>https://noamelf.com/posts/meeting-protocols/</guid>
+       <description>&lt;p&gt;Engineering teams have a few types of meetings that repeat themselves: weekly, 1:1s, design review, etc. I found that for each type of these meetings having a concrete protocol, firm recurring schedule (where applicable), meeting record, and the meeting doc shared in advance between the members have great benefits, mostly:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Individual expression - team members know they&#39;ll get an appropriate stage for their ideas/complaints/feelings so they can express them to me and the other team members in a (hopefully) proactive way.&lt;/li&gt;
+&lt;li&gt;Higher participation - the protocol and schedule are known in advance, so members have time to prepare and articulate what they want to say.&lt;/li&gt;
+&lt;li&gt;Taking turns - since everyone is used to the way the meeting works, it&#39;s possible to delegate the job of running the meetings between different team members - making it more a cooperative effort then the team lead role.&lt;/li&gt;
+&lt;li&gt;Visibility of decision-making process - running the team and making the decisions is not being made in the head of the team lead, but is a visible, recorded process.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://noamelf.com/img/pixel-cells-3947913_640.png&#34; alt=&#34;Meeting protocols&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Image by &lt;!-- raw HTML omitted --&gt;Manfred Steger&lt;!-- raw HTML omitted --&gt; from &lt;!-- raw HTML omitted --&gt;Pixabay&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Below are my teams&amp;rsquo; meeting protocols:&lt;/p&gt;
+&lt;h2 id=&#34;team-meetings-weekly&#34;&gt;Team meetings (weekly)&lt;/h2&gt;
+&lt;h3 id=&#34;meeting-preparation&#34;&gt;Meeting preparation&lt;/h3&gt;
+&lt;p&gt;Each team member is requested to prepare for the meeting:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tickets grooming
+&lt;ul&gt;
+&lt;li&gt;Review last week progress and move tasks to their respective status columns.&lt;/li&gt;
+&lt;li&gt;Update ticket descriptions/PRs etc.&lt;/li&gt;
+&lt;li&gt;Break big tasks into smaller ones that require up to 2 days of effort.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Plans for next week - decide what you plan to work on next week and creates the appropriate tickets for it.&lt;/li&gt;
+&lt;li&gt;Feedback - write up stuff you want to talk about in the meeting in the meeting document.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;in-the-meeting&#34;&gt;In the meeting&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Feedback and updates
+&lt;ul&gt;
+&lt;li&gt;Review this week content team members brought up (myself included).&lt;/li&gt;
+&lt;li&gt;Company/group/team updates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Review tickets - we review the tickets in the done column and each team member is encouraged to talk about the work been done. From saying a few words to a full-on demo.&lt;/li&gt;
+&lt;li&gt;Milestones and upcoming work - see if we met the milestones we setup earlier, review the upcoming ones, and say what you want to work on.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;design-reviews&#34;&gt;Design reviews&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mission statement - what problem do we want to solve (or feature to add)? why do we need to solve it?&lt;/li&gt;
+&lt;li&gt;High-level overview - what are the components that compose the solution, how do they interact?&lt;/li&gt;
+&lt;li&gt;Drill down - depending on the project, specify how the components work internally.&lt;/li&gt;
+&lt;li&gt;Milestones - how is the project development broken down? what are the estimated delivery dates?&lt;/li&gt;
+&lt;li&gt;Risk management - what can go wrong (building on previous experience)? how can the risk be mitigated?&lt;/li&gt;
+&lt;li&gt;Feedback - time for the participants to offer their views.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;11s-every-3-weeks&#34;&gt;1:1s (every 3 weeks)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Lookback - how the last 3 weeks have been for you?&lt;/li&gt;
+&lt;li&gt;Colleague feedback - is there something I (the team lead) can do better? Is there anything you want to ask from me?&lt;/li&gt;
+&lt;li&gt;Manager feedback - can you can do more of this and less of that?&lt;/li&gt;
+&lt;li&gt;Summary - any action items?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That&#39;s what I got so far, as I create more of these I&#39;ll add them to this list.&lt;/p&gt;
+</description>
+     </item>
+   
+     <item>
+       <title>Python Performance Profiling</title>
+       <link>https://noamelf.com/posts/python-performance-profiling/</link>
+       <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
+       
+       <guid>https://noamelf.com/posts/python-performance-profiling/</guid>
+       <description>&lt;h1 id=&#34;designing-pythonic-apis&#34;&gt;Designing Pythonic APIs&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Learning from Kenneth Reitz&#39;s [Requests][requests url]&lt;/em&gt;&lt;/p&gt;
+</description>
+     </item>
+   
+     <item>
+       <title>Designing Pythonic APIs</title>
+       <link>https://noamelf.com/posts/designing-pythonic-apis/</link>
+       <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
+       
+       <guid>https://noamelf.com/posts/designing-pythonic-apis/</guid>
+       <description>&lt;h1 id=&#34;designing-pythonic-apis&#34;&gt;Designing Pythonic APIs&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Learning from Kenneth Reitz&#39;s &lt;a href=&#34;http://docs.python-requests.org/en/master/&#34;&gt;Requests&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When writing a package (library), providing it with a good API, is almost as important as its
+functionality itself (well, at least if you want some adoption), but what makes a good API? In this post, I&#39;ll try to provide some insights on that question by comparing &lt;em&gt;Requests&lt;/em&gt; and &lt;em&gt;Urllib&lt;/em&gt; (part of Python&#39;s standard library) in a few typical HTTP usage scenarios and see why &lt;em&gt;Requests&lt;/em&gt; has become the de facto standard among Python users.&lt;/p&gt;
+&lt;p&gt;* Throughout our investigation we&#39;ll be using &lt;strong&gt;Python 3.5&lt;/strong&gt; and &lt;strong&gt;Requests 2.10.0&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;** This blog post is an adaptation of a talk I gave at our local Python meetup - &lt;a href=&#34;http://www.meetup.com/PyWeb-IL/events/232724175/&#34;&gt;PywebIL&lt;/a&gt; - last week. You can find the slides &lt;a href=&#34;https://noamelf.com/designing-pythonic-apis-talk&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;requests-vs-urllib&#34;&gt;&lt;em&gt;Requests&lt;/em&gt; vs. &lt;em&gt;Urllib&lt;/em&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;use-case-1-sending-a-get-request&#34;&gt;Use case #1: sending a GET request&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; urllib.request
+urllib&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;request&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;urlopen(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;http://python.org/&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;http.client.HTTPResponse at 0x7fdb08b1bba8&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; requests
+requests&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;http://python.org/&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;Response [200]&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;explicit-api-endpoints-is-better-than-implicit&#34;&gt;Explicit (API endpoints) is better than implicit&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Notice how requests is more concise (hence, clear) about what it will do.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Urllib&lt;/em&gt; is getting told implicitly to send a GET request since it didn&#39;t receive a &lt;code&gt;data&lt;/code&gt; argument&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Requests&lt;/em&gt; function name explicitly mark what it will do.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;helpful-object-representation&#34;&gt;Helpful object representation&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Requests&lt;/em&gt; returns a helpful string with the request status code when examining it (this done by implementing the &lt;code&gt;__repr__()&lt;/code&gt; method).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Urllib&lt;/em&gt; just returns the default (unclear) object representation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;code-snippet&#34;&gt;Code snippet&lt;/h4&gt;
+&lt;p&gt;(&lt;a href=&#34;https://github.com/kennethreitz/requests/blob/v2.10.0/requests/api.py&#34;&gt;requests/api.py&lt;/a&gt;):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;request&lt;/span&gt;(method, url, &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;kwargs):
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; sessions&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Session() &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; session:
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; session&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;request(method&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;method, url&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;url, &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;kwargs)
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;(url, params&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;None, &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;kwargs):
+    kwargs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;setdefault(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;allow_redirects&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;, True)
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; request(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;, url, params&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;params, &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;kwargs)
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;post&lt;/span&gt;(url, data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;None, json&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;None, &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;kwargs):
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; request(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;post&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;, url, data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;data, json&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;json, &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;kwargs)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;All the HTTP verbs follow a similar flow prior to sending, hence there is a the &lt;code&gt;request()&lt;/code&gt; main flow function.&lt;/li&gt;
+&lt;li&gt;Implementing a &amp;ldquo;helper function&amp;rdquo; for each verb that calls &lt;code&gt;request()&lt;/code&gt;, enables the explicitness we are looking for.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;use-case-2-getting-a-request-status-code&#34;&gt;Use case #2: getting a request status code&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; urllib.request
+r &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; urllib&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;request&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;urlopen(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;http://python.org/&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
+r&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;getcode()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;200
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; requests
+r &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; requests&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;http://python.org/&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
+r&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;status_code
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;200
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;no-need-for-getters-and-setters&#34;&gt;No need for getters and setters&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Accessing an object property as an actual property (and not a method call) makes the code a little clearer.&lt;/li&gt;
+&lt;li&gt;If you come from other OOP language (hmmm&amp;hellip; Java), you might be tempted to use getters and setters to allow future changes to the object&#39;s properties. No need for that in Python, just use the &lt;a href=&#34;http://www.programiz.com/python-programming/property&#34;&gt;&lt;code&gt;@property&lt;/code&gt;&lt;/a&gt; decorator.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;code-snippet-1&#34;&gt;Code snippet&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/python/cpython/blob/3.5/Lib/http/client.py#L737&#34;&gt;http/client.py&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;HTTPResponse&lt;/span&gt;(io&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;BufferedIOBase):
+
+    &lt;span style=&#34;color:#75715e&#34;&gt;# ...&lt;/span&gt;
+
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;getcode&lt;/span&gt;(self):
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;status
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Urllib&lt;/em&gt; (or actually &lt;em&gt;http&lt;/em&gt;) is using a &amp;ldquo;getter&amp;rdquo; to return a class property.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;use-case-3-encoding-sending-and-decoding-a-post-request&#34;&gt;Use case #3: encoding, sending and decoding a POST request&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; urllib.parse
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; urllib.request
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; json
+
+url &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;http://www.httpbin.org/post&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;
+values &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Michael Foord&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;}
+
+data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; urllib&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;parse&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;urlencode(values)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;encode()
+response &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; urllib&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;request&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;urlopen(url, data)
+body &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; response&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;decode()
+json&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;loads(body)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; requests
+
+url &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;http://www.httpbin.org/post&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;
+data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Michael Foord&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;}
+
+response &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; requests&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;post(url, data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;data)
+response&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;json()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;easy-access-to-common-functionality&#34;&gt;Easy access to common functionality&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Requests&lt;/em&gt; provides an out-of-the-box experience for the encoding of the data and loading the JSON response while in &lt;em&gt;Urllib&lt;/em&gt; you have to implement those parts yourself.&lt;/li&gt;
+&lt;li&gt;When designing your API think: how will my package be commonly use? What plugs can I add to make that usage easier?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On the same note, &lt;em&gt;Requests&lt;/em&gt; also provides an elegant way to send JSON content:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; requests
+
+url &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;http://www.httpbin.org/post&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;
+data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Michael Foord&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;}
+
+response &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; requests&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;post(url, json&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;data)
+response&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;json()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;use-case-4-sending-authenticated-request&#34;&gt;Use case #4: sending authenticated request&lt;/h3&gt;
+&lt;p&gt;The following creates persistence credentials for HTTP requests, and sends a request:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; urllib.request
+
+gh_url &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;https://api.github.com/user&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;
+
+password_mgr &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; urllib&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;request&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;HTTPPasswordMgrWithDefaultRealm()
+password_mgr&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;add_password(None, gh_url, &lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;user&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;pswd&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
+handler &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; urllib&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;request&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;HTTPBasicAuthHandler(password_mgr)
+
+opener &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; urllib&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;request&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;build_opener(handler)
+opener&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;open(gh_url)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; requests
+
+session &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; requests&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Session()
+session&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;auth &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;user&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;pswd&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
+session&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;https://api.github.com/user&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;But what if we just want to do a single HTTP call? Do we need all that code? &lt;em&gt;Requests&lt;/em&gt; have you covered here:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; requests
+
+requests&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;https://api.github.com/user&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;, auth&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;user&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;pswd&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;provide-possibilities-for-simple-and-advanced-usage&#34;&gt;Provide possibilities for simple and advanced usage&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Requests&lt;/em&gt; allow concise usage, when sending a single request, and a more verbose one for multiple requests.&lt;/li&gt;
+&lt;li&gt;Don&#39;t make the user go through a lengthy process when he needs a simple use case.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;prefer-python-data-types-over-self-made-ones&#34;&gt;Prefer Python data types over self-made ones&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Requests&lt;/em&gt; usage of Python&#39;s data structures makes it very easy to use. No need to get to know internal &lt;em&gt;Requests&lt;/em&gt; packages.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;libraries-code&#34;&gt;Libraries code&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/kennethreitz/requests/blob/v2.10.0/requests/models.py#L488&#34;&gt;requests/models.py&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prepare_auth&lt;/span&gt;(self, auth, url&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;):
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Prepares the given HTTP auth data.&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+
+    &lt;span style=&#34;color:#75715e&#34;&gt;# ...&lt;/span&gt;
+
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; auth:
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; isinstance(auth, tuple) &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; len(auth) &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;:
+            &lt;span style=&#34;color:#75715e&#34;&gt;# special-case basic HTTP auth&lt;/span&gt;
+            auth &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; HTTPBasicAuth(&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;auth)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Requests&lt;/em&gt; internally converts the &lt;code&gt;(user,pass)&lt;/code&gt; tuple to an authentication class.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;use-case-5-handling-errors&#34;&gt;Use case #5: handling errors&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; urllib.request &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; urlopen
+response &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; urlopen(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;http://www.httpbin.org/geta&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
+response&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;getcode()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;---------------------------------------------------------------------------
+
+HTTPError                                 Traceback (most recent call last)
+
+&amp;lt;ipython-input-45-5fba039d189a&amp;gt; in &amp;lt;module&amp;gt;()
+      1 from urllib.request import urlopen
+----&amp;gt; 2 response = urlopen(&#39;http://www.httpbin.org/geta&#39;)
+      3 response.getcode()
+
+
+/usr/lib/python3.5/urllib/request.py in urlopen(url, data, timeout, cafile, capath, cadefault, context)
+    161     else:
+    162         opener = _opener
+--&amp;gt; 163     return opener.open(url, data, timeout)
+    164
+    165 def install_opener(opener):
+
+
+/usr/lib/python3.5/urllib/request.py in open(self, fullurl, data, timeout)
+    470         for processor in self.process_response.get(protocol, []):
+    471             meth = getattr(processor, meth_name)
+--&amp;gt; 472             response = meth(req, response)
+    473
+    474         return response
+
+
+/usr/lib/python3.5/urllib/request.py in http_response(self, request, response)
+    580         if not (200 &amp;lt;= code &amp;lt; 300):
+    581             response = self.parent.error(
+--&amp;gt; 582                 &#39;http&#39;, request, response, code, msg, hdrs)
+    583
+    584         return response
+
+
+/usr/lib/python3.5/urllib/request.py in error(self, proto, *args)
+    508         if http_err:
+    509             args = (dict, &#39;default&#39;, &#39;http_error_default&#39;) + orig_args
+--&amp;gt; 510             return self._call_chain(*args)
+    511
+    512 # XXX probably also want an abstract factory that knows when it makes
+
+
+/usr/lib/python3.5/urllib/request.py in _call_chain(self, chain, kind, meth_name, *args)
+    442         for handler in handlers:
+    443             func = getattr(handler, meth_name)
+--&amp;gt; 444             result = func(*args)
+    445             if result is not None:
+    446                 return result
+
+
+/usr/lib/python3.5/urllib/request.py in http_error_default(self, req, fp, code, msg, hdrs)
+    588 class HTTPDefaultErrorHandler(BaseHandler):
+    589     def http_error_default(self, req, fp, code, msg, hdrs):
+--&amp;gt; 590         raise HTTPError(req.full_url, code, msg, hdrs, fp)
+    591
+    592 class HTTPRedirectHandler(BaseHandler):
+
+
+HTTPError: HTTP Error 404: NOT FOUND
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; requests
+r &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; requests&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;http://www.httpbin.org/geta&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
+r&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;status_code
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;404
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;let-the-user-choose-how-to-handle-errors&#34;&gt;Let the user choose how to handle errors&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Some programmers prefer exceptions, some prefer checks.&lt;/li&gt;
+&lt;li&gt;In some situations a check is much more elegant and sometimes it&#39;s the other way around.&lt;/li&gt;
+&lt;li&gt;It&#39;s good to let your users to choose what to use when.&lt;/li&gt;
+&lt;li&gt;Defaulting to return codes allow that, while defaulting to &lt;code&gt;exceptions&lt;/code&gt; do not.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Usage examples:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; urllib.request &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; urlopen
+&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; urllib.error &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; URLError, HTTPError
+&lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt;:
+    response &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; urlopen(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;http://www.httpbin.org/geta&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
+&lt;span style=&#34;color:#66d9ef&#34;&gt;except&lt;/span&gt; HTTPError &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; e:
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; e&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;code &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;404&lt;/span&gt;:
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Page not found&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
+&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;All good&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;Page not found
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; requests.exceptions &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; HTTPError
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; requests
+r &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; requests&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;http://www.httpbin.org/posta&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
+&lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt;:
+    r&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;raise_for_status()
+&lt;span style=&#34;color:#66d9ef&#34;&gt;except&lt;/span&gt; HTTPError &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; e:
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; e&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;response&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;status_code &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;404&lt;/span&gt;:
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Page not found&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;Page not found
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; requests
+r &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; requests&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;http://www.httpbin.org/geta&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
+&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; r&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ok:
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;All good&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
+&lt;span style=&#34;color:#66d9ef&#34;&gt;elif&lt;/span&gt; r&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;status_code &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; requests&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;codes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;not_found:
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Page not found&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;Page not found
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That&#39;s it for now. I learned quite a bit preparing this talk/post, and I hope you did too reading it. I&#39;ll be glad to hear your comments down bellow or on Twitter (@noamelf).&lt;/p&gt;
+&lt;h5 id=&#34;update-august-8th-2016&#34;&gt;Update (August 8th, 2016)&lt;/h5&gt;
+&lt;p&gt;If you end up wondering how come there is such a stark usability difference between Requests and Urllib like many, including myself, do. Nick Coghlan shares his wide perspective on the subject, in a &lt;a href=&#34;http://noamelf.com/2016/08/05/designing-pythonic-apis/#comment-2823855721&#34;&gt;comment bellow&lt;/a&gt; and a following blog post (with the self-explanatory title): &lt;a href=&#34;http://www.curiousefficiency.org/posts/2016/08/what-problem-does-it-solve.html&#34;&gt;what problem does it solve?&lt;/a&gt;.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+</description>
+     </item>
+   
+     <item>
+       <title>API and Microservices Management with Kong</title>
+       <link>https://noamelf.com/posts/api-and-microservices-management-with-kong/</link>
+       <pubDate>Fri, 18 Mar 2016 21:19:00 +0000</pubDate>
+       
+       <guid>https://noamelf.com/posts/api-and-microservices-management-with-kong/</guid>
+       <description>&lt;p&gt;Hi all,
+At the last &lt;a href=&#34;http://www.meetup.com/PyWeb-IL/events/228958390/&#34;&gt;PyWebIL meetup&lt;/a&gt; I took the stand and gave a talk about one a very interesting open-source project - &lt;a href=&#34;https://getkong.org/&#34;&gt;Kong&lt;/a&gt;.  Kong is an API and microservices management layer that serves as a reverse proxy to your API&#39;s while taking care of generic actions such as rate-limiting, authentication, monitoring and much more. One of it&#39;s key benefits is that it is very plugable, hence it is easy to add your own custom logic (I actually enhanced a plugin to fit my needs).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/iDcys5P.png&#34; alt=&#34;Kong&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The talk is constructed from a high level introduction to API&#39;s and the concept of microservices (here are the &lt;a href=&#34;https://goo.gl/sS5spo&#34;&gt;slides&lt;/a&gt;) and a hands on demonstration of a demo microservice environment using Python/Flask, Docker and Kong as the management layer (here is the &lt;a href=&#34;https://github.com/noamelf/kong-talk&#34;&gt;code&lt;/a&gt;). I had  real good time preparing for the talk! If you&#39;re interested in hearing in your meetup/company &lt;a href=&#34;http://noamelf.com/about&#34;&gt;reach out&lt;/a&gt;.&lt;/p&gt;
+</description>
+     </item>
+   
+     <item>
+       <title>Pycubator - Open Source Python Training</title>
+       <link>https://noamelf.com/posts/pycubator-open-source-python-training/</link>
+       <pubDate>Sat, 12 Dec 2015 17:35:04 +0000</pubDate>
+       
+       <guid>https://noamelf.com/posts/pycubator-open-source-python-training/</guid>
+       <description>&lt;p&gt;Preparing to teach my first Python class, I searched the web for teaching materials I can use and came up almost empty handed. There is a great variety of Python open books like &lt;a href=&#34;http://www.diveintopython.net/&#34;&gt;Dive into Python&lt;/a&gt; and &lt;a href=&#34;http://www.openbookproject.net/thinkcs/python/english2e/&#34;&gt;How to Think Like a Computer Scientist&lt;/a&gt; but they are all for autodidactic purposes and not for classroom teaching.&lt;/p&gt;
+&lt;p&gt;Pycubator is my attempt at establishing an open source Python training slides and exercises that the community of Python teachers can use and hopefully contribute to. It utilize &lt;a href=&#34;https://github.com/hakimel/reveal.js/&#34;&gt;RevealJS&lt;/a&gt; to create stunning slides, that are actually written in Markdown and hence easy to use with source control, and the exercises uses and the exercises are actually &lt;a href=&#34;http://jupyter.org/&#34;&gt;Jupyter notebooks&lt;/a&gt; so students can run their code straight away.&lt;/p&gt;
+&lt;p&gt;The classes are constructed to allow &lt;em&gt;a lot&lt;/em&gt; of exercise. After a topic is covered by the instructor, there are exercises to help the knowledge sink in, and after covering a few topics there is a mini-project to exercise writing some larger scale programs (credit here goes to Udi Oron for sharing his exercises and hands on approach).&lt;/p&gt;
+&lt;p&gt;You can find the materials at my GitHub &lt;a href=&#34;https://github.com/noamelf/pycubator&#34;&gt;repository&lt;/a&gt; and a the live slides at &lt;a href=&#34;http://pycubator.com&#34;&gt;pycubator.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Check it out!&lt;/p&gt;
+</description>
+     </item>
+   
+     <item>
+       <title>Project-based learning</title>
+       <link>https://noamelf.com/posts/project-based-learning/</link>
+       <pubDate>Wed, 23 Sep 2015 17:29:00 +0000</pubDate>
+       
+       <guid>https://noamelf.com/posts/project-based-learning/</guid>
+       <description>&lt;h4 id=&#34;context&#34;&gt;Context&lt;/h4&gt;
+&lt;p&gt;The &lt;a href=&#34;https://en.wikipedia.org/wiki/Python_%28programming_language%29&#34;&gt;Python&lt;/a&gt; course I&#39;m instructing at Avratech (see &lt;a href=&#34;http://thespoon.ghost.io/ravtech-and-cnn/&#34;&gt;earlier post&lt;/a&gt; and &lt;a href=&#34;http://edition.cnn.com/2015/07/08/world/israel-ultra-orthodox-jews-high-tech/index.html#&#34;&gt;CNN story&lt;/a&gt;) is advancing and the students are already a month and a half into their group projects. This post is about my personal experience with shifting my class from &lt;em&gt;teacher-led&lt;/em&gt; learning to &lt;em&gt;project-based&lt;/em&gt; (learning), but first, have a look at the 5 beautiful projects they&#39;re working on (you might want to use &lt;a href=&#34;https://translate.google.com/translate?hl=en&amp;amp;sl=iw&amp;amp;tl=en&amp;amp;u=jewishtimes.avratech.co.il&#34;&gt;Google to translate&lt;/a&gt; the websites if your Hebrew reading skills aren&#39;t in shape ☺):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;jewishtimes.avratech.co.il&#34;&gt;Jewish Times&lt;/a&gt; - Jewish prayer times notification system. You register, choose the prayers you wish to be alerted on, and  receive notifications by email.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;kindergarten.avratech.co.il&#34;&gt;Kindergarten&lt;/a&gt; - A kindergarten management cloud application. Enables to keep track of payments, contact parents, etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;theswamp.avratech.co.il&#34;&gt;The Swamp&lt;/a&gt; - A social media hub for the Ultra-Orthodox community. It uses Twitter and Facebook to collect updates from the community&#39;s leaders.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;kosherapps.avratech.co.il&#34;&gt;Kosher Apps&lt;/a&gt; - A &amp;ldquo;kosher&amp;rdquo; app store, meaning it collects applications that are suitable for the ultra-orthodox crowd from Google Play.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;easyhotel.avratech.co.il&#34;&gt;Easy Hotel&lt;/a&gt; - An hotel management cloud application. From room reservations financial reports, this application answers every hotel needs (okay, maybe not all, but most).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/JkyDgPt.png&#34; alt=&#34;Jewish times&#34;&gt;
+[Jewish Times screenshot]&lt;/p&gt;
+&lt;h4 id=&#34;choosing-a-path&#34;&gt;Choosing a path&lt;/h4&gt;
+&lt;p&gt;After 2 months of teacher-led classes, we reached the end of the basic course. Having a few more month of training time, we wanted to give the students some &amp;ldquo;real life&amp;rdquo; experience though we weren&#39;t sure how to go about it. First, we thought about inventing a project ourselves. We started writing our makeup project until at some point it felt like it will be too boring for the students and too time consuming for us.&lt;/p&gt;
+&lt;p&gt;We decided to give the students freedom to come up with a project that they will be interested in. Although there were some worries that without direct, homework like, instructions the students might not take these projects seriously and slack off but we decided to give it a go.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/JXuCVat.png&#34; alt=&#34;Kindergarten&#34;&gt;
+[kindergarten screenshot]&lt;/p&gt;
+&lt;h4 id=&#34;grouping-the-students&#34;&gt;Grouping the students&lt;/h4&gt;
+&lt;p&gt;The class (21 students) was split into 5 teams while trying to keep them as equal as possible skill wise. Each team was supposed to pick a team leader. I explained the class what responsibilities a team leader has, and gave them a few minutes to choose one for the team. For my surprise, none of the groups picked a leader. I stepped in and appointed the team member who seemed to me like the best fit. It was a little disappointing for me because I wanted the team leader to be given his &amp;ldquo;mandate&amp;rdquo; from his fellows and not from me.&lt;/p&gt;
+&lt;p&gt;The next phase was for each team to choose a project they&#39;re interested in. I showed them some examples of real applications which I think are good and they started coming up with their own ideas. It didn&#39;t go easy since as the saying goes: &lt;em&gt;as many Jews as many opinions&lt;/em&gt;, but by the end of the day all the teams had an idea or was closing in on one.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/yDzqkgq.png&#34; alt=&#34;TheSwamp&#34;&gt;
+[The swamp screenshot]&lt;/p&gt;
+&lt;h4 id=&#34;agility&#34;&gt;Agility&lt;/h4&gt;
+&lt;p&gt;We wanted the teams to adopt an &lt;a href=&#34;https://en.wikipedia.org/wiki/Agile_software_development&#34;&gt;agile&lt;/a&gt; development work flow. We set an iteration (development cycle) planning meeting in the beginning of the week (each iteration constitutes one week). There was an emphasis on getting something to work by the end of each iteration. The teams spoke about what features they want to add to the project and together we analyzed the effort it will take them to get there and the amount of working days they have in the upcoming iteration. After the meeting was over, the team leaders updated their teams &lt;a href=&#34;https://trello.com/&#34;&gt;Trello&lt;/a&gt; boards with what is to be accomplished in the following iteration and by whom.&lt;/p&gt;
+&lt;p&gt;The teams adopted the development flow rather easily but we&#39;re finding it difficult to start working since they weren&#39;t familiar with the way a web application works. Having team leaders was tremendously helpful at that point. I set a meeting with them discussing the way a web application is built and they transfered that knowledge and help direct their team members in their tasks.&lt;/p&gt;
+&lt;p&gt;After an iteration ended, each team had a retrospective meeting where we compared what&#39;s been done with what we hoped to accomplish. There was some interesting insights about how each team functioned. For example, a team that failed miserably in his iteration goals recognized that they had a communication problem with their team leader that caused him to &amp;ldquo;just do the job himself&amp;rdquo;. Another nice example is that all the teams complained they were having a hard time utilizing &lt;a href=&#34;https://en.wikipedia.org/wiki/Git_%28software%29&#34;&gt;Git&lt;/a&gt;, which made me realize I need to run a Git workshop.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/qu1Q4l0.png&#34; alt=&#34;Easy Hotel&#34;&gt;
+[Easy Hotel screenshot]&lt;/p&gt;
+&lt;h5 id=&#34;technological-stack-for-the-techy-reader&#34;&gt;Technological stack (for the techy reader)&lt;/h5&gt;
+&lt;p&gt;We tried to keep the projects technological stack as simple as possible, so the transition between simple, homework Python programs, and a fullstack web application will be easier.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Flask&lt;/strong&gt; was an easy pick as a web framework since getting familiar with it is as easy as it gets, but it still provides some nice, advanced functionality (with it&#39;s extensions). &lt;strong&gt;SQLAlchemy&lt;/strong&gt; and &lt;strong&gt;SQLite3&lt;/strong&gt; are also a perfect couple for the job as they are very easy to set up, and doesn&#39;t require much SQL knowledge (at least at the beginning). Since they didn&#39;t get a real frontend - HTML/CSS - training, &lt;strong&gt;Bootstrap&lt;/strong&gt; provided a quick and easy solution (although, when they wanted to customize the look and feel of their application, they had to dig into HTML/CSS anyway). The full list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Python3&lt;/li&gt;
+&lt;li&gt;Flask&lt;/li&gt;
+&lt;li&gt;SQLAlchemy&lt;/li&gt;
+&lt;li&gt;SQLite3&lt;/li&gt;
+&lt;li&gt;Nginx + Uwsgi emperor (I configured this part)&lt;/li&gt;
+&lt;li&gt;Bootstrap&lt;/li&gt;
+&lt;li&gt;HTML/CSS&lt;/li&gt;
+&lt;li&gt;Git&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Using a single web stack for all the groups was a really good decision since they could help each other and I was able to gather everyone together and explain a certain subject once.&lt;/p&gt;
+&lt;p&gt;As funny (or obvious) as it may sound, getting them to use &lt;strong&gt;Git&lt;/strong&gt; was by far the most challenging part of the project. I enjoy using Git very much, but I also remember how I struggled with it at the beginning. I&#39;m considering using a different VCS system for my next classes but I&#39;m not sure it will serve the students since Git is so ubiquitous these days.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/0S7FoQf.png&#34; alt=&#34;Kosher apps&#34;&gt;
+[Kosher apps screenshot]&lt;/p&gt;
+&lt;h4 id=&#34;project-based-learning-is-far-more-meaningful&#34;&gt;Project-based learning is far more meaningful!&lt;/h4&gt;
+&lt;p&gt;Having the students pick out their own projects and lead them was a tremendous success. It completely changed the value they are receiving from the course. The teacher-led part taught them Python alright but didn&#39;t really got them excited about software development (beside a few) and the endless possibilities it entails. Most just wanted to get good grades. Now, I can practically see the excitement in most, if not all, of their eyes and I believe that that is the best grantee for a successful programming career.&lt;/p&gt;
+&lt;p&gt;To finish off, I want to thank Eli Gur, the school technical lead/adviser, for giving me priceless advices and helping the students with their projects, and to my colleague &lt;a href=&#34;https://twitter.com/nonZero&#34;&gt;Udi Oron&lt;/a&gt; who influenced me towards project-based learning and shared his experience with me.&lt;/p&gt;
+</description>
+     </item>
+   
+     <item>
+       <title>Optimization Tale</title>
+       <link>https://noamelf.com/posts/optimization-tale/</link>
+       <pubDate>Sat, 29 Aug 2015 16:38:46 +0000</pubDate>
+       
+       <guid>https://noamelf.com/posts/optimization-tale/</guid>
+       <description>&lt;p&gt;I was asked to optimize our web API service. This was the first time I ever experienced anything of that sort so I was pretty excited about it. I read a lot of blog posts and Stack Overflow questions about optimization but still wasted some time on optimizing the wrong parts. Following is the lessons I learned, and some pitfalls that you can avoid on your next optimization task.&lt;/p&gt;
+&lt;h4 id=&#34;locust-vs-jmeter&#34;&gt;Locust vs Jmeter&lt;/h4&gt;
+&lt;p&gt;The first you want to do when optimizing anything is to be able to measure it&#39;s performance. I looked for a Python based (my favorite language) load testing solution and found &lt;a href=&#34;http://locust.io/&#34;&gt;Locust&lt;/a&gt;. Locust is a quick and easy package to run a threaded load testing programs with nothing but Python code. Everything was great until I sadly realized that Locust aggregates the results, meaning: I couldn&#39;t get a &lt;em&gt;raw&lt;/em&gt; CSV to store and analyze later on using graph tools of sorts.&lt;/p&gt;
+&lt;p&gt;I turned to the industry standard: &lt;a href=&#34;http://jmeter.apache.org/&#34;&gt;Jmeter&lt;/a&gt;. It&#39;s website felt 90&#39;ish and &lt;em&gt;Java&lt;/em&gt; isn&#39;t really my cup of tea, but nonetheless I found it to be a great piece of software.  After investing some time in reading the docs and understanding Jmeter inner logic and ugly GUI, you can make stuff happen really fast and in a very modular &amp;ldquo;Lego bricks&amp;rdquo; way.&lt;/p&gt;
+&lt;p&gt;Jmeter has built in result &lt;em&gt;listeners&lt;/em&gt;, which means you can view real time results with multiple graph/table listener of your choice. Further more, it is based on a GUI to configure the test itself, but after that, there is no problem running it in a non-GUI mode that writes the results to a CSV file and analyze it later in Jmeter or great services like &lt;a href=&#34;https://loadosophia.org/&#34;&gt;LoadSophia&lt;/a&gt;. &lt;strong&gt;Tip&lt;/strong&gt;: if your looking to create a stress test for your application, go for the no-GUI mode and analyze the results later since generating real time graphs is heavy on resources.&lt;/p&gt;
+&lt;h4 id=&#34;load-testing&#34;&gt;Load testing&lt;/h4&gt;
+&lt;p&gt;Before we continue, some information about the setup: we are using AWS Elastic Load Balancing (ELB) in front of 2 m3.medium identical instances. Each instance has Ngnix in front of a Uwsgi server running a flask application.&lt;/p&gt;
+&lt;p&gt;Back to our story, I created the Jmeter load test configuration on my local machine to simulate practical usage scenarios and &lt;a href=&#34;https://wiki.archlinux.org/index.php/Sshfs&#34;&gt;sshfs&lt;/a&gt; it to a designated server, wrote a bash script to automatically run test of different loads and run the tests. Getting analytics from LoadSophia, I sent a proud report to my coworkers with graphs and tables explaining the current API performance.&lt;/p&gt;
+&lt;h4 id=&#34;optimizations-&#34;&gt;Optimizations ?!?&lt;/h4&gt;
+&lt;p&gt;My next step, optimization, would be easy (or so I thought). I already read about some possible configurations to Nginx and Uwsgi like David Cramer&#39;s blog post ( &lt;a href=&#34;http://cramer.io/2013/06/27/serving-python-web-applications/&#34;&gt;You Should Be Using Nginx + UWSGI&lt;/a&gt;) or the Uwsgi docs about &lt;a href=&#34;http://uwsgi-docs.readthedocs.org/en/latest/Nginx.html&#34;&gt;integration with Nginx&lt;/a&gt;. Happily following their advices, I started tweaking the configuration and testing the results:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Changed the communication between Nginx to Uwsgi to the Uwsgi protocol which has lower overhead than HTTP.&lt;/li&gt;
+&lt;li&gt;Changed socket type from TCP to Unix. Since both process are running from the same machine and a Unix socket is lighter, hence faster.&lt;/li&gt;
+&lt;li&gt;Experimented with different numbers of processes/threads.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At that point I faced a frustrating situation, all of the changes I made had nearly no impact on the setup performance - the servers Transaction Per Second (TPS) and average response time remained more or less the same as before. Imagine my disappointment.&lt;/p&gt;
+&lt;h4 id=&#34;eureka&#34;&gt;Eureka&lt;/h4&gt;
+&lt;p&gt;I started thinking there might be something wrong with the DB performance. Puzzled by the case, I turned to the &lt;a href=&#34;http://goo.gl/K1gH7Z&#34;&gt;scientific method&lt;/a&gt; or put otherwise: &lt;em&gt;stop and think!&lt;/em&gt; I thought about the facts I was seeing, and remembered that through all my optimization tweaks, the servers CPU level was pretty high. I wrote 2 hypothesis about that, both of which seemed unlikely. In short (you can find the long version &lt;a href=&#34;https://goo.gl/irxrcs&#34;&gt;here&lt;/a&gt;):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Uwsgi is consuming tons of resources while trying to load balance it&#39;s processes and threads.&lt;/li&gt;
+&lt;li&gt;Our Flask application is CPU intensive.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Testing my assumptions I saw clearly that the Uwsgi processes running our Flask app takes almost all of the CPU capacity. This was thrilling to find as well as disappointing since I spent much of my time barking up the wrong tree. &lt;strong&gt;The application bottleneck was the processes high CPU consumption, thus, improving the rate Uwsgi and Nginx passes requests wouldn&#39;t improve performance.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;With  that revelation, we turned into the simplest, most immediate solution: increasing CPU power. In our case this meant upgrading the machines to an m3.large instances (2 CPU&#39;s instead of 1). This change immediately doubled our TPS and enabled us to serve twice more concurrent users. I really wanted to profile the application and see which part is gobbling the CPU, alas I run out of time for the task.&lt;/p&gt;
+&lt;h4 id=&#34;lesson-learned&#34;&gt;Lesson learned&lt;/h4&gt;
+&lt;p&gt;When testing applications performance, and trying to figure out how to optimize it, always start with the most basic suspects: it&#39;s memory and CPU consumption. Write a simple load test, and understand what &lt;code&gt;top&lt;/code&gt; (I used &lt;code&gt;htop&lt;/code&gt; with process filtering, very convenient) is showing you. If the servers memory or CPU are at full capacity, you can be certain that thats the bottleneck and invest your well worth time there.&lt;/p&gt;
+</description>
+     </item>
+   
+     <item>
+       <title>Teaching Python to Haredim (and a CNN visit)</title>
+       <link>https://noamelf.com/posts/ravtech-and-cnn/</link>
+       <pubDate>Fri, 10 Jul 2015 14:13:48 +0000</pubDate>
+       
+       <guid>https://noamelf.com/posts/ravtech-and-cnn/</guid>
+       <description>&lt;p&gt;For the last couple of months I&#39;ve been involved in a great project: getting &lt;a href=&#34;https://en.wikipedia.org/wiki/Haredi_Judaism&#34;&gt;Haredic&lt;/a&gt; (ultra-orthodox jews) man into the software world!&lt;/p&gt;
+&lt;p&gt;Last week, we got an exciting visit from Oren Libermann, a CNN reporter, who published this nice &lt;a href=&#34;http://edition.cnn.com/2015/07/08/world/israel-ultra-orthodox-jews-high-tech/index.html#&#34;&gt;story&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;My job in the training process is to teach them the Python programing language. Were doing a 3 month course, in which we go from learning the basic features of the language to writing a full blown (but small) software project.&lt;/p&gt;
+&lt;p&gt;The last mini-project we did might give an short example of what the course entails: the students we&#39;re given a CSV file, with some basic data about the world&#39;s countries. They needed to analyze that data and create a website which they published later using Github pages. Here is a sample of the results: &lt;a href=&#34;http://www.elnatan.890m.com/&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;http://spidivardi.github.io/contrys/new.html&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;http://moshefortgang.github.io/mosho-fortgang-world.site.net/&#34;&gt;3&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Theres much more to write and I&#39;ll try to update as the course advances!&lt;/p&gt;
+</description>
+     </item>
+   
+     <item>
+       <title>Coroutines in Python</title>
+       <link>https://noamelf.com/posts/coroutines-in-python/</link>
+       <pubDate>Sun, 10 May 2015 12:16:55 +0000</pubDate>
+       
+       <guid>https://noamelf.com/posts/coroutines-in-python/</guid>
+       <description>&lt;p&gt;In the last &lt;a href=&#34;http://www.meetup.com/PyWeb-IL/&#34;&gt;Pyweb-IL&lt;/a&gt; meetup I gave a short introduction talk
+about coroutines and their usage in Python. It covers the basic concepts of coroutines and how they
+can be used in Python.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://noamelf.com/intro-to-python-coroutines-talk&#34;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+</description>
+     </item>
+   
+     <item>
+       <title>A selfish justification for altruism (poster)</title>
+       <link>https://noamelf.com/posts/a-selfish-justification-for-altruism-poster/</link>
+       <pubDate>Sun, 26 Apr 2015 20:35:00 +0000</pubDate>
+       
+       <guid>https://noamelf.com/posts/a-selfish-justification-for-altruism-poster/</guid>
+       <description>&lt;p&gt;Next week I&#39;m presenting a philosophy paper I wrote about altruism (see &lt;a href=&#34;https://thespoon.ghost.io/a-selfish-justification-for-altruism-2&#34;&gt;previous post&lt;/a&gt;) in a conference at Tel-Hai college!&lt;/p&gt;
+&lt;p&gt;Alexandra, my girlfriend, came up with the idea (and executed it on Photoshop). The triangle represent the main 3 concepts in the paper: altruism, autonomy and well-being. Through those triangles (concepts) the image (life) looks sharper. I&#39;d Love to hear you&#39;re opinion on it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://noamelf.com/content/images/2015/04/poster-1.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</description>
+     </item>
+   
+     <item>
+       <title>Ideal workplace wishlist</title>
+       <link>https://noamelf.com/posts/ideal-workplace-wishlist/</link>
+       <pubDate>Sun, 26 Apr 2015 08:15:17 +0000</pubDate>
+       
+       <guid>https://noamelf.com/posts/ideal-workplace-wishlist/</guid>
+       <description>&lt;p&gt;Looking for a job, I wrote down things that I find important so I can narrow my search and be more focused. I got plenty of inspiration from Julia Evans &lt;a href=&#34;http://jvns.ca/blog/2013/12/30/questions-im-asking-in-interviews/&#34;&gt;post&lt;/a&gt; on the subject, so I thought it will be nice to share my list too. So, in my view, an ideal employer:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Is creating software to promote meaningful causes that I can relate to.&lt;/li&gt;
+&lt;li&gt;Has an open and transparent culture that promotes teamwork, creativity and employees initiatives.&lt;/li&gt;
+&lt;li&gt;Has talented people working for it, and a strong technical leader (that guides, but don&#39;t micro manage).&lt;/li&gt;
+&lt;li&gt;Encourages open source, and participation of its employees in pro-social projects.&lt;/li&gt;
+&lt;li&gt;Has interesting problems to solve and uses a wide range of technologies to do so.&lt;/li&gt;
+&lt;li&gt;Has offices in [near-your-home] Tel-Aviv or allows for remote work.&lt;/li&gt;
+&lt;li&gt;Cares about it&#39;s employees work/life balance (because he understands it&#39;s significance to his employees and to the quality of the work they produce).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;following-questions-to-ask-in-interviews&#34;&gt;Following questions to ask in interviews:&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;What do you feel about the product? Do you think it is meaningful?&lt;/li&gt;
+&lt;li&gt;Do the employees know the financial status of the company? Are the salaries kept secret? Do you give out team bonuses or personal ones? Do you allow to work on personal, work related project (not part of the official work)?&lt;/li&gt;
+&lt;li&gt;Who is the technical lead? what is his experience? Can I speak with him?&lt;/li&gt;
+&lt;li&gt;Do you contribute to open source? Do you support local social projects?&lt;/li&gt;
+&lt;li&gt;What is the kind of problem you need to solve? what type of tools do you use? What is the latest technology you adopted and why?&lt;/li&gt;
+&lt;li&gt;Where are the offices? Do you allow for remote work?&lt;/li&gt;
+&lt;li&gt;How may hours is in a workweek? in a single day? In which occasions will you expect to work longer hours?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That&#39;s what I came up. I try to remember it, since it&#39;s a little embarrassing to take out the phone in the middle of an interview and read from it.&lt;/p&gt;
+&lt;p&gt;What are you looking for in your workplace?&lt;/p&gt;
+</description>
+     </item>
+   
+     <item>
+       <title>A selfish justification for altruism</title>
+       <link>https://noamelf.com/posts/a-selfish-justification-for-altruism-2/</link>
+       <pubDate>Sat, 25 Apr 2015 09:42:58 +0000</pubDate>
+       
+       <guid>https://noamelf.com/posts/a-selfish-justification-for-altruism-2/</guid>
+       <description>&lt;p&gt;During college I was lucky enough to get my parents old car. Driving to college was much nicer than using public transportation or hitchhiking. Considering I didn&#39;t buy the car myself, and the fact that I used to hitchhike before I got one, I had an ambivalent feeling towards picking other hitchhikers. On the one hand I totally identified with their need, and on the other, sometimes I just didn&#39;t feel like picking up a stranger. It&#39;s funny but it became a real conflict for me.&lt;/p&gt;
+&lt;p&gt;In my philosophy studies, we had to write a paper about altruism, and I, wanting to figure this thing out (and other issues of that sort) wrote a paper on a possible psychological benefit to acting altruistically. Here is a short summary (you can find the full work &lt;a href=&#34;https://www.dropbox.com/s/58gzcezu408nxk0/A%20selfish%20justification%20for%20altruistic%20acts.pdf?dl=0&#34;&gt;here&lt;/a&gt;, and a poster I made for a recent conference &lt;a href=&#34;https://thespoon.ghost.io/a-selfish-justification-for-altruism-poster&#34;&gt;here&lt;/a&gt;):&lt;/p&gt;
+&lt;h6 id=&#34;introduction&#34;&gt;Introduction&lt;/h6&gt;
+&lt;p&gt;Many times in the course of our daily lives, we are faced with having to choose between selfish and altruistic behaviors. Sometimes we make these decisions spontaneously, while other times the decision might involve quite a bit of mental and emotional anguish caused by the tension between our believes of what is fair or just, and our perceived self interest. In this paper, I propose that although altruism behavior, by definition, reduces the actors fitness, it may have a long-term positive role on his psychological wellbeing, by framing it in the wider context of his view of life.&lt;/p&gt;
+&lt;h6 id=&#34;arguments&#34;&gt;Arguments&lt;/h6&gt;
+&lt;p&gt;Upon researching psychological wellbeing, two ancient and competing paradigms stand out: hedonism and eudemonism, the first emphasis pleasure, the later emphasis virtue, as a key to a well lived life. The eudemonic view is threaded through this paper since it is better suited to support altruistic behavior than hedonism; it weighs what you do higher then how you feel, and it promotes one to act in accordance with that which is best within him over what will be most pleasurable.&lt;/p&gt;
+&lt;p&gt;Since eudemonism inspire us to follow our true selves, autonomy is an inseparable part of it. A body of research on wellbeing shows that autonomy has been prominent in predicting psychological wellbeing in different groups of reference. These findings support the premise that when altruistic behavior coincide with the actor autonomous judgment it can have positive effect on his psychological wellbeing or differently put: “particular altruistic acts are compatible with a larger selfishness – selfishness on a more abstract level” (H. Rachlin).&lt;/p&gt;
+&lt;h6 id=&#34;discussion&#34;&gt;Discussion&lt;/h6&gt;
+&lt;p&gt;An interesting problem arises when we take into consideration that our ability to reflect and reach a coherence viewpoint on dilemmas we encounter varies. Therefor, even if one is convinced by the thesis suggested herein, and really aspires to act in an autonomous manner when reality summons him a moral dilemma, he might be at a loss. Not only that one can fail to formulate a stance towards the dilemma, one can also make a stance that seems to be autonomous, but it&#39;s underlying motivation, hidden even to oneself, is heteronomous. This problem is not an easy one, and can be solved only by the individual; one must dedicate time and mental resources to learn and mold his view of what is the “good”, what is he living for, and following this ongoing life processes, make choices that reflect her convictions and pave her unique path in the&lt;/p&gt;
+&lt;p&gt;That&#39;s it, I&#39;d love to hear what you think :)&lt;/p&gt;
+</description>
+     </item>
+   
+ </channel>
+</rss>
