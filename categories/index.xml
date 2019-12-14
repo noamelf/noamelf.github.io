@@ -113,17 +113,6 @@
      </item>
    
      <item>
-       <title>Python Performance Profiling</title>
-       <link>https://noamelf.com/posts/python-performance-profiling/</link>
-       <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
-       
-       <guid>https://noamelf.com/posts/python-performance-profiling/</guid>
-       <description>&lt;h1 id=&#34;designing-pythonic-apis&#34;&gt;Designing Pythonic APIs&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;Learning from Kenneth Reitz&#39;s [Requests][requests url]&lt;/em&gt;&lt;/p&gt;
-</description>
-     </item>
-   
-     <item>
        <title>Designing Pythonic APIs</title>
        <link>https://noamelf.com/posts/designing-pythonic-apis/</link>
        <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
