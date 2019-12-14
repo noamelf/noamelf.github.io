@@ -21,5 +21,15 @@
 When writing a package (library), providing it with a good API, is almost as important as its functionality itself (well, at least if you want some adoption), but what makes a good API? In this post, I&#39;ll try to provide some insights on that question by comparing Requests and Urllib (part of Python&#39;s standard library) in a few typical HTTP usage scenarios and see why Requests has become the de facto standard among Python users.</description>
     </item>
     
+    <item>
+      <title>Coroutines in Python</title>
+      <link>https://noamelf.com/posts/coroutines-in-python/</link>
+      <pubDate>Sun, 10 May 2015 12:16:55 +0000</pubDate>
+      
+      <guid>https://noamelf.com/posts/coroutines-in-python/</guid>
+      <description>In the last Pyweb-IL meetup I gave a short introduction talk about coroutines and their usage in Python. It covers the basic concepts of coroutines and how they can be used in Python.
+Check it out!</description>
+    </item>
+    
   </channel>
 </rss>

@@ -23,5 +23,59 @@
       
     </item>
     
+    <item>
+      <title>About</title>
+      <link>https://noamelf.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>Noam Elfanbaum</author>
+      <guid>https://noamelf.com/about/</guid>
+      <description></description>
+      
+      <content>&lt;p&gt;I&#39;m Noam Elfanbaum, I live in Tel-Aviv with my wife, baby-daughter and dog. In general, my life revolves around finding meaning and fulfilment, and in this blog, you&#39;ll get to read what I came up with, along with other, more specific interests that indirectly serves that goal.&lt;/p&gt;
+&lt;p&gt;Those interests include philosophy (mainly ethics), sports, meditation, politics, music and finally computers and software development, which is what I do for a living. Since I was young, computers and software fascinated me. I enjoy tinkering with my system, reading and implementing new ideas and taking part in the communities discussions.&lt;/p&gt;
+&lt;p&gt;I used to teach Python classes, do freelance work and organize Python community gatherings (&lt;a href=&#34;http://www.meetup.com/PyWeb-IL/&#34;&gt;PywebIL&lt;/a&gt; and &lt;a href=&#34;http://il.pycon.org&#34;&gt;Pycon Israel&lt;/a&gt;). These days I&#39;ve settled on a serious day job as a engneering team lead a Bluevine. If you&#39;re interested in any of the above, ping me at one of the links bellow. Hope you enjoy the blog posts!&lt;/p&gt;
+</content>
+      
+    </item>
+    
+    <item>
+      <title>Talks</title>
+      <link>https://noamelf.com/talks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>Noam Elfanbaum</author>
+      <guid>https://noamelf.com/talks/</guid>
+      <description></description>
+      
+      <content>&lt;p&gt;I enjoy giving public talks about subjects I investigate. Here are links to my previous talks:&lt;/p&gt;
+&lt;h3 id=&#34;from-zero-to-airflow---bootstrapping-a-ml-platform&#34;&gt;From Zero to Airflow - bootstrapping a ML platform&lt;/h3&gt;
+&lt;p&gt;The story behind bootstraping Airflow at Bluevine Capital&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1J0frjnuehQKLjFEmHdQqM7kd89flUN3M1chLEvulvwM/edit?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;lets-build-a-python-profiler-in-25-loc&#34;&gt;Let&#39;s build a Python profiler in 25 LOC&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitpitch.com/noamelf/Lets-build-a-Python-profiler-in-25-LOC&#34;&gt;slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/qRqDgJLM568?t=1h32m53s&#34;&gt;europython2018 video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=H8uVgtVv44Y&amp;amp;feature=youtu.be&#34;&gt;pyconil2018 video&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h3 id=&#34;designing-pythonic-apis&#34;&gt;Designing Pythonic APIs&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://noamelf.com/designing-pythonic-apis-talk&#34;&gt;blog post&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=CrQQCa_AoWI&#34;&gt;pyconil2017 video&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h3 id=&#34;api-and-microservices-management-with-kong&#34;&gt;API and Microservices Management with Kong&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://goo.gl/sS5spo&#34;&gt;slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;introduction-to-python-coroutines&#34;&gt;Introduction to Python coroutines&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://noamelf.com/intro-to-python-coroutines-talk&#34;&gt;slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+      
+    </item>
+    
   </channel>
 </rss>

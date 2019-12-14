@@ -68,12 +68,12 @@
   </url>
   
   <url>
-    <loc>https://noamelf.com/posts/project-based-learning/</loc>
-    <lastmod>2015-09-23T17:29:00+00:00</lastmod>
+    <loc>https://noamelf.com/tags/teaching/</loc>
+    <lastmod>2015-12-12T17:35:04+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://noamelf.com/tags/teaching/</loc>
+    <loc>https://noamelf.com/posts/project-based-learning/</loc>
     <lastmod>2015-09-23T17:29:00+00:00</lastmod>
   </url>
   
@@ -83,18 +83,13 @@
   </url>
   
   <url>
+    <loc>https://noamelf.com/tags/performance/</loc>
+    <lastmod>2015-08-29T16:38:46+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://noamelf.com/posts/ravtech-and-cnn/</loc>
     <lastmod>2015-07-10T14:13:48+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://noamelf.com/tags/code/</loc>
-    <lastmod>2015-05-10T12:16:55+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://noamelf.com/tags/coroutines/</loc>
-    <lastmod>2015-05-10T12:16:55+00:00</lastmod>
   </url>
   
   <url>
@@ -130,6 +125,14 @@
   <url>
     <loc>https://noamelf.com/posts/a-selfish-justification-for-altruism-2/</loc>
     <lastmod>2015-04-25T09:42:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://noamelf.com/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://noamelf.com/talks/</loc>
   </url>
   
 </urlset>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>performance on noamelf</title>
+    <link>https://noamelf.com/tags/performance/</link>
+    <description>Recent content in performance on noamelf</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Aug 2015 16:38:46 +0000</lastBuildDate>
+    
+	<atom:link href="https://noamelf.com/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Optimization Tale</title>
+      <link>https://noamelf.com/posts/optimization-tale/</link>
+      <pubDate>Sat, 29 Aug 2015 16:38:46 +0000</pubDate>
+      
+      <guid>https://noamelf.com/posts/optimization-tale/</guid>
+      <description>I was asked to optimize our web API service. This was the first time I ever experienced anything of that sort so I was pretty excited about it. I read a lot of blog posts and Stack Overflow questions about optimization but still wasted some time on optimizing the wrong parts. Following is the lessons I learned, and some pitfalls that you can avoid on your next optimization task.
+Locust vs Jmeter The first you want to do when optimizing anything is to be able to measure it&#39;s performance.</description>
+    </item>
+    
+  </channel>
+</rss>
