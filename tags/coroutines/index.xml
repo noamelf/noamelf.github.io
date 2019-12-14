@@ -130,8 +130,7 @@
        <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
        
        <guid>https://noamelf.com/posts/designing-pythonic-apis/</guid>
-       <description>&lt;h1 id=&#34;designing-pythonic-apis&#34;&gt;Designing Pythonic APIs&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;Learning from Kenneth Reitz&#39;s &lt;a href=&#34;http://docs.python-requests.org/en/master/&#34;&gt;Requests&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+       <description>&lt;p&gt;&lt;em&gt;Learning from Kenneth Reitz&#39;s &lt;a href=&#34;http://docs.python-requests.org/en/master/&#34;&gt;Requests&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;When writing a package (library), providing it with a good API, is almost as important as its
 functionality itself (well, at least if you want some adoption), but what makes a good API? In this post, I&#39;ll try to provide some insights on that question by comparing &lt;em&gt;Requests&lt;/em&gt; and &lt;em&gt;Urllib&lt;/em&gt; (part of Python&#39;s standard library) in a few typical HTTP usage scenarios and see why &lt;em&gt;Requests&lt;/em&gt; has become the de facto standard among Python users.&lt;/p&gt;
 &lt;p&gt;* Throughout our investigation we&#39;ll be using &lt;strong&gt;Python 3.5&lt;/strong&gt; and &lt;strong&gt;Requests 2.10.0&lt;/strong&gt;.&lt;/p&gt;
