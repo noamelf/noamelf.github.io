@@ -1,9 +1,11 @@
 ---
 date: "2016-08-05T00:00:00Z"
 title: Designing Pythonic APIs
+tags:
+- python
+- software design
 ---
 
-# Designing Pythonic APIs
 *Learning from Kenneth Reitz's [Requests][requests url]*
 
 When writing a package (library), providing it with a good API, is almost as important as its

@@ -1,16 +1,38 @@
 baseURL = "https://noamelf.com"
 languageCode = "en-us"
 title = "noamelf"
-theme = "hugo-kiera"
+theme = "kiss"
+Paginate = 10 # Number of posts per page
+enableRobotsTXT = true
 
 pygmentsCodeFences = true
 googleAnalytics = "UA-62273869-1" #Google Analytics ID
 
-[author]
-    name = "Noam Elfanbaum"           #Author name
-    github = "noamelf"         #Github username
-    linkedin = "noamelf"       #LinkedIn username
-    twitter = "noamelf"        #Twitter username
+[params.rss] # Adding this tag enables RSS feed
+includeContent = true # Includes whole content in rss
+authorName = "Noam Elfanbaum" # Author full name
+authorEmail = "noamelf@gmail.com" # Author email
 
-[params]
-    tagline = "thoughts about software development and more"
+[params.assets]
+customCSS = ["css/custom.css"]
+
+[params.info]
+enableSocial = true # Adds OpenGraph and Twitter cards
+homeTitle = "noamelf's blog" # Title for home page
+poweredby = true # Adds powered by hugo and kiss below Copyright
+related = true # Includes related articles at the bottom of the article
+codeCopy = true # Add copy button above code blocks
+
+[params.social]
+github = "noamelf"         #Github username
+linkedin = "noamelf"       #LinkedIn username
+twitter = "noamelf"        #Twitter username
+email = "noamelf@gmail.com"
+rss = "index.xml" # Add this to show RSS button in social.
+
+
+[params.social.config]
+platforms = ["github","twitter","linkedin", "email"]
+
+[taxonomies]
+tag ="tags"

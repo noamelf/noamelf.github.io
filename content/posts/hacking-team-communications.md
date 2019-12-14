@@ -1,6 +1,8 @@
 ---
 date: "2019-12-13T00:00:00Z"
 title: Hacking team communications
+tags:
+- management
 ---
 
 One of the daunting things in managing a team is being up to date with what is going on. On one hand, it's crucial to be up to speed with the team's progress, but on the other, I hate continuously asking about status or dreadful standup meetings. I guess being an individual contributor up until now, I remember not enjoying this type of management practices. It took me a while to figure out a technique that works well for my needs:

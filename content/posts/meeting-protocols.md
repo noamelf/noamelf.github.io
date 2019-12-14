@@ -1,6 +1,8 @@
 ---
 date: "2019-08-10T00:00:00Z"
 title: Meeting protocols
+tags:
+- management
 ---
 
 Engineering teams have a few types of meetings that repeat themselves: weekly, 1:1s, design review, etc. I found that for each type of these meetings having a concrete protocol, firm recurring schedule (where applicable), meeting record, and the meeting doc shared in advance between the members have great benefits, mostly:
