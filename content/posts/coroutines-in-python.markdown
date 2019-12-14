@@ -1,9 +1,8 @@
 ---
 date: "2015-05-10T12:16:55Z"
 tags:
-- code
 - python
-- coroutines
+- software design
 title: Coroutines in Python
 ---
 

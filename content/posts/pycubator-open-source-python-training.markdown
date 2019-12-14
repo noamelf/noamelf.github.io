@@ -1,6 +1,9 @@
 ---
 date: "2015-12-12T17:35:04Z"
 title: Pycubator - Open Source Python Training
+tags:
+- python
+- teaching
 ---
 
 Preparing to teach my first Python class, I searched the web for teaching materials I can use and came up almost empty handed. There is a great variety of Python open books like [Dive into Python][dip] and [How to Think Like a Computer Scientist][cs] but they are all for autodidactic purposes and not for classroom teaching.  

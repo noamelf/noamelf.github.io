@@ -36,3 +36,8 @@ platforms = ["github","twitter","linkedin", "email"]
 
 [taxonomies]
 tag ="tags"
+
+[params.sections_right]
+"/about" = "About"
+"/talks" = "Talks"
+

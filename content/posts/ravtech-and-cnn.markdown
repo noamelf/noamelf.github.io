@@ -1,6 +1,9 @@
 ---
 date: "2015-07-10T14:13:48Z"
 title: Teaching Python to Haredim (and a CNN visit)
+tags:
+- python
+- teaching
 ---
 
 For the last couple of months I've been involved in a great project: getting [Haredic](https://en.wikipedia.org/wiki/Haredi_Judaism) (ultra-orthodox jews) man into the software world! 

@@ -1,6 +1,9 @@
 ---
 date: "2015-08-29T16:38:46Z"
 title: Optimization Tale
+tags: 
+- python
+- performance
 ---
 
 I was asked to optimize our web API service. This was the first time I ever experienced anything of that sort so I was pretty excited about it. I read a lot of blog posts and Stack Overflow questions about optimization but still wasted some time on optimizing the wrong parts. Following is the lessons I learned, and some pitfalls that you can avoid on your next optimization task.

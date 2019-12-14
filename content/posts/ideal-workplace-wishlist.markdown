@@ -1,7 +1,6 @@
 ---
 date: "2015-04-26T08:15:17Z"
 tags:
-- code
 - career
 title: Ideal workplace wishlist
 ---
