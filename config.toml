@@ -1,0 +1,18 @@
+baseURL = "https://noamelf.com"
+languageCode = "en-us"
+title = "noamelf"
+theme = "hugo-kiera"
+
+pygmentsCodeFences = true
+
+disqusShortname = "" #Disqus shortname
+googleAnalytics = "" #Google Analytics ID
+
+[author]
+    name = "Noam Elfanbaum"           #Author name
+    github = "noamelf"         #Github username
+    linkedin = "noamelf"       #LinkedIn username
+    twitter = "noamelf"        #Twitter username
+
+[params]
+    tagline = "thoughts about software development and more"
