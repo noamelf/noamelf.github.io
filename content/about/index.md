@@ -9,3 +9,6 @@ I used to teach Python classes, do freelance work and organize Python community 
 
 [pyweb]: http://www.meetup.com/PyWeb-IL/
 [pycon]: http://il.pycon.org
+
+
+{{< figure src="me.jpg" class="center" hight="200px" width="200px">}}

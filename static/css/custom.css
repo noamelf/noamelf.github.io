@@ -5,3 +5,8 @@
 .content h6 {
     color: rgb(23, 24, 24); // Custom Color
 }
+
+.center {
+    text-align: center;
+  }
+  
