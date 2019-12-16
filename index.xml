@@ -50,31 +50,12 @@ I used to teach Python classes, do freelance work and organize Python community 
       <description></description>
       
       <content>&lt;p&gt;I enjoy giving public talks about subjects I investigate. Here are links to my previous talks:&lt;/p&gt;
-&lt;h3 id=&#34;from-zero-to-airflow---bootstrapping-a-ml-platform&#34;&gt;From Zero to Airflow - bootstrapping a ML platform&lt;/h3&gt;
-&lt;p&gt;The story behind bootstraping Airflow at Bluevine Capital&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1J0frjnuehQKLjFEmHdQqM7kd89flUN3M1chLEvulvwM/edit?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;lets-build-a-python-profiler-in-25-loc&#34;&gt;Let&#39;s build a Python profiler in 25 LOC&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://gitpitch.com/noamelf/Lets-build-a-Python-profiler-in-25-LOC&#34;&gt;slides&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://youtu.be/qRqDgJLM568?t=1h32m53s&#34;&gt;europython2018 video&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=H8uVgtVv44Y&amp;amp;feature=youtu.be&#34;&gt;pyconil2018 video&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;h3 id=&#34;designing-pythonic-apis&#34;&gt;Designing Pythonic APIs&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://noamelf.com/designing-pythonic-apis-talk&#34;&gt;blog post&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=CrQQCa_AoWI&#34;&gt;pyconil2017 video&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;h3 id=&#34;api-and-microservices-management-with-kong&#34;&gt;API and Microservices Management with Kong&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://goo.gl/sS5spo&#34;&gt;slides&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;introduction-to-python-coroutines&#34;&gt;Introduction to Python coroutines&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://noamelf.com/intro-to-python-coroutines-talk&#34;&gt;slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.slideshare.net/noamelf/from-zero-to-airflow&#34;&gt;From Zero to Airflow - bootstrapping a ML platform&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitpitch.com/noamelf/Lets-build-a-Python-profiler-in-25-LOC&#34;&gt;Let&#39;s build a Python profiler in 25 LOC&lt;/a&gt; (&lt;a href=&#34;https://youtu.be/qRqDgJLM568?t=1h32m53s&#34;&gt;europython2018&lt;/a&gt;, &lt;a href=&#34;https://www.youtube.com/watch?v=H8uVgtVv44Y&amp;amp;feature=youtu.be&#34;&gt;pyconil2018&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://noamelf.com/designing-pythonic-apis-talk&#34;&gt;Designing Pythonic APIs&lt;/a&gt; (&lt;a href=&#34;https://www.youtube.com/watch?v=CrQQCa_AoWI&#34;&gt;pyconil2017&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.slideshare.net/noamelf/kong-63521715&#34;&gt;API and Microservices Management with Kong&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://noamelf.com/intro-to-python-coroutines-talk&#34;&gt;Introduction to Python coroutines&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
       
