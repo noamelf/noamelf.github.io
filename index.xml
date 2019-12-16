@@ -33,6 +33,10 @@
       
       <content>&lt;p&gt;I&#39;m Noam Elfanbaum, I live in Tel-Aviv with my wife, baby-daughter and dog.
 I used to teach Python classes, do freelance work and organize Python community gatherings (&lt;a href=&#34;http://www.meetup.com/PyWeb-IL/&#34;&gt;PywebIL&lt;/a&gt; and &lt;a href=&#34;http://il.pycon.org&#34;&gt;Pycon Israel&lt;/a&gt;). These days I&#39;ve settled on a serious day job as a engineering team lead a Bluevine. Hope you enjoy the blog posts!&lt;/p&gt;
+&lt;figure class=&#34;center&#34;&gt;
+    &lt;img src=&#34;me.jpg&#34; width=&#34;200px&#34;/&gt; 
+&lt;/figure&gt;
+
 </content>
       
     </item>
