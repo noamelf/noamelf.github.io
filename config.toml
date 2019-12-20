@@ -18,7 +18,7 @@ customCSS = ["css/custom.css"]
 
 [params.info]
 enableSocial = true # Adds OpenGraph and Twitter cards
-homeTitle = "noamelf's blog" # Title for home page
+homeTitle = "Noam Elfanbaum's blog" # Title for home page
 poweredby = true # Adds powered by hugo and kiss below Copyright
 related = true # Includes related articles at the bottom of the article
 codeCopy = true # Add copy button above code blocks
