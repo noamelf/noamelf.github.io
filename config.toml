@@ -1,6 +1,6 @@
 baseURL = "https://noamelf.com"
 languageCode = "en-us"
-title = "noamelf"
+title = "Noam Elfanbaum"
 theme = "kiss"
 Paginate = 10 # Number of posts per page
 enableRobotsTXT = true
