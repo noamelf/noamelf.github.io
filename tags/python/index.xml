@@ -6,10 +6,22 @@
     <description>Recent content in python on Noam Elfanbaum</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Aug 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://noamelf.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Python setup for 2020</title>
+      <link>https://noamelf.com/posts/my-python-setup-for-2020/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://noamelf.com/posts/my-python-setup-for-2020/</guid>
+      <description>After some trial and errors I found a Python setup I enjoy using:
+Pyenv for Python versions Pyenv is really nice in the sense that it make it a breeze to try and use new Python versions that don&#39;t come bundled with your OS. e.g. try out the Walrus operator and Python 3.8:
+pyenv install 3.8.0 pyenv shell 3.8.0 And you are ready to go.
+Pyenv-virtualenv for virtual environments Now that you are using Pyenv, you&#39;ll probably want to create virtual environment for your different applications.</description>
+    </item>
     
     <item>
       <title>Designing Pythonic APIs</title>
