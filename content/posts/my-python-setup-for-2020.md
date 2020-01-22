@@ -1,7 +1,6 @@
 ---
 date: "2020-01-18"
 title: My Python setup for 2020
-draft: true
 tags:
 - python
 ---
