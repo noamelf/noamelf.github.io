@@ -5,7 +5,7 @@ tags:
 - python
 ---
 
-After some trial and errors I found a Python setup I enjoy using:
+As a Python developer I was used to use different tooling in order to build environments that worked well. These days I settled on a Python setup that satisfy all my different use cases and is easy to use. It is composed of 4 tools:
 
 ### Pyenv for Python versions
 
@@ -55,3 +55,7 @@ pandas 0.25.3 Powerful data structures for data analysis, time series, and stati
 - It replaces the renowned `setup.py` file with a `pyproject.toml` file that is pretty simple to create and understand (you can see an [example](https://github.com/noamelf/toshl-fixer/blob/master/pyproject.toml) in a project of mine).
 
 - The `poetry.lock` file is such a great addition since it "snapshots" the environment and allows poetry to reproduce the exact packages in each new installation without writing them explicitly in the `pyproject.toml` file. This means that the project first-hand requirement remains very clear and separate from the verbose installation requirements (unlike using a regular `requirements.txt` file).
+
+### Good old Pycharm for full blown development
+
+[Pycharm](https://www.jetbrains.com/pycharm/) is not the fastest or best looking editor around (I'm looking at you vscode), but it's a great work horse for full blown Python development. For quick scripts I might just use vim or vscode, but for bigger projects Pycharm's Python support is still the best around IMHO.
