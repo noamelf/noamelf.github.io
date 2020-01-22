@@ -17,10 +17,8 @@
       <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://noamelf.com/posts/my-python-setup-for-2020/</guid>
-      <description>After some trial and errors I found a Python setup I enjoy using:
-Pyenv for Python versions Pyenv is really nice in the sense that it make it a breeze to try and use new Python versions that don&#39;t come bundled with your OS. e.g. try out the Walrus operator and Python 3.8:
-pyenv install 3.8.0 pyenv shell 3.8.0 And you are ready to go.
-Pyenv-virtualenv for virtual environments Now that you are using Pyenv, you&#39;ll probably want to create virtual environment for your different applications.</description>
+      <description>As a Python developer I was used to use different tooling in order to build environments that worked well. These days I settled on a Python setup that satisfy all my different use cases and is easy to use. It is composed of 4 tools:
+Pyenv for Python versions Pyenv is really nice in the sense that it make it a breeze to try and use new Python versions that don&#39;t come bundled with your OS.</description>
     </item>
     
     <item>

@@ -7,10 +7,8 @@
 <title>My Python setup for 2020 | Noam Elfanbaum</title>
 
 <meta property='og:title' content='My Python setup for 2020 - Noam Elfanbaum'>
-<meta property='og:description' content='After some trial and errors I found a Python setup I enjoy using:
-Pyenv for Python versions Pyenv is really nice in the sense that it make it a breeze to try and use new Python versions that don&#39;t come bundled with your OS. e.g. try out the Walrus operator and Python 3.8:
-pyenv install 3.8.0 pyenv shell 3.8.0 And you are ready to go.
-Pyenv-virtualenv for virtual environments Now that you are using Pyenv, you&#39;ll probably want to create virtual environment for your different applications.'>
+<meta property='og:description' content='As a Python developer I was used to use different tooling in order to build environments that worked well. These days I settled on a Python setup that satisfy all my different use cases and is easy to use. It is composed of 4 tools:
+Pyenv for Python versions Pyenv is really nice in the sense that it make it a breeze to try and use new Python versions that don&#39;t come bundled with your OS.'>
 <meta property='og:url' content='https://noamelf.com/posts/my-python-setup-for-2020/'>
 <meta property='og:site_name' content='Noam Elfanbaum'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/72ff3d30567107b6ac3eb0025d63f042?s=256'><meta property='article:section' content='Posts'><meta property='article:tag' content='python'><meta property='article:published_time' content='2020-01-18T00:00:00Z'/><meta property='article:modified_time' content='2020-01-18T00:00:00Z'/><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@noamelf'><meta name='twitter:creator' content='@noamelf'>
@@ -108,7 +106,7 @@ Pyenv-virtualenv for virtual environments Now that you are using Pyenv, you&#39;
     <h1 class="title">My Python setup for 2020</h1>
     
     <div class="content">
-      <p>After some trial and errors I found a Python setup I enjoy using:</p>
+      <p>As a Python developer I was used to use different tooling in order to build environments that worked well. These days I settled on a Python setup that satisfy all my different use cases and is easy to use. It is composed of 4 tools:</p>
 <h3 id="pyenv-for-python-versions">Pyenv for Python versions</h3>
 <p><a href="https://github.com/pyenv/pyenv">Pyenv</a> is really nice in the sense that it make it a breeze to try and use new Python versions that don't come bundled with your OS. e.g. try out the <a href="https://www.python.org/dev/peps/pep-0572/">Walrus operator</a> and Python 3.8:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv install 3.8.0
@@ -142,6 +140,8 @@ $ which black
 <p>The <code>poetry.lock</code> file is such a great addition since it &ldquo;snapshots&rdquo; the environment and allows poetry to reproduce the exact packages in each new installation without writing them explicitly in the <code>pyproject.toml</code> file. This means that the project first-hand requirement remains very clear and separate from the verbose installation requirements (unlike using a regular <code>requirements.txt</code> file).</p>
 </li>
 </ul>
+<h3 id="good-old-pycharm-for-full-blown-development">Good old Pycharm for full blown development</h3>
+<p><a href="https://www.jetbrains.com/pycharm/">Pycharm</a> is not the fastest or best looking editor around (I'm looking at you vscode), but it's a great work horse for full blown Python development. For quick scripts I might just use vim or vscode, but for bigger projects Pycharm's Python support is still the best around IMHO.</p>
 
       
       <div class="related">
