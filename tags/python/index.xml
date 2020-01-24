@@ -17,7 +17,7 @@
       <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://noamelf.com/posts/my-python-setup-for-2020/</guid>
-      <description>As a Python developer, I was used to using different tooling to build environments that worked well. These days I settled on a Python setup that satisfies all my different use cases and is easy to use. It is composed of these tools:
+      <description>My Python setup used to change a lot, as I would find ad-hoc solutions for my needs. These days I&#39;ve settled on a Python setup that satisfies pretty much all of my different use cases and is easy to use. It is composed of these tools:
 Pyenv for Python versions Pyenv is nice in the sense that it makes it a breeze to try and use new Python versions that don&#39;t come bundled with your OS.</description>
     </item>
     
