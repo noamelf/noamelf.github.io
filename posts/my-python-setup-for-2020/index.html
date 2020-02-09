@@ -7,8 +7,8 @@
 <title>My Python setup for 2020 | Noam Elfanbaum</title>
 
 <meta property='og:title' content='My Python setup for 2020 - Noam Elfanbaum'>
-<meta property='og:description' content='My Python setup used to change a lot, as I would find ad-hoc solutions for my needs. These days I&#39;ve settled on a Python setup that satisfies pretty much all of my different use cases and is easy to use. It is composed of these tools:
-Pyenv for Python versions Pyenv is nice in the sense that it makes it a breeze to try and use new Python versions that don&#39;t come bundled with your OS.'>
+<meta property='og:description' content='My Python setup used to change a lot, as I would find ad-hoc solutions for my needs. These days I&rsquo;ve settled on a Python setup that satisfies pretty much all of my different use cases and is easy to use. It is composed of these tools:
+Pyenv for Python versions Pyenv is nice in the sense that it makes it a breeze to try and use new Python versions that don&rsquo;t come bundled with your OS.'>
 <meta property='og:url' content='https://noamelf.com/posts/my-python-setup-for-2020/'>
 <meta property='og:site_name' content='Noam Elfanbaum'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/72ff3d30567107b6ac3eb0025d63f042?s=256'><meta property='article:section' content='Posts'><meta property='article:tag' content='python'><meta property='article:published_time' content='2020-01-18T00:00:00Z'/><meta property='article:modified_time' content='2020-01-18T00:00:00Z'/><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@noamelf'><meta name='twitter:creator' content='@noamelf'>
@@ -106,25 +106,25 @@ Pyenv for Python versions Pyenv is nice in the sense that it makes it a breeze t
     <h1 class="title">My Python setup for 2020</h1>
     
     <div class="content">
-      <p>My Python setup used to change a lot, as I would find ad-hoc solutions for my needs. These days I've settled on a Python setup that satisfies pretty much all of my different use cases and is easy to use. It is composed of these tools:</p>
+      <p>My Python setup used to change a lot, as I would find ad-hoc solutions for my needs. These days I&rsquo;ve settled on a Python setup that satisfies pretty much all of my different use cases and is easy to use. It is composed of these tools:</p>
 <h3 id="pyenv-for-python-versions">Pyenv for Python versions</h3>
-<p><a href="https://github.com/pyenv/pyenv">Pyenv</a> is nice in the sense that it makes it a breeze to try and use new Python versions that don't come bundled with your OS. e.g. try out the <a href="https://www.python.org/dev/peps/pep-0572/">Walrus operator</a> and Python 3.8:</p>
+<p><a href="https://github.com/pyenv/pyenv">Pyenv</a> is nice in the sense that it makes it a breeze to try and use new Python versions that don&rsquo;t come bundled with your OS. e.g. try out the <a href="https://www.python.org/dev/peps/pep-0572/">Walrus operator</a> and Python 3.8:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv install 3.8.0
 pyenv shell 3.8.0
 </code></pre></div><p>And you are ready to go.</p>
 <h3 id="pyenv-virtualenv-for-virtual-environments">Pyenv-virtualenv for virtual environments</h3>
-<p>Now that you are using Pyenv, you create virtual environments with different Python interpreters for your projects. Of course you could use Python's venv module, and that is fine, but with Pyenv-virtualenv you get a clear interface and a <a href="https://virtualenvwrapper.readthedocs.io/en/latest/">Virtualenvwrapper</a> like user experience:</p>
+<p>Now that you are using Pyenv, you create virtual environments with different Python interpreters for your projects. Of course you could use Python&rsquo;s venv module, and that is fine, but with Pyenv-virtualenv you get a clear interface and a <a href="https://virtualenvwrapper.readthedocs.io/en/latest/">Virtualenvwrapper</a> like user experience:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv virtualenv 3.8.0 my-project
 </code></pre></div><h3 id="pipx-for-python-applications">Pipx for Python applications</h3>
-<p>It's a bad practice to install Python packages in your system's Python environment since it can mess it up: different packages installed can override one another and make system utilities dysfunctional. On the other hand, it's pretty annoying to create a virtual environment for each new program you want to install and then add it to <code>PATH</code>. <a href="https://pipxproject.github.io/pipx/">Pipx</a> solves that problem by creating the virtual environment for you and symlinking it to your local bin path. So to install black, you just write:</p>
+<p>It&rsquo;s a bad practice to install Python packages in your system&rsquo;s Python environment since it can mess it up: different packages installed can override one another and make system utilities dysfunctional. On the other hand, it&rsquo;s pretty annoying to create a virtual environment for each new program you want to install and then add it to <code>PATH</code>. <a href="https://pipxproject.github.io/pipx/">Pipx</a> solves that problem by creating the virtual environment for you and symlinking it to your local bin path. So to install black, you just write:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ pipx install black
 ...
 $ which black
 /home/noam/.local/bin/black
 </code></pre></div><h3 id="poetry-is-the-new-pipenv">Poetry is the new pipenv</h3>
-<p><a href="https://python-poetry.org/">Poetry</a> and <a href="https://pipenv-fork.readthedocs.io/en/latest/">Pipenv</a> are similar projects that have a joint appeal - improve Python's packaging and dependency management. Pipenv was the pioneering project, it made a big splash when it came out about 2.5 years ago and I was eager to try it out. While using it, I found that many times it was slow and buggy (this was up to a year ago so things might have changed since). Poetry came out about a year later and offers pretty much the same features, but in contrast with Pipenv, it worked nicely for me from the get-go. There are many nice features to it, but I'll just highlight a few that I like especially:</p>
+<p><a href="https://python-poetry.org/">Poetry</a> and <a href="https://pipenv-fork.readthedocs.io/en/latest/">Pipenv</a> are similar projects that have a joint appeal - improve Python&rsquo;s packaging and dependency management. Pipenv was the pioneering project, it made a big splash when it came out about 2.5 years ago and I was eager to try it out. While using it, I found that many times it was slow and buggy (this was up to a year ago so things might have changed since). Poetry came out about a year later and offers pretty much the same features, but in contrast with Pipenv, it worked nicely for me from the get-go. There are many nice features to it, but I&rsquo;ll just highlight a few that I like especially:</p>
 <ul>
-<li><strong>Dependency resolver</strong> - Poetry comes with an elaborative and relatively quick dependency resolver . It shows which packages are at conflict and why, so it's easy to understand and fix (if possible). This is a pretty big deal when adding requirements to an existing project. Doing so with pip and a simple <code>requirements.txt</code> file, can cause the application to break at run time, while using poetry shows you the conflict at the time you are adding it. Another nice related feature is the ability to print the dependency graph:</li>
+<li><strong>Dependency resolver</strong> - Poetry comes with an elaborative and relatively quick dependency resolver . It shows which packages are at conflict and why, so it&rsquo;s easy to understand and fix (if possible). This is a pretty big deal when adding requirements to an existing project. Doing so with pip and a simple <code>requirements.txt</code> file, can cause the application to break at run time, while using poetry shows you the conflict at the time you are adding it. Another nice related feature is the ability to print the dependency graph:</li>
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ poetry show --tree
 pandas 0.25.3 Powerful data structures <span style="color:#66d9ef">for</span> data analysis, time series, and statistics
@@ -147,7 +147,7 @@ pandas 0.25.3 Powerful data structures <span style="color:#66d9ef">for</span> da
 <li>Run <code>pyenv shell 3.8.0</code> before each time you want to use Poetry.</li>
 </ol>
 <h3 id="good-old-pycharm-for-full-blown-development">Good old Pycharm for full-blown development</h3>
-<p><a href="https://www.jetbrains.com/pycharm/">Pycharm</a> is not the fastest or best-looking editor around (I'm looking at you vscode), but it's a great workhorse for full-blown Python development. For quick scripts, I might just use vim or vscode, but for bigger projects, Pycharm's Python support is still the best around IMHO.</p>
+<p><a href="https://www.jetbrains.com/pycharm/">Pycharm</a> is not the fastest or best-looking editor around (I&rsquo;m looking at you vscode), but it&rsquo;s a great workhorse for full-blown Python development. For quick scripts, I might just use vim or vscode, but for bigger projects, Pycharm&rsquo;s Python support is still the best around IMHO.</p>
 <hr>
 
       

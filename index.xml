@@ -31,8 +31,8 @@
       <guid>https://noamelf.com/about/</guid>
       <description></description>
       
-      <content>&lt;p&gt;I&#39;m Noam Elfanbaum, I live in Tel-Aviv with my wife, baby-daughter and dog.
-I used to teach Python classes, do freelance work and organize Python community gatherings (&lt;a href=&#34;http://www.meetup.com/PyWeb-IL/&#34;&gt;PywebIL&lt;/a&gt; and &lt;a href=&#34;http://il.pycon.org&#34;&gt;Pycon Israel&lt;/a&gt;). These days I&#39;ve settled on a serious day job as a engineering team lead a Bluevine. Hope you enjoy the blog posts!&lt;/p&gt;
+      <content>&lt;p&gt;I&amp;rsquo;m Noam Elfanbaum, I live in Tel-Aviv with my wife, baby-daughter and dog.
+I used to teach Python classes, do freelance work and organize Python community gatherings (&lt;a href=&#34;http://www.meetup.com/PyWeb-IL/&#34;&gt;PywebIL&lt;/a&gt; and &lt;a href=&#34;http://il.pycon.org&#34;&gt;Pycon Israel&lt;/a&gt;). These days I&amp;rsquo;ve settled on a serious day job as a engineering team lead a Bluevine. Hope you enjoy the blog posts!&lt;/p&gt;
 &lt;figure class=&#34;center&#34;&gt;
     &lt;img src=&#34;me.jpg&#34; width=&#34;200px&#34;/&gt; 
 &lt;/figure&gt;
@@ -52,7 +52,7 @@ I used to teach Python classes, do freelance work and organize Python community 
       <content>&lt;p&gt;I enjoy giving public talks about subjects I investigate. Here are links to my previous talks:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.slideshare.net/noamelf/from-zero-to-airflow&#34;&gt;From Zero to Airflow - bootstrapping a ML platform&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gitpitch.com/noamelf/Lets-build-a-Python-profiler-in-25-LOC&#34;&gt;Let&#39;s build a Python profiler in 25 LOC&lt;/a&gt; (&lt;a href=&#34;https://youtu.be/qRqDgJLM568?t=1h32m53s&#34;&gt;europython2018&lt;/a&gt;, &lt;a href=&#34;https://www.youtube.com/watch?v=H8uVgtVv44Y&amp;amp;feature=youtu.be&#34;&gt;pyconil2018&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitpitch.com/noamelf/Lets-build-a-Python-profiler-in-25-LOC&#34;&gt;Let&amp;rsquo;s build a Python profiler in 25 LOC&lt;/a&gt; (&lt;a href=&#34;https://youtu.be/qRqDgJLM568?t=1h32m53s&#34;&gt;europython2018&lt;/a&gt;, &lt;a href=&#34;https://www.youtube.com/watch?v=H8uVgtVv44Y&amp;amp;feature=youtu.be&#34;&gt;pyconil2018&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://noamelf.com/designing-pythonic-apis-talk&#34;&gt;Designing Pythonic APIs&lt;/a&gt; (&lt;a href=&#34;https://www.youtube.com/watch?v=CrQQCa_AoWI&#34;&gt;pyconil2017&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.slideshare.net/noamelf/kong-63521715&#34;&gt;API and Microservices Management with Kong&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://noamelf.com/intro-to-python-coroutines-talk&#34;&gt;Introduction to Python coroutines&lt;/a&gt;&lt;/li&gt;

@@ -7,8 +7,8 @@
 <title>Designing Pythonic APIs | Noam Elfanbaum</title>
 
 <meta property='og:title' content='Designing Pythonic APIs - Noam Elfanbaum'>
-<meta property='og:description' content='Learning from Kenneth Reitz&#39;s Requests
-When writing a package (library), providing it with a good API, is almost as important as its functionality itself (well, at least if you want some adoption), but what makes a good API? In this post, I&#39;ll try to provide some insights on that question by comparing Requests and Urllib (part of Python&#39;s standard library) in a few typical HTTP usage scenarios and see why Requests has become the de facto standard among Python users.'>
+<meta property='og:description' content='Learning from Kenneth Reitz&rsquo;s Requests
+When writing a package (library), providing it with a good API, is almost as important as its functionality itself (well, at least if you want some adoption), but what makes a good API? In this post, I&rsquo;ll try to provide some insights on that question by comparing Requests and Urllib (part of Python&rsquo;s standard library) in a few typical HTTP usage scenarios and see why Requests has become the de facto standard among Python users.'>
 <meta property='og:url' content='https://noamelf.com/posts/designing-pythonic-apis/'>
 <meta property='og:site_name' content='Noam Elfanbaum'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/72ff3d30567107b6ac3eb0025d63f042?s=256'><meta property='article:section' content='Posts'><meta property='article:tag' content='python'><meta property='article:tag' content='software design'><meta property='article:published_time' content='2016-08-05T00:00:00Z'/><meta property='article:modified_time' content='2016-08-05T00:00:00Z'/><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@noamelf'><meta name='twitter:creator' content='@noamelf'>
@@ -110,10 +110,10 @@ When writing a package (library), providing it with a good API, is almost as imp
     <h1 class="title">Designing Pythonic APIs</h1>
     
     <div class="content">
-      <p><em>Learning from Kenneth Reitz's <a href="http://docs.python-requests.org/en/master/">Requests</a></em></p>
+      <p><em>Learning from Kenneth Reitz&rsquo;s <a href="http://docs.python-requests.org/en/master/">Requests</a></em></p>
 <p>When writing a package (library), providing it with a good API, is almost as important as its
-functionality itself (well, at least if you want some adoption), but what makes a good API? In this post, I'll try to provide some insights on that question by comparing <em>Requests</em> and <em>Urllib</em> (part of Python's standard library) in a few typical HTTP usage scenarios and see why <em>Requests</em> has become the de facto standard among Python users.</p>
-<p>* Throughout our investigation we'll be using <strong>Python 3.5</strong> and <strong>Requests 2.10.0</strong>.</p>
+functionality itself (well, at least if you want some adoption), but what makes a good API? In this post, I&rsquo;ll try to provide some insights on that question by comparing <em>Requests</em> and <em>Urllib</em> (part of Python&rsquo;s standard library) in a few typical HTTP usage scenarios and see why <em>Requests</em> has become the de facto standard among Python users.</p>
+<p>* Throughout our investigation we&rsquo;ll be using <strong>Python 3.5</strong> and <strong>Requests 2.10.0</strong>.</p>
 <p>** This blog post is an adaptation of a talk I gave at our local Python meetup - <a href="http://www.meetup.com/PyWeb-IL/events/232724175/">PywebIL</a> - last week. You can find the slides <a href="/designing-pythonic-apis-talk">here</a>.</p>
 <h2 id="requests-vs-urllib"><em>Requests</em> vs. <em>Urllib</em></h2>
 <h3 id="use-case-1-sending-a-get-request">Use case #1: sending a GET request</h3>
@@ -128,7 +128,7 @@ requests<span style="color:#f92672">.</span>get(<span style="color:#e6db74"></sp
 <h4 id="explicit-api-endpoints-is-better-than-implicit">Explicit (API endpoints) is better than implicit</h4>
 <ul>
 <li>Notice how requests is more concise (hence, clear) about what it will do.</li>
-<li><em>Urllib</em> is getting told implicitly to send a GET request since it didn't receive a <code>data</code> argument</li>
+<li><em>Urllib</em> is getting told implicitly to send a GET request since it didn&rsquo;t receive a <code>data</code> argument</li>
 <li><em>Requests</em> function name explicitly mark what it will do.</li>
 </ul>
 <h4 id="helpful-object-representation">Helpful object representation</h4>
@@ -166,7 +166,7 @@ r<span style="color:#f92672">.</span>status_code
 <h4 id="no-need-for-getters-and-setters">No need for getters and setters</h4>
 <ul>
 <li>Accessing an object property as an actual property (and not a method call) makes the code a little clearer.</li>
-<li>If you come from other OOP language (hmmm&hellip; Java), you might be tempted to use getters and setters to allow future changes to the object's properties. No need for that in Python, just use the <a href="http://www.programiz.com/python-programming/property"><code>@property</code></a> decorator.</li>
+<li>If you come from other OOP language (hmmm&hellip; Java), you might be tempted to use getters and setters to allow future changes to the object&rsquo;s properties. No need for that in Python, just use the <a href="http://www.programiz.com/python-programming/property"><code>@property</code></a> decorator.</li>
 </ul>
 <h4 id="code-snippet-1">Code snippet</h4>
 <p><a href="https://github.com/python/cpython/blob/3.5/Lib/http/client.py#L737">http/client.py</a>:</p>
@@ -235,11 +235,11 @@ requests<span style="color:#f92672">.</span>get(<span style="color:#e6db74"></sp
 </code></pre></div><h4 id="provide-possibilities-for-simple-and-advanced-usage">Provide possibilities for simple and advanced usage</h4>
 <ul>
 <li><em>Requests</em> allow concise usage, when sending a single request, and a more verbose one for multiple requests.</li>
-<li>Don't make the user go through a lengthy process when he needs a simple use case.</li>
+<li>Don&rsquo;t make the user go through a lengthy process when he needs a simple use case.</li>
 </ul>
 <h4 id="prefer-python-data-types-over-self-made-ones">Prefer Python data types over self-made ones</h4>
 <ul>
-<li><em>Requests</em> usage of Python's data structures makes it very easy to use. No need to get to know internal <em>Requests</em> packages.</li>
+<li><em>Requests</em> usage of Python&rsquo;s data structures makes it very easy to use. No need to get to know internal <em>Requests</em> packages.</li>
 </ul>
 <h4 id="libraries-code">Libraries code</h4>
 <p><a href="https://github.com/kennethreitz/requests/blob/v2.10.0/requests/models.py#L488">requests/models.py</a>:</p>
@@ -327,8 +327,8 @@ r<span style="color:#f92672">.</span>status_code
 <h4 id="let-the-user-choose-how-to-handle-errors">Let the user choose how to handle errors</h4>
 <ul>
 <li>Some programmers prefer exceptions, some prefer checks.</li>
-<li>In some situations a check is much more elegant and sometimes it's the other way around.</li>
-<li>It's good to let your users to choose what to use when.</li>
+<li>In some situations a check is much more elegant and sometimes it&rsquo;s the other way around.</li>
+<li>It&rsquo;s good to let your users to choose what to use when.</li>
 <li>Defaulting to return codes allow that, while defaulting to <code>exceptions</code> do not.</li>
 </ul>
 <p>Usage examples:</p>
@@ -361,7 +361,7 @@ r <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</sp
     <span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Page not found</span><span style="color:#e6db74">&#39;</span>)
 </code></pre></div><pre><code>Page not found
 </code></pre>
-<p>That's it for now. I learned quite a bit preparing this talk/post, and I hope you did too reading it. I'll be glad to hear your comments down bellow or on Twitter (@noamelf).</p>
+<p>That&rsquo;s it for now. I learned quite a bit preparing this talk/post, and I hope you did too reading it. I&rsquo;ll be glad to hear your comments down bellow or on Twitter (@noamelf).</p>
 <h5 id="update-august-8th-2016">Update (August 8th, 2016)</h5>
 <p>If you end up wondering how come there is such a stark usability difference between Requests and Urllib like many, including myself, do. Nick Coghlan shares his wide perspective on the subject, in a <a href="http://noamelf.com/2016/08/05/designing-pythonic-apis/#comment-2823855721">comment bellow</a> and a following blog post (with the self-explanatory title): <a href="http://www.curiousefficiency.org/posts/2016/08/what-problem-does-it-solve.html">what problem does it solve?</a>.</p>
 <!-- raw HTML omitted -->

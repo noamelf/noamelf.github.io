@@ -17,8 +17,8 @@
       <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
       
       <guid>https://noamelf.com/posts/designing-pythonic-apis/</guid>
-      <description>Learning from Kenneth Reitz&#39;s Requests
-When writing a package (library), providing it with a good API, is almost as important as its functionality itself (well, at least if you want some adoption), but what makes a good API? In this post, I&#39;ll try to provide some insights on that question by comparing Requests and Urllib (part of Python&#39;s standard library) in a few typical HTTP usage scenarios and see why Requests has become the de facto standard among Python users.</description>
+      <description>Learning from Kenneth Reitz&amp;rsquo;s Requests
+When writing a package (library), providing it with a good API, is almost as important as its functionality itself (well, at least if you want some adoption), but what makes a good API? In this post, I&amp;rsquo;ll try to provide some insights on that question by comparing Requests and Urllib (part of Python&amp;rsquo;s standard library) in a few typical HTTP usage scenarios and see why Requests has become the de facto standard among Python users.</description>
     </item>
     
     <item>

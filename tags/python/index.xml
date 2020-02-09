@@ -17,8 +17,8 @@
       <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://noamelf.com/posts/my-python-setup-for-2020/</guid>
-      <description>My Python setup used to change a lot, as I would find ad-hoc solutions for my needs. These days I&#39;ve settled on a Python setup that satisfies pretty much all of my different use cases and is easy to use. It is composed of these tools:
-Pyenv for Python versions Pyenv is nice in the sense that it makes it a breeze to try and use new Python versions that don&#39;t come bundled with your OS.</description>
+      <description>My Python setup used to change a lot, as I would find ad-hoc solutions for my needs. These days I&amp;rsquo;ve settled on a Python setup that satisfies pretty much all of my different use cases and is easy to use. It is composed of these tools:
+Pyenv for Python versions Pyenv is nice in the sense that it makes it a breeze to try and use new Python versions that don&amp;rsquo;t come bundled with your OS.</description>
     </item>
     
     <item>
@@ -27,8 +27,8 @@ Pyenv for Python versions Pyenv is nice in the sense that it makes it a breeze t
       <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
       
       <guid>https://noamelf.com/posts/designing-pythonic-apis/</guid>
-      <description>Learning from Kenneth Reitz&#39;s Requests
-When writing a package (library), providing it with a good API, is almost as important as its functionality itself (well, at least if you want some adoption), but what makes a good API? In this post, I&#39;ll try to provide some insights on that question by comparing Requests and Urllib (part of Python&#39;s standard library) in a few typical HTTP usage scenarios and see why Requests has become the de facto standard among Python users.</description>
+      <description>Learning from Kenneth Reitz&amp;rsquo;s Requests
+When writing a package (library), providing it with a good API, is almost as important as its functionality itself (well, at least if you want some adoption), but what makes a good API? In this post, I&amp;rsquo;ll try to provide some insights on that question by comparing Requests and Urllib (part of Python&amp;rsquo;s standard library) in a few typical HTTP usage scenarios and see why Requests has become the de facto standard among Python users.</description>
     </item>
     
     <item>
@@ -47,7 +47,7 @@ Pycubator is my attempt at establishing an open source Python training slides an
       <pubDate>Wed, 23 Sep 2015 17:29:00 +0000</pubDate>
       
       <guid>https://noamelf.com/posts/project-based-learning/</guid>
-      <description>Context The Python course I&#39;m instructing at Avratech (see earlier post and CNN story) is advancing and the students are already a month and a half into their group projects. This post is about my personal experience with shifting my class from teacher-led learning to project-based (learning), but first, have a look at the 5 beautiful projects they&#39;re working on (you might want to use Google to translate the websites if your Hebrew reading skills aren&#39;t in shape ☺):</description>
+      <description>Context The Python course I&amp;rsquo;m instructing at Avratech (see earlier post and CNN story) is advancing and the students are already a month and a half into their group projects. This post is about my personal experience with shifting my class from teacher-led learning to project-based (learning), but first, have a look at the 5 beautiful projects they&amp;rsquo;re working on (you might want to use Google to translate the websites if your Hebrew reading skills aren&amp;rsquo;t in shape ☺):</description>
     </item>
     
     <item>
@@ -57,7 +57,7 @@ Pycubator is my attempt at establishing an open source Python training slides an
       
       <guid>https://noamelf.com/posts/optimization-tale/</guid>
       <description>I was asked to optimize our web API service. This was the first time I ever experienced anything of that sort so I was pretty excited about it. I read a lot of blog posts and Stack Overflow questions about optimization but still wasted some time on optimizing the wrong parts. Following is the lessons I learned, and some pitfalls that you can avoid on your next optimization task.
-Locust vs Jmeter The first you want to do when optimizing anything is to be able to measure it&#39;s performance.</description>
+Locust vs Jmeter The first you want to do when optimizing anything is to be able to measure it&amp;rsquo;s performance.</description>
     </item>
     
     <item>
@@ -66,7 +66,7 @@ Locust vs Jmeter The first you want to do when optimizing anything is to be able
       <pubDate>Fri, 10 Jul 2015 14:13:48 +0000</pubDate>
       
       <guid>https://noamelf.com/posts/ravtech-and-cnn/</guid>
-      <description>For the last couple of months I&#39;ve been involved in a great project: getting Haredic (ultra-orthodox jews) man into the software world!
+      <description>For the last couple of months I&amp;rsquo;ve been involved in a great project: getting Haredic (ultra-orthodox jews) man into the software world!
 Last week, we got an exciting visit from Oren Libermann, a CNN reporter, who published this nice story.
 My job in the training process is to teach them the Python programing language. Were doing a 3 month course, in which we go from learning the basic features of the language to writing a full blown (but small) software project.</description>
     </item>
