@@ -39,7 +39,7 @@ Since it's more difficult to measure impact made than hours worked, the first is
 It's a thin line to walk, either being too permissive about times or too strict. As someone who wants to allow flexible schedules, it is tempting to just ignore hours put in all together, or look away when someone seems not to put in the time like the rest of the team. As a manager, I think that emphasizing the number of hours that is expected from employees to work, while also making clear that you respect and encourage people's unique schedules is the way to go.
 
 Following up on that, it's important not to let resentment pile up when someone seems to put in less than expected and have an **honest conversation** about it. This conversation doesn't have to be a finger-pointing type of discussion. Once you let the person know you genuinely care for his work-life balance, but you sense that something is not working out time obligations wise - it can open up a place for understanding each other intentions better. Maybe it's just a misunderstanding or perhaps there is some truth in that, either way, it's possible to find a better way forward from that point: better communications, more actual time in the office, etc.
- put in less than expected and have an **honest conversation** about it. This conversation does
+
 ## Engaged developers are much more effective!
 
 From my experience, team members who feel they are being respected and valued by their managers, are much more engaged and deliberative in their roles, and respecting their unique schedules is a part of that. Being the owners of their time propagates a general feeling of ownership and responsibility.
