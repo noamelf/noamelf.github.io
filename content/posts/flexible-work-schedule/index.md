@@ -1,7 +1,6 @@
 ---
-date: "2020-02-09"
+date: "2020-02-13"
 title: Flexible work schedules
-draft: true
 tags:
 - management
 ---
