@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Noam Elfanbaum</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://noamelf.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Flexible work schedules</title>
+      <link>https://noamelf.com/posts/flexible-work-schedule/</link>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://noamelf.com/posts/flexible-work-schedule/</guid>
+      <description>For many of us, programming is a hobby as well as a job. But, I can say that for most of my professional career, as much as I enjoy programming, I didn&amp;rsquo;t really enjoy having a job as a programmer. That&amp;rsquo;s a shame because you would expect that if you do something that you love, you&amp;rsquo;ll also enjoy doing it for a living, but somehow it wasn&amp;rsquo;t that great.</description>
+    </item>
     
     <item>
       <title>My Python setup for 2020</title>
