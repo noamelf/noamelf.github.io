@@ -1,6 +1,6 @@
 ---
 date: "2020-02-13"
-title: Flexible work schedules
+title: Flexible work schedules - not just an employee perk
 tags:
 - management
 ---
