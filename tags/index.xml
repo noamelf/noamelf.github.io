@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Airflow</title>
+      <title>airflow</title>
       <link>https://noamelf.com/tags/airflow/</link>
       <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
       
@@ -21,11 +21,20 @@
     </item>
     
     <item>
-      <title>Bluevine</title>
+      <title>bluevine</title>
       <link>https://noamelf.com/tags/bluevine/</link>
       <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://noamelf.com/tags/bluevine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>talks</title>
+      <link>https://noamelf.com/tags/talks/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://noamelf.com/tags/talks/</guid>
       <description></description>
     </item>
     

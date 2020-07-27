@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>talks on Noam Elfanbaum</title>
+    <link>https://noamelf.com/tags/talks/</link>
+    <description>Recent content in talks on Noam Elfanbaum</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://noamelf.com/tags/talks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Airflow Summit 2020 talk</title>
+      <link>https://noamelf.com/posts/airflow-summit-2020-talk/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://noamelf.com/posts/airflow-summit-2020-talk/</guid>
+      <description>Inline with the Corona pandemic, I gave my first online conference talk! The Airflow Summit 2020 was wonderfully organized and I must say I liked the ability to participate in a conference without leaving home. Giving a talk to a computer is a very different experience then giving it live, a lot less interaction with the audience but on the plus side, it&amp;rsquo;s much less stressful as well.
+At Bluevine we use Airflow to drive our ML platform.</description>
+    </item>
+    
+    <item>
+      <title>Designing Pythonic APIs</title>
+      <link>https://noamelf.com/posts/designing-pythonic-apis/</link>
+      <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://noamelf.com/posts/designing-pythonic-apis/</guid>
+      <description>Learning from Kenneth Reitz&amp;rsquo;s Requests
+When writing a package (library), providing it with a good API, is almost as important as its functionality itself (well, at least if you want some adoption), but what makes a good API? In this post, I&amp;rsquo;ll try to provide some insights on that question by comparing Requests and Urllib (part of Python&amp;rsquo;s standard library) in a few typical HTTP usage scenarios and see why Requests has become the de facto standard among Python users.</description>
+    </item>
+    
+    <item>
+      <title>API and Microservices Management with Kong</title>
+      <link>https://noamelf.com/posts/api-and-microservices-management-with-kong/</link>
+      <pubDate>Fri, 18 Mar 2016 21:19:00 +0000</pubDate>
+      
+      <guid>https://noamelf.com/posts/api-and-microservices-management-with-kong/</guid>
+      <description>Hi all, At the last PyWebIL meetup I took the stand and gave a talk about one a very interesting open-source project - Kong. Kong is an API and microservices management layer that serves as a reverse proxy to your API&amp;rsquo;s while taking care of generic actions such as rate-limiting, authentication, monitoring and much more. One of it&amp;rsquo;s key benefits is that it is very plugable, hence it is easy to add your own custom logic (I actually enhanced a plugin to fit my needs).</description>
+    </item>
+    
+    <item>
+      <title>Coroutines in Python</title>
+      <link>https://noamelf.com/posts/coroutines-in-python/</link>
+      <pubDate>Sun, 10 May 2015 12:16:55 +0000</pubDate>
+      
+      <guid>https://noamelf.com/posts/coroutines-in-python/</guid>
+      <description>In the last Pyweb-IL meetup I gave a short introduction talk about coroutines and their usage in Python. It covers the basic concepts of coroutines and how they can be used in Python.
+Check it out!</description>
+    </item>
+    
+  </channel>
+</rss>
