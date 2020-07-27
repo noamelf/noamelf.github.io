@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Airflow on Noam Elfanbaum</title>
+    <link>https://noamelf.com/tags/airflow/</link>
+    <description>Recent content in Airflow on Noam Elfanbaum</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://noamelf.com/tags/airflow/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Airflow Summit 2020 talk</title>
+      <link>https://noamelf.com/posts/airflow-summit-2020-talk/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://noamelf.com/posts/airflow-summit-2020-talk/</guid>
+      <description>Inline with the Corona pandemic, I gave my first online conference talk! The Airflow Summit 2020 was wonderfully organized and I must say I liked the ability to participate in a conference without leaving home. Giving a talk to a computer is a very different experience then giving it live, a lot less interaction with the audience but on the plus side, it&amp;rsquo;s much less stressful as well.
+At Bluevine we use Airflow to drive our ML platform.</description>
+    </item>
+    
+  </channel>
+</rss>

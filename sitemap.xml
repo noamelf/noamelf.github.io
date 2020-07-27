@@ -3,27 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://noamelf.com/tags/airflow/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://noamelf.com/posts/airflow-summit-2020-talk/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://noamelf.com/tags/bluevine/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://noamelf.com/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://noamelf.com/posts/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://noamelf.com/tags/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://noamelf.com/posts/flexible-work-schedule/</loc>
     <lastmod>2020-02-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://noamelf.com/tags/management/</loc>
-    <lastmod>2020-02-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://noamelf.com/</loc>
-    <lastmod>2020-02-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://noamelf.com/posts/</loc>
-    <lastmod>2020-02-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://noamelf.com/tags/</loc>
     <lastmod>2020-02-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -45,6 +60,11 @@
   <url>
     <loc>https://noamelf.com/posts/meeting-protocols/</loc>
     <lastmod>2019-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://noamelf.com/posts/team-lead-roles/</loc>
+    <lastmod>2019-04-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
