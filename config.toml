@@ -41,3 +41,5 @@ tag ="tags"
 "/about" = "About"
 "/talks" = "Talks"
 
+[markup.goldmark.renderer]
+unsafe = true
