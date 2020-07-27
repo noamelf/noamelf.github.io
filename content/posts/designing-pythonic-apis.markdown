@@ -4,6 +4,7 @@ title: Designing Pythonic APIs
 tags:
 - python
 - software design
+- talks
 ---
 
 *Learning from Kenneth Reitz's [Requests][requests url]*

@@ -3,6 +3,7 @@ date: "2015-05-10T12:16:55Z"
 tags:
 - python
 - software design
+- Talks
 title: Coroutines in Python
 ---
 

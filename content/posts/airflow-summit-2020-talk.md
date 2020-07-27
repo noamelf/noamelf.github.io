@@ -2,8 +2,9 @@
 date: "2020-07-27"
 title: Airflow Summit 2020 talk
 tags:
-- Airflow
-- Bluevine
+- airflow
+- bluevine
+- talks
 markup:
   goldmark:
     renderer:

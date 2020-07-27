@@ -3,6 +3,7 @@ date: "2016-03-18T21:19:00Z"
 tags:
 - api
 - docker
+- talks
 title: API and Microservices Management with Kong
 ---
 
