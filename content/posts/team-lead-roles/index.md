@@ -3,6 +3,7 @@ date: "2019-04-15T00:00:00Z"
 title: Team lead roles
 tags:
 - management
+draft: true
 ---
 
 <!-- The role is a little confusing since it can be said that a team lead is in charge of the output of his organization. Now, because the team lead organization is quite small, this can mean a few things.
