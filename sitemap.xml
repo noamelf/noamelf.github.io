@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://noamelf.com/tags/management/</loc>
+    <lastmod>2020-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://noamelf.com/</loc>
+    <lastmod>2020-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://noamelf.com/posts/</loc>
+    <lastmod>2020-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://noamelf.com/tags/</loc>
+    <lastmod>2020-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://noamelf.com/posts/high-output-management/</loc>
+    <lastmod>2020-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://noamelf.com/tags/airflow/</loc>
     <lastmod>2020-07-27T00:00:00+00:00</lastmod>
   </url>
@@ -18,32 +43,12 @@
   </url>
   
   <url>
-    <loc>https://noamelf.com/</loc>
-    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://noamelf.com/posts/</loc>
-    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://noamelf.com/tags/</loc>
-    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://noamelf.com/tags/talks/</loc>
     <lastmod>2020-07-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://noamelf.com/posts/flexible-work-schedule/</loc>
-    <lastmod>2020-02-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://noamelf.com/tags/management/</loc>
     <lastmod>2020-02-13T00:00:00+00:00</lastmod>
   </url>
   

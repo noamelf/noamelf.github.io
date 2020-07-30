@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Noam Elfanbaum</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://noamelf.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Thoughts on High Output Management</title>
+      <link>https://noamelf.com/posts/high-output-management/</link>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://noamelf.com/posts/high-output-management/</guid>
+      <description>High Output Management is a highly regarded management book in the tech industry, and so when I looked for reading materials to learn new management ideas, it was the first choice. Andrew Grove&amp;rsquo;s writing is very down to earth and practical and it opened up for me new ways to think about management. I&amp;rsquo;ll share the highlights with you here:
+  Variable Inspection  Later, when we examine managerial productivity, we’ll see that when a manager digs deeply into a specific activity under his jurisdiction, he’s applying the principle of variable inspection.</description>
+    </item>
     
     <item>
       <title>Airflow Summit 2020 talk</title>
