@@ -5,10 +5,7 @@ tags:
 - airflow
 - bluevine
 - talks
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
+
 ---
 
 Inline with the Corona pandemic, I gave my first online conference talk! The Airflow Summit 2020 was wonderfully organized and I must say I liked the ability to participate in a conference without leaving home. Giving a talk to a computer is a very different experience then giving it live, a lot less interaction with the audience but on the plus side, it's much less stressful as well.
