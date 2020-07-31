@@ -8,3 +8,12 @@
 [submodule "themes/kiss"]
 	path = themes/kiss
 	url = https://github.com/ribice/kiss.git
+[submodule "themes/harbor"]
+	path = themes/harbor
+	url = https://github.com/matsuyoshi30/harbor.git
+[submodule "themes/cactus"]
+	path = themes/cactus
+	url = git@github.com:nodejh/hugo-theme-cactus-plus.git
+[submodule "themes/hermit"]
+	path = themes/hermit
+	url = https://github.com/Track3/hermit.git

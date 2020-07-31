@@ -1,13 +1,13 @@
 ---
-date: "2020-07-30"
 title: Thoughts on High Output Management
+date: "2020-07-30"
 tags:
 - management
 ---
 
-[High Output Management](https://www.amazon.com/dp/B015VACHOK/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1) is a highly regarded management book in the tech industry, and so when I looked for reading materials to learn new management ideas, it was the first choice. Andrew Grove's writing is very down to earth and practical and it opened up for me new ways to think about management. I'll share the highlights with you here:
+[High Output Management](https://www.amazon.com/dp/B015VACHOK/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1) is a highly regarded management book in the tech industry (well at least at Hacker News), and so when I looked for reading materials to learn new management ideas, it was the first choice. Andrew Grove's writing is very down to earth and practical and it opened up for me new ways to think about management. I'll share the highlights with you here:
 
-{{< figure src="book-cover1.jpg" width="900x">}}
+{{< figure src="book-cover1.jpg" class="mid">}}
 
 ### Variable Inspection
 
