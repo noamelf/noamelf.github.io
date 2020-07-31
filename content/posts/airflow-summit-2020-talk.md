@@ -21,4 +21,4 @@ At Bluevine we use Airflow to drive our ML platform. In the talk, I presented th
 
 Here are the slides:
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/bqoKn6z6ci9fcX" width="900" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<script async class="speakerdeck-embed" data-id="1ec42b3dc65345bcb24e579a04632653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
