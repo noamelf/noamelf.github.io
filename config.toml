@@ -5,7 +5,6 @@ languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 
-enableGitInfo = true
 pygmentsCodefences  = true
 pygmentsUseClasses  = true
 rssLimit = 10  # Maximum number of items in the RSS feed.
@@ -29,14 +28,14 @@ unsafe = true
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
   themeColor = "#494f5c"
-  homeSubtitle = "A minimal and fast theme for Hugo."
+  homeSubtitle = "Thoughts on software development and more!"
   footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   # bgImg = ""  # Homepage background-image URL
 
   # Toggling this option needs to rebuild SCSS, requires Hugo extended version
   justifyContent = false  # Set "text-align: justify" to `.content`.
 
-  relatedPosts = false  # Add a related content section to all single posts page
+  relatedPosts = true  # Add a related content section to all single posts page
 
   code_copy_button = true # Turn on/off the code-copy-button for code-fields
   
@@ -47,15 +46,16 @@ unsafe = true
   # Check https://github.com/Track3/hermit#social-icons for more info.
   [[params.social]]
     name = "twitter"
-    url = "https://twitter.com/"
-
-  [[params.social]]
-    name = "instagram"
-    url = "https://instagram.com/"
+    url = "https://twitter.com/noamelf"
 
   [[params.social]]
     name = "github"
-    url = "https://github.com/"
+    url = "https://github.com/noamelf"
+  
+  [[params.social]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/noamelf/"
+
 
 [menu]
 
