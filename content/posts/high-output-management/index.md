@@ -1,5 +1,5 @@
 ---
-title: 4 thoughts on High Output Management
+title: 4 insights from High Output Management
 date: "2020-07-30"
 tags:
 - management
