@@ -21,4 +21,4 @@ At Bluevine we use Airflow to drive our ML platform. In the talk, I presented th
 
 Here are the slides:
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/bqoKn6z6ci9fcX" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/bqoKn6z6ci9fcX" width="900" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
