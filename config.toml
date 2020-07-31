@@ -1,5 +1,5 @@
 baseURL = "https://noamelf.com"
-title = "Noam Elfanbaum"
+title = "noamelf"
 theme = "hermit"
 languageCode = "en"
 DefaultContentLanguage = "en"
