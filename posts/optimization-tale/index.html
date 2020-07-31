@@ -1,124 +1,92 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="Optimization Tale">
+<meta itemprop="description" content="I was asked to optimize our web API service. This was the first time I ever experienced anything of that sort so I was pretty excited about it. I read a lot of blog posts and Stack Overflow questions about optimization but still wasted some time on optimizing the wrong parts. Following is the lessons I learned, and some pitfalls that you can avoid on your next optimization task.
+Locust vs Jmeter The first you want to do when optimizing anything is to be able to measure it&rsquo;s performance.">
+<meta itemprop="datePublished" content="2015-08-29T16:38:46+00:00" />
+<meta itemprop="dateModified" content="2019-12-14T21:11:58+02:00" />
+<meta itemprop="wordCount" content="861">
 
-<title>Optimization Tale | Noam Elfanbaum</title>
-
-<meta property='og:title' content='Optimization Tale - Noam Elfanbaum'>
-<meta property='og:description' content='I was asked to optimize our web API service. This was the first time I ever experienced anything of that sort so I was pretty excited about it. I read a lot of blog posts and Stack Overflow questions about optimization but still wasted some time on optimizing the wrong parts. Following is the lessons I learned, and some pitfalls that you can avoid on your next optimization task.
-Locust vs Jmeter The first you want to do when optimizing anything is to be able to measure it&rsquo;s performance.'>
-<meta property='og:url' content='https://noamelf.com/posts/optimization-tale/'>
-<meta property='og:site_name' content='Noam Elfanbaum'>
-<meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/72ff3d30567107b6ac3eb0025d63f042?s=256'><meta property='article:section' content='Posts'><meta property='article:tag' content='python'><meta property='article:tag' content='performance'><meta property='article:published_time' content='2015-08-29T16:38:46Z'/><meta property='article:modified_time' content='2015-08-29T16:38:46Z'/><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@noamelf'><meta name='twitter:creator' content='@noamelf'>
 
 
-<link href="https://noamelf.com/index.xml" rel="alternate" type="application/rss+xml" title="Noam Elfanbaum" />
+<meta itemprop="keywords" content="python,performance," />
+<meta property="og:title" content="Optimization Tale" />
+<meta property="og:description" content="I was asked to optimize our web API service. This was the first time I ever experienced anything of that sort so I was pretty excited about it. I read a lot of blog posts and Stack Overflow questions about optimization but still wasted some time on optimizing the wrong parts. Following is the lessons I learned, and some pitfalls that you can avoid on your next optimization task.
+Locust vs Jmeter The first you want to do when optimizing anything is to be able to measure it&rsquo;s performance." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://noamelf.com/posts/optimization-tale/" />
+<meta property="article:published_time" content="2015-08-29T16:38:46+00:00" />
+<meta property="article:modified_time" content="2019-12-14T21:11:58+02:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Optimization Tale"/>
+<meta name="twitter:description" content="I was asked to optimize our web API service. This was the first time I ever experienced anything of that sort so I was pretty excited about it. I read a lot of blog posts and Stack Overflow questions about optimization but still wasted some time on optimizing the wrong parts. Following is the lessons I learned, and some pitfalls that you can avoid on your next optimization task.
+Locust vs Jmeter The first you want to do when optimizing anything is to be able to measure it&rsquo;s performance."/>
 
-<link rel="stylesheet" href="/css/style.css"/><link rel='stylesheet' href='https://noamelf.com/css/custom.css'><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="canonical" href="https://noamelf.com/posts/optimization-tale/">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>Optimization Tale</title>
+	<link rel="stylesheet" href="https://noamelf.com/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
+	
 </head>
-<body>
-<section class="section">
-  <div class="container">
-    <nav id="nav-main" class="nav">
-      <div id="nav-name" class="nav-left">
-        <a id="nav-anchor" class="nav-item" href="https://noamelf.com">
-          <h1 id="nav-heading" class="title is-4">Noam Elfanbaum</h1>
-        </a>
-      </div>
-      <div class="nav-right">
-        <nav id="nav-items" class="nav-item level is-mobile"><a class="level-item" aria-label="github" href='https://github.com/noamelf'
-            target='_blank' rel='noopener'>
-            <span class="icon">
-              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-    
-  </svg></i>
-            </span>
-          </a><a class="level-item" aria-label="twitter" href='https://twitter.com/noamelf'
-            target='_blank' rel='noopener'>
-            <span class="icon">
-              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
-    
-  </svg></i>
-            </span>
-          </a><a class="level-item" aria-label="linkedin" href='https://linkedin.com/in/noamelf'
-            target='_blank' rel='noopener'>
-            <span class="icon">
-              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    <path stroke-width="1.8" d="m5.839218,4.101561c0,1.211972 -0.974141,2.194011 -2.176459,2.194011s-2.176459,-0.982039 -2.176459,-2.194011c0,-1.211094 0.974141,-2.194011 2.176459,-2.194011s2.176459,0.982917 2.176459,2.194011zm0.017552,3.94922l-4.388022,0l0,14.04167l4.388022,0l0,-14.04167zm7.005038,0l-4.359939,0l0,14.04167l4.360816,0l0,-7.370999c0,-4.098413 5.291077,-4.433657 5.291077,0l0,7.370999l4.377491,0l0,-8.89101c0,-6.915523 -7.829986,-6.66365 -9.669445,-3.259423l0,-1.891237z"/>
-    
-  </svg></i>
-            </span>
-          </a><a class="level-item" aria-label="email" href='mailto:noamelf@gmail.com'
-            target='_blank' rel='noopener'>
-            <span class="icon">
-              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-    <polyline points="22,6 12,13 2,6"/>
-    
-  </svg></i>
-            </span>
-          </a></nav>
-      </div>
-    </nav>
 
-    <nav class="nav">
-      
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://noamelf.com">Noam Elfanbaum</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://noamelf.com/posts/">Posts</a>
+				<a href="https://noamelf.com/about/">About</a>
+				<a href="https://noamelf.com/talks/">Talks</a>
 
-      
-      <div class="nav-right"><a class="nav-item" href="/about">
-          <h2 class="title is-5">About</h2>
-        </a><a class="nav-item" href="/talks">
-          <h2 class="title is-5">Talks</h2>
-        </a></div>
-      
-    </nav>
-
-  </div>
-  <script src="/js/navicon-shift.js"></script>
-</section>
-<section class="section">
-  <div class="container">
-    <div class="subtitle tags is-6 is-pulled-right">
-      
-      
-<a class="subtitle is-6" href="/tags/python">#python</a>
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://instagram.com/" target="_blank" rel="noopener me" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a><a href="https://github.com/" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://noamelf.com/posts/">Posts</a></li>
+			<li><a href="https://noamelf.com/about/">About</a></li>
+			<li><a href="https://noamelf.com/talks/">Talks</a></li>
+		</ul>
+	</div>
 
 
-
-  
-  | <a class="subtitle is-6" href="/tags/performance">#performance</a>
-  
-
-      
-    </div>
-    <h2 class="subtitle is-6">August 29, 2015</h2>
-    <h1 class="title">Optimization Tale</h1>
-    
-    <div class="content">
-      <p>I was asked to optimize our web API service. This was the first time I ever experienced anything of that sort so I was pretty excited about it. I read a lot of blog posts and Stack Overflow questions about optimization but still wasted some time on optimizing the wrong parts. Following is the lessons I learned, and some pitfalls that you can avoid on your next optimization task.</p>
-<h4 id="locust-vs-jmeter">Locust vs Jmeter</h4>
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Aug 29, 2015</span></div>
+				<h1>Optimization Tale</h1>
+			</header>
+			<div class="content">
+				<p>I was asked to optimize our web API service. This was the first time I ever experienced anything of that sort so I was pretty excited about it. I read a lot of blog posts and Stack Overflow questions about optimization but still wasted some time on optimizing the wrong parts. Following is the lessons I learned, and some pitfalls that you can avoid on your next optimization task.</p>
+<h4 id="locust-vs-jmeter">Locust vs Jmeter<a href="#locust-vs-jmeter" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>The first you want to do when optimizing anything is to be able to measure it&rsquo;s performance. I looked for a Python based (my favorite language) load testing solution and found <a href="http://locust.io/">Locust</a>. Locust is a quick and easy package to run a threaded load testing programs with nothing but Python code. Everything was great until I sadly realized that Locust aggregates the results, meaning: I couldn&rsquo;t get a <em>raw</em> CSV to store and analyze later on using graph tools of sorts.</p>
 <p>I turned to the industry standard: <a href="http://jmeter.apache.org/">Jmeter</a>. It&rsquo;s website felt 90&rsquo;ish and <em>Java</em> isn&rsquo;t really my cup of tea, but nonetheless I found it to be a great piece of software.  After investing some time in reading the docs and understanding Jmeter inner logic and ugly GUI, you can make stuff happen really fast and in a very modular &ldquo;Lego bricks&rdquo; way.</p>
 <p>Jmeter has built in result <em>listeners</em>, which means you can view real time results with multiple graph/table listener of your choice. Further more, it is based on a GUI to configure the test itself, but after that, there is no problem running it in a non-GUI mode that writes the results to a CSV file and analyze it later in Jmeter or great services like <a href="https://loadosophia.org/">LoadSophia</a>. <strong>Tip</strong>: if your looking to create a stress test for your application, go for the no-GUI mode and analyze the results later since generating real time graphs is heavy on resources.</p>
-<h4 id="load-testing">Load testing</h4>
+<h4 id="load-testing">Load testing<a href="#load-testing" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>Before we continue, some information about the setup: we are using AWS Elastic Load Balancing (ELB) in front of 2 m3.medium identical instances. Each instance has Ngnix in front of a Uwsgi server running a flask application.</p>
 <p>Back to our story, I created the Jmeter load test configuration on my local machine to simulate practical usage scenarios and <a href="https://wiki.archlinux.org/index.php/Sshfs">sshfs</a> it to a designated server, wrote a bash script to automatically run test of different loads and run the tests. Getting analytics from LoadSophia, I sent a proud report to my coworkers with graphs and tables explaining the current API performance.</p>
-<h4 id="optimizations-">Optimizations ?!?</h4>
+<h4 id="optimizations-">Optimizations ?!?<a href="#optimizations-" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>My next step, optimization, would be easy (or so I thought). I already read about some possible configurations to Nginx and Uwsgi like David Cramer&rsquo;s blog post ( <a href="http://cramer.io/2013/06/27/serving-python-web-applications/">You Should Be Using Nginx + UWSGI</a>) or the Uwsgi docs about <a href="http://uwsgi-docs.readthedocs.org/en/latest/Nginx.html">integration with Nginx</a>. Happily following their advices, I started tweaking the configuration and testing the results:</p>
 <ul>
 <li>Changed the communication between Nginx to Uwsgi to the Uwsgi protocol which has lower overhead than HTTP.</li>
@@ -126,7 +94,7 @@ Locust vs Jmeter The first you want to do when optimizing anything is to be able
 <li>Experimented with different numbers of processes/threads.</li>
 </ul>
 <p>At that point I faced a frustrating situation, all of the changes I made had nearly no impact on the setup performance - the servers Transaction Per Second (TPS) and average response time remained more or less the same as before. Imagine my disappointment.</p>
-<h4 id="eureka">Eureka</h4>
+<h4 id="eureka">Eureka<a href="#eureka" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>I started thinking there might be something wrong with the DB performance. Puzzled by the case, I turned to the <a href="http://goo.gl/K1gH7Z">scientific method</a> or put otherwise: <em>stop and think!</em> I thought about the facts I was seeing, and remembered that through all my optimization tweaks, the servers CPU level was pretty high. I wrote 2 hypothesis about that, both of which seemed unlikely. In short (you can find the long version <a href="https://goo.gl/irxrcs">here</a>):</p>
 <ol>
 <li>Uwsgi is consuming tons of resources while trying to load balance it&rsquo;s processes and threads.</li>
@@ -134,39 +102,42 @@ Locust vs Jmeter The first you want to do when optimizing anything is to be able
 </ol>
 <p>Testing my assumptions I saw clearly that the Uwsgi processes running our Flask app takes almost all of the CPU capacity. This was thrilling to find as well as disappointing since I spent much of my time barking up the wrong tree. <strong>The application bottleneck was the processes high CPU consumption, thus, improving the rate Uwsgi and Nginx passes requests wouldn&rsquo;t improve performance.</strong></p>
 <p>With  that revelation, we turned into the simplest, most immediate solution: increasing CPU power. In our case this meant upgrading the machines to an m3.large instances (2 CPU&rsquo;s instead of 1). This change immediately doubled our TPS and enabled us to serve twice more concurrent users. I really wanted to profile the application and see which part is gobbling the CPU, alas I run out of time for the task.</p>
-<h4 id="lesson-learned">Lesson learned</h4>
+<h4 id="lesson-learned">Lesson learned<a href="#lesson-learned" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>When testing applications performance, and trying to figure out how to optimize it, always start with the most basic suspects: it&rsquo;s memory and CPU consumption. Write a simple load test, and understand what <code>top</code> (I used <code>htop</code> with process filtering, very convenient) is showing you. If the servers memory or CPU are at full capacity, you can be certain that thats the bottleneck and invest your well worth time there.</p>
 
-      
-      <div class="related">
-
-<h3>Similar articles:</h3>
-<ul>
-	
-	<li><a href="/posts/ravtech-and-cnn/">Teaching Python to Haredim (and a CNN visit)</a></li>
-	
-	<li><a href="/posts/coroutines-in-python/">Coroutines in Python</a></li>
-	
-</ul>
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://noamelf.com/tags/python">python</a></span><span class="tag"><a href="https://noamelf.com/tags/performance">performance</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>861 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2015-08-29 19:38 &#43;0300</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="next-post" href="https://noamelf.com/posts/project-based-learning/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>Project-based learning</span>
+			</a>
+			<a class="prev-post" href="https://noamelf.com/posts/ravtech-and-cnn/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>Teaching Python to Haredim (and a CNN visit)</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
 </div>
-      
-    </div>
-    
-  </div>
-</section>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="https://noamelf.com">Noam Elfanbaum</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://noamelf.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
 
 
 
-<section class="section">
-  <div class="container has-text-centered">
-    <p></p>
-    
-      <p>Powered by <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/ribice/kiss">Kiss</a>.</p>
-    
-  </div>
-</section>
-
-
+	<script src="https://noamelf.com/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
 <script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
@@ -179,8 +150,6 @@ if (!doNotTrack) {
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
-
-
 </body>
-</html>
 
+</html>

@@ -1,64 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Noam Elfanbaum</title>
     <link>https://noamelf.com/</link>
     <description>Recent content on Noam Elfanbaum</description>
-    <generator>Hugo - gohugo.io</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <contact>noamelf@gmail.com</contact>
-    <copyright></copyright>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 30 Jul 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://noamelf.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://noamelf.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Posts</title>
-      <link>https://noamelf.com/posts/</link>
+      <title>Thoughts on High Output Management</title>
+      <link>https://noamelf.com/posts/high-output-management/</link>
       <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
-      <author>Noam Elfanbaum</author>
-      <guid>https://noamelf.com/posts/</guid>
-      <description></description>
       
-      <content></content>
-      
+      <guid>https://noamelf.com/posts/high-output-management/</guid>
+      <description>High Output Management is a highly regarded management book in the tech industry (well at least at Hacker News), and so when I looked for reading materials to learn new management ideas, it was the first choice. Andrew Grove&amp;rsquo;s writing is very down to earth and practical and it opened up for me new ways to think about management. I&amp;rsquo;ll share the highlights with you here:
+ Variable Inspection  Later, when we examine managerial productivity, we’ll see that when a manager digs deeply into a specific activity under his jurisdiction, he’s applying the principle of variable inspection.</description>
     </item>
     
     <item>
-      <title>About</title>
-      <link>https://noamelf.com/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>Noam Elfanbaum</author>
-      <guid>https://noamelf.com/about/</guid>
-      <description></description>
+      <title>Airflow Summit 2020 talk</title>
+      <link>https://noamelf.com/posts/airflow-summit-2020-talk/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
       
-      <content>&lt;p&gt;I&amp;rsquo;m Noam Elfanbaum, I live in Tel-Aviv with my wife, baby-daughter and dog.
-I used to teach Python classes, do freelance work and organize Python community gatherings (&lt;a href=&#34;http://www.meetup.com/PyWeb-IL/&#34;&gt;PywebIL&lt;/a&gt; and &lt;a href=&#34;http://il.pycon.org&#34;&gt;Pycon Israel&lt;/a&gt;). These days I&amp;rsquo;ve settled on a serious day job as a engineering team lead a Bluevine. Hope you enjoy the blog posts!&lt;/p&gt;
-&lt;figure class=&#34;center&#34;&gt;
-    &lt;img src=&#34;me.jpg&#34; width=&#34;200px&#34;/&gt; 
-&lt;/figure&gt;
-
-</content>
-      
+      <guid>https://noamelf.com/posts/airflow-summit-2020-talk/</guid>
+      <description>Inline with the Corona pandemic, I gave my first online conference talk! The Airflow Summit 2020 was wonderfully organized and I must say I liked the ability to participate in a conference without leaving home. Giving a talk to a computer is a very different experience then giving it live, a lot less interaction with the audience but on the plus side, it&amp;rsquo;s much less stressful as well.
+At Bluevine we use Airflow to drive our ML platform.</description>
     </item>
     
     <item>
-      <title>Talks</title>
-      <link>https://noamelf.com/talks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>Noam Elfanbaum</author>
-      <guid>https://noamelf.com/talks/</guid>
-      <description></description>
+      <title>Flexible work schedules - not just an employee perk</title>
+      <link>https://noamelf.com/posts/flexible-work-schedule/</link>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
       
-      <content>&lt;p&gt;I enjoy giving public talks about subjects I investigate. Here are links to my previous talks:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.slideshare.net/noamelf/airflow-summit-2020&#34;&gt;From Zero to Airflow - bootstrapping a ML platform&lt;/a&gt; (AirflowSummit 2020)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gitpitch.com/noamelf/Lets-build-a-Python-profiler-in-25-LOC&#34;&gt;Let&amp;rsquo;s build a Python profiler in 25 LOC&lt;/a&gt; (&lt;a href=&#34;https://youtu.be/qRqDgJLM568?t=1h32m53s&#34;&gt;europython2018&lt;/a&gt;, &lt;a href=&#34;https://www.youtube.com/watch?v=H8uVgtVv44Y&amp;amp;feature=youtu.be&#34;&gt;pyconil2018&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://noamelf.com/designing-pythonic-apis-talk&#34;&gt;Designing Pythonic APIs&lt;/a&gt; (&lt;a href=&#34;https://www.youtube.com/watch?v=CrQQCa_AoWI&#34;&gt;pyconil2017&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.slideshare.net/noamelf/kong-63521715&#34;&gt;API and Microservices Management with Kong&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://noamelf.com/intro-to-python-coroutines-talk&#34;&gt;Introduction to Python coroutines&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
+      <guid>https://noamelf.com/posts/flexible-work-schedule/</guid>
+      <description>For many of us, programming is a hobby as well as a job. But, I can say that for most of my professional career, as much as I enjoy programming, I didn&amp;rsquo;t really enjoy having a job as a programmer. That&amp;rsquo;s a shame because you would expect that if you do something that you love, you&amp;rsquo;ll also enjoy doing it for a living, but somehow it wasn&amp;rsquo;t that great.</description>
+    </item>
+    
+    <item>
+      <title>My Python setup for 2020</title>
+      <link>https://noamelf.com/posts/my-python-setup-for-2020/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
       
+      <guid>https://noamelf.com/posts/my-python-setup-for-2020/</guid>
+      <description>My Python setup used to change a lot, as I would find ad-hoc solutions for my needs. These days I&amp;rsquo;ve settled on a Python setup that satisfies pretty much all of my different use cases and is easy to use. It is composed of these tools:
+Pyenv for Python versions Pyenv is nice in the sense that it makes it a breeze to try and use new Python versions that don&amp;rsquo;t come bundled with your OS.</description>
+    </item>
+    
+    <item>
+      <title>Hacking team communications</title>
+      <link>https://noamelf.com/posts/hacking-team-communications/</link>
+      <pubDate>Fri, 13 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://noamelf.com/posts/hacking-team-communications/</guid>
+      <description>One of the daunting things in managing a team is being up to date with what is going on. On one hand, it&amp;rsquo;s crucial to be up to speed with the team&amp;rsquo;s progress, but on the other, I hate continuously asking about status or dreadful standup meetings. I guess being an individual contributor up until now, I remember not enjoying this type of management practices. It took me a while to figure out a technique that works well for my needs:</description>
+    </item>
+    
+    <item>
+      <title>Meeting protocols</title>
+      <link>https://noamelf.com/posts/meeting-protocols/</link>
+      <pubDate>Sat, 10 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://noamelf.com/posts/meeting-protocols/</guid>
+      <description>Engineering teams have a few types of meetings that repeat themselves: weekly, 1:1s, design review, etc. I found that for each type of these meetings having a concrete protocol, firm recurring schedule (where applicable), meeting record, and the meeting doc shared in advance between the members have great benefits, mostly:
+ Individual expression - team members know they&amp;rsquo;ll get an appropriate stage for their ideas/complaints/feelings so they can express them to me and the other team members in a (hopefully) proactive way.</description>
+    </item>
+    
+    <item>
+      <title>Designing Pythonic APIs</title>
+      <link>https://noamelf.com/posts/designing-pythonic-apis/</link>
+      <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://noamelf.com/posts/designing-pythonic-apis/</guid>
+      <description>Learning from Kenneth Reitz&amp;rsquo;s Requests
+When writing a package (library), providing it with a good API, is almost as important as its functionality itself (well, at least if you want some adoption), but what makes a good API? In this post, I&amp;rsquo;ll try to provide some insights on that question by comparing Requests and Urllib (part of Python&amp;rsquo;s standard library) in a few typical HTTP usage scenarios and see why Requests has become the de facto standard among Python users.</description>
+    </item>
+    
+    <item>
+      <title>API and Microservices Management with Kong</title>
+      <link>https://noamelf.com/posts/api-and-microservices-management-with-kong/</link>
+      <pubDate>Fri, 18 Mar 2016 21:19:00 +0000</pubDate>
+      
+      <guid>https://noamelf.com/posts/api-and-microservices-management-with-kong/</guid>
+      <description>Hi all, At the last PyWebIL meetup I took the stand and gave a talk about one a very interesting open-source project - Kong. Kong is an API and microservices management layer that serves as a reverse proxy to your API&amp;rsquo;s while taking care of generic actions such as rate-limiting, authentication, monitoring and much more. One of it&amp;rsquo;s key benefits is that it is very plugable, hence it is easy to add your own custom logic (I actually enhanced a plugin to fit my needs).</description>
+    </item>
+    
+    <item>
+      <title>Pycubator - Open Source Python Training</title>
+      <link>https://noamelf.com/posts/pycubator-open-source-python-training/</link>
+      <pubDate>Sat, 12 Dec 2015 17:35:04 +0000</pubDate>
+      
+      <guid>https://noamelf.com/posts/pycubator-open-source-python-training/</guid>
+      <description>Preparing to teach my first Python class, I searched the web for teaching materials I can use and came up almost empty handed. There is a great variety of Python open books like Dive into Python and How to Think Like a Computer Scientist but they are all for autodidactic purposes and not for classroom teaching.
+Pycubator is my attempt at establishing an open source Python training slides and exercises that the community of Python teachers can use and hopefully contribute to.</description>
+    </item>
+    
+    <item>
+      <title>Project-based learning</title>
+      <link>https://noamelf.com/posts/project-based-learning/</link>
+      <pubDate>Wed, 23 Sep 2015 17:29:00 +0000</pubDate>
+      
+      <guid>https://noamelf.com/posts/project-based-learning/</guid>
+      <description>Context The Python course I&amp;rsquo;m instructing at Avratech (see earlier post and CNN story) is advancing and the students are already a month and a half into their group projects. This post is about my personal experience with shifting my class from teacher-led learning to project-based (learning), but first, have a look at the 5 beautiful projects they&amp;rsquo;re working on (you might want to use Google to translate the websites if your Hebrew reading skills aren&amp;rsquo;t in shape ☺):</description>
     </item>
     
   </channel>

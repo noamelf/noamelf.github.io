@@ -1,111 +1,81 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="Hacking team communications">
+<meta itemprop="description" content="One of the daunting things in managing a team is being up to date with what is going on. On one hand, it&rsquo;s crucial to be up to speed with the team&rsquo;s progress, but on the other, I hate continuously asking about status or dreadful standup meetings. I guess being an individual contributor up until now, I remember not enjoying this type of management practices. It took me a while to figure out a technique that works well for my needs:">
+<meta itemprop="datePublished" content="2019-12-13T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2019-12-15T10:37:28+02:00" />
+<meta itemprop="wordCount" content="1276">
 
-<title>Hacking team communications | Noam Elfanbaum</title>
-
-<meta property='og:title' content='Hacking team communications - Noam Elfanbaum'>
-<meta property='og:description' content='One of the daunting things in managing a team is being up to date with what is going on. On one hand, it&rsquo;s crucial to be up to speed with the team&rsquo;s progress, but on the other, I hate continuously asking about status or dreadful standup meetings. I guess being an individual contributor up until now, I remember not enjoying this type of management practices. It took me a while to figure out a technique that works well for my needs:'>
-<meta property='og:url' content='https://noamelf.com/posts/hacking-team-communications/'>
-<meta property='og:site_name' content='Noam Elfanbaum'>
-<meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/72ff3d30567107b6ac3eb0025d63f042?s=256'><meta property='article:section' content='Posts'><meta property='article:tag' content='management'><meta property='article:published_time' content='2019-12-13T00:00:00Z'/><meta property='article:modified_time' content='2019-12-13T00:00:00Z'/><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@noamelf'><meta name='twitter:creator' content='@noamelf'>
 
 
-<link href="https://noamelf.com/index.xml" rel="alternate" type="application/rss+xml" title="Noam Elfanbaum" />
+<meta itemprop="keywords" content="management," />
+<meta property="og:title" content="Hacking team communications" />
+<meta property="og:description" content="One of the daunting things in managing a team is being up to date with what is going on. On one hand, it&rsquo;s crucial to be up to speed with the team&rsquo;s progress, but on the other, I hate continuously asking about status or dreadful standup meetings. I guess being an individual contributor up until now, I remember not enjoying this type of management practices. It took me a while to figure out a technique that works well for my needs:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://noamelf.com/posts/hacking-team-communications/" />
+<meta property="article:published_time" content="2019-12-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-12-15T10:37:28+02:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hacking team communications"/>
+<meta name="twitter:description" content="One of the daunting things in managing a team is being up to date with what is going on. On one hand, it&rsquo;s crucial to be up to speed with the team&rsquo;s progress, but on the other, I hate continuously asking about status or dreadful standup meetings. I guess being an individual contributor up until now, I remember not enjoying this type of management practices. It took me a while to figure out a technique that works well for my needs:"/>
 
-<link rel="stylesheet" href="/css/style.css"/><link rel='stylesheet' href='https://noamelf.com/css/custom.css'><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="canonical" href="https://noamelf.com/posts/hacking-team-communications/">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>Hacking team communications</title>
+	<link rel="stylesheet" href="https://noamelf.com/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
+	
 </head>
-<body>
-<section class="section">
-  <div class="container">
-    <nav id="nav-main" class="nav">
-      <div id="nav-name" class="nav-left">
-        <a id="nav-anchor" class="nav-item" href="https://noamelf.com">
-          <h1 id="nav-heading" class="title is-4">Noam Elfanbaum</h1>
-        </a>
-      </div>
-      <div class="nav-right">
-        <nav id="nav-items" class="nav-item level is-mobile"><a class="level-item" aria-label="github" href='https://github.com/noamelf'
-            target='_blank' rel='noopener'>
-            <span class="icon">
-              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-    
-  </svg></i>
-            </span>
-          </a><a class="level-item" aria-label="twitter" href='https://twitter.com/noamelf'
-            target='_blank' rel='noopener'>
-            <span class="icon">
-              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
-    
-  </svg></i>
-            </span>
-          </a><a class="level-item" aria-label="linkedin" href='https://linkedin.com/in/noamelf'
-            target='_blank' rel='noopener'>
-            <span class="icon">
-              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    <path stroke-width="1.8" d="m5.839218,4.101561c0,1.211972 -0.974141,2.194011 -2.176459,2.194011s-2.176459,-0.982039 -2.176459,-2.194011c0,-1.211094 0.974141,-2.194011 2.176459,-2.194011s2.176459,0.982917 2.176459,2.194011zm0.017552,3.94922l-4.388022,0l0,14.04167l4.388022,0l0,-14.04167zm7.005038,0l-4.359939,0l0,14.04167l4.360816,0l0,-7.370999c0,-4.098413 5.291077,-4.433657 5.291077,0l0,7.370999l4.377491,0l0,-8.89101c0,-6.915523 -7.829986,-6.66365 -9.669445,-3.259423l0,-1.891237z"/>
-    
-  </svg></i>
-            </span>
-          </a><a class="level-item" aria-label="email" href='mailto:noamelf@gmail.com'
-            target='_blank' rel='noopener'>
-            <span class="icon">
-              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-    <polyline points="22,6 12,13 2,6"/>
-    
-  </svg></i>
-            </span>
-          </a></nav>
-      </div>
-    </nav>
 
-    <nav class="nav">
-      
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://noamelf.com">Noam Elfanbaum</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://noamelf.com/posts/">Posts</a>
+				<a href="https://noamelf.com/about/">About</a>
+				<a href="https://noamelf.com/talks/">Talks</a>
 
-      
-      <div class="nav-right"><a class="nav-item" href="/about">
-          <h2 class="title is-5">About</h2>
-        </a><a class="nav-item" href="/talks">
-          <h2 class="title is-5">Talks</h2>
-        </a></div>
-      
-    </nav>
-
-  </div>
-  <script src="/js/navicon-shift.js"></script>
-</section>
-<section class="section">
-  <div class="container">
-    <div class="subtitle tags is-6 is-pulled-right">
-      
-      
-<a class="subtitle is-6" href="/tags/management">#management</a>
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://instagram.com/" target="_blank" rel="noopener me" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a><a href="https://github.com/" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://noamelf.com/posts/">Posts</a></li>
+			<li><a href="https://noamelf.com/about/">About</a></li>
+			<li><a href="https://noamelf.com/talks/">Talks</a></li>
+		</ul>
+	</div>
 
 
-
-      
-    </div>
-    <h2 class="subtitle is-6">December 13, 2019</h2>
-    <h1 class="title">Hacking team communications</h1>
-    
-    <div class="content">
-      <p>One of the daunting things in managing a team is being up to date with what is going on. On one hand, it&rsquo;s crucial to be up to speed with the team&rsquo;s progress, but on the other, I hate continuously asking about status or dreadful standup meetings. I guess being an individual contributor up until now, I remember not enjoying this type of management practices. It took me a while to figure out a technique that works well for my needs:</p>
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Dec 13, 2019</span></div>
+				<h1>Hacking team communications</h1>
+			</header>
+			<div class="content">
+				<p>One of the daunting things in managing a team is being up to date with what is going on. On one hand, it&rsquo;s crucial to be up to speed with the team&rsquo;s progress, but on the other, I hate continuously asking about status or dreadful standup meetings. I guess being an individual contributor up until now, I remember not enjoying this type of management practices. It took me a while to figure out a technique that works well for my needs:</p>
 <ol>
 <li>Smart usage of communication channels</li>
 <li>Forming team communication habits</li>
@@ -118,19 +88,19 @@
 </figure>
 
 <hr>
-<h2 id="smart-usage-of-communication-channels">Smart usage of communication channels</h2>
+<h2 id="smart-usage-of-communication-channels">Smart usage of communication channels<a href="#smart-usage-of-communication-channels" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <p>The key here is utilizing the existing communication channels to the maximum without drowning in information. It can be accomplished by setting up smart notification and filters. If this sound too generic, here is the actual data sources and filtering mechanisms:</p>
-<h3 id="emails">Emails</h3>
+<h3 id="emails">Emails<a href="#emails" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>In short, filters and inbox zero. Filters are mandatory to avoid drowning in a sea of irrelevant information. As much as it sounds anti-social, I&rsquo;m not really interested in new recruits across the company, and error emails of other teams aren&rsquo;t my cup of tea either. The simplest way to ignore these is to have accurate filters on recurring and not relevant emails.</p>
 <p>Once the filters are set up, I&rsquo;m using the <a href="https://whatis.techtarget.com/definition/inbox-zero">inbox zero</a> methodology, so that anything that needs addressing is being addressed at that moment or snoozed to when it needs to be addressed. If it&rsquo;s an ongoing thing, I turn it into a ticket.</p>
-<h3 id="tickets">Tickets</h3>
+<h3 id="tickets">Tickets<a href="#tickets" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>We use Trello where I work. Set up as a Kanban board, it allows to have multiple lists that represent the status of stuff, e.g. backlog, in progress, etc. The tickets are always sorted by priority in their list where a key requirement is to have the minimum viable number of tickets in each list. Our team has a board that holds all the work that we do, and if there are complex sub-projects that need their own board, the main board points to the sub-project board.</p>
 <p>Having a single board, allows me to understand at a glance what are we working on at the moment and in what priorities. Since Trello allows to subscribe to any action on the board, I get a notification when someone updates his progress. I find it more convenient to use Trello&rsquo;s in-app notification instead of receiving emails since it allows to respond more easily. One of the challenges is forming team communication habits, as I&rsquo;ll discuss later on, and one is less likely to update his tickets without getting any feedback that someone is paying attention. Hence, a simple &ldquo;+1&rdquo; emoji can go a long way.</p>
 <p>Each ticket gets assigned the relevant Pull Requests so that we can easily see the code that is being developed, Trello integrates nicely and shows the PR status (open/closed/merged) and the CI status (fails/success) on the ticket.</p>
-<h3 id="pull-requests">Pull Requests</h3>
+<h3 id="pull-requests">Pull Requests<a href="#pull-requests" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>Like with Trello, Github allows to subscribe to all activities on a certain repository, this is very convenient since I can be aware of what is going on in our code base, without being dependent on voluntary updates. If something is not interesting it&rsquo;s possible to unsubscribe specifically from it hence decrease the notifications load. Also, on repos that are not directly developed by us, I subscribe just to PRs of interest to me. Here also, I canceled the email notifications and use Github&rsquo;s in-app notifications, since it adds a few nice capabilities: marking all as read, muting and you can use the excellent <a href="https://github.com/tanmayrajani/notifications-preview-github">notifications-preview-github</a> to have quicker access to updates.</p>
 <p>One thing I can&rsquo;t stress enough is having team members open PRs as soon as possible. This helps to avoid so many headaches later on. Some devs are a little put off by this since it means coworkers will review (and judge!) their work before it&rsquo;s fully done, but now with Github new &ldquo;Draft PR&rdquo; feature, it&rsquo;s easier to explain to them that others know that this is not the final version. Making PRs early communicates the direction and the status of the project, it allows to give feedback before too much work has been invested. This, in turn, reduces conflicts since the dev getting the feedback is not busy defending the hours (if not days!) he spent.</p>
-<h3 id="meetings">Meetings</h3>
+<h3 id="meetings">Meetings<a href="#meetings" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>Meetings are a very important source for updates and planning, but too many of those kills productivity. Since so much of the manager&rsquo;s day is invested in meetings, I try to make them shorter and more effective. A few ideas I use:</p>
 <ul>
 <li>Start with emails, then move to meetings - try to avoid setting meetings where an email can do the same job. If things are unclear or there is a conflict or a project is just stuck for no apparent reason, it&rsquo;s time to move to a meeting since these issues are easier to resolve that way.</li>
@@ -138,7 +108,7 @@
 <li>Ask to shorten meetings - a lot of times co-workers choose 1-hour spots for a meeting, this is a lot! They count on cutting it short if they don&rsquo;t need all the time. I much rather have 30m meetings and scheduling another one if needed. Asking for shortening the meeting becomes pretty easy and not awkward with Google calender &ldquo;suggest new time&rdquo; feature. You just purpose less time and hope they accept it.</li>
 </ul>
 <hr>
-<h2 id="forming-team-communication-habits">Forming team communication habits</h2>
+<h2 id="forming-team-communication-habits">Forming team communication habits<a href="#forming-team-communication-habits" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <figure>
     <img src="sheep.jpg"
          alt="Getting cooperation can be difficult"/> <figcaption>
@@ -152,34 +122,39 @@
 <p>Most of the times, just explaining what I expect communication-wise, doesn&rsquo;t cut it since it requires a change of habits, so after the explanation part, comes the reminding part. For example - I ask a question on a ticket, once I don&rsquo;t get a response within say 4 hours, I ask that person: did you check Trello recently? This may some patronizing, but when doing it in good spirit, people tend to take it in a good way and make an effort to be more aware. In my current team, this works out pretty nicely and I can see a real difference.</p>
 <p>I find that while having good communication skills may not fit well with the image of a great developer (I&rsquo;m looking at you Linus ☺️), it can provide him/her with the freedom and context needed to do great work. And as for engineering leads, this is our main role, to make sure we set up the environment for great work to happen.</p>
 
-      
-      <div class="related">
-
-<h3>Similar articles:</h3>
-<ul>
-	
-	<li><a href="/posts/meeting-protocols/">Meeting protocols</a></li>
-	
-</ul>
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://noamelf.com/tags/management">management</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>1276 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-12-13 02:00 &#43;0200</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="next-post" href="https://noamelf.com/posts/my-python-setup-for-2020/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>My Python setup for 2020</span>
+			</a>
+			<a class="prev-post" href="https://noamelf.com/posts/meeting-protocols/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>Meeting protocols</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
 </div>
-      
-    </div>
-    
-  </div>
-</section>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="https://noamelf.com">Noam Elfanbaum</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://noamelf.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
 
 
 
-<section class="section">
-  <div class="container has-text-centered">
-    <p></p>
-    
-      <p>Powered by <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/ribice/kiss">Kiss</a>.</p>
-    
-  </div>
-</section>
-
-
+	<script src="https://noamelf.com/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
 <script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
@@ -192,8 +167,6 @@ if (!doNotTrack) {
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
-
-
 </body>
-</html>
 
+</html>

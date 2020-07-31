@@ -1,115 +1,81 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="Project-based learning">
+<meta itemprop="description" content="Context The Python course I&rsquo;m instructing at Avratech (see earlier post and CNN story) is advancing and the students are already a month and a half into their group projects. This post is about my personal experience with shifting my class from teacher-led learning to project-based (learning), but first, have a look at the 5 beautiful projects they&rsquo;re working on (you might want to use Google to translate the websites if your Hebrew reading skills aren&rsquo;t in shape ☺):">
+<meta itemprop="datePublished" content="2015-09-23T17:29:00+00:00" />
+<meta itemprop="dateModified" content="2019-12-14T19:48:32+02:00" />
+<meta itemprop="wordCount" content="1159">
 
-<title>Project-based learning | Noam Elfanbaum</title>
-
-<meta property='og:title' content='Project-based learning - Noam Elfanbaum'>
-<meta property='og:description' content='Context The Python course I&rsquo;m instructing at Avratech (see earlier post and CNN story) is advancing and the students are already a month and a half into their group projects. This post is about my personal experience with shifting my class from teacher-led learning to project-based (learning), but first, have a look at the 5 beautiful projects they&rsquo;re working on (you might want to use Google to translate the websites if your Hebrew reading skills aren&rsquo;t in shape ☺):'>
-<meta property='og:url' content='https://noamelf.com/posts/project-based-learning/'>
-<meta property='og:site_name' content='Noam Elfanbaum'>
-<meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/72ff3d30567107b6ac3eb0025d63f042?s=256'><meta property='article:section' content='Posts'><meta property='article:tag' content='python'><meta property='article:tag' content='teaching'><meta property='article:published_time' content='2015-09-23T17:29:00Z'/><meta property='article:modified_time' content='2015-09-23T17:29:00Z'/><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@noamelf'><meta name='twitter:creator' content='@noamelf'>
 
 
-<link href="https://noamelf.com/index.xml" rel="alternate" type="application/rss+xml" title="Noam Elfanbaum" />
+<meta itemprop="keywords" content="python,teaching," />
+<meta property="og:title" content="Project-based learning" />
+<meta property="og:description" content="Context The Python course I&rsquo;m instructing at Avratech (see earlier post and CNN story) is advancing and the students are already a month and a half into their group projects. This post is about my personal experience with shifting my class from teacher-led learning to project-based (learning), but first, have a look at the 5 beautiful projects they&rsquo;re working on (you might want to use Google to translate the websites if your Hebrew reading skills aren&rsquo;t in shape ☺):" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://noamelf.com/posts/project-based-learning/" />
+<meta property="article:published_time" content="2015-09-23T17:29:00+00:00" />
+<meta property="article:modified_time" content="2019-12-14T19:48:32+02:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Project-based learning"/>
+<meta name="twitter:description" content="Context The Python course I&rsquo;m instructing at Avratech (see earlier post and CNN story) is advancing and the students are already a month and a half into their group projects. This post is about my personal experience with shifting my class from teacher-led learning to project-based (learning), but first, have a look at the 5 beautiful projects they&rsquo;re working on (you might want to use Google to translate the websites if your Hebrew reading skills aren&rsquo;t in shape ☺):"/>
 
-<link rel="stylesheet" href="/css/style.css"/><link rel='stylesheet' href='https://noamelf.com/css/custom.css'><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="canonical" href="https://noamelf.com/posts/project-based-learning/">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>Project-based learning</title>
+	<link rel="stylesheet" href="https://noamelf.com/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
+	
 </head>
-<body>
-<section class="section">
-  <div class="container">
-    <nav id="nav-main" class="nav">
-      <div id="nav-name" class="nav-left">
-        <a id="nav-anchor" class="nav-item" href="https://noamelf.com">
-          <h1 id="nav-heading" class="title is-4">Noam Elfanbaum</h1>
-        </a>
-      </div>
-      <div class="nav-right">
-        <nav id="nav-items" class="nav-item level is-mobile"><a class="level-item" aria-label="github" href='https://github.com/noamelf'
-            target='_blank' rel='noopener'>
-            <span class="icon">
-              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-    
-  </svg></i>
-            </span>
-          </a><a class="level-item" aria-label="twitter" href='https://twitter.com/noamelf'
-            target='_blank' rel='noopener'>
-            <span class="icon">
-              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
-    
-  </svg></i>
-            </span>
-          </a><a class="level-item" aria-label="linkedin" href='https://linkedin.com/in/noamelf'
-            target='_blank' rel='noopener'>
-            <span class="icon">
-              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    <path stroke-width="1.8" d="m5.839218,4.101561c0,1.211972 -0.974141,2.194011 -2.176459,2.194011s-2.176459,-0.982039 -2.176459,-2.194011c0,-1.211094 0.974141,-2.194011 2.176459,-2.194011s2.176459,0.982917 2.176459,2.194011zm0.017552,3.94922l-4.388022,0l0,14.04167l4.388022,0l0,-14.04167zm7.005038,0l-4.359939,0l0,14.04167l4.360816,0l0,-7.370999c0,-4.098413 5.291077,-4.433657 5.291077,0l0,7.370999l4.377491,0l0,-8.89101c0,-6.915523 -7.829986,-6.66365 -9.669445,-3.259423l0,-1.891237z"/>
-    
-  </svg></i>
-            </span>
-          </a><a class="level-item" aria-label="email" href='mailto:noamelf@gmail.com'
-            target='_blank' rel='noopener'>
-            <span class="icon">
-              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-    <polyline points="22,6 12,13 2,6"/>
-    
-  </svg></i>
-            </span>
-          </a></nav>
-      </div>
-    </nav>
 
-    <nav class="nav">
-      
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://noamelf.com">Noam Elfanbaum</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://noamelf.com/posts/">Posts</a>
+				<a href="https://noamelf.com/about/">About</a>
+				<a href="https://noamelf.com/talks/">Talks</a>
 
-      
-      <div class="nav-right"><a class="nav-item" href="/about">
-          <h2 class="title is-5">About</h2>
-        </a><a class="nav-item" href="/talks">
-          <h2 class="title is-5">Talks</h2>
-        </a></div>
-      
-    </nav>
-
-  </div>
-  <script src="/js/navicon-shift.js"></script>
-</section>
-<section class="section">
-  <div class="container">
-    <div class="subtitle tags is-6 is-pulled-right">
-      
-      
-<a class="subtitle is-6" href="/tags/python">#python</a>
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://instagram.com/" target="_blank" rel="noopener me" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a><a href="https://github.com/" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://noamelf.com/posts/">Posts</a></li>
+			<li><a href="https://noamelf.com/about/">About</a></li>
+			<li><a href="https://noamelf.com/talks/">Talks</a></li>
+		</ul>
+	</div>
 
 
-
-  
-  | <a class="subtitle is-6" href="/tags/teaching">#teaching</a>
-  
-
-      
-    </div>
-    <h2 class="subtitle is-6">September 23, 2015</h2>
-    <h1 class="title">Project-based learning</h1>
-    
-    <div class="content">
-      <h4 id="context">Context</h4>
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Sep 23, 2015</span></div>
+				<h1>Project-based learning</h1>
+			</header>
+			<div class="content">
+				<h4 id="context">Context<a href="#context" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>The <a href="https://en.wikipedia.org/wiki/Python_%28programming_language%29">Python</a> course I&rsquo;m instructing at Avratech (see <a href="http://thespoon.ghost.io/ravtech-and-cnn/">earlier post</a> and <a href="http://edition.cnn.com/2015/07/08/world/israel-ultra-orthodox-jews-high-tech/index.html#">CNN story</a>) is advancing and the students are already a month and a half into their group projects. This post is about my personal experience with shifting my class from <em>teacher-led</em> learning to <em>project-based</em> (learning), but first, have a look at the 5 beautiful projects they&rsquo;re working on (you might want to use <a href="https://translate.google.com/translate?hl=en&amp;sl=iw&amp;tl=en&amp;u=jewishtimes.avratech.co.il">Google to translate</a> the websites if your Hebrew reading skills aren&rsquo;t in shape ☺):</p>
 <ul>
 <li><a href="jewishtimes.avratech.co.il">Jewish Times</a> - Jewish prayer times notification system. You register, choose the prayers you wish to be alerted on, and  receive notifications by email.</li>
@@ -120,23 +86,23 @@
 </ul>
 <p><img src="http://i.imgur.com/JkyDgPt.png" alt="Jewish times">
 [Jewish Times screenshot]</p>
-<h4 id="choosing-a-path">Choosing a path</h4>
+<h4 id="choosing-a-path">Choosing a path<a href="#choosing-a-path" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>After 2 months of teacher-led classes, we reached the end of the basic course. Having a few more month of training time, we wanted to give the students some &ldquo;real life&rdquo; experience though we weren&rsquo;t sure how to go about it. First, we thought about inventing a project ourselves. We started writing our makeup project until at some point it felt like it will be too boring for the students and too time consuming for us.</p>
 <p>We decided to give the students freedom to come up with a project that they will be interested in. Although there were some worries that without direct, homework like, instructions the students might not take these projects seriously and slack off but we decided to give it a go.</p>
 <p><img src="http://i.imgur.com/JXuCVat.png" alt="Kindergarten">
 [kindergarten screenshot]</p>
-<h4 id="grouping-the-students">Grouping the students</h4>
+<h4 id="grouping-the-students">Grouping the students<a href="#grouping-the-students" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>The class (21 students) was split into 5 teams while trying to keep them as equal as possible skill wise. Each team was supposed to pick a team leader. I explained the class what responsibilities a team leader has, and gave them a few minutes to choose one for the team. For my surprise, none of the groups picked a leader. I stepped in and appointed the team member who seemed to me like the best fit. It was a little disappointing for me because I wanted the team leader to be given his &ldquo;mandate&rdquo; from his fellows and not from me.</p>
 <p>The next phase was for each team to choose a project they&rsquo;re interested in. I showed them some examples of real applications which I think are good and they started coming up with their own ideas. It didn&rsquo;t go easy since as the saying goes: <em>as many Jews as many opinions</em>, but by the end of the day all the teams had an idea or was closing in on one.</p>
 <p><img src="http://i.imgur.com/yDzqkgq.png" alt="TheSwamp">
 [The swamp screenshot]</p>
-<h4 id="agility">Agility</h4>
+<h4 id="agility">Agility<a href="#agility" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>We wanted the teams to adopt an <a href="https://en.wikipedia.org/wiki/Agile_software_development">agile</a> development work flow. We set an iteration (development cycle) planning meeting in the beginning of the week (each iteration constitutes one week). There was an emphasis on getting something to work by the end of each iteration. The teams spoke about what features they want to add to the project and together we analyzed the effort it will take them to get there and the amount of working days they have in the upcoming iteration. After the meeting was over, the team leaders updated their teams <a href="https://trello.com/">Trello</a> boards with what is to be accomplished in the following iteration and by whom.</p>
 <p>The teams adopted the development flow rather easily but we&rsquo;re finding it difficult to start working since they weren&rsquo;t familiar with the way a web application works. Having team leaders was tremendously helpful at that point. I set a meeting with them discussing the way a web application is built and they transfered that knowledge and help direct their team members in their tasks.</p>
 <p>After an iteration ended, each team had a retrospective meeting where we compared what&rsquo;s been done with what we hoped to accomplish. There was some interesting insights about how each team functioned. For example, a team that failed miserably in his iteration goals recognized that they had a communication problem with their team leader that caused him to &ldquo;just do the job himself&rdquo;. Another nice example is that all the teams complained they were having a hard time utilizing <a href="https://en.wikipedia.org/wiki/Git_%28software%29">Git</a>, which made me realize I need to run a Git workshop.</p>
 <p><img src="http://i.imgur.com/qu1Q4l0.png" alt="Easy Hotel">
 [Easy Hotel screenshot]</p>
-<h5 id="technological-stack-for-the-techy-reader">Technological stack (for the techy reader)</h5>
+<h5 id="technological-stack-for-the-techy-reader">Technological stack (for the techy reader)<a href="#technological-stack-for-the-techy-reader" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h5>
 <p>We tried to keep the projects technological stack as simple as possible, so the transition between simple, homework Python programs, and a fullstack web application will be easier.</p>
 <p><strong>Flask</strong> was an easy pick as a web framework since getting familiar with it is as easy as it gets, but it still provides some nice, advanced functionality (with it&rsquo;s extensions). <strong>SQLAlchemy</strong> and <strong>SQLite3</strong> are also a perfect couple for the job as they are very easy to set up, and doesn&rsquo;t require much SQL knowledge (at least at the beginning). Since they didn&rsquo;t get a real frontend - HTML/CSS - training, <strong>Bootstrap</strong> provided a quick and easy solution (although, when they wanted to customize the look and feel of their application, they had to dig into HTML/CSS anyway). The full list:</p>
 <ul>
@@ -153,42 +119,43 @@
 <p>As funny (or obvious) as it may sound, getting them to use <strong>Git</strong> was by far the most challenging part of the project. I enjoy using Git very much, but I also remember how I struggled with it at the beginning. I&rsquo;m considering using a different VCS system for my next classes but I&rsquo;m not sure it will serve the students since Git is so ubiquitous these days.</p>
 <p><img src="http://i.imgur.com/0S7FoQf.png" alt="Kosher apps">
 [Kosher apps screenshot]</p>
-<h4 id="project-based-learning-is-far-more-meaningful">Project-based learning is far more meaningful!</h4>
+<h4 id="project-based-learning-is-far-more-meaningful">Project-based learning is far more meaningful!<a href="#project-based-learning-is-far-more-meaningful" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>Having the students pick out their own projects and lead them was a tremendous success. It completely changed the value they are receiving from the course. The teacher-led part taught them Python alright but didn&rsquo;t really got them excited about software development (beside a few) and the endless possibilities it entails. Most just wanted to get good grades. Now, I can practically see the excitement in most, if not all, of their eyes and I believe that that is the best grantee for a successful programming career.</p>
 <p>To finish off, I want to thank Eli Gur, the school technical lead/adviser, for giving me priceless advices and helping the students with their projects, and to my colleague <a href="https://twitter.com/nonZero">Udi Oron</a> who influenced me towards project-based learning and shared his experience with me.</p>
 
-      
-      <div class="related">
-
-<h3>Similar articles:</h3>
-<ul>
-	
-	<li><a href="/posts/ravtech-and-cnn/">Teaching Python to Haredim (and a CNN visit)</a></li>
-	
-	<li><a href="/posts/optimization-tale/">Optimization Tale</a></li>
-	
-	<li><a href="/posts/coroutines-in-python/">Coroutines in Python</a></li>
-	
-</ul>
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://noamelf.com/tags/python">python</a></span><span class="tag"><a href="https://noamelf.com/tags/teaching">teaching</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>1159 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2015-09-23 20:29 &#43;0300</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="next-post" href="https://noamelf.com/posts/pycubator-open-source-python-training/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>Pycubator - Open Source Python Training</span>
+			</a>
+			<a class="prev-post" href="https://noamelf.com/posts/optimization-tale/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>Optimization Tale</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
 </div>
-      
-    </div>
-    
-  </div>
-</section>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="https://noamelf.com">Noam Elfanbaum</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://noamelf.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
 
 
 
-<section class="section">
-  <div class="container has-text-centered">
-    <p></p>
-    
-      <p>Powered by <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/ribice/kiss">Kiss</a>.</p>
-    
-  </div>
-</section>
-
-
+	<script src="https://noamelf.com/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
 <script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
@@ -201,8 +168,6 @@ if (!doNotTrack) {
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
-
-
 </body>
-</html>
 
+</html>

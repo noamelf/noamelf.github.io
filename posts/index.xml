@@ -1,171 +1,787 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on Noam Elfanbaum</title>
-    <link>https://noamelf.com/posts/</link>
-    <description>Recent content in Posts on Noam Elfanbaum</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jul 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://noamelf.com/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Thoughts on High Output Management</title>
-      <link>https://noamelf.com/posts/high-output-management/</link>
-      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://noamelf.com/posts/high-output-management/</guid>
-      <description>High Output Management is a highly regarded management book in the tech industry, and so when I looked for reading materials to learn new management ideas, it was the first choice. Andrew Grove&amp;rsquo;s writing is very down to earth and practical and it opened up for me new ways to think about management. I&amp;rsquo;ll share the highlights with you here:
-  Variable Inspection  Later, when we examine managerial productivity, we’ll see that when a manager digs deeply into a specific activity under his jurisdiction, he’s applying the principle of variable inspection.</description>
-    </item>
-    
-    <item>
-      <title>Airflow Summit 2020 talk</title>
-      <link>https://noamelf.com/posts/airflow-summit-2020-talk/</link>
-      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://noamelf.com/posts/airflow-summit-2020-talk/</guid>
-      <description>Inline with the Corona pandemic, I gave my first online conference talk! The Airflow Summit 2020 was wonderfully organized and I must say I liked the ability to participate in a conference without leaving home. Giving a talk to a computer is a very different experience then giving it live, a lot less interaction with the audience but on the plus side, it&amp;rsquo;s much less stressful as well.
+	<channel>
+		<title>Posts on Noam Elfanbaum</title>
+		<link>https://noamelf.com/posts/</link>
+		<description>Recent content in Posts on Noam Elfanbaum</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en</language>
+		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+		<lastBuildDate>Thu, 30 Jul 2020 00:00:00 +0000</lastBuildDate>
+		<atom:link href="https://noamelf.com/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Thoughts on High Output Management</title>
+			<link>https://noamelf.com/posts/high-output-management/</link>
+			<pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+			
+			<guid>https://noamelf.com/posts/high-output-management/</guid>
+			<description>High Output Management is a highly regarded management book in the tech industry (well at least at Hacker News), and so when I looked for reading materials to learn new management ideas, it was the first choice. Andrew Grove&amp;rsquo;s writing is very down to earth and practical and it opened up for me new ways to think about management. I&amp;rsquo;ll share the highlights with you here:
+ Variable Inspection  Later, when we examine managerial productivity, we’ll see that when a manager digs deeply into a specific activity under his jurisdiction, he’s applying the principle of variable inspection.</description>
+			<content type="html"><![CDATA[<p><a href="https://www.amazon.com/dp/B015VACHOK/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1">High Output Management</a> is a highly regarded management book in the tech industry (well at least at Hacker News), and so when I looked for reading materials to learn new management ideas, it was the first choice. Andrew Grove&rsquo;s writing is very down to earth and practical and it opened up for me new ways to think about management. I&rsquo;ll share the highlights with you here:</p>
+<figure class="mid">
+    <img src="book-cover1.jpg"/> 
+</figure>
+
+<h3 id="variable-inspection">Variable Inspection</h3>
+<blockquote>
+<p>Later, when we examine managerial productivity, we’ll see that when a manager digs deeply into a specific activity under his jurisdiction, he’s applying the principle of variable inspection. If the manager examined everything his various subordinates did, he would be meddling, which for the most part would be a waste of his time.</p>
+</blockquote>
+<p>I found this very relevant to code reviews. I can&rsquo;t review all the code my team produces, I&rsquo;ll become a bottleneck if I try to do so. On the other hand, I can&rsquo;t just say: &ldquo;write good code&rdquo;, and go do my thing. Variable inspection can go a long way here, doing in-depth code reviews every once so often can help me understand what is going on in the codebase, and on the other, to promote my views and philosophy about coding.</p>
+<p>This is something I already did to an extent, but having read about it made it become a conscious part of my routine.</p>
+<h3 id="meetings-are-not-so-bad-after-all">Meetings are not so bad after all</h3>
+<blockquote>
+<p>Before you are horrified by how much time I spend in meetings, answer a question: which of the activities—information-gathering, information-giving, decision-making, nudging, and being a role model—could I have performed outside a meeting? The answer is practically none. Meetings provide an occasion for managerial activities. Getting together with others is not, of course, an activity—it is a medium.</p>
+</blockquote>
+<p>Developers hate meetings. I hated meetings. At the beginning of my managerial role, I tried to avoid those as much as possible (and on the way might have hurt some people&rsquo;s feelings). These days, I understand their importance, after most of what a manager does is exactly what Grove describes: &ldquo;information-gathering, information-giving, decision-making, nudging, and being a role model&rdquo;. These roles can be also taken care of in emails and such, but in truth, meetings are very effective at taken care of these aspects.</p>
+<p>The thing is, that people (mangers!) a lot of the time ignore the bad aspects of meetings, and are not considerate enough of other people&rsquo;s time. The gist for me is to have <strong>effective</strong> meetings and not just &ldquo;not that we are here, what should we talk about&rdquo; kind of meetings.</p>
+<h3 id="forecasting">Forecasting</h3>
+<blockquote>
+<p>From my experience a large portion of managerial work can be forecasted. Accordingly, forecasting those things you can and setting yourself up to do them is only common sense and an important way to minimize the feeling and the reality of fragmentation experienced in managerial work. Forecasting and planning your time around key events are literally like running an efficient factory.</p>
+</blockquote>
+<p>This. Managing can feel hectic at times. At the end of the day, the manager is responsible for the team&rsquo;s success, and if you need to be involved in every task for it to succeed, you&rsquo;ll get burned out pretty quickly. I think that many managers are in a constant on-call mode, everything needs their attention.</p>
+<p>What I liked about Grove&rsquo;s approach is that he treats management like another engineering practice - in this case running a production line in a factory. The idea is to design a management system that is predictable and efficient. Again, this is something I had a hunch about myself previous to reading the book, see my <a href="/posts/meeting-protocols">meeting protocols</a> blog post, but with Grove&rsquo;s support, I started to view my role as the person in charge of setting the optimal environment for the team to function and less as the all-mighty manager that is responsible for the success of every task. Success will come when work is organized correctly. And so, in the team meetings, when we discuss what each person is doing this week, I present my work pipeline optimization tasks.</p>
+<blockquote>
+<p>Because manufacturing people trust their indicators, they won’t allow material to begin its journey through the factory if they think it is already operating at capacity. If they did, material might go halfway through and back up behind a bottleneck. Instead, factory managers say “no” at the outset and keep the start level from overloading the system&hellip; It is important to say “no” earlier rather than later because we’ve learned that to wait until something reaches a higher value stage and then abort due to lack of capacity means losing more money and time&hellip; There is an optimum degree of loading, with enough slack built in so that one unanticipated phone call will not ruin your schedule for the rest of the day. You need some slack.</p>
+</blockquote>
+<p>What follows is that the way to reach optimal performance is to keep the system at capacity and to include some slack in it to allow for agility. Failing to do so will eventually create bottlenecks that will be much more expensive than the gain that is possible by crumping more work in.</p>
+<p>This insight gets lost a lot of time in our daily work. Managers feel the pressure to excel and deliver, but are ignoring the price of congestion in the system. Hence once surprises arrive (and they will), havoc starts. There is however the other type of mangers, that prefer to have <em>a lot</em> of slack since they don&rsquo;t want to commit and fail. Estimating is an art.</p>
+<h3 id="task-relevant-maturity">Task-relevant maturity</h3>
+<blockquote>
+<p>The fundamental variable that determines the effective management style is the task-relevant maturity of the subordinate.</p>
+</blockquote>
+<p>A repeating question in my daily routine is to determine how involved do I need to be in ongoing tasks. Too involved - micromanaging, too removed - can be reckless. The task-relevant maturity parameter is a good benchmark to measure against and to communicate your choices. I felt Grove was writing about me when he mentioned the manager&rsquo;s inclination to avoid micro-managing:</p>
+<blockquote>
+<p>That mode is one that we don’t think an enlightened manager should use. As a result, we often don’t take it up until it is too late and events overwhelm us.</p>
+</blockquote>
+<p>Well, that happened to me more than once! Of course, I want to be an enlightened manager and give space, so moving the discussion from the emotional perspective into the practical one, helps me a lot in better decision making.</p>
+<hr>
+<p>To write this post, I went through my highlights from the book, and actually, there are many more good points Grove makes. The book is full of practical management wisdom and so I can only thank Grove for taking the time to write it.</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Airflow Summit 2020 talk</title>
+			<link>https://noamelf.com/posts/airflow-summit-2020-talk/</link>
+			<pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+			
+			<guid>https://noamelf.com/posts/airflow-summit-2020-talk/</guid>
+			<description>Inline with the Corona pandemic, I gave my first online conference talk! The Airflow Summit 2020 was wonderfully organized and I must say I liked the ability to participate in a conference without leaving home. Giving a talk to a computer is a very different experience then giving it live, a lot less interaction with the audience but on the plus side, it&amp;rsquo;s much less stressful as well.
 At Bluevine we use Airflow to drive our ML platform.</description>
-    </item>
-    
-    <item>
-      <title>Flexible work schedules - not just an employee perk</title>
-      <link>https://noamelf.com/posts/flexible-work-schedule/</link>
-      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://noamelf.com/posts/flexible-work-schedule/</guid>
-      <description>For many of us, programming is a hobby as well as a job. But, I can say that for most of my professional career, as much as I enjoy programming, I didn&amp;rsquo;t really enjoy having a job as a programmer. That&amp;rsquo;s a shame because you would expect that if you do something that you love, you&amp;rsquo;ll also enjoy doing it for a living, but somehow it wasn&amp;rsquo;t that great.</description>
-    </item>
-    
-    <item>
-      <title>My Python setup for 2020</title>
-      <link>https://noamelf.com/posts/my-python-setup-for-2020/</link>
-      <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://noamelf.com/posts/my-python-setup-for-2020/</guid>
-      <description>My Python setup used to change a lot, as I would find ad-hoc solutions for my needs. These days I&amp;rsquo;ve settled on a Python setup that satisfies pretty much all of my different use cases and is easy to use. It is composed of these tools:
+			<content type="html"><![CDATA[<p>Inline with the Corona pandemic, I gave my first online conference talk! The Airflow Summit 2020 was wonderfully organized and I must say I liked the ability to participate in a conference without leaving home. Giving a talk to a computer is a very different experience then giving it live, a lot less interaction with the audience but on the plus side, it&rsquo;s much less stressful as well.</p>
+<p>At Bluevine we use Airflow to drive our ML platform. In the talk, I presented the challenges and gains we had at transitioning from a single server running Python scripts with cron to a full blown Airflow setup. Some of the points that I&rsquo;ve covered are:</p>
+<ul>
+<li>Supporting multiple Python versions</li>
+<li>Event driven DAGs</li>
+<li>Airflow Performance issues and how we circumvented them</li>
+<li>Building Airflow plugins to enhance observability</li>
+<li>Monitoring Airflow using Grafana</li>
+<li>Patching Airflow scheduler</li>
+</ul>
+<p>Here are the slides:</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/bqoKn6z6ci9fcX" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Flexible work schedules - not just an employee perk</title>
+			<link>https://noamelf.com/posts/flexible-work-schedule/</link>
+			<pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
+			
+			<guid>https://noamelf.com/posts/flexible-work-schedule/</guid>
+			<description>For many of us, programming is a hobby as well as a job. But, I can say that for most of my professional career, as much as I enjoy programming, I didn&amp;rsquo;t really enjoy having a job as a programmer. That&amp;rsquo;s a shame because you would expect that if you do something that you love, you&amp;rsquo;ll also enjoy doing it for a living, but somehow it wasn&amp;rsquo;t that great.</description>
+			<content type="html"><![CDATA[<figure>
+    <img src="work-harder.jpg"/> 
+</figure>
+
+<p>For many of us, programming is a hobby as well as a job. But, I can say that for most of my professional career, as much as I enjoy programming, I didn&rsquo;t really enjoy having a job as a programmer. That&rsquo;s a shame because you would expect that if you do something that you love, you&rsquo;ll also enjoy doing it for a living, but somehow it wasn&rsquo;t that great. This is not to say I&rsquo;m not grateful for earning a great living and working in a mostly interesting field, but that work can also be really fun! There are a few reasons I can think of why is that, but the main one I believe is that in many jobs, the playfulness and self-expression aspects are lost in a sea of seriousness, procedures, and politics.</p>
+<p>For quite some time I&rsquo;ve been looking for my way around this issue. It sucks to &ldquo;have&rdquo; to go to work, and not &ldquo;want&rdquo; to. Since this was the case for me many times, I tried different alternatives: freelancing, teaching programming and working 4-days weeks while doing other stuff in my day off. For this last 2 years, as my wife and I planned to start a family, I realized that I prefer to take a full-time job, and took an opportunity that came up to lead a dev team.</p>
+<p>Being in a team lead position allows me for greater influence on the day-to-day team and work dynamics, and presented an opportunity to try and manifest the team/environment that I wished I had as an individual contributor. You can have great theories about team building, work environment, etc. but it won&rsquo;t matter unless you &ldquo;step in the arena&rdquo;, take part in management and put your beliefs to the test of reality. The following lesson is that <strong>influence is earned</strong>, meaning my team needs to perform well for my supervisors and the organization to accept my viewpoints.</p>
+<p>I have a lot to say about what a team/company can do to encourage a productive and fun workplace and I hope to write a series of blog posts about it, but for now, I&rsquo;d like to focus on <strong>flexible work schedules as an enabler for self-expression</strong>. Why are flexible work schedules related to self-expression you ask? Well, different people have different lifestyles and the 9 to 5 workday isn&rsquo;t a good fit for all, once we appreciate that, we can encourage people to &ldquo;express&rdquo; their uniqueness in a work schedule that works well for them. If this sounds a bit abstract, the following paragraphs share a few examples.</p>
+<h2 id="my-flexible-work-schedule">My flexible work schedule</h2>
+<p>Working 8-9 straight hours in the office can sometimes be ineffective for me. Some of the days I have low attention spans, or maybe I&rsquo;m tired and stressed from a long week. When feeling this way, I try to go have an exercise session in between meetings, or maybe go home early, and then pick up some work back at home when I feel more refreshed. Another prevalent scenario is having to do errands in the middle of the day.</p>
+<p>I used to struggle with having doing special adjustments to my working day since it&rsquo;s often frowned upon. Now, I feel freer to peruse this type of work-life balance, mostly since I take a more meaningful part in setting the work norms. I wouldn&rsquo;t say though that I feel free to do whatever I want schedule-wise, appearances are important, so I try to balance it out.</p>
+<h2 id="different-people-have-different-preferences">Different people have different preferences</h2>
+<p>Members of my team also have very different lifestyles, one has hobbies he likes to peruse in the day time, and he needs to arrive late to do so and then he makes up for it by staying late or working from home in the early morning. Another team member&rsquo;s schedule resembles a swiss clock: always arriving and leaving at the same time, but he also prefers working a day from home every once so often. I try to encourage each team member to go and do his thing, but let him know that it is expected of him to put in the same number of hours as everyone.</p>
+<h2 id="why-should-time-even-be-measured">Why should time even be measured?</h2>
+<p>Since our team&rsquo;s success isn&rsquo;t measured by the number of hours put in, but by the impact we make, why should time be emphasized at all? There are 2 main reasons I can think of:</p>
+<ol>
+<li>That&rsquo;s part of the work contract - we get paid to work a certain amount of hours a day.</li>
+<li>The tempo of developing software is not linear - sometimes it goes faster and sometimes slower than expected - it&rsquo;s good to have another signal of the work being put in, which is time.</li>
+</ol>
+<p>Since it&rsquo;s more difficult to measure impact made than hours worked, the first is slightly neglected while the latter is focused on by some managers. That can be a reasonable tradeoff since measuring time is simpler, but you lose a lot while doing so. Focusing mainly on time is probably the last resort for bad managers who can&rsquo;t find other useful frameworks. I&rsquo;d like to see how remote companies go about impact measurement, they must have advanced ways to so since they are very limited in measuring hours.</p>
+<h2 id="that-trust-thing">That trust thing</h2>
+<p>It&rsquo;s a thin line to walk, either being too permissive about times or too strict. As someone who wants to allow flexible schedules, it is tempting to just ignore hours put in all together, or look away when someone seems not to put in the time like the rest of the team. As a manager, I think that emphasizing the number of hours that is expected from employees to work, while also making clear that you respect and encourage people&rsquo;s unique schedules is the way to go.</p>
+<p>Following up on that, it&rsquo;s important not to let resentment pile up when someone seems to put in less than expected and have an <strong>honest conversation</strong> about it. This conversation doesn&rsquo;t have to be a finger-pointing type of discussion. Once you let the person know you genuinely care for his work-life balance, but you sense that something is not working out time obligations wise - it can open up a place for understanding each other intentions better. Maybe it&rsquo;s just a misunderstanding or perhaps there is some truth in that, either way, it&rsquo;s possible to find a better way forward from that point: better communications, more actual time in the office, etc.</p>
+<h2 id="engaged-developers-are-much-more-effective">Engaged developers are much more effective!</h2>
+<p>From my experience, team members who feel they are being respected and valued by their managers, are much more engaged and deliberative in their roles, and respecting their unique schedules is a part of that. Being the owners of their time propagates a general feeling of ownership and responsibility.</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>My Python setup for 2020</title>
+			<link>https://noamelf.com/posts/my-python-setup-for-2020/</link>
+			<pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
+			
+			<guid>https://noamelf.com/posts/my-python-setup-for-2020/</guid>
+			<description>My Python setup used to change a lot, as I would find ad-hoc solutions for my needs. These days I&amp;rsquo;ve settled on a Python setup that satisfies pretty much all of my different use cases and is easy to use. It is composed of these tools:
 Pyenv for Python versions Pyenv is nice in the sense that it makes it a breeze to try and use new Python versions that don&amp;rsquo;t come bundled with your OS.</description>
-    </item>
-    
-    <item>
-      <title>Hacking team communications</title>
-      <link>https://noamelf.com/posts/hacking-team-communications/</link>
-      <pubDate>Fri, 13 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://noamelf.com/posts/hacking-team-communications/</guid>
-      <description>One of the daunting things in managing a team is being up to date with what is going on. On one hand, it&amp;rsquo;s crucial to be up to speed with the team&amp;rsquo;s progress, but on the other, I hate continuously asking about status or dreadful standup meetings. I guess being an individual contributor up until now, I remember not enjoying this type of management practices. It took me a while to figure out a technique that works well for my needs:</description>
-    </item>
-    
-    <item>
-      <title>Meeting protocols</title>
-      <link>https://noamelf.com/posts/meeting-protocols/</link>
-      <pubDate>Sat, 10 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://noamelf.com/posts/meeting-protocols/</guid>
-      <description>Engineering teams have a few types of meetings that repeat themselves: weekly, 1:1s, design review, etc. I found that for each type of these meetings having a concrete protocol, firm recurring schedule (where applicable), meeting record, and the meeting doc shared in advance between the members have great benefits, mostly:
+			<content type="html"><![CDATA[<p>My Python setup used to change a lot, as I would find ad-hoc solutions for my needs. These days I&rsquo;ve settled on a Python setup that satisfies pretty much all of my different use cases and is easy to use. It is composed of these tools:</p>
+<h3 id="pyenv-for-python-versions">Pyenv for Python versions</h3>
+<p><a href="https://github.com/pyenv/pyenv">Pyenv</a> is nice in the sense that it makes it a breeze to try and use new Python versions that don&rsquo;t come bundled with your OS. e.g. try out the <a href="https://www.python.org/dev/peps/pep-0572/">Walrus operator</a> and Python 3.8:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pyenv install 3.8.0
+pyenv shell 3.8.0
+</code></pre></div><p>And you are ready to go.</p>
+<h3 id="pyenv-virtualenv-for-virtual-environments">Pyenv-virtualenv for virtual environments</h3>
+<p>Now that you are using Pyenv, you create virtual environments with different Python interpreters for your projects. Of course you could use Python&rsquo;s venv module, and that is fine, but with Pyenv-virtualenv you get a clear interface and a <a href="https://virtualenvwrapper.readthedocs.io/en/latest/">Virtualenvwrapper</a> like user experience:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pyenv virtualenv 3.8.0 my-project
+</code></pre></div><h3 id="pipx-for-python-applications">Pipx for Python applications</h3>
+<p>It&rsquo;s a bad practice to install Python packages in your system&rsquo;s Python environment since it can mess it up: different packages installed can override one another and make system utilities dysfunctional. On the other hand, it&rsquo;s pretty annoying to create a virtual environment for each new program you want to install and then add it to <code>PATH</code>. <a href="https://pipxproject.github.io/pipx/">Pipx</a> solves that problem by creating the virtual environment for you and symlinking it to your local bin path. So to install black, you just write:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ pipx install black
+...
+$ which black
+/home/noam/.local/bin/black
+</code></pre></div><h3 id="poetry-is-the-new-pipenv">Poetry is the new pipenv</h3>
+<p><a href="https://python-poetry.org/">Poetry</a> and <a href="https://pipenv-fork.readthedocs.io/en/latest/">Pipenv</a> are similar projects that have a joint appeal - improve Python&rsquo;s packaging and dependency management. Pipenv was the pioneering project, it made a big splash when it came out about 2.5 years ago and I was eager to try it out. While using it, I found that many times it was slow and buggy (this was up to a year ago so things might have changed since). Poetry came out about a year later and offers pretty much the same features, but in contrast with Pipenv, it worked nicely for me from the get-go. There are many nice features to it, but I&rsquo;ll just highlight a few that I like especially:</p>
+<ul>
+<li><strong>Dependency resolver</strong> - Poetry comes with an elaborative and relatively quick dependency resolver . It shows which packages are at conflict and why, so it&rsquo;s easy to understand and fix (if possible). This is a pretty big deal when adding requirements to an existing project. Doing so with pip and a simple <code>requirements.txt</code> file, can cause the application to break at run time, while using poetry shows you the conflict at the time you are adding it. Another nice related feature is the ability to print the dependency graph:</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ poetry show --tree
+pandas 0.25.3 Powerful data structures <span class="k">for</span> data analysis, <span class="nb">time</span> series, and statistics
+├── numpy &gt;<span class="o">=</span>1.13.3
+├── python-dateutil &gt;<span class="o">=</span>2.6.1
+│ └── six &gt;<span class="o">=</span>1.5
+└── pytz &gt;<span class="o">=</span>2017.2
+...
+</code></pre></div><ul>
+<li>
+<p><strong>pyproject.toml</strong> - Poetry replaces the renowned <code>setup.py</code> file with a <code>pyproject.toml</code> file that is pretty simple to create and understand (you can see an <a href="https://github.com/noamelf/toshl-fixer/blob/master/pyproject.toml">example</a> in a project of mine).</p>
+</li>
+<li>
+<p><strong>poetry.lock</strong> - The <code>poetry.lock</code> file is such a great addition since it &ldquo;snapshots&rdquo; the environment and allows poetry to reproduce the exact packages in each new installation without writing them explicitly in the <code>pyproject.toml</code> file. This means that the project first-hand requirement remains very clear and separate from the verbose installation requirements (unlike using a regular <code>requirements.txt</code> file).</p>
+</li>
+</ul>
+<p><strong>Tip!</strong> To use Poetry together with Pyenv, remember to activate the Python version specified in the <code>pyproject.toml</code> file before running poetry. There are 2 ways to do so:</p>
+<ol>
+<li>Set the default Python interpreter for that project directory with <code>pyenv local 3.8.0</code>.</li>
+<li>Run <code>pyenv shell 3.8.0</code> before each time you want to use Poetry.</li>
+</ol>
+<h3 id="good-old-pycharm-for-full-blown-development">Good old Pycharm for full-blown development</h3>
+<p><a href="https://www.jetbrains.com/pycharm/">Pycharm</a> is not the fastest or best-looking editor around (I&rsquo;m looking at you vscode), but it&rsquo;s a great workhorse for full-blown Python development. For quick scripts, I might just use vim or vscode, but for bigger projects, Pycharm&rsquo;s Python support is still the best around IMHO.</p>
+<hr>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Hacking team communications</title>
+			<link>https://noamelf.com/posts/hacking-team-communications/</link>
+			<pubDate>Fri, 13 Dec 2019 00:00:00 +0000</pubDate>
+			
+			<guid>https://noamelf.com/posts/hacking-team-communications/</guid>
+			<description>One of the daunting things in managing a team is being up to date with what is going on. On one hand, it&amp;rsquo;s crucial to be up to speed with the team&amp;rsquo;s progress, but on the other, I hate continuously asking about status or dreadful standup meetings. I guess being an individual contributor up until now, I remember not enjoying this type of management practices. It took me a while to figure out a technique that works well for my needs:</description>
+			<content type="html"><![CDATA[<p>One of the daunting things in managing a team is being up to date with what is going on. On one hand, it&rsquo;s crucial to be up to speed with the team&rsquo;s progress, but on the other, I hate continuously asking about status or dreadful standup meetings. I guess being an individual contributor up until now, I remember not enjoying this type of management practices. It took me a while to figure out a technique that works well for my needs:</p>
+<ol>
+<li>Smart usage of communication channels</li>
+<li>Forming team communication habits</li>
+</ol>
+<figure>
+    <img src="post-it-notes.jpg"
+         alt="Communication can become quite messy"/> <figcaption>
+            <p>Communication can become quite messy</p>
+        </figcaption>
+</figure>
+
+<hr>
+<h2 id="smart-usage-of-communication-channels">Smart usage of communication channels</h2>
+<p>The key here is utilizing the existing communication channels to the maximum without drowning in information. It can be accomplished by setting up smart notification and filters. If this sound too generic, here is the actual data sources and filtering mechanisms:</p>
+<h3 id="emails">Emails</h3>
+<p>In short, filters and inbox zero. Filters are mandatory to avoid drowning in a sea of irrelevant information. As much as it sounds anti-social, I&rsquo;m not really interested in new recruits across the company, and error emails of other teams aren&rsquo;t my cup of tea either. The simplest way to ignore these is to have accurate filters on recurring and not relevant emails.</p>
+<p>Once the filters are set up, I&rsquo;m using the <a href="https://whatis.techtarget.com/definition/inbox-zero">inbox zero</a> methodology, so that anything that needs addressing is being addressed at that moment or snoozed to when it needs to be addressed. If it&rsquo;s an ongoing thing, I turn it into a ticket.</p>
+<h3 id="tickets">Tickets</h3>
+<p>We use Trello where I work. Set up as a Kanban board, it allows to have multiple lists that represent the status of stuff, e.g. backlog, in progress, etc. The tickets are always sorted by priority in their list where a key requirement is to have the minimum viable number of tickets in each list. Our team has a board that holds all the work that we do, and if there are complex sub-projects that need their own board, the main board points to the sub-project board.</p>
+<p>Having a single board, allows me to understand at a glance what are we working on at the moment and in what priorities. Since Trello allows to subscribe to any action on the board, I get a notification when someone updates his progress. I find it more convenient to use Trello&rsquo;s in-app notification instead of receiving emails since it allows to respond more easily. One of the challenges is forming team communication habits, as I&rsquo;ll discuss later on, and one is less likely to update his tickets without getting any feedback that someone is paying attention. Hence, a simple &ldquo;+1&rdquo; emoji can go a long way.</p>
+<p>Each ticket gets assigned the relevant Pull Requests so that we can easily see the code that is being developed, Trello integrates nicely and shows the PR status (open/closed/merged) and the CI status (fails/success) on the ticket.</p>
+<h3 id="pull-requests">Pull Requests</h3>
+<p>Like with Trello, Github allows to subscribe to all activities on a certain repository, this is very convenient since I can be aware of what is going on in our code base, without being dependent on voluntary updates. If something is not interesting it&rsquo;s possible to unsubscribe specifically from it hence decrease the notifications load. Also, on repos that are not directly developed by us, I subscribe just to PRs of interest to me. Here also, I canceled the email notifications and use Github&rsquo;s in-app notifications, since it adds a few nice capabilities: marking all as read, muting and you can use the excellent <a href="https://github.com/tanmayrajani/notifications-preview-github">notifications-preview-github</a> to have quicker access to updates.</p>
+<p>One thing I can&rsquo;t stress enough is having team members open PRs as soon as possible. This helps to avoid so many headaches later on. Some devs are a little put off by this since it means coworkers will review (and judge!) their work before it&rsquo;s fully done, but now with Github new &ldquo;Draft PR&rdquo; feature, it&rsquo;s easier to explain to them that others know that this is not the final version. Making PRs early communicates the direction and the status of the project, it allows to give feedback before too much work has been invested. This, in turn, reduces conflicts since the dev getting the feedback is not busy defending the hours (if not days!) he spent.</p>
+<h3 id="meetings">Meetings</h3>
+<p>Meetings are a very important source for updates and planning, but too many of those kills productivity. Since so much of the manager&rsquo;s day is invested in meetings, I try to make them shorter and more effective. A few ideas I use:</p>
+<ul>
+<li>Start with emails, then move to meetings - try to avoid setting meetings where an email can do the same job. If things are unclear or there is a conflict or a project is just stuck for no apparent reason, it&rsquo;s time to move to a meeting since these issues are easier to resolve that way.</li>
+<li>Ask for meetings agenda - helps to make the meeting more productive and shows if the meeting is really needed. e.g. &ldquo;Discuss latency&rdquo; meeting title doesn&rsquo;t say much.</li>
+<li>Ask to shorten meetings - a lot of times co-workers choose 1-hour spots for a meeting, this is a lot! They count on cutting it short if they don&rsquo;t need all the time. I much rather have 30m meetings and scheduling another one if needed. Asking for shortening the meeting becomes pretty easy and not awkward with Google calender &ldquo;suggest new time&rdquo; feature. You just purpose less time and hope they accept it.</li>
+</ul>
+<hr>
+<h2 id="forming-team-communication-habits">Forming team communication habits</h2>
+<figure>
+    <img src="sheep.jpg"
+         alt="Getting cooperation can be difficult"/> <figcaption>
+            <p>Getting cooperation can be difficult</p>
+        </figcaption>
+</figure>
+
+<p>Now all these ideas are nice and dandy, but if your team doesn&rsquo;t cooperate with you, it will never work. From my experience, a lack of cooperation is mostly a matter of changing habits. It&rsquo;s pretty easy to start working on something without moving the ticket to &ldquo;in progress&rdquo;.</p>
+<p>What I try to do is to convince the individuals in the team, why communication is important, and how if they don&rsquo;t answer a mail or move a ticket or open draft PRs, it creates more communication load later on. I also let them know that I understand that programming is not something that can be interrupted every few minutes and that as far as I&rsquo;m considered, checking their communication channels twice a day is enough.</p>
+<p>Something I encounter often is that when team members don&rsquo;t have anything meaningful to reply to a message they receive, they just, well, don&rsquo;t reply. This makes sense, but it leaves the other side hanging. What I encourage them to do, is to reply &ldquo;still in progress&rdquo; or &ldquo;will get back to you tomorrow on this&rdquo;, so that the other person knows that things are in check.</p>
+<p>Most of the times, just explaining what I expect communication-wise, doesn&rsquo;t cut it since it requires a change of habits, so after the explanation part, comes the reminding part. For example - I ask a question on a ticket, once I don&rsquo;t get a response within say 4 hours, I ask that person: did you check Trello recently? This may some patronizing, but when doing it in good spirit, people tend to take it in a good way and make an effort to be more aware. In my current team, this works out pretty nicely and I can see a real difference.</p>
+<p>I find that while having good communication skills may not fit well with the image of a great developer (I&rsquo;m looking at you Linus ☺️), it can provide him/her with the freedom and context needed to do great work. And as for engineering leads, this is our main role, to make sure we set up the environment for great work to happen.</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Meeting protocols</title>
+			<link>https://noamelf.com/posts/meeting-protocols/</link>
+			<pubDate>Sat, 10 Aug 2019 00:00:00 +0000</pubDate>
+			
+			<guid>https://noamelf.com/posts/meeting-protocols/</guid>
+			<description>Engineering teams have a few types of meetings that repeat themselves: weekly, 1:1s, design review, etc. I found that for each type of these meetings having a concrete protocol, firm recurring schedule (where applicable), meeting record, and the meeting doc shared in advance between the members have great benefits, mostly:
  Individual expression - team members know they&amp;rsquo;ll get an appropriate stage for their ideas/complaints/feelings so they can express them to me and the other team members in a (hopefully) proactive way.</description>
-    </item>
-    
-    <item>
-      <title>Designing Pythonic APIs</title>
-      <link>https://noamelf.com/posts/designing-pythonic-apis/</link>
-      <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://noamelf.com/posts/designing-pythonic-apis/</guid>
-      <description>Learning from Kenneth Reitz&amp;rsquo;s Requests
+			<content type="html"><![CDATA[<p>Engineering teams have a few types of meetings that repeat themselves: weekly, 1:1s, design review, etc. I found that for each type of these meetings having a concrete protocol, firm recurring schedule (where applicable), meeting record, and the meeting doc shared in advance between the members have great benefits, mostly:</p>
+<ul>
+<li>Individual expression - team members know they&rsquo;ll get an appropriate stage for their ideas/complaints/feelings so they can express them to me and the other team members in a (hopefully) proactive way.</li>
+<li>Higher participation - the protocol and schedule are known in advance, so members have time to prepare and articulate what they want to say.</li>
+<li>Taking turns - since everyone is used to the way the meeting works, it&rsquo;s possible to delegate the job of running the meetings between different team members - making it more a cooperative effort then the team lead role.</li>
+<li>Visibility of decision-making process - running the team and making the decisions is not being made in the head of the team lead, but is a visible, recorded process.</li>
+</ul>
+<p><img src="/img/pixel-cells-3947913_640.png" alt="Meeting protocols"></p>
+<blockquote>
+<p>Image by <a href="https://pixabay.com/users/manfredsteger-1848497/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3947913">Manfred Steger</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3947913">Pixabay</a></p>
+</blockquote>
+<p>Below are my teams&rsquo; meeting protocols:</p>
+<h2 id="team-meetings-weekly">Team meetings (weekly)</h2>
+<h3 id="meeting-preparation">Meeting preparation</h3>
+<p>Each team member is requested to prepare for the meeting:</p>
+<ul>
+<li>Tickets grooming
+<ul>
+<li>Review last week progress and move tasks to their respective status columns.</li>
+<li>Update ticket descriptions/PRs etc.</li>
+<li>Break big tasks into smaller ones that require up to 2 days of effort.</li>
+</ul>
+</li>
+<li>Plans for next week - decide what you plan to work on next week and creates the appropriate tickets for it.</li>
+<li>Feedback - write up stuff you want to talk about in the meeting in the meeting document.</li>
+</ul>
+<h3 id="in-the-meeting">In the meeting</h3>
+<ul>
+<li>Feedback and updates
+<ul>
+<li>Review this week content team members brought up (myself included).</li>
+<li>Company/group/team updates.</li>
+</ul>
+</li>
+<li>Review tickets - we review the tickets in the done column and each team member is encouraged to talk about the work been done. From saying a few words to a full-on demo.</li>
+<li>Milestones and upcoming work - see if we met the milestones we setup earlier, review the upcoming ones, and say what you want to work on.</li>
+</ul>
+<h2 id="design-reviews">Design reviews</h2>
+<ul>
+<li>Mission statement - what problem do we want to solve (or feature to add)? why do we need to solve it?</li>
+<li>High-level overview - what are the components that compose the solution, how do they interact?</li>
+<li>Drill down - depending on the project, specify how the components work internally.</li>
+<li>Milestones - how is the project development broken down? what are the estimated delivery dates?</li>
+<li>Risk management - what can go wrong (building on previous experience)? how can the risk be mitigated?</li>
+<li>Feedback - time for the participants to offer their views.</li>
+</ul>
+<h2 id="11s-every-3-weeks">1:1s (every 3 weeks)</h2>
+<ul>
+<li>Lookback - how the last 3 weeks have been for you?</li>
+<li>Colleague feedback - is there something I (the team lead) can do better? Is there anything you want to ask from me?</li>
+<li>Manager feedback - can you can do more of this and less of that?</li>
+<li>Summary - any action items?</li>
+</ul>
+<p>That&rsquo;s what I got so far, as I create more of these I&rsquo;ll add them to this list.</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Designing Pythonic APIs</title>
+			<link>https://noamelf.com/posts/designing-pythonic-apis/</link>
+			<pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
+			
+			<guid>https://noamelf.com/posts/designing-pythonic-apis/</guid>
+			<description>Learning from Kenneth Reitz&amp;rsquo;s Requests
 When writing a package (library), providing it with a good API, is almost as important as its functionality itself (well, at least if you want some adoption), but what makes a good API? In this post, I&amp;rsquo;ll try to provide some insights on that question by comparing Requests and Urllib (part of Python&amp;rsquo;s standard library) in a few typical HTTP usage scenarios and see why Requests has become the de facto standard among Python users.</description>
-    </item>
-    
-    <item>
-      <title>API and Microservices Management with Kong</title>
-      <link>https://noamelf.com/posts/api-and-microservices-management-with-kong/</link>
-      <pubDate>Fri, 18 Mar 2016 21:19:00 +0000</pubDate>
-      
-      <guid>https://noamelf.com/posts/api-and-microservices-management-with-kong/</guid>
-      <description>Hi all, At the last PyWebIL meetup I took the stand and gave a talk about one a very interesting open-source project - Kong. Kong is an API and microservices management layer that serves as a reverse proxy to your API&amp;rsquo;s while taking care of generic actions such as rate-limiting, authentication, monitoring and much more. One of it&amp;rsquo;s key benefits is that it is very plugable, hence it is easy to add your own custom logic (I actually enhanced a plugin to fit my needs).</description>
-    </item>
-    
-    <item>
-      <title>Pycubator - Open Source Python Training</title>
-      <link>https://noamelf.com/posts/pycubator-open-source-python-training/</link>
-      <pubDate>Sat, 12 Dec 2015 17:35:04 +0000</pubDate>
-      
-      <guid>https://noamelf.com/posts/pycubator-open-source-python-training/</guid>
-      <description>Preparing to teach my first Python class, I searched the web for teaching materials I can use and came up almost empty handed. There is a great variety of Python open books like Dive into Python and How to Think Like a Computer Scientist but they are all for autodidactic purposes and not for classroom teaching.
+			<content type="html"><![CDATA[<p><em>Learning from Kenneth Reitz&rsquo;s <a href="http://docs.python-requests.org/en/master/">Requests</a></em></p>
+<p>When writing a package (library), providing it with a good API, is almost as important as its
+functionality itself (well, at least if you want some adoption), but what makes a good API? In this post, I&rsquo;ll try to provide some insights on that question by comparing <em>Requests</em> and <em>Urllib</em> (part of Python&rsquo;s standard library) in a few typical HTTP usage scenarios and see why <em>Requests</em> has become the de facto standard among Python users.</p>
+<p>* Throughout our investigation we&rsquo;ll be using <strong>Python 3.5</strong> and <strong>Requests 2.10.0</strong>.</p>
+<p>** This blog post is an adaptation of a talk I gave at our local Python meetup - <a href="http://www.meetup.com/PyWeb-IL/events/232724175/">PywebIL</a> - last week. You can find the slides <a href="/designing-pythonic-apis-talk">here</a>.</p>
+<h2 id="requests-vs-urllib"><em>Requests</em> vs. <em>Urllib</em></h2>
+<h3 id="use-case-1-sending-a-get-request">Use case #1: sending a GET request</h3>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">urllib.request</span>
+<span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://python.org/&#39;</span><span class="p">)</span>
+</code></pre></div><pre><code>&lt;http.client.HTTPResponse at 0x7fdb08b1bba8&gt;
+</code></pre>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;http://python.org/&#39;</span><span class="p">)</span>
+</code></pre></div><pre><code>&lt;Response [200]&gt;
+</code></pre>
+<h4 id="explicit-api-endpoints-is-better-than-implicit">Explicit (API endpoints) is better than implicit</h4>
+<ul>
+<li>Notice how requests is more concise (hence, clear) about what it will do.</li>
+<li><em>Urllib</em> is getting told implicitly to send a GET request since it didn&rsquo;t receive a <code>data</code> argument</li>
+<li><em>Requests</em> function name explicitly mark what it will do.</li>
+</ul>
+<h4 id="helpful-object-representation">Helpful object representation</h4>
+<ul>
+<li><em>Requests</em> returns a helpful string with the request status code when examining it (this done by implementing the <code>__repr__()</code> method).</li>
+<li><em>Urllib</em> just returns the default (unclear) object representation</li>
+</ul>
+<h4 id="code-snippet">Code snippet</h4>
+<p>(<a href="https://github.com/kennethreitz/requests/blob/v2.10.0/requests/api.py">requests/api.py</a>):</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">request</span><span class="p">(</span><span class="n">method</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">with</span> <span class="n">sessions</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span> <span class="k">as</span> <span class="n">session</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">session</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="n">method</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="n">kwargs</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="s1">&#39;allow_redirects&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="s1">&#39;get&#39;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="s1">&#39;post&#39;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">json</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div><ul>
+<li>All the HTTP verbs follow a similar flow prior to sending, hence there is a the <code>request()</code> main flow function.</li>
+<li>Implementing a &ldquo;helper function&rdquo; for each verb that calls <code>request()</code>, enables the explicitness we are looking for.</li>
+</ul>
+<h3 id="use-case-2-getting-a-request-status-code">Use case #2: getting a request status code</h3>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">urllib.request</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://python.org/&#39;</span><span class="p">)</span>
+<span class="n">r</span><span class="o">.</span><span class="n">getcode</span><span class="p">()</span>
+</code></pre></div><pre><code>200
+</code></pre>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;http://python.org/&#39;</span><span class="p">)</span>
+<span class="n">r</span><span class="o">.</span><span class="n">status_code</span>
+</code></pre></div><pre><code>200
+</code></pre>
+<h4 id="no-need-for-getters-and-setters">No need for getters and setters</h4>
+<ul>
+<li>Accessing an object property as an actual property (and not a method call) makes the code a little clearer.</li>
+<li>If you come from other OOP language (hmmm&hellip; Java), you might be tempted to use getters and setters to allow future changes to the object&rsquo;s properties. No need for that in Python, just use the <a href="http://www.programiz.com/python-programming/property"><code>@property</code></a> decorator.</li>
+</ul>
+<h4 id="code-snippet-1">Code snippet</h4>
+<p><a href="https://github.com/python/cpython/blob/3.5/Lib/http/client.py#L737">http/client.py</a>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">HTTPResponse</span><span class="p">(</span><span class="n">io</span><span class="o">.</span><span class="n">BufferedIOBase</span><span class="p">):</span>
+
+    <span class="c1"># ...</span>
+
+    <span class="k">def</span> <span class="nf">getcode</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">status</span>
+</code></pre></div><ul>
+<li><em>Urllib</em> (or actually <em>http</em>) is using a &ldquo;getter&rdquo; to return a class property.</li>
+</ul>
+<h3 id="use-case-3-encoding-sending-and-decoding-a-post-request">Use case #3: encoding, sending and decoding a POST request</h3>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">urllib.parse</span>
+<span class="kn">import</span> <span class="nn">urllib.request</span>
+<span class="kn">import</span> <span class="nn">json</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;http://www.httpbin.org/post&#39;</span>
+<span class="n">values</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span> <span class="p">:</span> <span class="s1">&#39;Michael Foord&#39;</span><span class="p">}</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">parse</span><span class="o">.</span><span class="n">urlencode</span><span class="p">(</span><span class="n">values</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">()</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+<span class="n">body</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+<span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">body</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;http://www.httpbin.org/post&#39;</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span> <span class="p">:</span> <span class="s1">&#39;Michael Foord&#39;</span><span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+<span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</code></pre></div><h4 id="easy-access-to-common-functionality">Easy access to common functionality</h4>
+<ul>
+<li><em>Requests</em> provides an out-of-the-box experience for the encoding of the data and loading the JSON response while in <em>Urllib</em> you have to implement those parts yourself.</li>
+<li>When designing your API think: how will my package be commonly use? What plugs can I add to make that usage easier?</li>
+</ul>
+<p>On the same note, <em>Requests</em> also provides an elegant way to send JSON content:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;http://www.httpbin.org/post&#39;</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span> <span class="p">:</span> <span class="s1">&#39;Michael Foord&#39;</span><span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+<span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</code></pre></div><h3 id="use-case-4-sending-authenticated-request">Use case #4: sending authenticated request</h3>
+<p>The following creates persistence credentials for HTTP requests, and sends a request:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">urllib.request</span>
+
+<span class="n">gh_url</span> <span class="o">=</span> <span class="s1">&#39;https://api.github.com/user&#39;</span>
+
+<span class="n">password_mgr</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">HTTPPasswordMgrWithDefaultRealm</span><span class="p">()</span>
+<span class="n">password_mgr</span><span class="o">.</span><span class="n">add_password</span><span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="n">gh_url</span><span class="p">,</span> <span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="s1">&#39;pswd&#39;</span><span class="p">)</span>
+<span class="n">handler</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">HTTPBasicAuthHandler</span><span class="p">(</span><span class="n">password_mgr</span><span class="p">)</span>
+
+<span class="n">opener</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">build_opener</span><span class="p">(</span><span class="n">handler</span><span class="p">)</span>
+<span class="n">opener</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">gh_url</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">session</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span>
+<span class="n">session</span><span class="o">.</span><span class="n">auth</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="s1">&#39;pswd&#39;</span><span class="p">)</span>
+<span class="n">session</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://api.github.com/user&#39;</span><span class="p">)</span>
+</code></pre></div><p>But what if we just want to do a single HTTP call? Do we need all that code? <em>Requests</em> have you covered here:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://api.github.com/user&#39;</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="s1">&#39;pswd&#39;</span><span class="p">))</span>
+</code></pre></div><h4 id="provide-possibilities-for-simple-and-advanced-usage">Provide possibilities for simple and advanced usage</h4>
+<ul>
+<li><em>Requests</em> allow concise usage, when sending a single request, and a more verbose one for multiple requests.</li>
+<li>Don&rsquo;t make the user go through a lengthy process when he needs a simple use case.</li>
+</ul>
+<h4 id="prefer-python-data-types-over-self-made-ones">Prefer Python data types over self-made ones</h4>
+<ul>
+<li><em>Requests</em> usage of Python&rsquo;s data structures makes it very easy to use. No need to get to know internal <em>Requests</em> packages.</li>
+</ul>
+<h4 id="libraries-code">Libraries code</h4>
+<p><a href="https://github.com/kennethreitz/requests/blob/v2.10.0/requests/models.py#L488">requests/models.py</a>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">prepare_auth</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">auth</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+    <span class="s2">&#34;&#34;&#34;Prepares the given HTTP auth data.&#34;&#34;&#34;</span>
+
+    <span class="c1"># ...</span>
+
+    <span class="k">if</span> <span class="n">auth</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">auth</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">auth</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="c1"># special-case basic HTTP auth</span>
+            <span class="n">auth</span> <span class="o">=</span> <span class="n">HTTPBasicAuth</span><span class="p">(</span><span class="o">*</span><span class="n">auth</span><span class="p">)</span>
+</code></pre></div><ul>
+<li><em>Requests</em> internally converts the <code>(user,pass)</code> tuple to an authentication class.</li>
+</ul>
+<h3 id="use-case-5-handling-errors">Use case #5: handling errors</h3>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://www.httpbin.org/geta&#39;</span><span class="p">)</span>
+<span class="n">response</span><span class="o">.</span><span class="n">getcode</span><span class="p">()</span>
+</code></pre></div><pre><code>---------------------------------------------------------------------------
+
+HTTPError                                 Traceback (most recent call last)
+
+&lt;ipython-input-45-5fba039d189a&gt; in &lt;module&gt;()
+      1 from urllib.request import urlopen
+----&gt; 2 response = urlopen('http://www.httpbin.org/geta')
+      3 response.getcode()
+
+
+/usr/lib/python3.5/urllib/request.py in urlopen(url, data, timeout, cafile, capath, cadefault, context)
+    161     else:
+    162         opener = _opener
+--&gt; 163     return opener.open(url, data, timeout)
+    164
+    165 def install_opener(opener):
+
+
+/usr/lib/python3.5/urllib/request.py in open(self, fullurl, data, timeout)
+    470         for processor in self.process_response.get(protocol, []):
+    471             meth = getattr(processor, meth_name)
+--&gt; 472             response = meth(req, response)
+    473
+    474         return response
+
+
+/usr/lib/python3.5/urllib/request.py in http_response(self, request, response)
+    580         if not (200 &lt;= code &lt; 300):
+    581             response = self.parent.error(
+--&gt; 582                 'http', request, response, code, msg, hdrs)
+    583
+    584         return response
+
+
+/usr/lib/python3.5/urllib/request.py in error(self, proto, *args)
+    508         if http_err:
+    509             args = (dict, 'default', 'http_error_default') + orig_args
+--&gt; 510             return self._call_chain(*args)
+    511
+    512 # XXX probably also want an abstract factory that knows when it makes
+
+
+/usr/lib/python3.5/urllib/request.py in _call_chain(self, chain, kind, meth_name, *args)
+    442         for handler in handlers:
+    443             func = getattr(handler, meth_name)
+--&gt; 444             result = func(*args)
+    445             if result is not None:
+    446                 return result
+
+
+/usr/lib/python3.5/urllib/request.py in http_error_default(self, req, fp, code, msg, hdrs)
+    588 class HTTPDefaultErrorHandler(BaseHandler):
+    589     def http_error_default(self, req, fp, code, msg, hdrs):
+--&gt; 590         raise HTTPError(req.full_url, code, msg, hdrs, fp)
+    591
+    592 class HTTPRedirectHandler(BaseHandler):
+
+
+HTTPError: HTTP Error 404: NOT FOUND
+</code></pre>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;http://www.httpbin.org/geta&#39;</span><span class="p">)</span>
+<span class="n">r</span><span class="o">.</span><span class="n">status_code</span>
+</code></pre></div><pre><code>404
+</code></pre>
+<h4 id="let-the-user-choose-how-to-handle-errors">Let the user choose how to handle errors</h4>
+<ul>
+<li>Some programmers prefer exceptions, some prefer checks.</li>
+<li>In some situations a check is much more elegant and sometimes it&rsquo;s the other way around.</li>
+<li>It&rsquo;s good to let your users to choose what to use when.</li>
+<li>Defaulting to return codes allow that, while defaulting to <code>exceptions</code> do not.</li>
+</ul>
+<p>Usage examples:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
+<span class="kn">from</span> <span class="nn">urllib.error</span> <span class="kn">import</span> <span class="n">URLError</span><span class="p">,</span> <span class="n">HTTPError</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://www.httpbin.org/geta&#39;</span><span class="p">)</span>
+<span class="k">except</span> <span class="n">HTTPError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">code</span> <span class="o">==</span> <span class="mi">404</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Page not found&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;All good&#39;</span><span class="p">)</span>
+</code></pre></div><pre><code>Page not found
+</code></pre>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">requests.exceptions</span> <span class="kn">import</span> <span class="n">HTTPError</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;http://www.httpbin.org/posta&#39;</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">r</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+<span class="k">except</span> <span class="n">HTTPError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">404</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Page not found&#39;</span><span class="p">)</span>
+</code></pre></div><pre><code>Page not found
+</code></pre>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;http://www.httpbin.org/geta&#39;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;All good&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">r</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="n">requests</span><span class="o">.</span><span class="n">codes</span><span class="o">.</span><span class="n">not_found</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Page not found&#39;</span><span class="p">)</span>
+</code></pre></div><pre><code>Page not found
+</code></pre>
+<p>That&rsquo;s it for now. I learned quite a bit preparing this talk/post, and I hope you did too reading it. I&rsquo;ll be glad to hear your comments down bellow or on Twitter (@noamelf).</p>
+<h5 id="update-august-8th-2016">Update (August 8th, 2016)</h5>
+<p>If you end up wondering how come there is such a stark usability difference between Requests and Urllib like many, including myself, do. Nick Coghlan shares his wide perspective on the subject, in a <a href="http://noamelf.com/2016/08/05/designing-pythonic-apis/#comment-2823855721">comment bellow</a> and a following blog post (with the self-explanatory title): <a href="http://www.curiousefficiency.org/posts/2016/08/what-problem-does-it-solve.html">what problem does it solve?</a>.</p>
+<blockquote class="reddit-card" data-card-created="1471210275"><a href="https://www.reddit.com/r/Python/comments/4wfdfc/designing_pythonic_apis_learning_from_requests/?ref=share&ref_source=embed">Designing Pythonic APIs - learning from Requests</a> from <a href="http://www.reddit.com/r/Python">Python</a></blockquote>
+<script async src="//embed.redditmedia.com/widgets/platform.js"
+charset="UTF-8"></script>
+]]></content>
+		</item>
+		
+		<item>
+			<title>API and Microservices Management with Kong</title>
+			<link>https://noamelf.com/posts/api-and-microservices-management-with-kong/</link>
+			<pubDate>Fri, 18 Mar 2016 21:19:00 +0000</pubDate>
+			
+			<guid>https://noamelf.com/posts/api-and-microservices-management-with-kong/</guid>
+			<description>Hi all, At the last PyWebIL meetup I took the stand and gave a talk about one a very interesting open-source project - Kong. Kong is an API and microservices management layer that serves as a reverse proxy to your API&amp;rsquo;s while taking care of generic actions such as rate-limiting, authentication, monitoring and much more. One of it&amp;rsquo;s key benefits is that it is very plugable, hence it is easy to add your own custom logic (I actually enhanced a plugin to fit my needs).</description>
+			<content type="html"><![CDATA[<p>Hi all,
+At the last <a href="http://www.meetup.com/PyWeb-IL/events/228958390/">PyWebIL meetup</a> I took the stand and gave a talk about one a very interesting open-source project - <a href="https://getkong.org/">Kong</a>.  Kong is an API and microservices management layer that serves as a reverse proxy to your API&rsquo;s while taking care of generic actions such as rate-limiting, authentication, monitoring and much more. One of it&rsquo;s key benefits is that it is very plugable, hence it is easy to add your own custom logic (I actually enhanced a plugin to fit my needs).</p>
+<p><img src="http://i.imgur.com/iDcys5P.png" alt="Kong"></p>
+<p>The talk is constructed from a high level introduction to API&rsquo;s and the concept of microservices (here are the <a href="https://goo.gl/sS5spo">slides</a>) and a hands on demonstration of a demo microservice environment using Python/Flask, Docker and Kong as the management layer (here is the <a href="https://github.com/noamelf/kong-talk">code</a>). I had  real good time preparing for the talk! If you&rsquo;re interested in hearing in your meetup/company <a href="http://noamelf.com/about">reach out</a>.</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Pycubator - Open Source Python Training</title>
+			<link>https://noamelf.com/posts/pycubator-open-source-python-training/</link>
+			<pubDate>Sat, 12 Dec 2015 17:35:04 +0000</pubDate>
+			
+			<guid>https://noamelf.com/posts/pycubator-open-source-python-training/</guid>
+			<description>Preparing to teach my first Python class, I searched the web for teaching materials I can use and came up almost empty handed. There is a great variety of Python open books like Dive into Python and How to Think Like a Computer Scientist but they are all for autodidactic purposes and not for classroom teaching.
 Pycubator is my attempt at establishing an open source Python training slides and exercises that the community of Python teachers can use and hopefully contribute to.</description>
-    </item>
-    
-    <item>
-      <title>Project-based learning</title>
-      <link>https://noamelf.com/posts/project-based-learning/</link>
-      <pubDate>Wed, 23 Sep 2015 17:29:00 +0000</pubDate>
-      
-      <guid>https://noamelf.com/posts/project-based-learning/</guid>
-      <description>Context The Python course I&amp;rsquo;m instructing at Avratech (see earlier post and CNN story) is advancing and the students are already a month and a half into their group projects. This post is about my personal experience with shifting my class from teacher-led learning to project-based (learning), but first, have a look at the 5 beautiful projects they&amp;rsquo;re working on (you might want to use Google to translate the websites if your Hebrew reading skills aren&amp;rsquo;t in shape ☺):</description>
-    </item>
-    
-    <item>
-      <title>Optimization Tale</title>
-      <link>https://noamelf.com/posts/optimization-tale/</link>
-      <pubDate>Sat, 29 Aug 2015 16:38:46 +0000</pubDate>
-      
-      <guid>https://noamelf.com/posts/optimization-tale/</guid>
-      <description>I was asked to optimize our web API service. This was the first time I ever experienced anything of that sort so I was pretty excited about it. I read a lot of blog posts and Stack Overflow questions about optimization but still wasted some time on optimizing the wrong parts. Following is the lessons I learned, and some pitfalls that you can avoid on your next optimization task.
+			<content type="html"><![CDATA[<p>Preparing to teach my first Python class, I searched the web for teaching materials I can use and came up almost empty handed. There is a great variety of Python open books like <a href="http://www.diveintopython.net/">Dive into Python</a> and <a href="http://www.openbookproject.net/thinkcs/python/english2e/">How to Think Like a Computer Scientist</a> but they are all for autodidactic purposes and not for classroom teaching.</p>
+<p>Pycubator is my attempt at establishing an open source Python training slides and exercises that the community of Python teachers can use and hopefully contribute to. It utilize <a href="https://github.com/hakimel/reveal.js/">RevealJS</a> to create stunning slides, that are actually written in Markdown and hence easy to use with source control, and the exercises uses and the exercises are actually <a href="http://jupyter.org/">Jupyter notebooks</a> so students can run their code straight away.</p>
+<p>The classes are constructed to allow <em>a lot</em> of exercise. After a topic is covered by the instructor, there are exercises to help the knowledge sink in, and after covering a few topics there is a mini-project to exercise writing some larger scale programs (credit here goes to Udi Oron for sharing his exercises and hands on approach).</p>
+<p>You can find the materials at my GitHub <a href="https://github.com/noamelf/pycubator">repository</a> and a the live slides at <a href="http://pycubator.com">pycubator.com</a>.</p>
+<p>Check it out!</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Project-based learning</title>
+			<link>https://noamelf.com/posts/project-based-learning/</link>
+			<pubDate>Wed, 23 Sep 2015 17:29:00 +0000</pubDate>
+			
+			<guid>https://noamelf.com/posts/project-based-learning/</guid>
+			<description>Context The Python course I&amp;rsquo;m instructing at Avratech (see earlier post and CNN story) is advancing and the students are already a month and a half into their group projects. This post is about my personal experience with shifting my class from teacher-led learning to project-based (learning), but first, have a look at the 5 beautiful projects they&amp;rsquo;re working on (you might want to use Google to translate the websites if your Hebrew reading skills aren&amp;rsquo;t in shape ☺):</description>
+			<content type="html"><![CDATA[<h4 id="context">Context</h4>
+<p>The <a href="https://en.wikipedia.org/wiki/Python_%28programming_language%29">Python</a> course I&rsquo;m instructing at Avratech (see <a href="http://thespoon.ghost.io/ravtech-and-cnn/">earlier post</a> and <a href="http://edition.cnn.com/2015/07/08/world/israel-ultra-orthodox-jews-high-tech/index.html#">CNN story</a>) is advancing and the students are already a month and a half into their group projects. This post is about my personal experience with shifting my class from <em>teacher-led</em> learning to <em>project-based</em> (learning), but first, have a look at the 5 beautiful projects they&rsquo;re working on (you might want to use <a href="https://translate.google.com/translate?hl=en&amp;sl=iw&amp;tl=en&amp;u=jewishtimes.avratech.co.il">Google to translate</a> the websites if your Hebrew reading skills aren&rsquo;t in shape ☺):</p>
+<ul>
+<li><a href="jewishtimes.avratech.co.il">Jewish Times</a> - Jewish prayer times notification system. You register, choose the prayers you wish to be alerted on, and  receive notifications by email.</li>
+<li><a href="kindergarten.avratech.co.il">Kindergarten</a> - A kindergarten management cloud application. Enables to keep track of payments, contact parents, etc.</li>
+<li><a href="theswamp.avratech.co.il">The Swamp</a> - A social media hub for the Ultra-Orthodox community. It uses Twitter and Facebook to collect updates from the community&rsquo;s leaders.</li>
+<li><a href="kosherapps.avratech.co.il">Kosher Apps</a> - A &ldquo;kosher&rdquo; app store, meaning it collects applications that are suitable for the ultra-orthodox crowd from Google Play.</li>
+<li><a href="easyhotel.avratech.co.il">Easy Hotel</a> - An hotel management cloud application. From room reservations financial reports, this application answers every hotel needs (okay, maybe not all, but most).</li>
+</ul>
+<p><img src="http://i.imgur.com/JkyDgPt.png" alt="Jewish times">
+[Jewish Times screenshot]</p>
+<h4 id="choosing-a-path">Choosing a path</h4>
+<p>After 2 months of teacher-led classes, we reached the end of the basic course. Having a few more month of training time, we wanted to give the students some &ldquo;real life&rdquo; experience though we weren&rsquo;t sure how to go about it. First, we thought about inventing a project ourselves. We started writing our makeup project until at some point it felt like it will be too boring for the students and too time consuming for us.</p>
+<p>We decided to give the students freedom to come up with a project that they will be interested in. Although there were some worries that without direct, homework like, instructions the students might not take these projects seriously and slack off but we decided to give it a go.</p>
+<p><img src="http://i.imgur.com/JXuCVat.png" alt="Kindergarten">
+[kindergarten screenshot]</p>
+<h4 id="grouping-the-students">Grouping the students</h4>
+<p>The class (21 students) was split into 5 teams while trying to keep them as equal as possible skill wise. Each team was supposed to pick a team leader. I explained the class what responsibilities a team leader has, and gave them a few minutes to choose one for the team. For my surprise, none of the groups picked a leader. I stepped in and appointed the team member who seemed to me like the best fit. It was a little disappointing for me because I wanted the team leader to be given his &ldquo;mandate&rdquo; from his fellows and not from me.</p>
+<p>The next phase was for each team to choose a project they&rsquo;re interested in. I showed them some examples of real applications which I think are good and they started coming up with their own ideas. It didn&rsquo;t go easy since as the saying goes: <em>as many Jews as many opinions</em>, but by the end of the day all the teams had an idea or was closing in on one.</p>
+<p><img src="http://i.imgur.com/yDzqkgq.png" alt="TheSwamp">
+[The swamp screenshot]</p>
+<h4 id="agility">Agility</h4>
+<p>We wanted the teams to adopt an <a href="https://en.wikipedia.org/wiki/Agile_software_development">agile</a> development work flow. We set an iteration (development cycle) planning meeting in the beginning of the week (each iteration constitutes one week). There was an emphasis on getting something to work by the end of each iteration. The teams spoke about what features they want to add to the project and together we analyzed the effort it will take them to get there and the amount of working days they have in the upcoming iteration. After the meeting was over, the team leaders updated their teams <a href="https://trello.com/">Trello</a> boards with what is to be accomplished in the following iteration and by whom.</p>
+<p>The teams adopted the development flow rather easily but we&rsquo;re finding it difficult to start working since they weren&rsquo;t familiar with the way a web application works. Having team leaders was tremendously helpful at that point. I set a meeting with them discussing the way a web application is built and they transfered that knowledge and help direct their team members in their tasks.</p>
+<p>After an iteration ended, each team had a retrospective meeting where we compared what&rsquo;s been done with what we hoped to accomplish. There was some interesting insights about how each team functioned. For example, a team that failed miserably in his iteration goals recognized that they had a communication problem with their team leader that caused him to &ldquo;just do the job himself&rdquo;. Another nice example is that all the teams complained they were having a hard time utilizing <a href="https://en.wikipedia.org/wiki/Git_%28software%29">Git</a>, which made me realize I need to run a Git workshop.</p>
+<p><img src="http://i.imgur.com/qu1Q4l0.png" alt="Easy Hotel">
+[Easy Hotel screenshot]</p>
+<h5 id="technological-stack-for-the-techy-reader">Technological stack (for the techy reader)</h5>
+<p>We tried to keep the projects technological stack as simple as possible, so the transition between simple, homework Python programs, and a fullstack web application will be easier.</p>
+<p><strong>Flask</strong> was an easy pick as a web framework since getting familiar with it is as easy as it gets, but it still provides some nice, advanced functionality (with it&rsquo;s extensions). <strong>SQLAlchemy</strong> and <strong>SQLite3</strong> are also a perfect couple for the job as they are very easy to set up, and doesn&rsquo;t require much SQL knowledge (at least at the beginning). Since they didn&rsquo;t get a real frontend - HTML/CSS - training, <strong>Bootstrap</strong> provided a quick and easy solution (although, when they wanted to customize the look and feel of their application, they had to dig into HTML/CSS anyway). The full list:</p>
+<ul>
+<li>Python3</li>
+<li>Flask</li>
+<li>SQLAlchemy</li>
+<li>SQLite3</li>
+<li>Nginx + Uwsgi emperor (I configured this part)</li>
+<li>Bootstrap</li>
+<li>HTML/CSS</li>
+<li>Git</li>
+</ul>
+<p>Using a single web stack for all the groups was a really good decision since they could help each other and I was able to gather everyone together and explain a certain subject once.</p>
+<p>As funny (or obvious) as it may sound, getting them to use <strong>Git</strong> was by far the most challenging part of the project. I enjoy using Git very much, but I also remember how I struggled with it at the beginning. I&rsquo;m considering using a different VCS system for my next classes but I&rsquo;m not sure it will serve the students since Git is so ubiquitous these days.</p>
+<p><img src="http://i.imgur.com/0S7FoQf.png" alt="Kosher apps">
+[Kosher apps screenshot]</p>
+<h4 id="project-based-learning-is-far-more-meaningful">Project-based learning is far more meaningful!</h4>
+<p>Having the students pick out their own projects and lead them was a tremendous success. It completely changed the value they are receiving from the course. The teacher-led part taught them Python alright but didn&rsquo;t really got them excited about software development (beside a few) and the endless possibilities it entails. Most just wanted to get good grades. Now, I can practically see the excitement in most, if not all, of their eyes and I believe that that is the best grantee for a successful programming career.</p>
+<p>To finish off, I want to thank Eli Gur, the school technical lead/adviser, for giving me priceless advices and helping the students with their projects, and to my colleague <a href="https://twitter.com/nonZero">Udi Oron</a> who influenced me towards project-based learning and shared his experience with me.</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Optimization Tale</title>
+			<link>https://noamelf.com/posts/optimization-tale/</link>
+			<pubDate>Sat, 29 Aug 2015 16:38:46 +0000</pubDate>
+			
+			<guid>https://noamelf.com/posts/optimization-tale/</guid>
+			<description>I was asked to optimize our web API service. This was the first time I ever experienced anything of that sort so I was pretty excited about it. I read a lot of blog posts and Stack Overflow questions about optimization but still wasted some time on optimizing the wrong parts. Following is the lessons I learned, and some pitfalls that you can avoid on your next optimization task.
 Locust vs Jmeter The first you want to do when optimizing anything is to be able to measure it&amp;rsquo;s performance.</description>
-    </item>
-    
-    <item>
-      <title>Teaching Python to Haredim (and a CNN visit)</title>
-      <link>https://noamelf.com/posts/ravtech-and-cnn/</link>
-      <pubDate>Fri, 10 Jul 2015 14:13:48 +0000</pubDate>
-      
-      <guid>https://noamelf.com/posts/ravtech-and-cnn/</guid>
-      <description>For the last couple of months I&amp;rsquo;ve been involved in a great project: getting Haredic (ultra-orthodox jews) man into the software world!
+			<content type="html"><![CDATA[<p>I was asked to optimize our web API service. This was the first time I ever experienced anything of that sort so I was pretty excited about it. I read a lot of blog posts and Stack Overflow questions about optimization but still wasted some time on optimizing the wrong parts. Following is the lessons I learned, and some pitfalls that you can avoid on your next optimization task.</p>
+<h4 id="locust-vs-jmeter">Locust vs Jmeter</h4>
+<p>The first you want to do when optimizing anything is to be able to measure it&rsquo;s performance. I looked for a Python based (my favorite language) load testing solution and found <a href="http://locust.io/">Locust</a>. Locust is a quick and easy package to run a threaded load testing programs with nothing but Python code. Everything was great until I sadly realized that Locust aggregates the results, meaning: I couldn&rsquo;t get a <em>raw</em> CSV to store and analyze later on using graph tools of sorts.</p>
+<p>I turned to the industry standard: <a href="http://jmeter.apache.org/">Jmeter</a>. It&rsquo;s website felt 90&rsquo;ish and <em>Java</em> isn&rsquo;t really my cup of tea, but nonetheless I found it to be a great piece of software.  After investing some time in reading the docs and understanding Jmeter inner logic and ugly GUI, you can make stuff happen really fast and in a very modular &ldquo;Lego bricks&rdquo; way.</p>
+<p>Jmeter has built in result <em>listeners</em>, which means you can view real time results with multiple graph/table listener of your choice. Further more, it is based on a GUI to configure the test itself, but after that, there is no problem running it in a non-GUI mode that writes the results to a CSV file and analyze it later in Jmeter or great services like <a href="https://loadosophia.org/">LoadSophia</a>. <strong>Tip</strong>: if your looking to create a stress test for your application, go for the no-GUI mode and analyze the results later since generating real time graphs is heavy on resources.</p>
+<h4 id="load-testing">Load testing</h4>
+<p>Before we continue, some information about the setup: we are using AWS Elastic Load Balancing (ELB) in front of 2 m3.medium identical instances. Each instance has Ngnix in front of a Uwsgi server running a flask application.</p>
+<p>Back to our story, I created the Jmeter load test configuration on my local machine to simulate practical usage scenarios and <a href="https://wiki.archlinux.org/index.php/Sshfs">sshfs</a> it to a designated server, wrote a bash script to automatically run test of different loads and run the tests. Getting analytics from LoadSophia, I sent a proud report to my coworkers with graphs and tables explaining the current API performance.</p>
+<h4 id="optimizations-">Optimizations ?!?</h4>
+<p>My next step, optimization, would be easy (or so I thought). I already read about some possible configurations to Nginx and Uwsgi like David Cramer&rsquo;s blog post ( <a href="http://cramer.io/2013/06/27/serving-python-web-applications/">You Should Be Using Nginx + UWSGI</a>) or the Uwsgi docs about <a href="http://uwsgi-docs.readthedocs.org/en/latest/Nginx.html">integration with Nginx</a>. Happily following their advices, I started tweaking the configuration and testing the results:</p>
+<ul>
+<li>Changed the communication between Nginx to Uwsgi to the Uwsgi protocol which has lower overhead than HTTP.</li>
+<li>Changed socket type from TCP to Unix. Since both process are running from the same machine and a Unix socket is lighter, hence faster.</li>
+<li>Experimented with different numbers of processes/threads.</li>
+</ul>
+<p>At that point I faced a frustrating situation, all of the changes I made had nearly no impact on the setup performance - the servers Transaction Per Second (TPS) and average response time remained more or less the same as before. Imagine my disappointment.</p>
+<h4 id="eureka">Eureka</h4>
+<p>I started thinking there might be something wrong with the DB performance. Puzzled by the case, I turned to the <a href="http://goo.gl/K1gH7Z">scientific method</a> or put otherwise: <em>stop and think!</em> I thought about the facts I was seeing, and remembered that through all my optimization tweaks, the servers CPU level was pretty high. I wrote 2 hypothesis about that, both of which seemed unlikely. In short (you can find the long version <a href="https://goo.gl/irxrcs">here</a>):</p>
+<ol>
+<li>Uwsgi is consuming tons of resources while trying to load balance it&rsquo;s processes and threads.</li>
+<li>Our Flask application is CPU intensive.</li>
+</ol>
+<p>Testing my assumptions I saw clearly that the Uwsgi processes running our Flask app takes almost all of the CPU capacity. This was thrilling to find as well as disappointing since I spent much of my time barking up the wrong tree. <strong>The application bottleneck was the processes high CPU consumption, thus, improving the rate Uwsgi and Nginx passes requests wouldn&rsquo;t improve performance.</strong></p>
+<p>With  that revelation, we turned into the simplest, most immediate solution: increasing CPU power. In our case this meant upgrading the machines to an m3.large instances (2 CPU&rsquo;s instead of 1). This change immediately doubled our TPS and enabled us to serve twice more concurrent users. I really wanted to profile the application and see which part is gobbling the CPU, alas I run out of time for the task.</p>
+<h4 id="lesson-learned">Lesson learned</h4>
+<p>When testing applications performance, and trying to figure out how to optimize it, always start with the most basic suspects: it&rsquo;s memory and CPU consumption. Write a simple load test, and understand what <code>top</code> (I used <code>htop</code> with process filtering, very convenient) is showing you. If the servers memory or CPU are at full capacity, you can be certain that thats the bottleneck and invest your well worth time there.</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Teaching Python to Haredim (and a CNN visit)</title>
+			<link>https://noamelf.com/posts/ravtech-and-cnn/</link>
+			<pubDate>Fri, 10 Jul 2015 14:13:48 +0000</pubDate>
+			
+			<guid>https://noamelf.com/posts/ravtech-and-cnn/</guid>
+			<description>For the last couple of months I&amp;rsquo;ve been involved in a great project: getting Haredic (ultra-orthodox jews) man into the software world!
 Last week, we got an exciting visit from Oren Libermann, a CNN reporter, who published this nice story.
 My job in the training process is to teach them the Python programing language. Were doing a 3 month course, in which we go from learning the basic features of the language to writing a full blown (but small) software project.</description>
-    </item>
-    
-    <item>
-      <title>Coroutines in Python</title>
-      <link>https://noamelf.com/posts/coroutines-in-python/</link>
-      <pubDate>Sun, 10 May 2015 12:16:55 +0000</pubDate>
-      
-      <guid>https://noamelf.com/posts/coroutines-in-python/</guid>
-      <description>In the last Pyweb-IL meetup I gave a short introduction talk about coroutines and their usage in Python. It covers the basic concepts of coroutines and how they can be used in Python.
+			<content type="html"><![CDATA[<p>For the last couple of months I&rsquo;ve been involved in a great project: getting <a href="https://en.wikipedia.org/wiki/Haredi_Judaism">Haredic</a> (ultra-orthodox jews) man into the software world!</p>
+<p>Last week, we got an exciting visit from Oren Libermann, a CNN reporter, who published this nice <a href="http://edition.cnn.com/2015/07/08/world/israel-ultra-orthodox-jews-high-tech/index.html#">story</a>.</p>
+<p>My job in the training process is to teach them the Python programing language. Were doing a 3 month course, in which we go from learning the basic features of the language to writing a full blown (but small) software project.</p>
+<p>The last mini-project we did might give an short example of what the course entails: the students we&rsquo;re given a CSV file, with some basic data about the world&rsquo;s countries. They needed to analyze that data and create a website which they published later using Github pages. Here is a sample of the results: <a href="http://www.elnatan.890m.com/">1</a>, <a href="http://spidivardi.github.io/contrys/new.html">2</a>, <a href="http://moshefortgang.github.io/mosho-fortgang-world.site.net/">3</a>.</p>
+<p>Theres much more to write and I&rsquo;ll try to update as the course advances!</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Coroutines in Python</title>
+			<link>https://noamelf.com/posts/coroutines-in-python/</link>
+			<pubDate>Sun, 10 May 2015 12:16:55 +0000</pubDate>
+			
+			<guid>https://noamelf.com/posts/coroutines-in-python/</guid>
+			<description>In the last Pyweb-IL meetup I gave a short introduction talk about coroutines and their usage in Python. It covers the basic concepts of coroutines and how they can be used in Python.
 Check it out!</description>
-    </item>
-    
-    <item>
-      <title>A selfish justification for altruism (poster)</title>
-      <link>https://noamelf.com/posts/a-selfish-justification-for-altruism-poster/</link>
-      <pubDate>Sun, 26 Apr 2015 20:35:00 +0000</pubDate>
-      
-      <guid>https://noamelf.com/posts/a-selfish-justification-for-altruism-poster/</guid>
-      <description>Next week I&amp;rsquo;m presenting a philosophy paper I wrote about altruism (see previous post) in a conference at Tel-Hai college!
+			<content type="html"><![CDATA[<p>In the last <a href="http://www.meetup.com/PyWeb-IL/">Pyweb-IL</a> meetup I gave a short introduction talk
+about coroutines and their usage in Python. It covers the basic concepts of coroutines and how they
+can be used in Python.</p>
+<p><a href="/intro-to-python-coroutines-talk">Check it out!</a></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>A selfish justification for altruism (poster)</title>
+			<link>https://noamelf.com/posts/a-selfish-justification-for-altruism-poster/</link>
+			<pubDate>Sun, 26 Apr 2015 20:35:00 +0000</pubDate>
+			
+			<guid>https://noamelf.com/posts/a-selfish-justification-for-altruism-poster/</guid>
+			<description>Next week I&amp;rsquo;m presenting a philosophy paper I wrote about altruism (see previous post) in a conference at Tel-Hai college!
 Alexandra, my girlfriend, came up with the idea (and executed it on Photoshop). The triangle represent the main 3 concepts in the paper: altruism, autonomy and well-being. Through those triangles (concepts) the image (life) looks sharper. I&amp;rsquo;d Love to hear you&amp;rsquo;re opinion on it.</description>
-    </item>
-    
-    <item>
-      <title>Ideal workplace wishlist</title>
-      <link>https://noamelf.com/posts/ideal-workplace-wishlist/</link>
-      <pubDate>Sun, 26 Apr 2015 08:15:17 +0000</pubDate>
-      
-      <guid>https://noamelf.com/posts/ideal-workplace-wishlist/</guid>
-      <description>Looking for a job, I wrote down things that I find important so I can narrow my search and be more focused. I got plenty of inspiration from Julia Evans post on the subject, so I thought it will be nice to share my list too. So, in my view, an ideal employer:
+			<content type="html"><![CDATA[<p>Next week I&rsquo;m presenting a philosophy paper I wrote about altruism (see <a href="https://thespoon.ghost.io/a-selfish-justification-for-altruism-2">previous post</a>) in a conference at Tel-Hai college!</p>
+<p>Alexandra, my girlfriend, came up with the idea (and executed it on Photoshop). The triangle represent the main 3 concepts in the paper: altruism, autonomy and well-being. Through those triangles (concepts) the image (life) looks sharper. I&rsquo;d Love to hear you&rsquo;re opinion on it.</p>
+<p><img src="/content/images/2015/04/poster-1.jpg" alt=""></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Ideal workplace wishlist</title>
+			<link>https://noamelf.com/posts/ideal-workplace-wishlist/</link>
+			<pubDate>Sun, 26 Apr 2015 08:15:17 +0000</pubDate>
+			
+			<guid>https://noamelf.com/posts/ideal-workplace-wishlist/</guid>
+			<description>Looking for a job, I wrote down things that I find important so I can narrow my search and be more focused. I got plenty of inspiration from Julia Evans post on the subject, so I thought it will be nice to share my list too. So, in my view, an ideal employer:
  Is creating software to promote meaningful causes that I can relate to. Has an open and transparent culture that promotes teamwork, creativity and employees initiatives.</description>
-    </item>
-    
-    <item>
-      <title>A selfish justification for altruism</title>
-      <link>https://noamelf.com/posts/a-selfish-justification-for-altruism-2/</link>
-      <pubDate>Sat, 25 Apr 2015 09:42:58 +0000</pubDate>
-      
-      <guid>https://noamelf.com/posts/a-selfish-justification-for-altruism-2/</guid>
-      <description>During college I was lucky enough to get my parents old car. Driving to college was much nicer than using public transportation or hitchhiking. Considering I didn&amp;rsquo;t buy the car myself, and the fact that I used to hitchhike before I got one, I had an ambivalent feeling towards picking other hitchhikers. On the one hand I totally identified with their need, and on the other, sometimes I just didn&amp;rsquo;t feel like picking up a stranger.</description>
-    </item>
-    
-  </channel>
+			<content type="html"><![CDATA[<p>Looking for a job, I wrote down things that I find important so I can narrow my search and be more focused. I got plenty of inspiration from Julia Evans <a href="http://jvns.ca/blog/2013/12/30/questions-im-asking-in-interviews/">post</a> on the subject, so I thought it will be nice to share my list too. So, in my view, an ideal employer:</p>
+<ul>
+<li>Is creating software to promote meaningful causes that I can relate to.</li>
+<li>Has an open and transparent culture that promotes teamwork, creativity and employees initiatives.</li>
+<li>Has talented people working for it, and a strong technical leader (that guides, but don&rsquo;t micro manage).</li>
+<li>Encourages open source, and participation of its employees in pro-social projects.</li>
+<li>Has interesting problems to solve and uses a wide range of technologies to do so.</li>
+<li>Has offices in [near-your-home] Tel-Aviv or allows for remote work.</li>
+<li>Cares about it&rsquo;s employees work/life balance (because he understands it&rsquo;s significance to his employees and to the quality of the work they produce).</li>
+</ul>
+<h6 id="following-questions-to-ask-in-interviews">Following questions to ask in interviews:</h6>
+<ul>
+<li>What do you feel about the product? Do you think it is meaningful?</li>
+<li>Do the employees know the financial status of the company? Are the salaries kept secret? Do you give out team bonuses or personal ones? Do you allow to work on personal, work related project (not part of the official work)?</li>
+<li>Who is the technical lead? what is his experience? Can I speak with him?</li>
+<li>Do you contribute to open source? Do you support local social projects?</li>
+<li>What is the kind of problem you need to solve? what type of tools do you use? What is the latest technology you adopted and why?</li>
+<li>Where are the offices? Do you allow for remote work?</li>
+<li>How may hours is in a workweek? in a single day? In which occasions will you expect to work longer hours?</li>
+</ul>
+<p>That&rsquo;s what I came up. I try to remember it, since it&rsquo;s a little embarrassing to take out the phone in the middle of an interview and read from it.</p>
+<p>What are you looking for in your workplace?</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>A selfish justification for altruism</title>
+			<link>https://noamelf.com/posts/a-selfish-justification-for-altruism-2/</link>
+			<pubDate>Sat, 25 Apr 2015 09:42:58 +0000</pubDate>
+			
+			<guid>https://noamelf.com/posts/a-selfish-justification-for-altruism-2/</guid>
+			<description>During college I was lucky enough to get my parents old car. Driving to college was much nicer than using public transportation or hitchhiking. Considering I didn&amp;rsquo;t buy the car myself, and the fact that I used to hitchhike before I got one, I had an ambivalent feeling towards picking other hitchhikers. On the one hand I totally identified with their need, and on the other, sometimes I just didn&amp;rsquo;t feel like picking up a stranger.</description>
+			<content type="html"><![CDATA[<p>During college I was lucky enough to get my parents old car. Driving to college was much nicer than using public transportation or hitchhiking. Considering I didn&rsquo;t buy the car myself, and the fact that I used to hitchhike before I got one, I had an ambivalent feeling towards picking other hitchhikers. On the one hand I totally identified with their need, and on the other, sometimes I just didn&rsquo;t feel like picking up a stranger. It&rsquo;s funny but it became a real conflict for me.</p>
+<p>In my philosophy studies, we had to write a paper about altruism, and I, wanting to figure this thing out (and other issues of that sort) wrote a paper on a possible psychological benefit to acting altruistically. Here is a short summary (you can find the full work <a href="https://www.dropbox.com/s/58gzcezu408nxk0/A%20selfish%20justification%20for%20altruistic%20acts.pdf?dl=0">here</a>, and a poster I made for a recent conference <a href="https://thespoon.ghost.io/a-selfish-justification-for-altruism-poster">here</a>):</p>
+<h6 id="introduction">Introduction</h6>
+<p>Many times in the course of our daily lives, we are faced with having to choose between selfish and altruistic behaviors. Sometimes we make these decisions spontaneously, while other times the decision might involve quite a bit of mental and emotional anguish caused by the tension between our believes of what is fair or just, and our perceived self interest. In this paper, I propose that although altruism behavior, by definition, reduces the actors fitness, it may have a long-term positive role on his psychological wellbeing, by framing it in the wider context of his view of life.</p>
+<h6 id="arguments">Arguments</h6>
+<p>Upon researching psychological wellbeing, two ancient and competing paradigms stand out: hedonism and eudemonism, the first emphasis pleasure, the later emphasis virtue, as a key to a well lived life. The eudemonic view is threaded through this paper since it is better suited to support altruistic behavior than hedonism; it weighs what you do higher then how you feel, and it promotes one to act in accordance with that which is best within him over what will be most pleasurable.</p>
+<p>Since eudemonism inspire us to follow our true selves, autonomy is an inseparable part of it. A body of research on wellbeing shows that autonomy has been prominent in predicting psychological wellbeing in different groups of reference. These findings support the premise that when altruistic behavior coincide with the actor autonomous judgment it can have positive effect on his psychological wellbeing or differently put: “particular altruistic acts are compatible with a larger selfishness – selfishness on a more abstract level” (H. Rachlin).</p>
+<h6 id="discussion">Discussion</h6>
+<p>An interesting problem arises when we take into consideration that our ability to reflect and reach a coherence viewpoint on dilemmas we encounter varies. Therefor, even if one is convinced by the thesis suggested herein, and really aspires to act in an autonomous manner when reality summons him a moral dilemma, he might be at a loss. Not only that one can fail to formulate a stance towards the dilemma, one can also make a stance that seems to be autonomous, but it&rsquo;s underlying motivation, hidden even to oneself, is heteronomous. This problem is not an easy one, and can be solved only by the individual; one must dedicate time and mental resources to learn and mold his view of what is the “good”, what is he living for, and following this ongoing life processes, make choices that reflect her convictions and pave her unique path in the</p>
+<p>That&rsquo;s it, I&rsquo;d love to hear what you think :)</p>
+]]></content>
+		</item>
+		
+	</channel>
 </rss>
