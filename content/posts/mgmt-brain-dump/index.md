@@ -1,38 +1,38 @@
 ---
 date: "2020-10-07T00:00:00Z"
-title: Team Management Best Practices Brain-Dump
+title: Team Management Brain Dump
 tags:
 - management
 ---
 
-Due to a change in Bluevine's R&D structure, I'm receiving another team to manage directly. So I'll be acting as a direct manager for both the Data Engineering team I've been managing this far and the new Core Backend team. This practically doubles the load I have right now and although I'm a bit concerned over my work/life balance and meeting the quality standard I inspire to in each of the teams, this is also an opportunity to have greater influence and learn new stuff.
-
 {{< figure src="brain-dump.jpg" class="mid">}}
 
-I figured that to do good work - while staying sane - I need to streamline my management practices. Make it so that ad-hoc communication and tasks are minimized and long-term predefined work is the main focus. I gathered a few best practices from the last 2 years of management experience, that in theory should help. I'm writing them here so that I try to accustom the new team to work by these principles from the get-go:
+I'm receiving another team to manage directly, which is good news! But it also means I'll have a lot on my table. I wrote down this list of things that support efficient work for myself to follow:
 
-- Single "in progress" task - make sure each team member is working on a single task at each given point in time to avoid confusion and context switch overhead.
+- Single "in progress" task - make sure each team member is working on a single task at each given point in time to avoid confusion and context switch overhead. If a task is stuck, it goes to the "blocked" queue so it'll be clear that we have a problem.
+
+- Clear bottlenecks - building on the above point, part of the reason for constant context switching is tasks being stuck due to reasons the developer doesn't control. Avoid this by planning in advance and sharing with the other teams. Be rigorous about this.
 
 - Clean backlog - have 1-3 ready tasks in the backlog to consume if stuck, allows not to have to ask the manager for priority. Have a backlog grooming meeting every 2 weeks to keep the tasks in check.
 
-- Clear bottlenecks - part of the reason for constant context switching is tasks being stuck due to reasons the developer doesn't control. Avoid this by planning in advance and sharing with the other teams. Be rigorous about this.
+- On-call rotation - make sure to have the on-call person deal with all interrupts the team receives from external resources. All support requests should be directed to the on-call channel. This makes interaction over support work more visible and allows for the other team members context-switching-free time.
 
-- On-call rotation - make sure to have the on-call person deal with all interrupts the team receives from external resources. This makes it more organized and allows for a less casual method for interrupting the team. All communications should be in the on-call channel in threads. This also allows me to review the interaction, and nudge it in the right direction.
+- Async updates - make sure all team members update progress on cards. This creates a history of the task and prevents me from checking in to know the status.
 
-- Async updates - make sure all team members update progress on cards. This allows me to know the status of tasks without interrupting work and creates a history of the task. Also, it creates a good snapshot of the status of all the work that is being done, so I can easily reply to status checks from superiors/neighboring teams.
-
-- Domain responsibilities - define team domains and have a certain owner for each domain. This allows developers to develop a sense of intimacy and ownership of a domain, so they want to groom and improve it.
+- Domain responsibilities - define team domains and then split their ownership between team members. Doing so develops expertise and ownership of a domain, and provides a focal point for the team. It's good to rotate responsibilities every once so often to refresh and challenge team members.
 
 - Incidents retrospectives - a pillar in team building. Setting the right tone in these meetings allows for a safe place for the team to come together and think about how to improve. It helps define the team culture and fix systematic issues with architecture and processes.
 
 - Fixing organizational issues - finding where the team struggles when working with the rest of the organization. Advocating to resolve these issues as they come up and not letting them slide.
 
-- Technical deep dives - a definition that issues need to be written down in a clear and lucid fashion can promote thinking thoroughly and gathering data before asking for help or for a review. I also like the notion of setting meetings only after a document has been created and shared and that the meetings focus is a discussion about it's content (and not on presenting it).
+- Technical deep dives - it's important to monitor and understand the technical work being done to help come up with ideas and to avoid missing potential critical issues. Promoting written discussions on technical issues is efficient since it requires the person leading it to gather data and analyze the issue instead of using you as a [rubber duck](https://en.wikipedia.org/wiki/Rubber_duck_debugging).
+
+- Rigorous schedule - people like to set meetings, make sure they are actually needed. Try to divert the meeting to a written discussion. Works well for simple things that don't require deep discussions (and there are many of those). I also like the notion of setting meetings only after a document has been created and shared and that the focus of the meeting is a discussion about its content (and not on presenting it).
 
 - Repeating team-building meetings -
   - Daily - updates, priorities, and notifications.
-  - Weekly - tickets reviews, long term goals, backlog cleanup.
-  - 1on1 - 1 hour time for each team member to update on personal and work-related issues. Also good for building personal relationships.
+  - Weekly - accomplishments, long term goals, backlog cleanup.
+  - 1on1s - 1 hour time for each team member to update on personal and work-related issues. Also good for building personal relationships.
 
 - Project management -
   - Define stakeholders
