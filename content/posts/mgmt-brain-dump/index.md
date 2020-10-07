@@ -23,6 +23,12 @@ I figured that to do good work - while staying sane - I need to streamline my ma
 
 - Domain responsibilities - define team domains and have a certain owner for each domain. This allows developers to develop a sense of intimacy and ownership of a domain, so they want to groom and improve it.
 
+- Incidents retrospectives - a pillar in team building. Setting the right tone in these meetings allows for a safe place for the team to come together and think about how to improve. It helps define the team culture and fix systematic issues with architecture and processes.
+
+- Fixing organizational issues - finding where the team struggles when working with the rest of the organization. Advocating to resolve these issues as they come up and not letting them slide.
+
+- Technical deep dives - a definition that issues need to be written down in a clear and lucid fashion can promote thinking thoroughly and gathering data before asking for help or for a review. I also like the notion of setting meetings only after a document has been created and shared and that the meetings focus is a discussion about it's content (and not on presenting it).
+
 - Repeating team-building meetings -
   - Daily - updates, priorities, and notifications.
   - Weekly - tickets reviews, long term goals, backlog cleanup.
