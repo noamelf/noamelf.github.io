@@ -25,7 +25,7 @@ I'm receiving another team to manage directly, which is good news! But it also m
 
 - Fixing organizational issues - finding where the team struggles when working with the rest of the organization. Advocating to resolve these issues as they come up and not letting them slide.
 
-- Technical deep dives - it's important to monitor and understand the technical work being done to help come up with ideas and to avoid missing potential critical issues. Promoting written discussions on technical issues is efficient since it requires the person leading it to gather data and analyze the issue instead of using you as a [rubber duck](https://en.wikipedia.org/wiki/Rubber_duck_debugging).
+- Technical deep dives - it's important to monitor and understand the technical work being done to help come up with ideas and to avoid missing potential critical issues. Promoting written discussions on technical issues is efficient since it requires the person leading it to gather data and analyze the issue instead of using you as a [rubber duck 🦆](https://en.wikipedia.org/wiki/Rubber_duck_debugging).
 
 - Rigorous schedule - people like to set meetings, make sure they are actually needed. Try to divert the meeting to a written discussion. Works well for simple things that don't require deep discussions (and there are many of those). I also like the notion of setting meetings only after a document has been created and shared and that the focus of the meeting is a discussion about its content (and not on presenting it).
 
