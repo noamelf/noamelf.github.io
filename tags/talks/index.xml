@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://noamelf.com/tags/talks/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://noamelf.com/tags/talks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Airflow Summit 2020 talk</title>
       <link>https://noamelf.com/posts/airflow-summit-2020-talk/</link>

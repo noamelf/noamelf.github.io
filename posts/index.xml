@@ -27,7 +27,7 @@
 <p>Later, when we examine managerial productivity, we’ll see that when a manager digs deeply into a specific activity under his jurisdiction, he’s applying the principle of variable inspection. If the manager examined everything his various subordinates did, he would be meddling, which for the most part would be a waste of his time.</p>
 </blockquote>
 <p>Since the manager is responsible for everything produced by his team, there is an inclination to try and take part in, or at least review everything that is produced (which is a <strong>very bad idea</strong>!). You can&rsquo;t review all the code your team produces, you&rsquo;ll become a bottleneck and so lower your team productivity. On the other hand, saying &ldquo;write good code&rdquo; doesn&rsquo;t work either.</p>
-<p>Variable inspection suggest that you can get the optimal benefit from inspecting a limited number of tasks. By going deep into some tasks it&rsquo;s possible to better understand the different challenges your team faces in a more intimate way. For example, realizing there is a broken component that makes everyone&rsquo;s work much less efficient, or that something you thought was done in a certain way, is actually done completely differently. Another benefit is that you can provide guidance and standards (training) that will outlast the scope of the current review, and that that individual will pass it on while reviewing others&rsquo; work - hence having a cumulative effect.</p>
+<p>Variable inspection suggest that you can get the optimal benefit from inspecting a limited number of tasks. By going deep into some tasks it&rsquo;s possible to better understand the different challenges your team faces in a more intimate way. For example, realizing there is a broken component that makes everyone&rsquo;s work much less efficient, or that something you thought was done in a certain way, is actually done completely differently. Another benefit is that you can provide guidance and standards (training) that will outlast the scope of the current review, and that that individual will pass it on while reviewing others' work - hence having a cumulative effect.</p>
 <h3 id="2-meetings-are-not-so-bad-after-all">2. Meetings are not so bad after all</h3>
 <blockquote>
 <p>Before you are horrified by how much time I spend in meetings, answer a question: which of the activities—information-gathering, information-giving, decision-making, nudging, and being a role model—could I have performed outside a meeting? The answer is practically none. Meetings provide an occasion for managerial activities. Getting together with others is not, of course, an activity—it is a medium.</p>
@@ -245,7 +245,7 @@ pandas 0.25.3 Powerful data structures <span class="k">for</span> data analysis,
 <blockquote>
 <p>Image by <a href="https://pixabay.com/users/manfredsteger-1848497/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3947913">Manfred Steger</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3947913">Pixabay</a></p>
 </blockquote>
-<p>Below are my teams&rsquo; meeting protocols:</p>
+<p>Below are my teams' meeting protocols:</p>
 <h2 id="team-meetings-weekly">Team meetings (weekly)</h2>
 <h3 id="meeting-preparation">Meeting preparation</h3>
 <p>Each team member is requested to prepare for the meeting:</p>

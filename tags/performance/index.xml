@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 29 Aug 2015 16:38:46 +0000</lastBuildDate>
-    
-	<atom:link href="https://noamelf.com/tags/performance/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 29 Aug 2015 16:38:46 +0000</lastBuildDate><atom:link href="https://noamelf.com/tags/performance/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Optimization Tale</title>
       <link>https://noamelf.com/posts/optimization-tale/</link>
