@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 30 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://noamelf.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://noamelf.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Management Practices Brain-Dump</title>
+      <link>https://noamelf.com/posts/management-brain-dump/</link>
+      <pubDate>Wed, 07 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://noamelf.com/posts/management-brain-dump/</guid>
+      <description>Due to a change in Bluevine&amp;rsquo;s R&amp;amp;D structure, I&amp;rsquo;m receiving another team to manage directly. So I&amp;rsquo;ll be acting as a direct manager for both the Data Engineering team I&amp;rsquo;ve been managing this far and the new Core Backend team. This practically doubles the load I have right now and although I&amp;rsquo;m a bit concerned over my work/life balance and meeting the quality standard I inspire to in each of the teams, this is also an opportunity to have greater influence and learn new stuff.</description>
+    </item>
+    
     <item>
       <title>4 insights from High Output Management</title>
       <link>https://noamelf.com/posts/high-output-management/</link>
@@ -93,15 +102,6 @@ When writing a package (library), providing it with a good API, is almost as imp
       <guid>https://noamelf.com/posts/pycubator-open-source-python-training/</guid>
       <description>Preparing to teach my first Python class, I searched the web for teaching materials I can use and came up almost empty handed. There is a great variety of Python open books like Dive into Python and How to Think Like a Computer Scientist but they are all for autodidactic purposes and not for classroom teaching.
 Pycubator is my attempt at establishing an open source Python training slides and exercises that the community of Python teachers can use and hopefully contribute to.</description>
-    </item>
-    
-    <item>
-      <title>Project-based learning</title>
-      <link>https://noamelf.com/posts/project-based-learning/</link>
-      <pubDate>Wed, 23 Sep 2015 17:29:00 +0000</pubDate>
-      
-      <guid>https://noamelf.com/posts/project-based-learning/</guid>
-      <description>Context The Python course I&amp;rsquo;m instructing at Avratech (see earlier post and CNN story) is advancing and the students are already a month and a half into their group projects. This post is about my personal experience with shifting my class from teacher-led learning to project-based (learning), but first, have a look at the 5 beautiful projects they&amp;rsquo;re working on (you might want to use Google to translate the websites if your Hebrew reading skills aren&amp;rsquo;t in shape ☺):</description>
     </item>
     
   </channel>
