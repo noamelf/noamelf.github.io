@@ -6,8 +6,24 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Wed, 07 Oct 2020 00:00:00 +0000</lastBuildDate>
+		<lastBuildDate>Wed, 27 Jan 2021 00:00:00 +0000</lastBuildDate>
 		<atom:link href="https://noamelf.com/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>On Mentorship</title>
+			<link>https://noamelf.com/posts/on-mentorship/</link>
+			<pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+			
+			<guid>https://noamelf.com/posts/on-mentorship/</guid>
+			<description>Mentoring is something I mostly do quite often as part of leading a developer group, but I rarely do it consciously, it mostly just happens in 1on1s and code reviews.
+I notice many times that I&amp;rsquo;m not fully satisfied with the end results of a team member, but kind of let it slide and settle on the produced results. I do give feedback etc. but if it&amp;rsquo;s still not right, I just go on.</description>
+			<content type="html"><![CDATA[<p>Mentoring is something I mostly do quite often as part of leading a developer group, but I rarely do it consciously, it mostly just happens in 1on1s and code reviews.</p>
+<p>I notice many times that I&rsquo;m not fully satisfied with the end results of a team member, but kind of let it slide and settle on the produced results. I do give feedback etc. but if it&rsquo;s still not right, I just go on.</p>
+<p>What is missing is a way to bridge the gap between how I think things should be and between how the developer, is doing it. Feedback is not enough in many cases, and explicit mentorship time is required in order to bridge that gap. It might be that the persons task relevant maturity is just not there yet, and he needs clear and specific guidance and it could be that I&rsquo;m looking at it the wrong way, anyway, time is needed to bridge that gap.</p>
+<p>So, what I should do instead is to notice that this is the case and set aside time with that person, until I feel we reached a point where he can advance independently and produce high quality results. This needs to be time that is off the regular meeting cadence.</p>
+<p>Beside improving the results of that specific task, it can also improve our relationship, build knowledge that the dev and myself will take to other tasks (without meeting again), and improve the dev satisfaction by hopefully feeling he is learning new stuff as well as being seen.</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Team Management Brain Dump</title>
