@@ -1,12 +1,9 @@
 ---
-date: "2020-01-27T00:00:00Z"
+date: "2021-01-27T00:00:00Z"
 title: On Mentorship
-draft: true
 tags:
 - management
 ---
-
-{{< figure src="brain-dump.jpg" class="mid">}}
 
 Mentoring is something I mostly do quite often as part of leading a developer group, but I rarely do it consciously, it mostly just happens in 1on1s and code reviews.
 
