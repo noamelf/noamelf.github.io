@@ -5,12 +5,12 @@ tags:
 - management
 ---
 
-Transitioning from team to group management, I wanted to pass some of the techniques I gathered to the team leaders I'm managing. The best way I found to manage the ongoing work is through a [Kanban board](https://en.wikipedia.org/wiki/Kanban_board). It serves 2 related objectives:
+Transitioning from team to group management, I wanted to pass some of the techniques I gathered to the team leaders I'm managing, and one of them is to manage ongoing work with a [Kanban board](https://en.wikipedia.org/wiki/Kanban_board). It serves 2 related objectives:
 
 - It makes work items status highly visible
 - It emphasizes important steps in work items delivery
 
-This simple objectives may not sound like a big deal but it has great implications on the team's ability to deliver work predictably and reduce communication and process burden.
+This simple objectives may not sound like a big deal but it has great implications on the team's ability to deliver work predictably and reduce communication and process burden. 
 
 Kanban can have different columns for different teams. In the team I lead, we had a few iterations until we reached this structure:
 
