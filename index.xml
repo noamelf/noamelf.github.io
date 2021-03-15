@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 27 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://noamelf.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://noamelf.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kanban is simply great!</title>
+      <link>https://noamelf.com/posts/kanban/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://noamelf.com/posts/kanban/</guid>
+      <description>To me, a Kanban board serves enables 2 related objectives:
+ It makes work items status highly visible It emphasizes important steps in work items delivery  This simple objectives may not sound like a big deal but it has great implications on the team&amp;rsquo;s ability to deliver work predictably and reduce communication and process burden.
+Kanban can have different columns for different teams. In the team I lead, we had a few iterations until we reached this structure:</description>
+    </item>
+    
     <item>
       <title>On Mentorship</title>
       <link>https://noamelf.com/posts/on-mentorship/</link>
@@ -94,15 +105,6 @@ Pyenv for Python versions Pyenv is nice in the sense that it makes it a breeze t
       <guid>https://noamelf.com/posts/designing-pythonic-apis/</guid>
       <description>Learning from Kenneth Reitz&amp;rsquo;s Requests
 When writing a package (library), providing it with a good API, is almost as important as its functionality itself (well, at least if you want some adoption), but what makes a good API? In this post, I&amp;rsquo;ll try to provide some insights on that question by comparing Requests and Urllib (part of Python&amp;rsquo;s standard library) in a few typical HTTP usage scenarios and see why Requests has become the de facto standard among Python users.</description>
-    </item>
-    
-    <item>
-      <title>API and Microservices Management with Kong</title>
-      <link>https://noamelf.com/posts/api-and-microservices-management-with-kong/</link>
-      <pubDate>Fri, 18 Mar 2016 21:19:00 +0000</pubDate>
-      
-      <guid>https://noamelf.com/posts/api-and-microservices-management-with-kong/</guid>
-      <description>Hi all, At the last PyWebIL meetup I took the stand and gave a talk about one a very interesting open-source project - Kong. Kong is an API and microservices management layer that serves as a reverse proxy to your API&amp;rsquo;s while taking care of generic actions such as rate-limiting, authentication, monitoring and much more. One of it&amp;rsquo;s key benefits is that it is very plugable, hence it is easy to add your own custom logic (I actually enhanced a plugin to fit my needs).</description>
     </item>
     
   </channel>

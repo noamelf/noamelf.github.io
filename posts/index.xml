@@ -6,8 +6,50 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Wed, 27 Jan 2021 00:00:00 +0000</lastBuildDate>
+		<lastBuildDate>Mon, 15 Mar 2021 00:00:00 +0000</lastBuildDate>
 		<atom:link href="https://noamelf.com/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Kanban is simply great!</title>
+			<link>https://noamelf.com/posts/kanban/</link>
+			<pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+			
+			<guid>https://noamelf.com/posts/kanban/</guid>
+			<description>To me, a Kanban board serves enables 2 related objectives:
+ It makes work items status highly visible It emphasizes important steps in work items delivery  This simple objectives may not sound like a big deal but it has great implications on the team&amp;rsquo;s ability to deliver work predictably and reduce communication and process burden.
+Kanban can have different columns for different teams. In the team I lead, we had a few iterations until we reached this structure:</description>
+			<content type="html"><![CDATA[<p>To me, a <a href="https://en.wikipedia.org/wiki/Kanban_board">Kanban board</a> serves enables 2 related objectives:</p>
+<ul>
+<li>It makes work items status highly visible</li>
+<li>It emphasizes important steps in work items delivery</li>
+</ul>
+<p>This simple objectives may not sound like a big deal but it has great implications on the team&rsquo;s ability to deliver work predictably and reduce communication and process burden.</p>
+<p>Kanban can have different columns for different teams. In the team I lead, we had a few iterations until we reached this structure:</p>
+<table>
+<thead>
+<tr>
+<th>Backlog</th>
+<th>Blocked</th>
+<th>In progress</th>
+<th>On staging</th>
+<th>Tested on staging</th>
+<th>Deployed to production</th>
+<th>Done</th>
+</tr>
+</thead>
+</table>
+<p>This setup represents what is important for our team, particularly these columns:</p>
+<ul>
+<li>
+<p>Blocked - a key to streamlining development work is to, well, streamline work. Blocked tickets are tasks that cannot progress due to an external dependency. For example, waiting for the infrastructure team to make changes so development can continue, or a missing specification from the ticket requester. Having blocked items highly visible allows the team - and mostly the team leader - to reconcile it quickly and &ldquo;unstuck&rdquo; the task. If the task can&rsquo;t be &ldquo;unstack&rdquo; at the time being, it can go back to the backlog, making it clear that it won&rsquo;t be delivered at this time.</p>
+</li>
+<li>
+<p>On staging / tested on staging - there is a tendency to feel like the work is done once the code is merged. I think it&rsquo;s because a lot of the time testing it works - i.e. provides value to the users/system, can be a difficult and tedious job. Most devs prefer to leave that job for the QA team. I don&rsquo;t like that approach since there certainly some issues that the developer can find in a quick check and save the QA-&gt;dev-&gt;QA cycle, and also, it can leave the staging environment barely functional if something serious broke. Having the developer aware of that, and consciously move the ticket to the &ldquo;tested&rdquo; column, avoid these issues. The same goes for deployed to production / done columns, the developer needs to do his best to see that everything works well, before signing off the ticket as &ldquo;done&rdquo;.</p>
+</li>
+</ul>
+<p>Having a tight Kanban board team methodology makes life much easier for the developers and team lead as it makes it clear to everyone what work is being delivered and how it is being delivered, releasing the developers and the team leader to focus on the work itself, rather than on the process. A bit like having an automated code formatter (<a href="https://blog.golang.org/gofmt">gofmt</a>, <a href="https://black.readthedocs.io/en/stable/">Black</a>) that removes the need to discuss code formatting, having a clear methodology backed by a Kanban board reduces the need to discuss methodology each time.</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>On Mentorship</title>
