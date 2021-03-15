@@ -5,7 +5,7 @@ tags:
 - management
 ---
 
-To me, a [Kanban board](https://en.wikipedia.org/wiki/Kanban_board) serves enables 2 related objectives:
+Transitioning from team to group management, I wanted to pass some of the techniques I gathered to the team leaders I'm managing. The best way I found to manage the ongoing work is through a [Kanban board](https://en.wikipedia.org/wiki/Kanban_board). It serves 2 related objectives:
 
 - It makes work items status highly visible
 - It emphasizes important steps in work items delivery
