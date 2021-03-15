@@ -12,8 +12,6 @@ Transitioning from team to group management, I wanted to pass some of the techni
 
 This simple objectives may not sound like a big deal but it has great implications on the team's ability to deliver work predictably and reduce communication and process burden.
 
-{{< figure src="kanban-board.jpeg" class="mid">}}
-
 Kanban can have different columns for different teams. In the team I lead, we had a few iterations until we reached this structure:
 
 | Backlog | Blocked | In progress | On staging | Tested on staging | Deployed | Done |
