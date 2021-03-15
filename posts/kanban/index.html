@@ -11,7 +11,7 @@
 <meta itemprop="description" content="Transitioning from team to group management, I wanted to pass some of the techniques I gathered to the team leaders I&rsquo;m managing, and one of them is to manage ongoing work with a Kanban board. It serves 2 related objectives:
  It makes work items status highly visible It emphasizes important steps in work items delivery  This simple objectives may not sound like a big deal but it has great implications on the team&rsquo;s ability to deliver work predictably and reduce communication and process burden."><meta itemprop="datePublished" content="2021-03-15T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2021-03-15T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="467">
+<meta itemprop="wordCount" content="463">
 <meta itemprop="keywords" content="management," /><meta property="og:title" content="Kanban is simply great!" />
 <meta property="og:description" content="Transitioning from team to group management, I wanted to pass some of the techniques I gathered to the team leaders I&rsquo;m managing, and one of them is to manage ongoing work with a Kanban board. It serves 2 related objectives:
  It makes work items status highly visible It emphasizes important steps in work items delivery  This simple objectives may not sound like a big deal but it has great implications on the team&rsquo;s ability to deliver work predictably and reduce communication and process burden." />
@@ -82,6 +82,10 @@
 <li>It emphasizes important steps in work items delivery</li>
 </ul>
 <p>This simple objectives may not sound like a big deal but it has great implications on the team&rsquo;s ability to deliver work predictably and reduce communication and process burden.</p>
+<figure class="mid">
+    <img src="kanban-board.jpeg"/> 
+</figure>
+
 <p>Kanban can have different columns for different teams. In the team I lead, we had a few iterations until we reached this structure:</p>
 <table>
 <thead>
@@ -91,7 +95,7 @@
 <th>In progress</th>
 <th>On staging</th>
 <th>Tested on staging</th>
-<th>Deployed to production</th>
+<th>Deployed</th>
 <th>Done</th>
 </tr>
 </thead>
@@ -102,7 +106,7 @@
 <p>Blocked - a key to streamlining development work is to, well, streamline work. Blocked tickets are tasks that cannot progress due to an external dependency. For example, waiting for the infrastructure team to make changes so development can continue, or a missing specification from the ticket requester. Having blocked items highly visible allows the team - and mostly the team leader - to reconcile it quickly and &ldquo;unstuck&rdquo; the task. If the task can&rsquo;t be &ldquo;unstack&rdquo; at the time being, it can go back to the backlog, making it clear that it won&rsquo;t be delivered at this time.</p>
 </li>
 <li>
-<p>On staging / tested on staging - there is a tendency to feel like the work is done once the code is merged. I think it&rsquo;s because a lot of the time testing it works - i.e. provides value to the users/system, can be a difficult and tedious job. Most devs prefer to leave that job for the QA team. I don&rsquo;t like that approach since there certainly some issues that the developer can find in a quick check and save the QA-&gt;dev-&gt;QA cycle, and also, it can leave the staging environment barely functional if something serious broke. Having the developer aware of that, and consciously move the ticket to the &ldquo;tested&rdquo; column, avoid these issues. The same goes for deployed to production / done columns, the developer needs to do his best to see that everything works well, before signing off the ticket as &ldquo;done&rdquo;.</p>
+<p>On staging / tested on staging - there is a tendency to feel like the work is done once the code is merged. I think it&rsquo;s because a lot of the time testing it works - i.e. provides value to the users/system, can be a difficult and tedious job. Most devs prefer to leave that job for the QA team. I don&rsquo;t like that approach since there certainly some issues that the developer can find in a quick check and save the QA-&gt;dev-&gt;QA cycle, and also, it can leave the staging environment barely functional if something serious broke. Having the developer aware of that, and consciously move the ticket to the &ldquo;tested&rdquo; column, avoid these issues. The same goes for deployed / done columns, the developer needs to do his best to see that everything works well, before signing off the ticket as &ldquo;done&rdquo;.</p>
 </li>
 </ul>
 <p>Having a tight Kanban board team methodology makes life much easier for the developers and team lead as it makes it clear to everyone what work is being delivered and how it is being delivered, releasing the developers and the team leader to focus on the work itself, rather than on the process. A bit like having an automated code formatter (<a href="https://blog.golang.org/gofmt">gofmt</a>, <a href="https://black.readthedocs.io/en/stable/">Black</a>) that removes the need to discuss code formatting for each change, having a clear Kanban board reduces the need to check and discuss the status for each task.</p>
@@ -113,7 +117,7 @@
 				<p>
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://noamelf.com/tags/management">management</a></span>
 				</p>
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>467 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>463 Words</p>
 				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2021-03-15 02:00 &#43;0200</p>
 			</footer>
 		</article>
