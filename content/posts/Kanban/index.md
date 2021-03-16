@@ -17,8 +17,6 @@ Kanban can have different columns for different teams. In the team I lead, we ha
 | Backlog | Blocked | In progress | On staging | Tested on staging | Deployed | Done |
 |---------|---------|-------------|------------|-------------------|----------|------|
 
-
-
 This setup represents what is important for our team, particularly these columns:
 
 - Blocked - a key to streamlining development work is to, well, streamline work. Blocked tickets are tasks that cannot progress due to an external dependency. For example, waiting for the infrastructure team to make changes so development can continue, or a missing specification from the ticket requester. Having blocked items highly visible allows the team - and mostly the team leader - to reconcile it quickly and "unstuck" the task. If the task can't be "unstack" at the time being, it can go back to the backlog, making it clear that it won't be delivered at this time.
