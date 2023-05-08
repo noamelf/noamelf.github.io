@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#6C8DA1">
+	<meta name="msapplication-TileColor" content="#6C8DA1">
+<meta itemprop="name" content="Easily Mute and Unmute in Google Meet with Custom Shortcuts using Hammerspoon">
+<meta itemprop="description" content="Introduction As a frequent Google Meet user, I often find myself in situations where I need to quickly mute and unmute my microphone or toggle my video on and off during meetings. In my quest to make these tasks more efficient, I discovered Hammerspoon, a powerful automation tool for macOS. In this blog post, I&rsquo;ll share a handy script I created using Hammerspoon to set up custom shortcuts for these common actions in Google Meet."><meta itemprop="datePublished" content="2020-02-13T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-02-13T00:00:00+00:00" />
+<meta itemprop="wordCount" content="494">
+<meta itemprop="keywords" content="hacks," /><meta property="og:title" content="Easily Mute and Unmute in Google Meet with Custom Shortcuts using Hammerspoon" />
+<meta property="og:description" content="Introduction As a frequent Google Meet user, I often find myself in situations where I need to quickly mute and unmute my microphone or toggle my video on and off during meetings. In my quest to make these tasks more efficient, I discovered Hammerspoon, a powerful automation tool for macOS. In this blog post, I&rsquo;ll share a handy script I created using Hammerspoon to set up custom shortcuts for these common actions in Google Meet." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://noamelf.com/posts/mute-google-meet/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-02-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-02-13T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Easily Mute and Unmute in Google Meet with Custom Shortcuts using Hammerspoon"/>
+<meta name="twitter:description" content="Introduction As a frequent Google Meet user, I often find myself in situations where I need to quickly mute and unmute my microphone or toggle my video on and off during meetings. In my quest to make these tasks more efficient, I discovered Hammerspoon, a powerful automation tool for macOS. In this blog post, I&rsquo;ll share a handy script I created using Hammerspoon to set up custom shortcuts for these common actions in Google Meet."/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>Easily Mute and Unmute in Google Meet with Custom Shortcuts using Hammerspoon</title>
+	<link rel="stylesheet" href="https://noamelf.com/css/style.min.037b6ee8f8c1baab6a3d0a9da11c3ff18a7552471f16c59fd98538d5ce99208b.css" integrity="sha256-A3tu6PjBuqtqPQqdoRw/8Yp1UkcfFsWf2YU41c6ZIIs=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://noamelf.com">noamelf</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://noamelf.com/about/">About</a>
+				<a href="https://noamelf.com/posts/">Posts</a>
+				<a href="https://noamelf.com/projects/">Projects</a>
+				<a href="https://noamelf.com/talks/">Talks</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/noamelf" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://github.com/noamelf" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="https://www.linkedin.com/in/noamelf/" target="_blank" rel="noopener me" title="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://noamelf.com/about/">About</a></li>
+			<li><a href="https://noamelf.com/posts/">Posts</a></li>
+			<li><a href="https://noamelf.com/projects/">Projects</a></li>
+			<li><a href="https://noamelf.com/talks/">Talks</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Feb 13, 2020</span></div>
+				<h1>Easily Mute and Unmute in Google Meet with Custom Shortcuts using Hammerspoon</h1>
+			</header>
+			<div class="content">
+				<h3 id="introduction">Introduction<a href="#introduction" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>As a frequent Google Meet user, I often find myself in situations where I need to quickly mute and unmute my microphone or toggle my video on and off during meetings. In my quest to make these tasks more efficient, I discovered Hammerspoon, a powerful automation tool for macOS. In this blog post, I&rsquo;ll share a handy script I created using Hammerspoon to set up custom shortcuts for these common actions in Google Meet.</p>
+<h3 id="hammerspoon-a-brief-overview">Hammerspoon: A Brief Overview<a href="#hammerspoon-a-brief-overview" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>Before diving into the script, let me tell you a bit about Hammerspoon. It&rsquo;s an open-source automation tool for macOS that allows you to write Lua scripts to control various aspects of your system. I&rsquo;ve found Hammerspoon to be incredibly useful for customizing my workflow, automating repetitive tasks, and creating shortcuts. I highly recommend checking it out if you&rsquo;re a macOS user looking to enhance your productivity.</p>
+<h3 id="my-google-meet-script">My Google Meet Script<a href="#my-google-meet-script" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="kd">local</span> <span class="kr">function</span> <span class="nf">muteGoogleMeet</span><span class="p">(</span><span class="n">event</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">local</span> <span class="n">keyCode</span> <span class="o">=</span> <span class="n">event</span><span class="p">:</span><span class="n">getKeyCode</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">local</span> <span class="n">eventType</span> <span class="o">=</span> <span class="n">event</span><span class="p">:</span><span class="n">getType</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">if</span> <span class="n">eventType</span> <span class="o">==</span> <span class="n">hs.eventtap</span><span class="p">.</span><span class="n">event.types</span><span class="p">.</span><span class="n">keyDown</span> <span class="kr">then</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">local</span> <span class="n">toggleFeature</span><span class="p">,</span> <span class="n">shortcut</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kr">if</span> <span class="n">keyCode</span> <span class="o">==</span> <span class="n">hs.keycodes</span><span class="p">.</span><span class="n">map</span><span class="p">[</span><span class="s2">&#34;F1&#34;</span><span class="p">]</span> <span class="kr">then</span>
+</span></span><span class="line"><span class="cl">            <span class="n">toggleFeature</span> <span class="o">=</span> <span class="s2">&#34;mute&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">shortcut</span> <span class="o">=</span> <span class="s2">&#34;d&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">elseif</span> <span class="n">keyCode</span> <span class="o">==</span> <span class="n">hs.keycodes</span><span class="p">.</span><span class="n">map</span><span class="p">[</span><span class="s2">&#34;F2&#34;</span><span class="p">]</span> <span class="kr">then</span>
+</span></span><span class="line"><span class="cl">            <span class="n">toggleFeature</span> <span class="o">=</span> <span class="s2">&#34;video&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">shortcut</span> <span class="o">=</span> <span class="s2">&#34;e&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">else</span>
+</span></span><span class="line"><span class="cl">            <span class="kr">return</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">end</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">print</span><span class="p">(</span><span class="s2">&#34;Toggling &#34;</span> <span class="o">..</span> <span class="n">toggleFeature</span> <span class="o">..</span> <span class="s2">&#34; on Google Meet&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">hs.alert</span><span class="p">.</span><span class="n">show</span><span class="p">(</span><span class="s2">&#34;Toggling &#34;</span> <span class="o">..</span> <span class="n">toggleFeature</span> <span class="o">..</span> <span class="s2">&#34; on Google Meet&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">hs.application</span><span class="p">.</span><span class="n">launchOrFocus</span><span class="p">(</span><span class="s2">&#34;Google Meet&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">hs.timer</span><span class="p">.</span><span class="n">doAfter</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="n">hs.eventtap</span><span class="p">.</span><span class="n">keyStroke</span><span class="p">({</span><span class="s2">&#34;cmd&#34;</span><span class="p">},</span> <span class="n">shortcut</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">end</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">return</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">end</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">return</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl"><span class="kr">end</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">keyLogger</span> <span class="o">=</span> <span class="n">hs.eventtap</span><span class="p">.</span><span class="n">new</span><span class="p">({</span><span class="n">hs.eventtap</span><span class="p">.</span><span class="n">event.types</span><span class="p">.</span><span class="n">keyDown</span><span class="p">},</span> <span class="n">muteGoogleMeet</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">keyLogger</span><span class="p">:</span><span class="n">start</span><span class="p">()</span>
+</span></span></code></pre></div><h3 id="script-explanation">Script Explanation<a href="#script-explanation" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>I developed this Hammerspoon script to create custom shortcuts for muting and unmuting my microphone, as well as toggling my video on and off during a Google Meet session. The script is simple but effective, allowing me to stay focused on my meetings instead of fumbling with the Google Meet interface.</p>
+<p>The script starts with a function called &lsquo;muteGoogleMeet&rsquo;, which takes an &rsquo;event&rsquo; parameter. This function retrieves the &lsquo;keyCode&rsquo; and &rsquo;eventType&rsquo; of the event. If a key has been pressed, the script initializes two variables: &rsquo;toggleFeature&rsquo; and &lsquo;shortcut&rsquo;. Depending on whether the &lsquo;F1&rsquo; or &lsquo;F2&rsquo; key is pressed, the script sets these variables to control the microphone or video, respectively.</p>
+<p>After determining the desired action, the script displays a notification on the screen and brings Google Meet into focus. It then waits for a brief moment before sending a keyStroke event with the appropriate shortcut to perform the action in Google Meet.</p>
+<p>The script concludes by creating an event tap named &lsquo;keyLogger&rsquo;, which listens for keyDown events and calls the &lsquo;muteGoogleMeet&rsquo; function when a relevant key is pressed.</p>
+<h3 id="conclusion">Conclusion<a href="#conclusion" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>By using Hammerspoon and my custom Google Meet script, I&rsquo;ve been able to significantly improve my efficiency during virtual meetings. With just a couple of key presses, I can now quickly mute and unmute my microphone or toggle my video on and off, without having to navigate the Google Meet interface. If you&rsquo;re a macOS user who wants to streamline your Google Meet experience, I highly recommend giving Hammerspoon a try!</p>
+<blockquote>
+<p>This blog post was written by chatgpt, and approved by me</p>
+</blockquote>
+
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://noamelf.com/tags/hacks">hacks</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>494 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-02-13 02:00 &#43;0200</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="next-post" href="https://noamelf.com/posts/airflow-summit-2020-talk/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>Airflow Summit 2020 talk</span>
+			</a>
+			<a class="prev-post" href="https://noamelf.com/posts/flexible-work-schedule/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>Encouraging flexible work schedules</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2023 <a href="https://noamelf.com">Noam Elfanbaum</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://noamelf.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://noamelf.com/js/bundle.min.580988ed2982bcbb74a1773c7abea97b43e4c43b9324e10cda0813ec6ec4bb67.js" integrity="sha256-WAmI7SmCvLt0oXc8er6pe0PkxDuTJOEM2ggT7G7Eu2c=" crossorigin="anonymous"></script>
+	
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-62273869-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+</body>
+
+</html>

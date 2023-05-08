@@ -9,17 +9,16 @@
 	<meta name="msapplication-TileColor" content="#6C8DA1">
 <meta itemprop="name" content="My Python setup for 2020">
 <meta itemprop="description" content="My Python setup used to change a lot, as I would find ad-hoc solutions for my needs. These days I&rsquo;ve settled on a Python setup that satisfies pretty much all of my different use cases and is easy to use. It is composed of these tools:
-Pyenv for Python versions Pyenv is nice in the sense that it makes it a breeze to try and use new Python versions that don&rsquo;t come bundled with your OS."><meta itemprop="datePublished" content="2020-01-18T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2020-01-18T00:00:00&#43;00:00" />
+Pyenv for Python versions Pyenv is nice in the sense that it makes it a breeze to try and use new Python versions that don&rsquo;t come bundled with your OS."><meta itemprop="datePublished" content="2020-01-18T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-01-18T00:00:00+00:00" />
 <meta itemprop="wordCount" content="675">
 <meta itemprop="keywords" content="python," /><meta property="og:title" content="My Python setup for 2020" />
 <meta property="og:description" content="My Python setup used to change a lot, as I would find ad-hoc solutions for my needs. These days I&rsquo;ve settled on a Python setup that satisfies pretty much all of my different use cases and is easy to use. It is composed of these tools:
 Pyenv for Python versions Pyenv is nice in the sense that it makes it a breeze to try and use new Python versions that don&rsquo;t come bundled with your OS." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://noamelf.com/posts/my-python-setup-for-2020/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-01-18T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2020-01-18T00:00:00&#43;00:00" />
-
+<meta property="article:published_time" content="2020-01-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-01-18T00:00:00+00:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="My Python setup for 2020"/>
 <meta name="twitter:description" content="My Python setup used to change a lot, as I would find ad-hoc solutions for my needs. These days I&rsquo;ve settled on a Python setup that satisfies pretty much all of my different use cases and is easy to use. It is composed of these tools:
@@ -33,7 +32,7 @@ Pyenv for Python versions Pyenv is nice in the sense that it makes it a breeze t
 	<link rel="shortcut icon" href="/favicon.ico">
 
 	<title>My Python setup for 2020</title>
-	<link rel="stylesheet" href="https://noamelf.com/css/style.min.f74778e3020c87c304fb5982e09b92ba63a5c7f202996d4c7283d6057acfe9c1.css" integrity="sha256-90d44wIMh8ME+1mC4JuSumOlx/ICmW1McoPWBXrP6cE=" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://noamelf.com/css/style.min.037b6ee8f8c1baab6a3d0a9da11c3ff18a7552471f16c59fd98538d5ce99208b.css" integrity="sha256-A3tu6PjBuqtqPQqdoRw/8Yp1UkcfFsWf2YU41c6ZIIs=" crossorigin="anonymous">
 	
 </head>
 
@@ -79,31 +78,31 @@ Pyenv for Python versions Pyenv is nice in the sense that it makes it a breeze t
 				<p>My Python setup used to change a lot, as I would find ad-hoc solutions for my needs. These days I&rsquo;ve settled on a Python setup that satisfies pretty much all of my different use cases and is easy to use. It is composed of these tools:</p>
 <h3 id="pyenv-for-python-versions">Pyenv for Python versions<a href="#pyenv-for-python-versions" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p><a href="https://github.com/pyenv/pyenv">Pyenv</a> is nice in the sense that it makes it a breeze to try and use new Python versions that don&rsquo;t come bundled with your OS. e.g. try out the <a href="https://www.python.org/dev/peps/pep-0572/">Walrus operator</a> and Python 3.8:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pyenv install 3.8.0
-pyenv shell 3.8.0
-</code></pre></div><p>And you are ready to go.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pyenv install 3.8.0
+</span></span><span class="line"><span class="cl">pyenv shell 3.8.0
+</span></span></code></pre></div><p>And you are ready to go.</p>
 <h3 id="pyenv-virtualenv-for-virtual-environments">Pyenv-virtualenv for virtual environments<a href="#pyenv-virtualenv-for-virtual-environments" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>Now that you are using Pyenv, you create virtual environments with different Python interpreters for your projects. Of course you could use Python&rsquo;s venv module, and that is fine, but with Pyenv-virtualenv you get a clear interface and a <a href="https://virtualenvwrapper.readthedocs.io/en/latest/">Virtualenvwrapper</a> like user experience:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pyenv virtualenv 3.8.0 my-project
-</code></pre></div><h3 id="pipx-for-python-applications">Pipx for Python applications<a href="#pipx-for-python-applications" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pyenv virtualenv 3.8.0 my-project
+</span></span></code></pre></div><h3 id="pipx-for-python-applications">Pipx for Python applications<a href="#pipx-for-python-applications" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>It&rsquo;s a bad practice to install Python packages in your system&rsquo;s Python environment since it can mess it up: different packages installed can override one another and make system utilities dysfunctional. On the other hand, it&rsquo;s pretty annoying to create a virtual environment for each new program you want to install and then add it to <code>PATH</code>. <a href="https://pipxproject.github.io/pipx/">Pipx</a> solves that problem by creating the virtual environment for you and symlinking it to your local bin path. So to install black, you just write:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ pipx install black
-...
-$ which black
-/home/noam/.local/bin/black
-</code></pre></div><h3 id="poetry-is-the-new-pipenv">Poetry is the new pipenv<a href="#poetry-is-the-new-pipenv" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ pipx install black
+</span></span><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl">$ which black
+</span></span><span class="line"><span class="cl">/home/noam/.local/bin/black
+</span></span></code></pre></div><h3 id="poetry-is-the-new-pipenv">Poetry is the new pipenv<a href="#poetry-is-the-new-pipenv" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p><a href="https://python-poetry.org/">Poetry</a> and <a href="https://pipenv-fork.readthedocs.io/en/latest/">Pipenv</a> are similar projects that have a joint appeal - improve Python&rsquo;s packaging and dependency management. Pipenv was the pioneering project, it made a big splash when it came out about 2.5 years ago and I was eager to try it out. While using it, I found that many times it was slow and buggy (this was up to a year ago so things might have changed since). Poetry came out about a year later and offers pretty much the same features, but in contrast with Pipenv, it worked nicely for me from the get-go. There are many nice features to it, but I&rsquo;ll just highlight a few that I like especially:</p>
 <ul>
 <li><strong>Dependency resolver</strong> - Poetry comes with an elaborative and relatively quick dependency resolver . It shows which packages are at conflict and why, so it&rsquo;s easy to understand and fix (if possible). This is a pretty big deal when adding requirements to an existing project. Doing so with pip and a simple <code>requirements.txt</code> file, can cause the application to break at run time, while using poetry shows you the conflict at the time you are adding it. Another nice related feature is the ability to print the dependency graph:</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ poetry show --tree
-pandas 0.25.3 Powerful data structures <span class="k">for</span> data analysis, <span class="nb">time</span> series, and statistics
-├── numpy &gt;<span class="o">=</span>1.13.3
-├── python-dateutil &gt;<span class="o">=</span>2.6.1
-│ └── six &gt;<span class="o">=</span>1.5
-└── pytz &gt;<span class="o">=</span>2017.2
-...
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ poetry show --tree
+</span></span><span class="line"><span class="cl">pandas 0.25.3 Powerful data structures <span class="k">for</span> data analysis, <span class="nb">time</span> series, and statistics
+</span></span><span class="line"><span class="cl">├── numpy &gt;<span class="o">=</span>1.13.3
+</span></span><span class="line"><span class="cl">├── python-dateutil &gt;<span class="o">=</span>2.6.1
+</span></span><span class="line"><span class="cl">│ └── six &gt;<span class="o">=</span>1.5
+</span></span><span class="line"><span class="cl">└── pytz &gt;<span class="o">=</span>2017.2
+</span></span><span class="line"><span class="cl">...
+</span></span></code></pre></div><ul>
 <li>
 <p><strong>pyproject.toml</strong> - Poetry replaces the renowned <code>setup.py</code> file with a <code>pyproject.toml</code> file that is pretty simple to create and understand (you can see an <a href="https://github.com/noamelf/toshl-fixer/blob/master/pyproject.toml">example</a> in a project of mine).</p>
 </li>
@@ -143,7 +142,7 @@ pandas 0.25.3 Powerful data structures <span class="k">for</span> data analysis,
 	</main>
 
 	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
-		<p>&copy; 2021 <a href="https://noamelf.com">Noam Elfanbaum</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>&copy; 2023 <a href="https://noamelf.com">Noam Elfanbaum</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
 		<p>
 			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://noamelf.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
 		</p>
@@ -151,7 +150,7 @@ pandas 0.25.3 Powerful data structures <span class="k">for</span> data analysis,
 
 
 
-	<script src="https://noamelf.com/js/bundle.min.7d8545daa55d62427355498dd8da13f98ff79a7938ce7d2a5e2ae1ec0de3beb8.js" integrity="sha256-fYVF2qVdYkJzVUmN2NoT+Y/3mnk4zn0qXirh7A3jvrg=" crossorigin="anonymous"></script>
+	<script src="https://noamelf.com/js/bundle.min.580988ed2982bcbb74a1773c7abea97b43e4c43b9324e10cda0813ec6ec4bb67.js" integrity="sha256-WAmI7SmCvLt0oXc8er6pe0PkxDuTJOEM2ggT7G7Eu2c=" crossorigin="anonymous"></script>
 	
 <script type="application/javascript">
 var doNotTrack = false;

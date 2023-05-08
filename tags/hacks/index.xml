@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hacks on noamelf</title>
+    <link>https://noamelf.com/tags/hacks/</link>
+    <description>Recent content in hacks on noamelf</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 13 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://noamelf.com/tags/hacks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Easily Mute and Unmute in Google Meet with Custom Shortcuts using Hammerspoon</title>
+      <link>https://noamelf.com/posts/mute-google-meet/</link>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://noamelf.com/posts/mute-google-meet/</guid>
+      <description>Introduction As a frequent Google Meet user, I often find myself in situations where I need to quickly mute and unmute my microphone or toggle my video on and off during meetings. In my quest to make these tasks more efficient, I discovered Hammerspoon, a powerful automation tool for macOS. In this blog post, I&amp;rsquo;ll share a handy script I created using Hammerspoon to set up custom shortcuts for these common actions in Google Meet.</description>
+    </item>
+    
+  </channel>
+</rss>

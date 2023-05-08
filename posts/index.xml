@@ -16,7 +16,7 @@
 			
 			<guid>https://noamelf.com/posts/kanban/</guid>
 			<description>Transitioning from team to group management, I wanted to pass some of the techniques I gathered to the team leaders I&amp;rsquo;m managing, and one of them is to manage ongoing work with a Kanban board. It serves 2 related objectives:
- It makes work items status highly visible It emphasizes important steps in work items delivery  This simple objectives may not sound like a big deal but it has great implications on the team&amp;rsquo;s ability to deliver work predictably and reduce communication and process burden.</description>
+It makes work items status highly visible It emphasizes important steps in work items delivery This simple objectives may not sound like a big deal but it has great implications on the team&amp;rsquo;s ability to deliver work predictably and reduce communication and process burden.</description>
 			<content type="html"><![CDATA[<p>Transitioning from team to group management, I wanted to pass some of the techniques I gathered to the team leaders I&rsquo;m managing, and one of them is to manage ongoing work with a <a href="https://en.wikipedia.org/wiki/Kanban_board">Kanban board</a>. It serves 2 related objectives:</p>
 <ul>
 <li>It makes work items status highly visible</li>
@@ -71,9 +71,8 @@
 			
 			<guid>https://noamelf.com/posts/mgmt-brain-dump/</guid>
 			<description>I&amp;rsquo;m receiving another team to manage directly, which is good news! But it also means I&amp;rsquo;ll have a lot on my table. I wrote down this list of things that support efficient work for myself to follow:
-  Single &amp;ldquo;in progress&amp;rdquo; task - make sure each team member is working on a single task at each given point in time to avoid confusion and context switch overhead. If a task is stuck, it goes to the &amp;ldquo;blocked&amp;rdquo; queue so it&amp;rsquo;ll be clear that we have a problem.</description>
-			<content type="html"><![CDATA[<figure class="mid">
-    <img src="brain-dump.jpg"/> 
+Single &amp;ldquo;in progress&amp;rdquo; task - make sure each team member is working on a single task at each given point in time to avoid confusion and context switch overhead. If a task is stuck, it goes to the &amp;ldquo;blocked&amp;rdquo; queue so it&amp;rsquo;ll be clear that we have a problem.</description>
+			<content type="html"><![CDATA[<figure class="mid"><img src="brain-dump.jpg"/>
 </figure>
 
 <p>I&rsquo;m receiving another team to manage directly, which is good news! But it also means I&rsquo;ll have a lot on my table. I wrote down this list of things that support efficient work for myself to follow:</p>
@@ -147,10 +146,9 @@
 			
 			<guid>https://noamelf.com/posts/high-output-management/</guid>
 			<description>Wanting to broaden my knowledge in management, I picked up High Output Management after I saw it come up a few times on Hacker News. Andrew Grove&amp;rsquo;s writing is very down to earth and practical and I had quite a few a-ha moments. Here are 4 ideas that stood out for me and I use in my day to day work.
- 1. Variable Inspection  Later, when we examine managerial productivity, we’ll see that when a manager digs deeply into a specific activity under his jurisdiction, he’s applying the principle of variable inspection.</description>
+1. Variable Inspection Later, when we examine managerial productivity, we’ll see that when a manager digs deeply into a specific activity under his jurisdiction, he’s applying the principle of variable inspection.</description>
 			<content type="html"><![CDATA[<p>Wanting to broaden my knowledge in management, I picked up <a href="https://www.amazon.com/dp/B015VACHOK/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1">High Output Management</a> after I saw it come up a few times on Hacker News. Andrew Grove&rsquo;s writing is very down to earth and practical and I had quite a few a-ha moments. Here are 4 ideas that stood out for me and I use in my day to day work.</p>
-<figure class="mid">
-    <img src="book-cover1.jpg"/> 
+<figure class="mid"><img src="book-cover1.jpg"/>
 </figure>
 
 <h3 id="1-variable-inspection">1. Variable Inspection</h3>
@@ -158,7 +156,7 @@
 <p>Later, when we examine managerial productivity, we’ll see that when a manager digs deeply into a specific activity under his jurisdiction, he’s applying the principle of variable inspection. If the manager examined everything his various subordinates did, he would be meddling, which for the most part would be a waste of his time.</p>
 </blockquote>
 <p>Since the manager is responsible for everything produced by his team, there is an inclination to try and take part in, or at least review everything that is produced (which is a <strong>very bad idea</strong>!). You can&rsquo;t review all the code your team produces, you&rsquo;ll become a bottleneck and so lower your team productivity. On the other hand, saying &ldquo;write good code&rdquo; doesn&rsquo;t work either.</p>
-<p>Variable inspection suggest that you can get the optimal benefit from inspecting a limited number of tasks. By going deep into some tasks it&rsquo;s possible to better understand the different challenges your team faces in a more intimate way. For example, realizing there is a broken component that makes everyone&rsquo;s work much less efficient, or that something you thought was done in a certain way, is actually done completely differently. Another benefit is that you can provide guidance and standards (training) that will outlast the scope of the current review, and that that individual will pass it on while reviewing others' work - hence having a cumulative effect.</p>
+<p>Variable inspection suggest that you can get the optimal benefit from inspecting a limited number of tasks. By going deep into some tasks it&rsquo;s possible to better understand the different challenges your team faces in a more intimate way. For example, realizing there is a broken component that makes everyone&rsquo;s work much less efficient, or that something you thought was done in a certain way, is actually done completely differently. Another benefit is that you can provide guidance and standards (training) that will outlast the scope of the current review, and that that individual will pass it on while reviewing others&rsquo; work - hence having a cumulative effect.</p>
 <h3 id="2-meetings-are-not-so-bad-after-all">2. Meetings are not so bad after all</h3>
 <blockquote>
 <p>Before you are horrified by how much time I spend in meetings, answer a question: which of the activities—information-gathering, information-giving, decision-making, nudging, and being a role model—could I have performed outside a meeting? The answer is practically none. Meetings provide an occasion for managerial activities. Getting together with others is not, of course, an activity—it is a medium.</p>
@@ -213,14 +211,69 @@ At Bluevine we use Airflow to drive our ML platform.</description>
 		</item>
 		
 		<item>
+			<title>Easily Mute and Unmute in Google Meet with Custom Shortcuts using Hammerspoon</title>
+			<link>https://noamelf.com/posts/mute-google-meet/</link>
+			<pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
+			
+			<guid>https://noamelf.com/posts/mute-google-meet/</guid>
+			<description>Introduction As a frequent Google Meet user, I often find myself in situations where I need to quickly mute and unmute my microphone or toggle my video on and off during meetings. In my quest to make these tasks more efficient, I discovered Hammerspoon, a powerful automation tool for macOS. In this blog post, I&amp;rsquo;ll share a handy script I created using Hammerspoon to set up custom shortcuts for these common actions in Google Meet.</description>
+			<content type="html"><![CDATA[<h3 id="introduction">Introduction</h3>
+<p>As a frequent Google Meet user, I often find myself in situations where I need to quickly mute and unmute my microphone or toggle my video on and off during meetings. In my quest to make these tasks more efficient, I discovered Hammerspoon, a powerful automation tool for macOS. In this blog post, I&rsquo;ll share a handy script I created using Hammerspoon to set up custom shortcuts for these common actions in Google Meet.</p>
+<h3 id="hammerspoon-a-brief-overview">Hammerspoon: A Brief Overview</h3>
+<p>Before diving into the script, let me tell you a bit about Hammerspoon. It&rsquo;s an open-source automation tool for macOS that allows you to write Lua scripts to control various aspects of your system. I&rsquo;ve found Hammerspoon to be incredibly useful for customizing my workflow, automating repetitive tasks, and creating shortcuts. I highly recommend checking it out if you&rsquo;re a macOS user looking to enhance your productivity.</p>
+<h3 id="my-google-meet-script">My Google Meet Script</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="kd">local</span> <span class="kr">function</span> <span class="nf">muteGoogleMeet</span><span class="p">(</span><span class="n">event</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">local</span> <span class="n">keyCode</span> <span class="o">=</span> <span class="n">event</span><span class="p">:</span><span class="n">getKeyCode</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">local</span> <span class="n">eventType</span> <span class="o">=</span> <span class="n">event</span><span class="p">:</span><span class="n">getType</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">if</span> <span class="n">eventType</span> <span class="o">==</span> <span class="n">hs.eventtap</span><span class="p">.</span><span class="n">event.types</span><span class="p">.</span><span class="n">keyDown</span> <span class="kr">then</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">local</span> <span class="n">toggleFeature</span><span class="p">,</span> <span class="n">shortcut</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kr">if</span> <span class="n">keyCode</span> <span class="o">==</span> <span class="n">hs.keycodes</span><span class="p">.</span><span class="n">map</span><span class="p">[</span><span class="s2">&#34;F1&#34;</span><span class="p">]</span> <span class="kr">then</span>
+</span></span><span class="line"><span class="cl">            <span class="n">toggleFeature</span> <span class="o">=</span> <span class="s2">&#34;mute&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">shortcut</span> <span class="o">=</span> <span class="s2">&#34;d&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">elseif</span> <span class="n">keyCode</span> <span class="o">==</span> <span class="n">hs.keycodes</span><span class="p">.</span><span class="n">map</span><span class="p">[</span><span class="s2">&#34;F2&#34;</span><span class="p">]</span> <span class="kr">then</span>
+</span></span><span class="line"><span class="cl">            <span class="n">toggleFeature</span> <span class="o">=</span> <span class="s2">&#34;video&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">shortcut</span> <span class="o">=</span> <span class="s2">&#34;e&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">else</span>
+</span></span><span class="line"><span class="cl">            <span class="kr">return</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">end</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">print</span><span class="p">(</span><span class="s2">&#34;Toggling &#34;</span> <span class="o">..</span> <span class="n">toggleFeature</span> <span class="o">..</span> <span class="s2">&#34; on Google Meet&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">hs.alert</span><span class="p">.</span><span class="n">show</span><span class="p">(</span><span class="s2">&#34;Toggling &#34;</span> <span class="o">..</span> <span class="n">toggleFeature</span> <span class="o">..</span> <span class="s2">&#34; on Google Meet&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">hs.application</span><span class="p">.</span><span class="n">launchOrFocus</span><span class="p">(</span><span class="s2">&#34;Google Meet&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">hs.timer</span><span class="p">.</span><span class="n">doAfter</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="n">hs.eventtap</span><span class="p">.</span><span class="n">keyStroke</span><span class="p">({</span><span class="s2">&#34;cmd&#34;</span><span class="p">},</span> <span class="n">shortcut</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">end</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">return</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">end</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">return</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl"><span class="kr">end</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">keyLogger</span> <span class="o">=</span> <span class="n">hs.eventtap</span><span class="p">.</span><span class="n">new</span><span class="p">({</span><span class="n">hs.eventtap</span><span class="p">.</span><span class="n">event.types</span><span class="p">.</span><span class="n">keyDown</span><span class="p">},</span> <span class="n">muteGoogleMeet</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">keyLogger</span><span class="p">:</span><span class="n">start</span><span class="p">()</span>
+</span></span></code></pre></div><h3 id="script-explanation">Script Explanation</h3>
+<p>I developed this Hammerspoon script to create custom shortcuts for muting and unmuting my microphone, as well as toggling my video on and off during a Google Meet session. The script is simple but effective, allowing me to stay focused on my meetings instead of fumbling with the Google Meet interface.</p>
+<p>The script starts with a function called &lsquo;muteGoogleMeet&rsquo;, which takes an &rsquo;event&rsquo; parameter. This function retrieves the &lsquo;keyCode&rsquo; and &rsquo;eventType&rsquo; of the event. If a key has been pressed, the script initializes two variables: &rsquo;toggleFeature&rsquo; and &lsquo;shortcut&rsquo;. Depending on whether the &lsquo;F1&rsquo; or &lsquo;F2&rsquo; key is pressed, the script sets these variables to control the microphone or video, respectively.</p>
+<p>After determining the desired action, the script displays a notification on the screen and brings Google Meet into focus. It then waits for a brief moment before sending a keyStroke event with the appropriate shortcut to perform the action in Google Meet.</p>
+<p>The script concludes by creating an event tap named &lsquo;keyLogger&rsquo;, which listens for keyDown events and calls the &lsquo;muteGoogleMeet&rsquo; function when a relevant key is pressed.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>By using Hammerspoon and my custom Google Meet script, I&rsquo;ve been able to significantly improve my efficiency during virtual meetings. With just a couple of key presses, I can now quickly mute and unmute my microphone or toggle my video on and off, without having to navigate the Google Meet interface. If you&rsquo;re a macOS user who wants to streamline your Google Meet experience, I highly recommend giving Hammerspoon a try!</p>
+<blockquote>
+<p>This blog post was written by chatgpt, and approved by me</p>
+</blockquote>
+]]></content>
+		</item>
+		
+		<item>
 			<title>Encouraging flexible work schedules</title>
 			<link>https://noamelf.com/posts/flexible-work-schedule/</link>
 			<pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
 			
 			<guid>https://noamelf.com/posts/flexible-work-schedule/</guid>
-			<description>For many of us, programming is a hobby as well as a job. But, I can say that for most of my professional career, as much as I enjoy programming, I didn&amp;rsquo;t really enjoy having a job as a programmer. That&amp;rsquo;s a shame because you would expect that if you do something that you love, you&amp;rsquo;ll also enjoy doing it for a living, but somehow it wasn&amp;rsquo;t that great.</description>
-			<content type="html"><![CDATA[<figure>
-    <img src="work-harder.jpg"/> 
+			<description>For many of us, programming is a hobby as well as a job. But, I can say that for most of my professional career, as much as I enjoy programming, I didn&amp;rsquo;t really enjoy having a job as a programmer. That&amp;rsquo;s a shame because you would expect that if you do something that you love, you&amp;rsquo;ll also enjoy doing it for a living, but somehow it wasn&amp;rsquo;t that great. This is not to say I&amp;rsquo;m not grateful for earning a great living and working in a mostly interesting field, but that work can also be really fun!</description>
+			<content type="html"><![CDATA[<figure><img src="work-harder.jpg"/>
 </figure>
 
 <p>For many of us, programming is a hobby as well as a job. But, I can say that for most of my professional career, as much as I enjoy programming, I didn&rsquo;t really enjoy having a job as a programmer. That&rsquo;s a shame because you would expect that if you do something that you love, you&rsquo;ll also enjoy doing it for a living, but somehow it wasn&rsquo;t that great. This is not to say I&rsquo;m not grateful for earning a great living and working in a mostly interesting field, but that work can also be really fun! There are a few reasons I can think of why is that, but the main one I believe is that in many jobs, the playfulness and self-expression aspects are lost in a sea of seriousness, procedures, and politics.</p>
@@ -258,31 +311,31 @@ Pyenv for Python versions Pyenv is nice in the sense that it makes it a breeze t
 			<content type="html"><![CDATA[<p>My Python setup used to change a lot, as I would find ad-hoc solutions for my needs. These days I&rsquo;ve settled on a Python setup that satisfies pretty much all of my different use cases and is easy to use. It is composed of these tools:</p>
 <h3 id="pyenv-for-python-versions">Pyenv for Python versions</h3>
 <p><a href="https://github.com/pyenv/pyenv">Pyenv</a> is nice in the sense that it makes it a breeze to try and use new Python versions that don&rsquo;t come bundled with your OS. e.g. try out the <a href="https://www.python.org/dev/peps/pep-0572/">Walrus operator</a> and Python 3.8:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pyenv install 3.8.0
-pyenv shell 3.8.0
-</code></pre></div><p>And you are ready to go.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pyenv install 3.8.0
+</span></span><span class="line"><span class="cl">pyenv shell 3.8.0
+</span></span></code></pre></div><p>And you are ready to go.</p>
 <h3 id="pyenv-virtualenv-for-virtual-environments">Pyenv-virtualenv for virtual environments</h3>
 <p>Now that you are using Pyenv, you create virtual environments with different Python interpreters for your projects. Of course you could use Python&rsquo;s venv module, and that is fine, but with Pyenv-virtualenv you get a clear interface and a <a href="https://virtualenvwrapper.readthedocs.io/en/latest/">Virtualenvwrapper</a> like user experience:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pyenv virtualenv 3.8.0 my-project
-</code></pre></div><h3 id="pipx-for-python-applications">Pipx for Python applications</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pyenv virtualenv 3.8.0 my-project
+</span></span></code></pre></div><h3 id="pipx-for-python-applications">Pipx for Python applications</h3>
 <p>It&rsquo;s a bad practice to install Python packages in your system&rsquo;s Python environment since it can mess it up: different packages installed can override one another and make system utilities dysfunctional. On the other hand, it&rsquo;s pretty annoying to create a virtual environment for each new program you want to install and then add it to <code>PATH</code>. <a href="https://pipxproject.github.io/pipx/">Pipx</a> solves that problem by creating the virtual environment for you and symlinking it to your local bin path. So to install black, you just write:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ pipx install black
-...
-$ which black
-/home/noam/.local/bin/black
-</code></pre></div><h3 id="poetry-is-the-new-pipenv">Poetry is the new pipenv</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ pipx install black
+</span></span><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl">$ which black
+</span></span><span class="line"><span class="cl">/home/noam/.local/bin/black
+</span></span></code></pre></div><h3 id="poetry-is-the-new-pipenv">Poetry is the new pipenv</h3>
 <p><a href="https://python-poetry.org/">Poetry</a> and <a href="https://pipenv-fork.readthedocs.io/en/latest/">Pipenv</a> are similar projects that have a joint appeal - improve Python&rsquo;s packaging and dependency management. Pipenv was the pioneering project, it made a big splash when it came out about 2.5 years ago and I was eager to try it out. While using it, I found that many times it was slow and buggy (this was up to a year ago so things might have changed since). Poetry came out about a year later and offers pretty much the same features, but in contrast with Pipenv, it worked nicely for me from the get-go. There are many nice features to it, but I&rsquo;ll just highlight a few that I like especially:</p>
 <ul>
 <li><strong>Dependency resolver</strong> - Poetry comes with an elaborative and relatively quick dependency resolver . It shows which packages are at conflict and why, so it&rsquo;s easy to understand and fix (if possible). This is a pretty big deal when adding requirements to an existing project. Doing so with pip and a simple <code>requirements.txt</code> file, can cause the application to break at run time, while using poetry shows you the conflict at the time you are adding it. Another nice related feature is the ability to print the dependency graph:</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ poetry show --tree
-pandas 0.25.3 Powerful data structures <span class="k">for</span> data analysis, <span class="nb">time</span> series, and statistics
-├── numpy &gt;<span class="o">=</span>1.13.3
-├── python-dateutil &gt;<span class="o">=</span>2.6.1
-│ └── six &gt;<span class="o">=</span>1.5
-└── pytz &gt;<span class="o">=</span>2017.2
-...
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ poetry show --tree
+</span></span><span class="line"><span class="cl">pandas 0.25.3 Powerful data structures <span class="k">for</span> data analysis, <span class="nb">time</span> series, and statistics
+</span></span><span class="line"><span class="cl">├── numpy &gt;<span class="o">=</span>1.13.3
+</span></span><span class="line"><span class="cl">├── python-dateutil &gt;<span class="o">=</span>2.6.1
+</span></span><span class="line"><span class="cl">│ └── six &gt;<span class="o">=</span>1.5
+</span></span><span class="line"><span class="cl">└── pytz &gt;<span class="o">=</span>2017.2
+</span></span><span class="line"><span class="cl">...
+</span></span></code></pre></div><ul>
 <li>
 <p><strong>pyproject.toml</strong> - Poetry replaces the renowned <code>setup.py</code> file with a <code>pyproject.toml</code> file that is pretty simple to create and understand (you can see an <a href="https://github.com/noamelf/toshl-fixer/blob/master/pyproject.toml">example</a> in a project of mine).</p>
 </li>
@@ -313,9 +366,8 @@ pandas 0.25.3 Powerful data structures <span class="k">for</span> data analysis,
 <li>Smart usage of communication channels</li>
 <li>Forming team communication habits</li>
 </ol>
-<figure>
-    <img src="post-it-notes.jpg"
-         alt="Communication can become quite messy"/> <figcaption>
+<figure><img src="post-it-notes.jpg"
+         alt="Communication can become quite messy"/><figcaption>
             <p>Communication can become quite messy</p>
         </figcaption>
 </figure>
@@ -342,9 +394,8 @@ pandas 0.25.3 Powerful data structures <span class="k">for</span> data analysis,
 </ul>
 <hr>
 <h2 id="forming-team-communication-habits">Forming team communication habits</h2>
-<figure>
-    <img src="sheep.jpg"
-         alt="Getting cooperation can be difficult"/> <figcaption>
+<figure><img src="sheep.jpg"
+         alt="Getting cooperation can be difficult"/><figcaption>
             <p>Getting cooperation can be difficult</p>
         </figcaption>
 </figure>
@@ -364,7 +415,7 @@ pandas 0.25.3 Powerful data structures <span class="k">for</span> data analysis,
 			
 			<guid>https://noamelf.com/posts/meeting-protocols/</guid>
 			<description>Engineering teams have a few types of meetings that repeat themselves: weekly, 1:1s, design review, etc. I found that for each type of these meetings having a concrete protocol, firm recurring schedule (where applicable), meeting record, and the meeting doc shared in advance between the members have great benefits, mostly:
- Individual expression - team members know they&amp;rsquo;ll get an appropriate stage for their ideas/complaints/feelings so they can express them to me and the other team members in a (hopefully) proactive way.</description>
+Individual expression - team members know they&amp;rsquo;ll get an appropriate stage for their ideas/complaints/feelings so they can express them to me and the other team members in a (hopefully) proactive way.</description>
 			<content type="html"><![CDATA[<p>Engineering teams have a few types of meetings that repeat themselves: weekly, 1:1s, design review, etc. I found that for each type of these meetings having a concrete protocol, firm recurring schedule (where applicable), meeting record, and the meeting doc shared in advance between the members have great benefits, mostly:</p>
 <ul>
 <li>Individual expression - team members know they&rsquo;ll get an appropriate stage for their ideas/complaints/feelings so they can express them to me and the other team members in a (hopefully) proactive way.</li>
@@ -376,7 +427,7 @@ pandas 0.25.3 Powerful data structures <span class="k">for</span> data analysis,
 <blockquote>
 <p>Image by <a href="https://pixabay.com/users/manfredsteger-1848497/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3947913">Manfred Steger</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3947913">Pixabay</a></p>
 </blockquote>
-<p>Below are my teams' meeting protocols:</p>
+<p>Below are my teams&rsquo; meeting protocols:</p>
 <h2 id="team-meetings-weekly">Team meetings (weekly)</h2>
 <h3 id="meeting-preparation">Meeting preparation</h3>
 <p>Each team member is requested to prepare for the meeting:</p>
@@ -437,13 +488,13 @@ functionality itself (well, at least if you want some adoption), but what makes 
 <p>** This blog post is an adaptation of a talk I gave at our local Python meetup - <a href="http://www.meetup.com/PyWeb-IL/events/232724175/">PywebIL</a> - last week. You can find the slides <a href="/designing-pythonic-apis-talk">here</a>.</p>
 <h2 id="requests-vs-urllib"><em>Requests</em> vs. <em>Urllib</em></h2>
 <h3 id="use-case-1-sending-a-get-request">Use case #1: sending a GET request</h3>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">urllib.request</span>
-<span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://python.org/&#39;</span><span class="p">)</span>
-</code></pre></div><pre><code>&lt;http.client.HTTPResponse at 0x7fdb08b1bba8&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">urllib.request</span>
+</span></span><span class="line"><span class="cl"><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://python.org/&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>&lt;http.client.HTTPResponse at 0x7fdb08b1bba8&gt;
 </code></pre>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;http://python.org/&#39;</span><span class="p">)</span>
-</code></pre></div><pre><code>&lt;Response [200]&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl"><span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;http://python.org/&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>&lt;Response [200]&gt;
 </code></pre>
 <h4 id="explicit-api-endpoints-is-better-than-implicit">Explicit (API endpoints) is better than implicit</h4>
 <ul>
@@ -458,30 +509,30 @@ functionality itself (well, at least if you want some adoption), but what makes 
 </ul>
 <h4 id="code-snippet">Code snippet</h4>
 <p>(<a href="https://github.com/kennethreitz/requests/blob/v2.10.0/requests/api.py">requests/api.py</a>):</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">request</span><span class="p">(</span><span class="n">method</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-    <span class="k">with</span> <span class="n">sessions</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span> <span class="k">as</span> <span class="n">session</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">session</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="n">method</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-    <span class="n">kwargs</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="s1">&#39;allow_redirects&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="s1">&#39;get&#39;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="s1">&#39;post&#39;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">json</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">request</span><span class="p">(</span><span class="n">method</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="n">sessions</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span> <span class="k">as</span> <span class="n">session</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">session</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="n">method</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">kwargs</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="s1">&#39;allow_redirects&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="s1">&#39;get&#39;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="s1">&#39;post&#39;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">json</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</span></span></code></pre></div><ul>
 <li>All the HTTP verbs follow a similar flow prior to sending, hence there is a the <code>request()</code> main flow function.</li>
 <li>Implementing a &ldquo;helper function&rdquo; for each verb that calls <code>request()</code>, enables the explicitness we are looking for.</li>
 </ul>
 <h3 id="use-case-2-getting-a-request-status-code">Use case #2: getting a request status code</h3>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">urllib.request</span>
-<span class="n">r</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://python.org/&#39;</span><span class="p">)</span>
-<span class="n">r</span><span class="o">.</span><span class="n">getcode</span><span class="p">()</span>
-</code></pre></div><pre><code>200
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">urllib.request</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://python.org/&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span><span class="o">.</span><span class="n">getcode</span><span class="p">()</span>
+</span></span></code></pre></div><pre><code>200
 </code></pre>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;http://python.org/&#39;</span><span class="p">)</span>
-<span class="n">r</span><span class="o">.</span><span class="n">status_code</span>
-</code></pre></div><pre><code>200
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;http://python.org/&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span><span class="o">.</span><span class="n">status_code</span>
+</span></span></code></pre></div><pre><code>200
 </code></pre>
 <h4 id="no-need-for-getters-and-setters">No need for getters and setters</h4>
 <ul>
@@ -490,69 +541,69 @@ functionality itself (well, at least if you want some adoption), but what makes 
 </ul>
 <h4 id="code-snippet-1">Code snippet</h4>
 <p><a href="https://github.com/python/cpython/blob/3.5/Lib/http/client.py#L737">http/client.py</a>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">HTTPResponse</span><span class="p">(</span><span class="n">io</span><span class="o">.</span><span class="n">BufferedIOBase</span><span class="p">):</span>
-
-    <span class="c1"># ...</span>
-
-    <span class="k">def</span> <span class="nf">getcode</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">status</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">HTTPResponse</span><span class="p">(</span><span class="n">io</span><span class="o">.</span><span class="n">BufferedIOBase</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># ...</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">getcode</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">status</span>
+</span></span></code></pre></div><ul>
 <li><em>Urllib</em> (or actually <em>http</em>) is using a &ldquo;getter&rdquo; to return a class property.</li>
 </ul>
 <h3 id="use-case-3-encoding-sending-and-decoding-a-post-request">Use case #3: encoding, sending and decoding a POST request</h3>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">urllib.parse</span>
-<span class="kn">import</span> <span class="nn">urllib.request</span>
-<span class="kn">import</span> <span class="nn">json</span>
-
-<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;http://www.httpbin.org/post&#39;</span>
-<span class="n">values</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span> <span class="p">:</span> <span class="s1">&#39;Michael Foord&#39;</span><span class="p">}</span>
-
-<span class="n">data</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">parse</span><span class="o">.</span><span class="n">urlencode</span><span class="p">(</span><span class="n">values</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">()</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
-<span class="n">body</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
-<span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">body</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
-
-<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;http://www.httpbin.org/post&#39;</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span> <span class="p">:</span> <span class="s1">&#39;Michael Foord&#39;</span><span class="p">}</span>
-
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
-<span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-</code></pre></div><h4 id="easy-access-to-common-functionality">Easy access to common functionality</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">urllib.parse</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">urllib.request</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">json</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;http://www.httpbin.org/post&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">values</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span> <span class="p">:</span> <span class="s1">&#39;Michael Foord&#39;</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">data</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">parse</span><span class="o">.</span><span class="n">urlencode</span><span class="p">(</span><span class="n">values</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">response</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">body</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">body</span><span class="p">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;http://www.httpbin.org/post&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span> <span class="p">:</span> <span class="s1">&#39;Michael Foord&#39;</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</span></span></code></pre></div><h4 id="easy-access-to-common-functionality">Easy access to common functionality</h4>
 <ul>
 <li><em>Requests</em> provides an out-of-the-box experience for the encoding of the data and loading the JSON response while in <em>Urllib</em> you have to implement those parts yourself.</li>
 <li>When designing your API think: how will my package be commonly use? What plugs can I add to make that usage easier?</li>
 </ul>
 <p>On the same note, <em>Requests</em> also provides an elegant way to send JSON content:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
-
-<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;http://www.httpbin.org/post&#39;</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span> <span class="p">:</span> <span class="s1">&#39;Michael Foord&#39;</span><span class="p">}</span>
-
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
-<span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-</code></pre></div><h3 id="use-case-4-sending-authenticated-request">Use case #4: sending authenticated request</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;http://www.httpbin.org/post&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span> <span class="p">:</span> <span class="s1">&#39;Michael Foord&#39;</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</span></span></code></pre></div><h3 id="use-case-4-sending-authenticated-request">Use case #4: sending authenticated request</h3>
 <p>The following creates persistence credentials for HTTP requests, and sends a request:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">urllib.request</span>
-
-<span class="n">gh_url</span> <span class="o">=</span> <span class="s1">&#39;https://api.github.com/user&#39;</span>
-
-<span class="n">password_mgr</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">HTTPPasswordMgrWithDefaultRealm</span><span class="p">()</span>
-<span class="n">password_mgr</span><span class="o">.</span><span class="n">add_password</span><span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="n">gh_url</span><span class="p">,</span> <span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="s1">&#39;pswd&#39;</span><span class="p">)</span>
-<span class="n">handler</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">HTTPBasicAuthHandler</span><span class="p">(</span><span class="n">password_mgr</span><span class="p">)</span>
-
-<span class="n">opener</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">build_opener</span><span class="p">(</span><span class="n">handler</span><span class="p">)</span>
-<span class="n">opener</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">gh_url</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
-
-<span class="n">session</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span>
-<span class="n">session</span><span class="o">.</span><span class="n">auth</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="s1">&#39;pswd&#39;</span><span class="p">)</span>
-<span class="n">session</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://api.github.com/user&#39;</span><span class="p">)</span>
-</code></pre></div><p>But what if we just want to do a single HTTP call? Do we need all that code? <em>Requests</em> have you covered here:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
-
-<span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://api.github.com/user&#39;</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="s1">&#39;pswd&#39;</span><span class="p">))</span>
-</code></pre></div><h4 id="provide-possibilities-for-simple-and-advanced-usage">Provide possibilities for simple and advanced usage</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">urllib.request</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">gh_url</span> <span class="o">=</span> <span class="s1">&#39;https://api.github.com/user&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">password_mgr</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">HTTPPasswordMgrWithDefaultRealm</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">password_mgr</span><span class="o">.</span><span class="n">add_password</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">gh_url</span><span class="p">,</span> <span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="s1">&#39;pswd&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">handler</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">HTTPBasicAuthHandler</span><span class="p">(</span><span class="n">password_mgr</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">opener</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">build_opener</span><span class="p">(</span><span class="n">handler</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">opener</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">gh_url</span><span class="p">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">session</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">session</span><span class="o">.</span><span class="n">auth</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="s1">&#39;pswd&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">session</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://api.github.com/user&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>But what if we just want to do a single HTTP call? Do we need all that code? <em>Requests</em> have you covered here:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://api.github.com/user&#39;</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="s1">&#39;pswd&#39;</span><span class="p">))</span>
+</span></span></code></pre></div><h4 id="provide-possibilities-for-simple-and-advanced-usage">Provide possibilities for simple and advanced usage</h4>
 <ul>
 <li><em>Requests</em> allow concise usage, when sending a single request, and a more verbose one for multiple requests.</li>
 <li>Don&rsquo;t make the user go through a lengthy process when he needs a simple use case.</li>
@@ -563,23 +614,23 @@ functionality itself (well, at least if you want some adoption), but what makes 
 </ul>
 <h4 id="libraries-code">Libraries code</h4>
 <p><a href="https://github.com/kennethreitz/requests/blob/v2.10.0/requests/models.py#L488">requests/models.py</a>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">prepare_auth</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">auth</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
-    <span class="s2">&#34;&#34;&#34;Prepares the given HTTP auth data.&#34;&#34;&#34;</span>
-
-    <span class="c1"># ...</span>
-
-    <span class="k">if</span> <span class="n">auth</span><span class="p">:</span>
-        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">auth</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">auth</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
-            <span class="c1"># special-case basic HTTP auth</span>
-            <span class="n">auth</span> <span class="o">=</span> <span class="n">HTTPBasicAuth</span><span class="p">(</span><span class="o">*</span><span class="n">auth</span><span class="p">)</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">prepare_auth</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">auth</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Prepares the given HTTP auth data.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># ...</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">auth</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">auth</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">auth</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># special-case basic HTTP auth</span>
+</span></span><span class="line"><span class="cl">            <span class="n">auth</span> <span class="o">=</span> <span class="n">HTTPBasicAuth</span><span class="p">(</span><span class="o">*</span><span class="n">auth</span><span class="p">)</span>
+</span></span></code></pre></div><ul>
 <li><em>Requests</em> internally converts the <code>(user,pass)</code> tuple to an authentication class.</li>
 </ul>
 <h3 id="use-case-5-handling-errors">Use case #5: handling errors</h3>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://www.httpbin.org/geta&#39;</span><span class="p">)</span>
-<span class="n">response</span><span class="o">.</span><span class="n">getcode</span><span class="p">()</span>
-</code></pre></div><pre><code>---------------------------------------------------------------------------
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
+</span></span><span class="line"><span class="cl"><span class="n">response</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://www.httpbin.org/geta&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">response</span><span class="o">.</span><span class="n">getcode</span><span class="p">()</span>
+</span></span></code></pre></div><pre><code>---------------------------------------------------------------------------
 
 HTTPError                                 Traceback (most recent call last)
 
@@ -639,10 +690,10 @@ HTTPError                                 Traceback (most recent call last)
 
 HTTPError: HTTP Error 404: NOT FOUND
 </code></pre>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;http://www.httpbin.org/geta&#39;</span><span class="p">)</span>
-<span class="n">r</span><span class="o">.</span><span class="n">status_code</span>
-</code></pre></div><pre><code>404
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;http://www.httpbin.org/geta&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span><span class="o">.</span><span class="n">status_code</span>
+</span></span></code></pre></div><pre><code>404
 </code></pre>
 <h4 id="let-the-user-choose-how-to-handle-errors">Let the user choose how to handle errors</h4>
 <ul>
@@ -652,34 +703,34 @@ HTTPError: HTTP Error 404: NOT FOUND
 <li>Defaulting to return codes allow that, while defaulting to <code>exceptions</code> do not.</li>
 </ul>
 <p>Usage examples:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
-<span class="kn">from</span> <span class="nn">urllib.error</span> <span class="kn">import</span> <span class="n">URLError</span><span class="p">,</span> <span class="n">HTTPError</span>
-<span class="k">try</span><span class="p">:</span>
-    <span class="n">response</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://www.httpbin.org/geta&#39;</span><span class="p">)</span>
-<span class="k">except</span> <span class="n">HTTPError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">code</span> <span class="o">==</span> <span class="mi">404</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Page not found&#39;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;All good&#39;</span><span class="p">)</span>
-</code></pre></div><pre><code>Page not found
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">urllib.error</span> <span class="kn">import</span> <span class="n">URLError</span><span class="p">,</span> <span class="n">HTTPError</span>
+</span></span><span class="line"><span class="cl"><span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">response</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://www.httpbin.org/geta&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">except</span> <span class="n">HTTPError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">code</span> <span class="o">==</span> <span class="mi">404</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Page not found&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;All good&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>Page not found
 </code></pre>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">requests.exceptions</span> <span class="kn">import</span> <span class="n">HTTPError</span>
-<span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;http://www.httpbin.org/posta&#39;</span><span class="p">)</span>
-<span class="k">try</span><span class="p">:</span>
-    <span class="n">r</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
-<span class="k">except</span> <span class="n">HTTPError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">404</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Page not found&#39;</span><span class="p">)</span>
-</code></pre></div><pre><code>Page not found
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">requests.exceptions</span> <span class="kn">import</span> <span class="n">HTTPError</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;http://www.httpbin.org/posta&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">r</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">except</span> <span class="n">HTTPError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">404</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Page not found&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>Page not found
 </code></pre>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;http://www.httpbin.org/geta&#39;</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;All good&#39;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">r</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="n">requests</span><span class="o">.</span><span class="n">codes</span><span class="o">.</span><span class="n">not_found</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Page not found&#39;</span><span class="p">)</span>
-</code></pre></div><pre><code>Page not found
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;http://www.httpbin.org/geta&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;All good&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="n">r</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="n">requests</span><span class="o">.</span><span class="n">codes</span><span class="o">.</span><span class="n">not_found</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Page not found&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>Page not found
 </code></pre>
 <p>That&rsquo;s it for now. I learned quite a bit preparing this talk/post, and I hope you did too reading it. I&rsquo;ll be glad to hear your comments down bellow or on Twitter (@noamelf).</p>
 <h5 id="update-august-8th-2016">Update (August 8th, 2016)</h5>
@@ -867,7 +918,7 @@ Alexandra, my girlfriend, came up with the idea (and executed it on Photoshop). 
 			
 			<guid>https://noamelf.com/posts/ideal-workplace-wishlist/</guid>
 			<description>Looking for a job, I wrote down things that I find important so I can narrow my search and be more focused. I got plenty of inspiration from Julia Evans post on the subject, so I thought it will be nice to share my list too. So, in my view, an ideal employer:
- Is creating software to promote meaningful causes that I can relate to. Has an open and transparent culture that promotes teamwork, creativity and employees initiatives.</description>
+Is creating software to promote meaningful causes that I can relate to. Has an open and transparent culture that promotes teamwork, creativity and employees initiatives.</description>
 			<content type="html"><![CDATA[<p>Looking for a job, I wrote down things that I find important so I can narrow my search and be more focused. I got plenty of inspiration from Julia Evans <a href="http://jvns.ca/blog/2013/12/30/questions-im-asking-in-interviews/">post</a> on the subject, so I thought it will be nice to share my list too. So, in my view, an ideal employer:</p>
 <ul>
 <li>Is creating software to promote meaningful causes that I can relate to.</li>
