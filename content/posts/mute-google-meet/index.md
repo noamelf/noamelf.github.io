@@ -63,6 +63,5 @@ The script concludes by creating an event tap named 'keyLogger', which listens f
 
 By using Hammerspoon and my custom Google Meet script, I've been able to significantly improve my efficiency during virtual meetings. With just a couple of key presses, I can now quickly mute and unmute my microphone or toggle my video on and off, without having to navigate the Google Meet interface. If you're a macOS user who wants to streamline your Google Meet experience, I highly recommend giving Hammerspoon a try!
 
-{{% notice info %}}
-This blog post was written by chatgpt, and approved by me
-{{% /notice %}}
+
+> Co-created by ChatGPT and me, both post and script.
