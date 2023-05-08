@@ -6,8 +6,64 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Mon, 15 Mar 2021 00:00:00 +0000</lastBuildDate>
+		<lastBuildDate>Mon, 08 May 2023 00:00:00 +0000</lastBuildDate>
 		<atom:link href="https://noamelf.com/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Easily Mute and Unmute in Google Meet with Custom Shortcuts using Hammerspoon</title>
+			<link>https://noamelf.com/posts/mute-google-meet/</link>
+			<pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
+			
+			<guid>https://noamelf.com/posts/mute-google-meet/</guid>
+			<description>Introduction As a frequent Google Meet user, I often find myself in situations where I need to quickly mute and unmute my microphone or toggle my video on and off during meetings. In my quest to make these tasks more efficient, I discovered Hammerspoon, a powerful automation tool for macOS. In this blog post, I&amp;rsquo;ll share a handy script I created using Hammerspoon to set up custom shortcuts for these common actions in Google Meet.</description>
+			<content type="html"><![CDATA[<h3 id="introduction">Introduction</h3>
+<p>As a frequent Google Meet user, I often find myself in situations where I need to quickly mute and unmute my microphone or toggle my video on and off during meetings. In my quest to make these tasks more efficient, I discovered Hammerspoon, a powerful automation tool for macOS. In this blog post, I&rsquo;ll share a handy script I created using Hammerspoon to set up custom shortcuts for these common actions in Google Meet.</p>
+<h3 id="hammerspoon-a-brief-overview">Hammerspoon: A Brief Overview</h3>
+<p>Before diving into the script, let me tell you a bit about Hammerspoon. It&rsquo;s an open-source automation tool for macOS that allows you to write Lua scripts to control various aspects of your system. I&rsquo;ve found Hammerspoon to be incredibly useful for customizing my workflow, automating repetitive tasks, and creating shortcuts. I highly recommend checking it out if you&rsquo;re a macOS user looking to enhance your productivity.</p>
+<h3 id="my-google-meet-script">My Google Meet Script</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="kd">local</span> <span class="kr">function</span> <span class="nf">muteGoogleMeet</span><span class="p">(</span><span class="n">event</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">local</span> <span class="n">keyCode</span> <span class="o">=</span> <span class="n">event</span><span class="p">:</span><span class="n">getKeyCode</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">local</span> <span class="n">eventType</span> <span class="o">=</span> <span class="n">event</span><span class="p">:</span><span class="n">getType</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">if</span> <span class="n">eventType</span> <span class="o">==</span> <span class="n">hs.eventtap</span><span class="p">.</span><span class="n">event.types</span><span class="p">.</span><span class="n">keyDown</span> <span class="kr">then</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">local</span> <span class="n">toggleFeature</span><span class="p">,</span> <span class="n">shortcut</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kr">if</span> <span class="n">keyCode</span> <span class="o">==</span> <span class="n">hs.keycodes</span><span class="p">.</span><span class="n">map</span><span class="p">[</span><span class="s2">&#34;F1&#34;</span><span class="p">]</span> <span class="kr">then</span>
+</span></span><span class="line"><span class="cl">            <span class="n">toggleFeature</span> <span class="o">=</span> <span class="s2">&#34;mute&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">shortcut</span> <span class="o">=</span> <span class="s2">&#34;d&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">elseif</span> <span class="n">keyCode</span> <span class="o">==</span> <span class="n">hs.keycodes</span><span class="p">.</span><span class="n">map</span><span class="p">[</span><span class="s2">&#34;F2&#34;</span><span class="p">]</span> <span class="kr">then</span>
+</span></span><span class="line"><span class="cl">            <span class="n">toggleFeature</span> <span class="o">=</span> <span class="s2">&#34;video&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">shortcut</span> <span class="o">=</span> <span class="s2">&#34;e&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">else</span>
+</span></span><span class="line"><span class="cl">            <span class="kr">return</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">end</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">print</span><span class="p">(</span><span class="s2">&#34;Toggling &#34;</span> <span class="o">..</span> <span class="n">toggleFeature</span> <span class="o">..</span> <span class="s2">&#34; on Google Meet&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">hs.alert</span><span class="p">.</span><span class="n">show</span><span class="p">(</span><span class="s2">&#34;Toggling &#34;</span> <span class="o">..</span> <span class="n">toggleFeature</span> <span class="o">..</span> <span class="s2">&#34; on Google Meet&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">hs.application</span><span class="p">.</span><span class="n">launchOrFocus</span><span class="p">(</span><span class="s2">&#34;Google Meet&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">hs.timer</span><span class="p">.</span><span class="n">doAfter</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="n">hs.eventtap</span><span class="p">.</span><span class="n">keyStroke</span><span class="p">({</span><span class="s2">&#34;cmd&#34;</span><span class="p">},</span> <span class="n">shortcut</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">end</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">return</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">end</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">return</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl"><span class="kr">end</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">keyLogger</span> <span class="o">=</span> <span class="n">hs.eventtap</span><span class="p">.</span><span class="n">new</span><span class="p">({</span><span class="n">hs.eventtap</span><span class="p">.</span><span class="n">event.types</span><span class="p">.</span><span class="n">keyDown</span><span class="p">},</span> <span class="n">muteGoogleMeet</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">keyLogger</span><span class="p">:</span><span class="n">start</span><span class="p">()</span>
+</span></span></code></pre></div><h3 id="script-explanation">Script Explanation</h3>
+<p>I developed this Hammerspoon script to create custom shortcuts for muting and unmuting my microphone, as well as toggling my video on and off during a Google Meet session. The script is simple but effective, allowing me to stay focused on my meetings instead of fumbling with the Google Meet interface.</p>
+<p>The script starts with a function called &lsquo;muteGoogleMeet&rsquo;, which takes an &rsquo;event&rsquo; parameter. This function retrieves the &lsquo;keyCode&rsquo; and &rsquo;eventType&rsquo; of the event. If a key has been pressed, the script initializes two variables: &rsquo;toggleFeature&rsquo; and &lsquo;shortcut&rsquo;. Depending on whether the &lsquo;F1&rsquo; or &lsquo;F2&rsquo; key is pressed, the script sets these variables to control the microphone or video, respectively.</p>
+<p>After determining the desired action, the script displays a notification on the screen and brings Google Meet into focus. It then waits for a brief moment before sending a keyStroke event with the appropriate shortcut to perform the action in Google Meet.</p>
+<p>The script concludes by creating an event tap named &lsquo;keyLogger&rsquo;, which listens for keyDown events and calls the &lsquo;muteGoogleMeet&rsquo; function when a relevant key is pressed.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>By using Hammerspoon and my custom Google Meet script, I&rsquo;ve been able to significantly improve my efficiency during virtual meetings. With just a couple of key presses, I can now quickly mute and unmute my microphone or toggle my video on and off, without having to navigate the Google Meet interface. If you&rsquo;re a macOS user who wants to streamline your Google Meet experience, I highly recommend giving Hammerspoon a try!</p>
+<blockquote>
+<p>Co-created by ChatGPT and me, both post and script.</p>
+</blockquote>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Kanban is simply great!</title>
@@ -207,62 +263,6 @@ At Bluevine we use Airflow to drive our ML platform.</description>
 </ul>
 <p>Here are the slides:</p>
 <script async class="speakerdeck-embed" data-id="1ec42b3dc65345bcb24e579a04632653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-]]></content>
-		</item>
-		
-		<item>
-			<title>Easily Mute and Unmute in Google Meet with Custom Shortcuts using Hammerspoon</title>
-			<link>https://noamelf.com/posts/mute-google-meet/</link>
-			<pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
-			
-			<guid>https://noamelf.com/posts/mute-google-meet/</guid>
-			<description>Introduction As a frequent Google Meet user, I often find myself in situations where I need to quickly mute and unmute my microphone or toggle my video on and off during meetings. In my quest to make these tasks more efficient, I discovered Hammerspoon, a powerful automation tool for macOS. In this blog post, I&amp;rsquo;ll share a handy script I created using Hammerspoon to set up custom shortcuts for these common actions in Google Meet.</description>
-			<content type="html"><![CDATA[<h3 id="introduction">Introduction</h3>
-<p>As a frequent Google Meet user, I often find myself in situations where I need to quickly mute and unmute my microphone or toggle my video on and off during meetings. In my quest to make these tasks more efficient, I discovered Hammerspoon, a powerful automation tool for macOS. In this blog post, I&rsquo;ll share a handy script I created using Hammerspoon to set up custom shortcuts for these common actions in Google Meet.</p>
-<h3 id="hammerspoon-a-brief-overview">Hammerspoon: A Brief Overview</h3>
-<p>Before diving into the script, let me tell you a bit about Hammerspoon. It&rsquo;s an open-source automation tool for macOS that allows you to write Lua scripts to control various aspects of your system. I&rsquo;ve found Hammerspoon to be incredibly useful for customizing my workflow, automating repetitive tasks, and creating shortcuts. I highly recommend checking it out if you&rsquo;re a macOS user looking to enhance your productivity.</p>
-<h3 id="my-google-meet-script">My Google Meet Script</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="kd">local</span> <span class="kr">function</span> <span class="nf">muteGoogleMeet</span><span class="p">(</span><span class="n">event</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">local</span> <span class="n">keyCode</span> <span class="o">=</span> <span class="n">event</span><span class="p">:</span><span class="n">getKeyCode</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">local</span> <span class="n">eventType</span> <span class="o">=</span> <span class="n">event</span><span class="p">:</span><span class="n">getType</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kr">if</span> <span class="n">eventType</span> <span class="o">==</span> <span class="n">hs.eventtap</span><span class="p">.</span><span class="n">event.types</span><span class="p">.</span><span class="n">keyDown</span> <span class="kr">then</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">local</span> <span class="n">toggleFeature</span><span class="p">,</span> <span class="n">shortcut</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="kr">if</span> <span class="n">keyCode</span> <span class="o">==</span> <span class="n">hs.keycodes</span><span class="p">.</span><span class="n">map</span><span class="p">[</span><span class="s2">&#34;F1&#34;</span><span class="p">]</span> <span class="kr">then</span>
-</span></span><span class="line"><span class="cl">            <span class="n">toggleFeature</span> <span class="o">=</span> <span class="s2">&#34;mute&#34;</span>
-</span></span><span class="line"><span class="cl">            <span class="n">shortcut</span> <span class="o">=</span> <span class="s2">&#34;d&#34;</span>
-</span></span><span class="line"><span class="cl">        <span class="kr">elseif</span> <span class="n">keyCode</span> <span class="o">==</span> <span class="n">hs.keycodes</span><span class="p">.</span><span class="n">map</span><span class="p">[</span><span class="s2">&#34;F2&#34;</span><span class="p">]</span> <span class="kr">then</span>
-</span></span><span class="line"><span class="cl">            <span class="n">toggleFeature</span> <span class="o">=</span> <span class="s2">&#34;video&#34;</span>
-</span></span><span class="line"><span class="cl">            <span class="n">shortcut</span> <span class="o">=</span> <span class="s2">&#34;e&#34;</span>
-</span></span><span class="line"><span class="cl">        <span class="kr">else</span>
-</span></span><span class="line"><span class="cl">            <span class="kr">return</span> <span class="kc">false</span>
-</span></span><span class="line"><span class="cl">        <span class="kr">end</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="n">print</span><span class="p">(</span><span class="s2">&#34;Toggling &#34;</span> <span class="o">..</span> <span class="n">toggleFeature</span> <span class="o">..</span> <span class="s2">&#34; on Google Meet&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="n">hs.alert</span><span class="p">.</span><span class="n">show</span><span class="p">(</span><span class="s2">&#34;Toggling &#34;</span> <span class="o">..</span> <span class="n">toggleFeature</span> <span class="o">..</span> <span class="s2">&#34; on Google Meet&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="n">hs.application</span><span class="p">.</span><span class="n">launchOrFocus</span><span class="p">(</span><span class="s2">&#34;Google Meet&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="n">hs.timer</span><span class="p">.</span><span class="n">doAfter</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">            <span class="n">hs.eventtap</span><span class="p">.</span><span class="n">keyStroke</span><span class="p">({</span><span class="s2">&#34;cmd&#34;</span><span class="p">},</span> <span class="n">shortcut</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="kr">end</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="kr">return</span> <span class="kc">true</span>
-</span></span><span class="line"><span class="cl">    <span class="kr">end</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kr">return</span> <span class="kc">false</span>
-</span></span><span class="line"><span class="cl"><span class="kr">end</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">keyLogger</span> <span class="o">=</span> <span class="n">hs.eventtap</span><span class="p">.</span><span class="n">new</span><span class="p">({</span><span class="n">hs.eventtap</span><span class="p">.</span><span class="n">event.types</span><span class="p">.</span><span class="n">keyDown</span><span class="p">},</span> <span class="n">muteGoogleMeet</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">keyLogger</span><span class="p">:</span><span class="n">start</span><span class="p">()</span>
-</span></span></code></pre></div><h3 id="script-explanation">Script Explanation</h3>
-<p>I developed this Hammerspoon script to create custom shortcuts for muting and unmuting my microphone, as well as toggling my video on and off during a Google Meet session. The script is simple but effective, allowing me to stay focused on my meetings instead of fumbling with the Google Meet interface.</p>
-<p>The script starts with a function called &lsquo;muteGoogleMeet&rsquo;, which takes an &rsquo;event&rsquo; parameter. This function retrieves the &lsquo;keyCode&rsquo; and &rsquo;eventType&rsquo; of the event. If a key has been pressed, the script initializes two variables: &rsquo;toggleFeature&rsquo; and &lsquo;shortcut&rsquo;. Depending on whether the &lsquo;F1&rsquo; or &lsquo;F2&rsquo; key is pressed, the script sets these variables to control the microphone or video, respectively.</p>
-<p>After determining the desired action, the script displays a notification on the screen and brings Google Meet into focus. It then waits for a brief moment before sending a keyStroke event with the appropriate shortcut to perform the action in Google Meet.</p>
-<p>The script concludes by creating an event tap named &lsquo;keyLogger&rsquo;, which listens for keyDown events and calls the &lsquo;muteGoogleMeet&rsquo; function when a relevant key is pressed.</p>
-<h3 id="conclusion">Conclusion</h3>
-<p>By using Hammerspoon and my custom Google Meet script, I&rsquo;ve been able to significantly improve my efficiency during virtual meetings. With just a couple of key presses, I can now quickly mute and unmute my microphone or toggle my video on and off, without having to navigate the Google Meet interface. If you&rsquo;re a macOS user who wants to streamline your Google Meet experience, I highly recommend giving Hammerspoon a try!</p>
-<blockquote>
-<p>Co-created by ChatGPT and me, both post and script.</p>
-</blockquote>
 ]]></content>
 		</item>
 		

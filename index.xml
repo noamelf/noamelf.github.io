@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 15 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://noamelf.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://noamelf.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Easily Mute and Unmute in Google Meet with Custom Shortcuts using Hammerspoon</title>
+      <link>https://noamelf.com/posts/mute-google-meet/</link>
+      <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://noamelf.com/posts/mute-google-meet/</guid>
+      <description>Introduction As a frequent Google Meet user, I often find myself in situations where I need to quickly mute and unmute my microphone or toggle my video on and off during meetings. In my quest to make these tasks more efficient, I discovered Hammerspoon, a powerful automation tool for macOS. In this blog post, I&amp;rsquo;ll share a handy script I created using Hammerspoon to set up custom shortcuts for these common actions in Google Meet.</description>
+    </item>
+    
     <item>
       <title>Kanban is simply great!</title>
       <link>https://noamelf.com/posts/kanban/</link>
@@ -55,15 +64,6 @@ Single &amp;ldquo;in progress&amp;rdquo; task - make sure each team member is wo
       <guid>https://noamelf.com/posts/airflow-summit-2020-talk/</guid>
       <description>Inline with the Corona pandemic, I gave my first online conference talk! The Airflow Summit 2020 was wonderfully organized and I must say I liked the ability to participate in a conference without leaving home. Giving a talk to a computer is a very different experience then giving it live, a lot less interaction with the audience but on the plus side, it&amp;rsquo;s much less stressful as well.
 At Bluevine we use Airflow to drive our ML platform.</description>
-    </item>
-    
-    <item>
-      <title>Easily Mute and Unmute in Google Meet with Custom Shortcuts using Hammerspoon</title>
-      <link>https://noamelf.com/posts/mute-google-meet/</link>
-      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://noamelf.com/posts/mute-google-meet/</guid>
-      <description>Introduction As a frequent Google Meet user, I often find myself in situations where I need to quickly mute and unmute my microphone or toggle my video on and off during meetings. In my quest to make these tasks more efficient, I discovered Hammerspoon, a powerful automation tool for macOS. In this blog post, I&amp;rsquo;ll share a handy script I created using Hammerspoon to set up custom shortcuts for these common actions in Google Meet.</description>
     </item>
     
     <item>
