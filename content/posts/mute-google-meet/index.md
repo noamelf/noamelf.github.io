@@ -1,5 +1,5 @@
 ---
-date: "2020-02-13"
+date: "2023-05-08"
 title: Easily Mute and Unmute in Google Meet with Custom Shortcuts using Hammerspoon
 tags:
 - hacks
