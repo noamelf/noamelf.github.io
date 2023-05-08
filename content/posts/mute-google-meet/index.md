@@ -7,7 +7,7 @@ tags:
 
 ### Introduction
 
-As a frequent Google Meet user, I often find myself in situations where I need to quickly mute and unmute my microphone or toggle my video on and off during meetings. In my quest to make these tasks more efficient, I discovered Hammerspoon, a powerful automation tool for macOS. In this blog post, I'll share a handy script I created using Hammerspoon to set up custom shortcuts for these common actions in Google Meet.
+As a frequent Google Meet user, I often find myself in situations where I need to quickly mute and unmute my microphone or toggle my video on and off during meetings. In my quest to make these tasks more efficient, I discovered [Hammerspoon](https://www.hammerspoon.org/), a powerful automation tool for macOS. In this blog post, I'll share a handy script I created using Hammerspoon to set up custom shortcuts for these common actions in Google Meet.
 
 ### Hammerspoon: A Brief Overview
 
