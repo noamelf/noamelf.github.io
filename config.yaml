@@ -1,43 +1,42 @@
-baseURL: "https://noamelf.com"
-title: "noamelf"
+baseURL: https://noamelf.com
+title: noamelf
 enableInlineShortcodes: true
-googleAnalytics: "G-XXXXXXXXXX"  # Replace with your GA4 ID
-languageCode: "en"
-theme: "PaperMod"
+googleAnalytics: G-GZL41FLBX8  # Replace with your GA4 ID
+languageCode: en
+theme: PaperMod
 pygmentsUseClasses: true
 markup:
   highlight:
     noClasses: false
-ignoreLogs: ['warning-goldmark-raw-html']
+ignoreLogs: [warning-goldmark-raw-html]
 params:
-  env: "production"
-  title: "noamelf"
-  description: "Thoughts on software development and more!"
+  env: development
+  title: noamelf
+  description: Thoughts on software development and more!
   author: Me
   defaultTheme: auto 
   ShowCodeCopyButtons: true
 
   homeInfoParams:
-    Title: "Hi there 👋"
+    Title: Hi there 👋
     Content: Welcome to my blog where I write my thoughts on software development, management and more!
 
   socialIcons:
-    - name: "x"
-      url: "https://twitter.com/noamelf"
-    - name: "github"
-      url: "https://github.com/noamelf"
-    - name: "linkedin"
-      url: "https://www.linkedin.com/in/noamelf/"
+    - name: x
+      url: https://twitter.com/noamelf
+    - name: github
+      url: https://github.com/noamelf
+    - name: linkedin
+      url: https://www.linkedin.com/in/noamelf/
   
-
 menu:
   main:
-    - name: "About"
-      url: "about/"
+    - name: About
+      url: about/
       weight: 10
-    - name: "Projects"
-      url: "projects/"
+    - name: Projects
+      url: projects/
       weight: 30
-    - name: "Talks"
-      url: "talks/"
+    - name: Talks
+      url: talks/
       weight: 40
