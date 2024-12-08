@@ -1,7 +1,7 @@
 baseURL: https://noamelf.com
 title: noamelf
 enableInlineShortcodes: true
-googleAnalytics: G-GZL41FLBX8  # Replace with your GA4 ID
+googleAnalytics: G-GZL41FLBX8
 languageCode: en
 theme: PaperMod
 pygmentsUseClasses: true
