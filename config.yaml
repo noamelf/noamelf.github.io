@@ -1,34 +1,11 @@
 baseURL: https://noamelf.com
-title: noamelf
 enableInlineShortcodes: true
 googleAnalytics: G-GZL41FLBX8
+ignoreLogs: [warning-goldmark-raw-html]
 languageCode: en
-theme: PaperMod
-pygmentsUseClasses: true
 markup:
   highlight:
     noClasses: false
-ignoreLogs: [warning-goldmark-raw-html]
-params:
-  env: development
-  title: noamelf
-  description: Thoughts on software development and more!
-  author: Me
-  defaultTheme: auto 
-  ShowCodeCopyButtons: true
-
-  homeInfoParams:
-    Title: Hi there 👋
-    Content: Welcome to my blog where I write my thoughts on software development, management and more!
-
-  socialIcons:
-    - name: x
-      url: https://twitter.com/noamelf
-    - name: github
-      url: https://github.com/noamelf
-    - name: linkedin
-      url: https://www.linkedin.com/in/noamelf/
-  
 menu:
   main:
     - name: About
@@ -40,3 +17,23 @@ menu:
     - name: Talks
       url: talks/
       weight: 40
+params:
+  author: Me
+  defaultTheme: auto 
+  description: Thoughts on software development and more!
+  env: development
+  homeInfoParams:
+    Title: Hi there 👋
+    Content: Welcome to my blog where I write my thoughts on software development, management and more!
+  showCodeCopyButtons: true
+  socialIcons:
+    - name: github
+      url: https://github.com/noamelf
+    - name: linkedin
+      url: https://www.linkedin.com/in/noamelf/
+    - name: x
+      url: https://twitter.com/noamelf
+  title: noamelf
+pygmentsUseClasses: true
+theme: PaperMod
+title: noamelf
