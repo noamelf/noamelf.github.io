@@ -35,7 +35,7 @@ I'm somewhat familiar with Terraform, as it's the tool we use to manage our clou
 
 The Terraform GitHub provider requires a high level of granularity. For instance, each team-repo relationship needs to be defined as a separate resource. This approach becomes unwieldy when managing many repositories and teams. Additionally, I wanted the Terraform repository to be self-service, allowing team members to submit PRs for changes without requiring them to learn Terraform.
 
-Initially, I attempted to use an LLM (Claude) to generate Terraform configurations, but I quickly realized that without familiarity with Terraform, LLMs could produce weird patterns. Instead, I found an excellent [blog post](https://developer.hashicorp.com/terraform/tutorials/configuration-language/provider-versioning) by the Terraform education team (discovered on the second page of Google search results 🤯) that provided the guidance I needed.
+Initially, I attempted to use an LLM (Claude) to generate Terraform configurations, but I quickly realized that without familiarity with Terraform, LLMs could produce weird patterns. Instead, I found an excellent [blog post](https://developer.hashicorp.com/terraform/tutorials/it-saas/github-user-teams) by the Terraform education team (discovered on the second page of Google search results 🤯) that provided the guidance I needed.
 
 ### Implementing the Solution
 
