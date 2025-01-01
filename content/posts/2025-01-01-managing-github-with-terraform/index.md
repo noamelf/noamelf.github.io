@@ -1,5 +1,4 @@
 ---
-draft: true
 date: "2025-01-01"
 title: Managing GitHub Teams at Scale with Terraform
 tags:
@@ -8,6 +7,8 @@ tags:
 ---
 
 During a recent reorganization, I was tasked with updating GitHub to reflect the changes. Doing the changes manually was out of the question due to the scope of the updates. Initially, I considered writing a custom script to handle the task, but I realized this was a golden opportunity to transition the tedious job of GitHub management to code. Enter Terraform.
+
+{{< figure src="gh-tf.webp" align="center" height="400px" >}}
 
 ## The Problem
 
