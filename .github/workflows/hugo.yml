@@ -24,6 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.160.1
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
       TZ: America/Los_Angeles
     steps:
       - name: Checkout
@@ -70,7 +71,7 @@ jobs:
           key: ${{ steps.cache-restore.outputs.cache-primary-key }}
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./public
 
