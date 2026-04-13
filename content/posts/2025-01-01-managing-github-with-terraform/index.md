@@ -45,7 +45,7 @@ Since this wasn't a greenfield setup, I needed to import existing resources into
 
 ### Handling Codeowners
 
-A unique challenge was managing the Codeowners feature, which requires teams to be explicitly added to repositories. To address this, I wrote a custom Terraform provider in Go, as Python, my go-to language, doesn't have first-class support in Terraform. While Claude helped with the initial code, the tricky part was installing it locally from my GitHub repo. There were different methods used in past versions, and Claude's guidance was off the mark here, so I had to go old school and RTFD.
+A unique challenge was managing the Codeowners feature, which requires teams to be explicitly added to repositories. To address this, I wrote a custom Terraform provider in Go, as Python, my go-to language, doesn't have first-class support in Terraform. While Claude helped with the initial code, the tricky part was installing it locally from my GitHub repo. There were different methods used in past versions, and Claude's guidance was off the mark here, so I had to go old school and [RTFD](https://developer.hashicorp.com/terraform/tutorials/providers-plugin-framework/providers-plugin-framework-provider#prepare-terraform-for-local-provider-install).
 
 ## Results
 
