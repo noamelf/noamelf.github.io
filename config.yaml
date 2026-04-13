@@ -1,4 +1,7 @@
 baseURL: https://noamelf.com
+caches:
+  images:
+    dir: :cacheDir/images
 enableInlineShortcodes: true
 googleAnalytics: G-GZL41FLBX8
 ignoreLogs: [warning-goldmark-raw-html]
