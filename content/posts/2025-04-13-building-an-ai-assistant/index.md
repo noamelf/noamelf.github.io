@@ -35,7 +35,7 @@ My sources are ephemeral. A Slack conversation about a decision, a meeting where
 
 This is the business/team use case that Karpathy mentions but doesn't go deep on. He writes about "an internal wiki maintained by LLMs, fed by Slack threads, meeting transcripts, project documents." That's exactly what I have, except it's personal -- the organizational knowledge that makes me effective, now persistent and queryable.
 
-Interestingly, this connects to what Jack Dorsey and Roelof Botha recently wrote in [From Hierarchy to Intelligence](https://block.xyz/inside/from-hierarchy-to-intelligence) -- their vision for restructuring Block around AI. One of their core ideas is a "company world model": the context managers typically convey about operations and strategy, made consumable by LLMs. My wiki is a personal-scale version of that.
+This is also what made Jack Dorsey and Roelof Botha's [From Hierarchy to Intelligence](https://block.xyz/inside/from-hierarchy-to-intelligence) click for me. Their core idea is a "company world model" -- the context that managers typically convey about operations and strategy, made consumable by LLMs. When I first read it I thought it was interesting but abstract. Now I really get it. A huge chunk of what I do as a manager is communication work: making sure the right context reaches the right people, translating between teams, repeating decisions so they stick. An LLM wiki that updates in real time -- as decisions happen, as things change -- can shift a lot of that burden. My wiki is a personal-scale version of what they're describing, and even at this small scale, the reduction in repetitive communication work is noticeable.
 
 ## What makes it work
 
